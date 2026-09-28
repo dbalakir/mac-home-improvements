@@ -1479,66 +1479,60 @@ h1, h2, h3, h4 { font-stretch: 112%; font-weight: 700; letter-spacing: -0.02em; 
 .nav a:hover::after, .nav a[aria-current='page']::after { scale: 1 1; }
 .mobile-nav__panel, .mobile-nav__cta { background: var(--frame); }
 
-/* --- Hero: the photograph cut to a gable, under the brass roofline ------- */
-.hero--split { background: var(--bg); color: var(--ink); padding-block: clamp(2.5rem, 5vw, 4.5rem) clamp(2.5rem, 5vw, 4rem); overflow: hidden; }
-.hero--split::after { display: none; }
-/* The headline runs the full width so it holds to two lines; the lede and
-   actions sit beside the gable below it. */
-.hero__grid {
+/* --- Hero: headline, then a full-bleed strip of three real jobs --------
+   The headline names three trades; the strip shows one of each, laid edge
+   to edge with a mortar-width joint between them. */
+.hero--strip { background: var(--bg); color: var(--ink); padding-top: clamp(2.5rem, 5vw, 4rem); }
+.hero--strip::after { display: none; }
+.hero--strip .eyebrow { color: var(--clay); }
+.hero--strip h1 { color: var(--ink); font-size: clamp(2rem, 3.9vw, 3.1rem); font-stretch: 112%; text-wrap: balance; }
+.hero__row {
   display: grid;
-  grid-template-columns: 1.25fr 0.75fr;
-  grid-template-rows: auto auto auto 1fr;
-  column-gap: clamp(2rem, 6vw, 6rem);
-  align-items: start;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1.5rem clamp(2rem, 5vw, 4rem);
+  align-items: end;
+  margin-top: 1.5rem;
 }
-.hero__copy { display: contents; }
-.hero__copy > .eyebrow, .hero__copy > h1 { grid-column: 1 / -1; }
-.hero__copy > .hero__lede, .hero__copy > .hero__actions { grid-column: 1; }
-.hero__frame { grid-column: 2; grid-row: 3 / span 2; margin-top: 1.25rem; }
-.hero--split h1 { color: var(--ink); font-size: clamp(2rem, 3.9vw, 3.1rem); font-stretch: 112%; max-width: none; text-wrap: balance; }
-.hero--split .eyebrow { color: var(--clay); }
-.hero--split .hero__lede { color: var(--ink-mid); margin-top: 1.75rem; max-width: 56ch; }
-.hero--split .hero__lede a { color: var(--ink); }
-.hero__frame { position: relative; padding-top: clamp(1.25rem, 3vw, 2rem); }
-.hero__roof {
-  position: absolute;
-  top: 0;
-  left: -6%;
-  width: 112%;
-  max-width: none;
-  height: auto;
-  color: var(--brass);
-  overflow: visible;
+.hero--strip .hero__lede { color: var(--ink-mid); margin: 0; max-width: 58ch; }
+.hero--strip .hero__lede a { color: var(--ink); }
+.hero--strip .hero__actions { margin: 0; }
+.hero__strip {
+  display: grid;
+  grid-template-columns: 1.35fr 1.3fr 0.75fr;
+  gap: 6px;
+  height: clamp(260px, 30vw, 420px);
+  margin-top: clamp(2.25rem, 4vw, 3.25rem);
+  background: var(--line);
 }
-.hero__frame picture {
-  display: block;
-  aspect-ratio: 4 / 4.2;
-  /* Gable pitch matches the roof stroke above (rise/run 0.61): at 4:4.2 a
-     29% rise over half the width. */
-  clip-path: polygon(50% 0, 100% 29%, 100% 100%, 0 100%, 0 29%);
-}
-.hero__frame img { width: 100%; height: 100%; object-fit: cover; }
+.hero__shot { overflow: hidden; background: var(--bg-sunk); }
+.hero__shot picture, .hero__shot img { display: block; width: 100%; height: 100%; }
+.hero__shot img { object-fit: cover; background: none; }
 @media (max-width: 900px) {
-  .hero__grid { grid-template-columns: 1fr; }
-  .hero__copy > * { grid-column: 1; }
-  /* Copy first on phones so the estimate button is on the first screen. */
-  .hero__frame { grid-column: 1; grid-row: auto; margin: 2.5rem auto 0; max-width: 420px; width: 88%; }
-  .hero__frame picture { aspect-ratio: 4 / 3.6; clip-path: polygon(50% 0, 100% 34%, 100% 100%, 0 100%, 0 34%); }
+  .hero__row { grid-template-columns: 1fr; }
+}
+@media (max-width: 760px) {
+  .hero__strip { grid-template-columns: 1fr 1fr; height: auto; }
+  .hero__shot:first-child { grid-column: 1 / -1; aspect-ratio: 16 / 10; }
+  .hero__shot { aspect-ratio: 1; }
 }
 
-/* The one orchestrated moment: the roof draws, the house settles, the copy
-   follows. It tells the visitor what the business does before they read. */
+/* The one orchestrated moment: copy settles, then the three photographs are
+   uncovered from the ground up, one after another, like courses being laid. */
 @media (prefers-reduced-motion: no-preference) {
-  .hero__roof path { stroke-dasharray: 140; stroke-dashoffset: 140; animation: roof-draw 1.1s .15s var(--ease) forwards; }
-  .hero__frame picture { animation: settle .9s .1s var(--ease) both; }
-  .hero__copy > * { animation: rise .8s var(--ease) both; }
-  .hero__copy > :nth-child(2) { animation-delay: .08s; }
-  .hero__copy > :nth-child(3) { animation-delay: .16s; }
-  .hero__copy > :nth-child(4) { animation-delay: .24s; }
-  @keyframes roof-draw { to { stroke-dashoffset: 0; } }
-  @keyframes settle { from { opacity: 0; translate: 0 18px; } to { opacity: 1; translate: 0 0; } }
+  .hero--strip .wrap > * { animation: rise .8s var(--ease) both; }
+  .hero--strip .wrap > :nth-child(2) { animation-delay: .06s; }
+  .hero--strip .wrap > :nth-child(3) { animation-delay: .12s; }
+  .hero__shot { animation: lay 1s var(--ease) both; }
+  .hero__shot:nth-child(1) { animation-delay: .25s; }
+  .hero__shot:nth-child(2) { animation-delay: .37s; }
+  .hero__shot:nth-child(3) { animation-delay: .49s; }
   @keyframes rise { from { opacity: 0; translate: 0 10px; } to { opacity: 1; translate: 0 0; } }
+  @keyframes lay { from { clip-path: inset(100% 0 0 0); } to { clip-path: inset(0 0 0 0); } }
 }
+
+/* The trust ledger sits under the strip, so it needs air above it. */
+.hero--strip + .trustbar { margin-top: 0; }
+.hero--strip + .trustbar ul { border-top: 0; }
 
 /* Scroll reveals are retired: content below the hero is simply there. */
 .reveal { animation: none !important; }
