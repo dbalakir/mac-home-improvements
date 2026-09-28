@@ -157,7 +157,7 @@ function ctaBand() {
       <h2 class="h-section reveal">Ready to start? Schedule a free estimate.</h2>
       <p class="cta-close__call reveal">Or call <a class="tel" href="${BIZ.phoneHref}">${BIZ.phone}</a></p>
     </div>
-    <a class="btn btn--solid reveal" href="/get-your-free-estimate/">Request an Estimate ${ARROW}</a>
+    <a class="btn btn--solid" href="/get-your-free-estimate/">Request an Estimate</a>
   </div></div>
 </section>`;
 }
@@ -281,8 +281,7 @@ function layout({ title, desc, url, body, current, jsonld = [], heroImage = null
 <meta property="og:image" content="${BIZ.origin}/assets/img/hero-driveway-1200.webp">
 <meta name="twitter:card" content="summary_large_image">
 
-<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/manrope-latin.woff2" crossorigin>
-<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/archivo-latin.woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/site.css">${heroPreload}
 <link rel="icon" href="/assets/favicon.ico" sizes="16x16 32x32 48x48">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
@@ -446,7 +445,7 @@ function warrantyBand(keys) {
     <ul class="wband__list">
       ${terms.map(t => `<li><strong>${t.years} years</strong> <span>${esc(t.label)}</span></li>`).join('\n      ')}
     </ul>
-    <a class="wband__link" href="/warranty/">What the warranty covers &rarr;</a>
+    <a class="wband__link" href="/warranty/">What the warranty covers</a>
   </div>
 </div>`;
 }
@@ -692,7 +691,9 @@ function buildHome() {
         <a class="btn btn--on-photo tel" href="${BIZ.phoneHref}">${BIZ.phone}</a>
       </div>
     </div>
-    <div class="hero__frame">${picture('hero-driveway', {
+    <div class="hero__frame">
+      <svg class="hero__roof" viewBox="0 0 112 36" aria-hidden="true"><path d="M2 35.5L56 2.5L110 35.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="miter"/></svg>
+      ${picture('hero-driveway', {
       sizes: '(max-width:900px) 100vw, 52vw', lazy: false,
       altOverride: 'Circular paver driveway with a stone medallion in front of a stone-faced Northern Virginia home',
     })}</div>

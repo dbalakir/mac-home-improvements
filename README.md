@@ -75,7 +75,7 @@ Some consequences, all deliberate:
   the `<meta http-equiv="refresh">` next to it. Every page also carries a
   `<script type="application/ld+json">` block — that is structured data for
   search engines, not code, and nothing executes it.
-- **No third-party resources are loaded.** Fonts are self-hosted (Manrope + Inter,
+- **No third-party resources are loaded.** Fonts are self-hosted (Archivo,
  latin subset, ~72 KB). The service-area map is inline SVG generated
   from Census boundary data — no map API, no key, no tiles, no tracking. There
   is no analytics until you add a GA4 ID yourself. The only external URLs
@@ -151,7 +151,7 @@ README.md                This file.
 
 assets/
   css/site.css           Every style rule. Design tokens at the top.
-  fonts/                 Manrope + Inter, latin subset, woff2.
+  fonts/                 Archivo (variable width + weight), latin subset, woff2.
   img/                   Site photos: AVIF + WebP, several widths each.
     manifest.json        Generated index of the above. Do not hand-edit.
     projects/            Project photos: JPEG, 1200 and 760 wide.
