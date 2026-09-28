@@ -1393,7 +1393,7 @@ a { color: inherit; }
 }
 
 /* Chrome regions: navy in either mode, so their tokens are fixed. */
-.masthead, .footer, .cta-close {
+.masthead, .footer, .cta-close, .hero__panel {
   --bg:        var(--frame);
   --bg-card:   #152238;
   --bg-sunk:   var(--frame-deep);
@@ -1479,60 +1479,40 @@ h1, h2, h3, h4 { font-stretch: 112%; font-weight: 700; letter-spacing: -0.02em; 
 .nav a:hover::after, .nav a[aria-current='page']::after { scale: 1 1; }
 .mobile-nav__panel, .mobile-nav__cta { background: var(--frame); }
 
-/* --- Hero: headline, then a full-bleed strip of three real jobs --------
-   The headline names three trades; the strip shows one of each, laid edge
-   to edge with a mortar-width joint between them. */
-.hero--strip { background: var(--bg); color: var(--ink); padding-top: clamp(2.5rem, 5vw, 4rem); }
-.hero--strip::after { display: none; }
-.hero--strip .eyebrow { color: var(--clay); }
-.hero--strip h1 { color: var(--ink); font-size: clamp(2rem, 3.9vw, 3.1rem); font-stretch: 112%; text-wrap: balance; }
-.hero__row {
+/* --- Hero: a navy panel of copy beside one large photograph --------------
+   Split edge to edge. The panel's left padding tracks the page wrap so the
+   copy lines up with every section below it. */
+.hero--panel {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 1.5rem clamp(2rem, 5vw, 4rem);
-  align-items: end;
-  margin-top: 1.5rem;
+  grid-template-columns: minmax(0, 50%) 1fr;
+  min-height: clamp(540px, 80vh, 720px);
+  background: var(--frame);
 }
-.hero--strip .hero__lede { color: var(--ink-mid); margin: 0; max-width: 58ch; }
-.hero--strip .hero__lede a { color: var(--ink); }
-.hero--strip .hero__actions { margin: 0; }
-.hero__strip {
-  display: grid;
-  grid-template-columns: 1.35fr 1.3fr 0.75fr;
-  gap: 6px;
-  height: clamp(260px, 30vw, 420px);
-  margin-top: clamp(2.25rem, 4vw, 3.25rem);
-  background: var(--line);
+.hero--panel::after { display: none; }
+.hero__panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-block: clamp(3rem, 6vw, 5rem);
+  padding-right: clamp(2rem, 4vw, 4rem);
+  padding-left: max(var(--gutter), calc((100vw - var(--wrap)) / 2 + var(--gutter)));
+  color: var(--ink);
 }
-.hero__shot { overflow: hidden; background: var(--bg-sunk); }
-.hero__shot picture, .hero__shot img { display: block; width: 100%; height: 100%; }
-.hero__shot img { object-fit: cover; background: none; }
+.hero--panel .eyebrow { color: var(--brass); }
+.hero--panel h1 { color: var(--ink); font-size: clamp(2.1rem, 3.2vw, 2.85rem); font-stretch: 110%; text-wrap: balance; }
+.hero--panel .hero__lede { color: var(--ink-mid); margin-top: 1.5rem; max-width: 50ch; }
+.hero--panel .hero__lede a { color: var(--ink); }
+.hero--panel .hero__actions { margin-top: 2rem; }
+.hero__photo { position: relative; min-height: 100%; }
+.hero__photo picture, .hero__photo img { display: block; width: 100%; height: 100%; }
+.hero__photo img { position: absolute; inset: 0; object-fit: cover; background: var(--frame); }
 @media (max-width: 900px) {
-  .hero__row { grid-template-columns: 1fr; }
-}
-@media (max-width: 760px) {
-  .hero__strip { grid-template-columns: 1fr 1fr; height: auto; }
-  .hero__shot:first-child { grid-column: 1 / -1; aspect-ratio: 16 / 10; }
-  .hero__shot { aspect-ratio: 1; }
+  .hero--panel { grid-template-columns: 1fr; min-height: 0; }
+  .hero__panel { padding-inline: var(--gutter); }
+  .hero__photo { aspect-ratio: 4 / 3; }
 }
 
-/* The one orchestrated moment: copy settles, then the three photographs are
-   uncovered from the ground up, one after another, like courses being laid. */
-@media (prefers-reduced-motion: no-preference) {
-  .hero--strip .wrap > * { animation: rise .8s var(--ease) both; }
-  .hero--strip .wrap > :nth-child(2) { animation-delay: .06s; }
-  .hero--strip .wrap > :nth-child(3) { animation-delay: .12s; }
-  .hero__shot { animation: lay 1s var(--ease) both; }
-  .hero__shot:nth-child(1) { animation-delay: .25s; }
-  .hero__shot:nth-child(2) { animation-delay: .37s; }
-  .hero__shot:nth-child(3) { animation-delay: .49s; }
-  @keyframes rise { from { opacity: 0; translate: 0 10px; } to { opacity: 1; translate: 0 0; } }
-  @keyframes lay { from { clip-path: inset(100% 0 0 0); } to { clip-path: inset(0 0 0 0); } }
-}
-
-/* The trust ledger sits under the strip, so it needs air above it. */
-.hero--strip + .trustbar { margin-top: 0; }
-.hero--strip + .trustbar ul { border-top: 0; }
+.hero--panel + .trustbar ul { border-top: 0; }
 
 /* Scroll reveals are retired: content below the hero is simply there. */
 .reveal { animation: none !important; }
@@ -1654,3 +1634,10 @@ h1, h2, h3, h4 { font-stretch: 112%; font-weight: 700; letter-spacing: -0.02em; 
 .footer__base p { color: var(--ink-dim); }
 .footer__brand { font-stretch: 112%; }
 .lockup__name { font-stretch: 118%; font-weight: 800; letter-spacing: 0.08em; margin-right: -0.08em; }
+
+/* --- Stillness -------------------------------------------------------------
+   Nothing on the page moves on its own. Hover and press states change colour
+   only: no zooming photographs, no sliding underlines, no nudged buttons. */
+.card__media img, .card:hover .card__media img { transition: none; transform: none; }
+.nav a::after { transition: none; }
+.btn:active { translate: none; scale: 1; }

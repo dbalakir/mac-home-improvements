@@ -239,7 +239,7 @@ function layout({ title, desc, url, body, current, jsonld = [], heroImage = null
   const heroPreload = heroImage && IMG[heroImage]
     ? `\n<link rel="preload" as="image" type="image/avif" fetchpriority="high"`
       + ` imagesrcset="${IMG[heroImage].sizes.map(s => `/assets/img/${heroImage}-${s.w}.avif ${s.w}w`).join(', ')}"`
-      + ` imagesizes="(max-width:760px) 100vw, 42vw">`
+      + ` imagesizes="(max-width:900px) 100vw, 56vw">`
     : '';
 
   // BreadcrumbList mirrors the visible crumbs exactly — Google requires the
@@ -680,26 +680,20 @@ function buildHome() {
 </figure>`;
   }).join('\n');
 
-  const body = `<section class="hero hero--strip">
-  <div class="wrap">
+  const body = `<section class="hero hero--panel">
+  <div class="hero__panel">
     <p class="eyebrow">Family-operated in Northern Virginia since ${BIZ.since}</p>
     <h1 class="h-display">Northern Virginia&rsquo;s Driveway, Hardscape &amp; Masonry Specialists</h1>
-    <div class="hero__row">
-      <p class="hero__lede">Paver, asphalt, and concrete driveways, patios, walkways, retaining walls, and stonework throughout Northern Virginia and Washington DC. Free written estimates, and the owners are on site for every job (<a href="/about-us/">read our story</a>).</p>
-      <div class="hero__actions">
-        <a class="btn btn--solid" href="/get-your-free-estimate/">Get a Free Estimate</a>
-        <a class="btn btn--ghost tel" href="${BIZ.phoneHref}">${BIZ.phone}</a>
-      </div>
+    <p class="hero__lede">Paver, asphalt, and concrete driveways, patios, walkways, retaining walls, and stonework throughout Northern Virginia and Washington DC. Free written estimates, and the owners are on site for every job (<a href="/about-us/">read our story</a>).</p>
+    <div class="hero__actions">
+      <a class="btn btn--solid" href="/get-your-free-estimate/">Get a Free Estimate</a>
+      <a class="btn btn--ghost tel" href="${BIZ.phoneHref}">${BIZ.phone}</a>
     </div>
   </div>
-  <div class="hero__strip">
-    <div class="hero__shot">${picture('hero-driveway', {
-      sizes: '(max-width:760px) 100vw, 42vw', lazy: false,
-      altOverride: 'Circular paver driveway with a stone medallion in front of a stone-faced Northern Virginia home',
-    })}</div>
-    <div class="hero__shot">${picture('fireplace-stone', { sizes: '(max-width:760px) 50vw, 38vw', lazy: false })}</div>
-    <div class="hero__shot">${picture('walkway-brick', { sizes: '(max-width:760px) 50vw, 20vw', lazy: false })}</div>
-  </div>
+  <div class="hero__photo">${picture('hero-driveway', {
+    sizes: '(max-width:900px) 100vw, 56vw', lazy: false,
+    altOverride: 'Circular paver driveway with a stone medallion in front of a stone-faced Northern Virginia home',
+  })}</div>
 </section>
 
 ${trustbar()}
