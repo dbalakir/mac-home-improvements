@@ -26,7 +26,7 @@ export const BIZ = {
   // ----------------------------------------------------------------------
 
   // Taken from the Google Business Profile, where the business sets them.
-  hours: 'Open 7 days · 9 AM – 6 PM',
+  hours: 'Open 7 days · 9 AM - 6 PM',
 
   // Headline rating, shown as a single combined figure.
   //
@@ -90,13 +90,13 @@ export const SERVICES = [
     ],
     faq: [
       { q: 'How long does a new driveway take?',
-        a: ['A typical residential replacement runs three to five days from excavation to finished surface. Larger or steeper driveways, poor access, and drainage correction all add time. Weather is the biggest variable — asphalt in particular cannot be laid properly in the wet or the cold, and we would rather wait a few days than lay a surface that will not hold.'] },
+        a: ['A typical residential replacement runs three to five days from excavation to finished surface. Larger or steeper driveways, poor access, and drainage correction all add time. Weather is the biggest variable: asphalt in particular cannot be laid properly in the wet or the cold, and we would rather wait a few days than lay a surface that will not hold.'] },
       { q: 'Should I choose asphalt, pavers, or concrete?',
-        a: ['Asphalt is the least expensive up front, goes down fastest, and is straightforward to resurface later. Pavers cost more initially but individual units lift out and go back without a patch mark, so repairs and utility work do not leave scars. Concrete sits between the two and gives the cleanest uniform surface.', 'We walk through all three against your site, your budget, and how much maintenance you actually want to do — rather than steering you toward one by default.'] },
+        a: ['Asphalt is the least expensive up front, goes down fastest, and is straightforward to resurface later. Pavers cost more initially but individual units lift out and go back without a patch mark, so repairs and utility work do not leave scars. Concrete sits between the two and gives the cleanest uniform surface.', 'We walk through all three against your site, your budget, and how much maintenance you actually want to do, rather than steering you toward one by default.'] },
       { q: 'Can you pave over the existing driveway?',
         a: ['Sometimes, but usually it is a false economy. Overlaying leaves whatever caused the original failure in place underneath, so cracks reflect back through the new surface, often within a couple of seasons. If the base is sound and the problem is genuinely surface-level, we will tell you an overlay is reasonable. More often, the honest answer is that the base is the problem.'] },
       { q: 'When can I drive on it?',
-        a: ['A paver driveway is ready as soon as the edging and jointing are finished. New asphalt needs to cure — light traffic after a day or two, and we ask you to keep heavy vehicles and sharp turning off it for longer than that, especially in hot weather. We give you specific timing for your job when we finish.'] },
+        a: ['A paver driveway is ready as soon as the edging and jointing are finished. New asphalt needs to cure: light traffic after a day or two, and we ask you to keep heavy vehicles and sharp turning off it for longer than that, especially in hot weather. We give you specific timing for your job when we finish.'] },
       { q: 'Will you fix the drainage that ruined the old driveway?',
         a: ['Yes, and we will raise it whether or not you ask. Water is the reason most paving fails early. If the grading around your driveway is sending water the wrong way, replacing the surface without correcting it just buys you a few years before the same failure repeats. It goes in the estimate as a line item so you can see what it costs.'] },
     ],
@@ -111,30 +111,30 @@ export const SERVICES = [
     feature: 'driveway-circle',
     gallery: ['driveway-circle', 'driveway-paver-grey', 'driveway-asphalt-new', 'driveway-roller', 'driveway-paver-tan', 'driveway-crew'],
     h1: 'Driveway Paving and Installation',
-    intro: 'A professionally paved driveway does more than lift curb appeal — it improves safety, drainage, and the value of the property. Whether you are replacing a surface that has reached the end of its life or installing something new, the right materials and the right preparation make a difference you can see for decades.',
+    intro: 'A professionally paved driveway does more than lift curb appeal: it improves safety, drainage, and the value of the property. Whether you are replacing a surface that has reached the end of its life or installing something new, the right materials and the right preparation make a difference you can see for decades.',
     sections: [
       {
         h: "Signs it's time to repave",
         p: [
-          'Even a well-built driveway shows its age eventually. Cracking, potholes, water pooling after rain, and a faded, brittle surface all point toward repaving rather than patching. Uneven areas are not only unattractive — they become trip hazards and collect standing water.',
+          'Even a well-built driveway shows its age eventually. Cracking, potholes, water pooling after rain, and a faded, brittle surface all point toward repaving rather than patching. Uneven areas are not only unattractive; they become trip hazards and collect standing water.',
           'Once a driveway is past the point of minor repair, a new surface gives you a smoother, safer approach to the house and a chance to correct the drainage problems that shortened the life of the old one.',
         ],
       },
       {
         h: 'Choosing between asphalt, concrete, and pavers',
         p: [
-          'The material decides the up-front price, the look, and how the driveway ages — and each of the three has a situation it is genuinely the right answer for. We walk through all three against your site, your budget, and how much maintenance you actually want to do, rather than steering you toward one by default. Each has its own page above if you want the detail.',
+          'The material decides the up-front price, the look, and how the driveway ages, and each of the three has a situation it is genuinely the right answer for. We walk through all three against your site, your budget, and how much maintenance you actually want to do, rather than steering you toward one by default. Each has its own page above if you want the detail.',
         ],
         list: [
           ['Asphalt', 'Least expensive up front and fastest to install. Flexes with the ground rather than cracking against it, and can be resurfaced later rather than replaced. Wants sealcoating every few years.'],
-          ['Concrete', 'The cleanest uniform surface, and the one that takes finishes — broom, exposed aggregate, or stamped. Longer-lived than asphalt and lower maintenance, but rigid, so it needs a better base and honest control joints.'],
+          ['Concrete', 'The cleanest uniform surface, and the one that takes finishes: broom, exposed aggregate, or stamped. Longer-lived than asphalt and lower maintenance, but rigid, so it needs a better base and honest control joints.'],
           ['Pavers', 'The only surface that repairs invisibly: individual units lift out and go back after a utility trench, a stain, or a settled area. Highest up-front cost, and the widest range of patterns, borders, and inlays.'],
         ],
       },
       {
         h: 'Built to hold up to daily use',
         p: [
-          'Every driveway we build starts with site preparation — excavation, a compacted aggregate base, and attention to how water will leave the surface. Skipping that step is the most common reason driveways fail early, and it is the step you can never go back and fix.',
+          'Every driveway we build starts with site preparation: excavation, a compacted aggregate base, and attention to how water will leave the surface. Skipping that step is the most common reason driveways fail early, and it is the step you can never go back and fix.',
           'From base prep through precision finishing, each stage gets the same attention. The result is a surface built for daily traffic and Northern Virginia freeze-thaw cycles.',
         ],
       },
@@ -147,10 +147,10 @@ export const SERVICES = [
     reviewFrom: 'RJ C.',
     process: [
       ['Site visit and written estimate', 'We measure the drive, look at where water currently goes, and check whether the failure you can see is a surface problem or a base problem. The estimate is itemized, so you can see what the tear-out costs and what the paving costs.'],
-      ['Tear-out and excavation', 'The old asphalt comes up and goes away. We excavate to the depth the new section needs rather than the depth the old one happened to sit at — an undersized base is the reason most driveways in this area are being replaced ten years early.'],
+      ['Tear-out and excavation', 'The old asphalt comes up and goes away. We excavate to the depth the new section needs rather than the depth the old one happened to sit at. An undersized base is the reason most driveways in this area are being replaced ten years early.'],
       ['Base repair and compaction', 'Aggregate is laid and compacted in lifts. Soft spots get dug out and rebuilt rather than bridged over, because a soft spot under new asphalt reappears as a depression in the first year.'],
       ['Grading for drainage', 'Pitch is set so water sheets off the driveway and away from the garage and the foundation. Where the old drive was draining toward the house, this is the stage that corrects it.'],
-      ['Paving in lifts', 'A binder course goes down first and is compacted, then the surface course. Two lifts on a residential drive is not overkill — it is what lets the mat carry vehicle loads without deforming at the wheel tracks.'],
+      ['Paving in lifts', 'A binder course goes down first and is compacted, then the surface course. Two lifts on a residential drive is not overkill; it is what lets the mat carry vehicle loads without deforming at the wheel tracks.'],
       ['Rolling while hot', 'Compaction has a window measured in minutes, not hours. The roller works the mat while the material is still at temperature, which is what closes the surface and stops it ravelling at the edges a few winters in.'],
       ['Edges, seams, and cleanup', 'Edges are cut and tapered, the seam against the street or garage apron is sealed, and the site is swept. We walk the finished drive with you before we leave.'],
     ],
@@ -160,7 +160,7 @@ export const SERVICES = [
       { q: 'How long before I can drive on new asphalt?',
         a: ['Light traffic after 24 to 48 hours in normal weather. New asphalt keeps curing for months, so for the first summer we ask you to avoid parking in the same spot for days at a time, turning the wheel while stationary, and putting jack stands or trailer jacks directly on the surface. We give you the specific timing for your job when we finish, because it depends on the temperature the week we paved.'] },
       { q: 'Can you resurface instead of replacing?',
-        a: ['Sometimes. An overlay works when the base is genuinely sound and the problem is confined to the surface — oxidation, minor cracking, a tired-looking mat. It does not work when the driveway has alligator cracking, potholes, or areas that sink after rain, because those are base failures and they reflect straight back through new asphalt, often within two seasons.', 'We will tell you honestly which one you have. An overlay we know will fail is not a saving.'] },
+        a: ['Sometimes. An overlay works when the base is genuinely sound and the problem is confined to the surface: oxidation, minor cracking, a tired-looking mat. It does not work when the driveway has alligator cracking, potholes, or areas that sink after rain, because those are base failures and they reflect straight back through new asphalt, often within two seasons.', 'We will tell you honestly which one you have. An overlay we know will fail is not a saving.'] },
       { q: 'When should an asphalt driveway be sealcoated?',
         a: ['Not immediately. New asphalt needs to cure and release its oils first, so the first sealcoat should wait roughly six to twelve months. After that, every three to five years is reasonable in this climate. Sealing more often than that does nothing useful and builds up a brittle film that cracks on its own.'] },
       { q: 'Can you pave in winter?',
@@ -174,7 +174,7 @@ export const SERVICES = [
     feature: 'driveway-roller',
     gallery: ['driveway-asphalt-new', 'driveway-asphalt-curve', 'driveway-roller', 'driveway-crew', 'driveway-asphalt-cone', 'driveway-prep'],
     h1: 'Asphalt Driveway Installation and Replacement',
-    intro: 'Asphalt is the fastest and least expensive way to get a driveway that carries daily traffic and sheds water properly — provided the base underneath it is built to do its job. We tear out to depth, rebuild the base, and lay the mat in lifts.',
+    intro: 'Asphalt is the fastest and least expensive way to get a driveway that carries daily traffic and sheds water properly, provided the base underneath it is built to do its job. We tear out to depth, rebuild the base, and lay the mat in lifts.',
     sections: [
       {
         h: 'When asphalt is the right choice',
@@ -186,7 +186,7 @@ export const SERVICES = [
       {
         h: 'What kills an asphalt driveway early',
         p: [
-          'Almost never the asphalt. Alligator cracking — the interlocking web of fine cracks that looks like reptile skin — means the base beneath has failed and is moving under load. Potholes are the same story further along. Depressions that hold water after rain are a base that was never compacted properly, or a soft spot that was paved over instead of dug out.',
+          'Almost never the asphalt. Alligator cracking, the interlocking web of fine cracks that looks like reptile skin, means the base beneath has failed and is moving under load. Potholes are the same story further along. Depressions that hold water after rain are a base that was never compacted properly, or a soft spot that was paved over instead of dug out.',
           'Edge ravelling, where the perimeter crumbles away a handful of stones at a time, is the one genuine surface failure, and it comes from compaction that was rushed or from an unsupported edge. All of it is decided before the paver truck arrives, which is why we spend most of a driveway job below the surface.',
         ],
         list: [
@@ -218,21 +218,21 @@ export const SERVICES = [
     warranty: ['concrete'],
     reviewFrom: 'Bob R.',
     process: [
-      ['Site visit and written estimate', 'We measure, check access for the truck, and agree the finish — broom, exposed aggregate, or stamped — before anything is priced. Finish affects cost, so it belongs in the estimate rather than in a conversation on pour day.'],
+      ['Site visit and written estimate', 'We measure, check access for the truck, and agree the finish (broom, exposed aggregate, or stamped) before anything is priced. Finish affects cost, so it belongs in the estimate rather than in a conversation on pour day.'],
       ['Demolition and excavation', 'The old surface is broken out and hauled away, and the subgrade is cut to the depth the new slab and its base need.'],
       ['Base and compaction', 'Compacted aggregate under the slab, in lifts. Concrete is rigid: it does not tolerate a base that settles unevenly, and the result of one is a crack you cannot lift out and reset.'],
       ['Forming and grading', 'Forms are set to the finished line and the fall is established so water leaves the slab and travels away from the house and garage.'],
       ['Reinforcement', 'Rebar or mesh goes in on chairs so it sits within the slab rather than on the ground under it. Steel lying on the subgrade is doing nothing.'],
-      ['Pour, screed, and finish', 'Placed, screeded, floated, and finished to the agreed texture. Timing here is everything — a slab finished too early traps bleed water and a slab finished too late is fighting the set.'],
+      ['Pour, screed, and finish', 'Placed, screeded, floated, and finished to the agreed texture. Timing here is everything: a slab finished too early traps bleed water and a slab finished too late is fighting the set.'],
       ['Jointing and curing', 'Control joints are cut at the right spacing and depth so the slab cracks where we decided rather than where it chooses, and the surface is kept damp or covered while it cures.'],
     ],
     faq: [
       { q: 'How long before I can drive on a new concrete driveway?',
-        a: ['Foot traffic after 24 to 48 hours. Vehicles after seven days as a rule, and we ask you to keep anything heavier than a car — a loaded truck, a dumpster, a delivery lorry — off it for a full 28 days, which is when concrete reaches its design strength. We give you exact dates when the pour is done.'] },
+        a: ['Foot traffic after 24 to 48 hours. Vehicles after seven days as a rule, and we ask you to keep anything heavier than a car (a loaded truck, a dumpster, a delivery lorry) off it for a full 28 days, which is when concrete reaches its design strength. We give you exact dates when the pour is done.'] },
       { q: 'Will my concrete driveway crack?',
         a: ['Concrete shrinks as it cures, and shrinkage has to go somewhere. The job of a control joint is to decide where. Cut at the right spacing and to a quarter of the slab depth, joints give the slab a weak line to crack along, and the crack happens inside the joint where you never see it.', 'What is not normal is random cracking across the field, and that comes from an inadequate base, missing or badly placed joints, reinforcement lying on the ground, or a slab that was poured too wet. Those are all decisions made before the truck leaves.'] },
       { q: 'Concrete or asphalt?',
-        a: ['Concrete costs more up front, lasts longer with less attention, stays lighter and cooler underfoot, and takes finishes — broom, exposed aggregate, stamped patterns — that asphalt cannot. It is also rigid, which means it needs a better base and it does not forgive ground movement.', 'Asphalt is cheaper, faster, flexes with the ground, and can be resurfaced later. If you want the lowest price today, asphalt. If you want the surface to still look deliberate in twenty years, concrete.'] },
+        a: ['Concrete costs more up front, lasts longer with less attention, stays lighter and cooler underfoot, and takes finishes (broom, exposed aggregate, stamped patterns) that asphalt cannot. It is also rigid, which means it needs a better base and it does not forgive ground movement.', 'Asphalt is cheaper, faster, flexes with the ground, and can be resurfaced later. If you want the lowest price today, asphalt. If you want the surface to still look deliberate in twenty years, concrete.'] },
       { q: 'Can you pour concrete in cold weather?',
         a: ['Yes, with precautions. Concrete does not cure below about 40°F and freezing during the first days does permanent damage, so a winter pour means watching the forecast for a clear window, using the right mix, and protecting the slab with blankets while it sets. We schedule around the weather rather than pretending it does not matter.'] },
       { q: 'Do I need to seal a concrete driveway?',
@@ -241,7 +241,7 @@ export const SERVICES = [
     href: '/masonry/concrete-driveways/',
     title: 'Concrete Driveways',
     group: 'Masonry',
-    card: 'Poured concrete driveways in broom, exposed aggregate, and stamped finishes — reinforced, jointed properly, and graded to drain.',
+    card: 'Poured concrete driveways in broom, exposed aggregate, and stamped finishes, reinforced, jointed properly, and graded to drain.',
     // Both point at the Annandale project photo rather than a manifest slug —
     // it is the only finished poured-concrete drive we have photographed, and
     // mediaFor() in build.mjs resolves a project slug the same way.
@@ -273,7 +273,7 @@ export const SERVICES = [
       {
         h: 'Freeze-thaw, salt, and what to expect here',
         p: [
-          'Northern Virginia gives concrete a hard time: repeated freeze-thaw cycling all winter, and de-icing salt on top of it. Water that gets into the surface expands as it freezes and lifts the paste away in flakes — spalling — and salt accelerates the process considerably.',
+          'Northern Virginia gives concrete a hard time: repeated freeze-thaw cycling all winter, and de-icing salt on top of it. Water that gets into the surface expands as it freezes and lifts the paste away in flakes (spalling) and salt accelerates the process considerably.',
           'The defences are an air-entrained mix, a properly finished surface that is not overworked into a weak skin, drainage that does not leave water standing on the slab, and a penetrating sealer applied after the cure. We specify all of that as standard rather than as an upgrade.',
         ],
       },
@@ -281,7 +281,7 @@ export const SERVICES = [
         h: 'Replacing a failed concrete driveway',
         p: [
           'Concrete that has cracked across the field, tipped at the joints, or spalled through to the aggregate has generally reached the end of what repair can do for it. Resurfacing a moving slab puts a new coating on the same problem.',
-          'We break it out, address whatever caused the failure — nearly always base or water — and pour a new slab that is jointed and reinforced properly. If the honest answer is that a section can be cut out and replaced rather than the whole drive, we will tell you that instead.',
+          'We break it out, address whatever caused the failure, nearly always base or water, and pour a new slab that is jointed and reinforced properly. If the honest answer is that a section can be cut out and replaced rather than the whole drive, we will tell you that instead.',
         ],
       },
     ],
@@ -302,7 +302,7 @@ export const SERVICES = [
     ],
     faq: [
       { q: 'Are paver driveways strong enough for vehicles?',
-        a: ['Yes — interlocking concrete pavers are used on port aprons and bus lanes, which are considerably harder duty than a family car. The strength comes from two things: the units interlock so load spreads sideways into neighbouring pavers instead of punching straight down, and the base under a driveway is built deeper than the base under a patio.', 'What matters is that it was built as a driveway. A paver surface laid on a patio-depth base will rut where the wheels sit, and no paver can compensate for that.'] },
+        a: ['Yes, interlocking concrete pavers are used on port aprons and bus lanes, which are considerably harder duty than a family car. The strength comes from two things: the units interlock so load spreads sideways into neighbouring pavers instead of punching straight down, and the base under a driveway is built deeper than the base under a patio.', 'What matters is that it was built as a driveway. A paver surface laid on a patio-depth base will rut where the wheels sit, and no paver can compensate for that.'] },
       { q: 'Will weeds grow between the pavers?',
         a: ['Some, eventually, and not from below. Weed seed blows in and germinates in the joint sand at the surface. Polymeric jointing sand, compacted in properly, largely prevents it and is what we use as standard. A few volunteers a year at the edges is normal and pulls out by hand.'] },
       { q: 'What happens if a paver gets stained or damaged?',
@@ -310,7 +310,7 @@ export const SERVICES = [
       { q: 'Do paver driveways sink or shift?',
         a: ['A properly built one moves very little. Settling comes from a base that was not compacted in lifts, from a base that was not deep enough for vehicle loads, or from water travelling under the surface because the grade sends it the wrong way. All three are decided before a single paver is laid.', 'When a paver drive does settle, the fix is genuinely a fix: the field is lifted, the base corrected and recompacted, and the same units reset. You rarely need new material.'] },
       { q: 'How much more do pavers cost than asphalt?',
-        a: ['Meaningfully more up front — the excavation is deeper, the base is heavier, and the units are set by hand one at a time. Over twenty years the gap narrows, because pavers do not need resurfacing and repairs do not leave scars. We price both against your actual driveway so you are comparing real numbers rather than averages.'] },
+        a: ['Meaningfully more up front: the excavation is deeper, the base is heavier, and the units are set by hand one at a time. Over twenty years the gap narrows, because pavers do not need resurfacing and repairs do not leave scars. We price both against your actual driveway so you are comparing real numbers rather than averages.'] },
     ],
     href: '/masonry/paver-driveways/',
     title: 'Paver Driveways',
@@ -320,12 +320,12 @@ export const SERVICES = [
     feature: 'driveway-circle',
     gallery: ['driveway-circle', 'hero-herringbone', 'driveway-paver-grey', 'driveway-paver-tan', 'driveway-paver-blue', 'driveway-paver-band', 'driveway-paver-wide'],
     h1: 'Paver Driveway Installation',
-    intro: 'A paver driveway is the one surface that can be repaired without leaving a mark. Individual units lift out and go back — after a utility trench, an oil spill, or a settled area — which is why a paver drive twenty years on can still look like the day it was laid.',
+    intro: 'A paver driveway is the one surface that can be repaired without leaving a mark. Individual units lift out and go back (after a utility trench, an oil spill, or a settled area), which is why a paver drive twenty years on can still look like the day it was laid.',
     sections: [
       {
         h: 'Patterns, borders, and inlays',
         p: [
-          'The pattern does real work on a surface this large. Herringbone is the strongest bond you can lay, because every unit locks against its neighbours in two directions and load spreads rather than concentrating — it is the right choice anywhere vehicles turn or brake. Running bond is calmer and pulls the eye toward the house.',
+          'The pattern does real work on a surface this large. Herringbone is the strongest bond you can lay, because every unit locks against its neighbours in two directions and load spreads rather than concentrating; it is the right choice anywhere vehicles turn or brake. Running bond is calmer and pulls the eye toward the house.',
           'A soldier course around the perimeter is not decoration: it locks the field and gives the driveway a deliberate edge against the lawn. Banding across the width breaks up a long run, and a circular medallion set on axis with the garage doors gives a wide apron a centre instead of leaving it as an expanse of paving.',
         ],
       },
@@ -340,13 +340,13 @@ export const SERVICES = [
         h: 'Materials that suit the house',
         p: [
           'Concrete pavers come in tumbled, smooth, and textured faces and in a range of formats, from small cobble units to large-format slabs. Clay brick pavers hold their colour permanently because the colour is the fired clay itself rather than a pigment, which is why a brick drive laid beside a brick house still matches decades later.',
-          'We choose against the house — its brick, its stone, its roof — and we deliberately avoid an exact match, which flattens both surfaces. Picking up a tone rather than copying it is what makes new paving look like it belongs.',
+          'We choose against the house (its brick, its stone, its roof) and we deliberately avoid an exact match, which flattens both surfaces. Picking up a tone rather than copying it is what makes new paving look like it belongs.',
         ],
       },
       {
         h: 'Living with a paver driveway',
         p: [
-          'Very little maintenance, and what there is is simple. Sweep it. Top up the joint sand every few years where it has washed low. Pull the occasional weed from the perimeter. Sealing is optional and mostly cosmetic — it deepens the colour and helps against oil — and it is not required for the surface to perform.',
+          'Very little maintenance, and what there is is simple. Sweep it. Top up the joint sand every few years where it has washed low. Pull the occasional weed from the perimeter. Sealing is optional and mostly cosmetic (it deepens the colour and helps against oil) and it is not required for the surface to perform.',
           'Snow clearing is no different from any other driveway, though a plough blade should be run with a shoe or a rubber edge so it rides over the surface rather than catching a raised unit.',
         ],
       },
@@ -357,7 +357,7 @@ export const SERVICES = [
     warranty: ['masonry'],
     reviewFrom: 'Jason S.',
     process: [
-      ['Assessment and brick matching', 'We look at what is already there — the brick size, color, texture, and the bond it was laid in — and work out what will blend. On repairs, matching the existing brick matters more than anything else you choose.'],
+      ['Assessment and brick matching', 'We look at what is already there (the brick size, color, texture, and the bond it was laid in) and work out what will blend. On repairs, matching the existing brick matters more than anything else you choose.'],
       ['Mortar analysis', 'Old brick was laid with softer mortar than modern mixes. We match the mortar to the brick rather than defaulting to the strongest available, because a mortar harder than the brick will destroy the brick instead of protecting it.'],
       ['Preparation and demolition', 'Failed material comes out, joints are raked to depth, and surfaces are cleaned. On new work, the base or substrate is prepared first.'],
       ['Layout and dry bond', 'Courses are laid out dry so the pattern lands correctly at corners, edges, and openings. This is where a bond pattern either reads as deliberate or reads as improvised.'],
@@ -368,11 +368,11 @@ export const SERVICES = [
       { q: 'Can you match my existing brick?',
         a: ['Usually, and it is the first thing we look at. Brick sizes and colors have changed over the decades, so a close match often means sourcing a reclaimed or specialty brick rather than picking the nearest thing off a pallet. On an older house we will show you options before ordering, because a mismatch on a front facade is permanent and obvious.'] },
       { q: 'What is repointing, and how do I know if I need it?',
-        a: ['Repointing is raking out failed mortar joints and replacing them. You need it when mortar is crumbling, has receded noticeably behind the face of the brick, or you can rake it out with a key. Left alone, open joints let water into the wall, and freeze-thaw does the rest — at which point you are replacing brick rather than mortar.'] },
+        a: ['Repointing is raking out failed mortar joints and replacing them. You need it when mortar is crumbling, has receded noticeably behind the face of the brick, or you can rake it out with a key. Left alone, open joints let water into the wall, and freeze-thaw does the rest, at which point you are replacing brick rather than mortar.'] },
       { q: 'Will the new mortar match the old?',
         a: ['We mix to match color and tool the joint to the same profile, and on most walls the repair reads as part of the wall within a season. New mortar cures lighter and darkens as it weathers, so there is usually a visible difference for the first few months. We tell you that up front rather than letting you discover it.'] },
       { q: 'Why is there white powder on my brick?',
-        a: ['That is efflorescence — mineral salts carried to the surface by water moving through the masonry. It is cosmetic in itself and often washes off, but it is a signal worth reading: it means water is getting into the wall and traveling. If it keeps returning after cleaning, the useful question is where the water is coming in, not how to scrub it off.'] },
+        a: ['That is efflorescence: mineral salts carried to the surface by water moving through the masonry. It is cosmetic in itself and often washes off, but it is a signal worth reading: it means water is getting into the wall and traveling. If it keeps returning after cleaning, the useful question is where the water is coming in, not how to scrub it off.'] },
     ],
     href: '/masonry/brickwork/',
     title: 'Brickwork',
@@ -382,13 +382,13 @@ export const SERVICES = [
     feature: 'steps-stone',
     gallery: ['steps-brick', 'walkway-brick', 'brick-flooring', 'patio-red', 'steps-landing', 'wall-brick-long'],
     h1: 'Brickwork That Adds Character and Lasting Value',
-    intro: 'Quality brickwork does not just change how a property looks — it adds character, strength, and value that holds. Whether you are refreshing a worn exterior, building something new, or restoring detail that has been lost, expert craftsmanship is what separates work that lasts from work that has to be redone.',
+    intro: 'Quality brickwork does not just change how a property looks; it adds character, strength, and value that holds. Whether you are refreshing a worn exterior, building something new, or restoring detail that has been lost, expert craftsmanship is what separates work that lasts from work that has to be redone.',
     sections: [
       {
         h: 'Custom brickwork designed to last',
         p: [
           'Every home deserves brick features built with care and attention to detail. Our projects are tailored to fit your style, whether that is a new patio, an elegant entryway, or a full exterior upgrade.',
-          'We use premium materials and time-tested techniques so that every structure stands up to the elements and to time. We also help with the decisions that are easy to get wrong — color, bond pattern, and layout — so the finished work reads as though it was always part of the house.',
+          'We use premium materials and time-tested techniques so that every structure stands up to the elements and to time. We also help with the decisions that are easy to get wrong (color, bond pattern, and layout) so the finished work reads as though it was always part of the house.',
         ],
       },
       {
@@ -401,7 +401,7 @@ export const SERVICES = [
       {
         h: 'Serving homeowners across Northern Virginia',
         p: [
-          'We are proud to work throughout Northern Virginia and the surrounding communities, on everything from intricate facades to sturdy retaining walls and pathways. Local knowledge matters more than people expect — soil, drainage, and the way local weather works on mortar all shape how a job should be built.',
+          'We are proud to work throughout Northern Virginia and the surrounding communities, on everything from intricate facades to sturdy retaining walls and pathways. Local knowledge matters more than people expect: soil, drainage, and the way local weather works on mortar all shape how a job should be built.',
         ],
       },
     ],
@@ -411,7 +411,7 @@ export const SERVICES = [
     warranty: ['walls'],
     reviewFrom: 'Nancy P.',
     process: [
-      ['Survey the slope and the water', 'We measure the grade, work out how much soil the wall actually has to hold, and trace where water moves across the site. Load and water are what size the wall — the look is chosen afterward.'],
+      ['Survey the slope and the water', 'We measure the grade, work out how much soil the wall actually has to hold, and trace where water moves across the site. Load and water are what size the wall; the look is chosen afterward.'],
       ['Design, engineering, and permits', 'Taller walls and walls carrying a surcharge such as a driveway need an engineered design and a permit. We tell you which category yours falls into before you commit, and confirm the requirement with your jurisdiction rather than guessing.'],
       ['Excavation and footing', 'We dig below the finished grade and build a compacted aggregate footing. The first course sits below ground level, which is what stops the wall walking forward over time.'],
       ['Drainage detail', 'Open-graded backfill, filter fabric, and an outlet that carries water somewhere useful. Most wall failures are water failures, and this is the stage that decides whether yours is one of them.'],
@@ -420,13 +420,13 @@ export const SERVICES = [
     ],
     faq: [
       { q: 'How tall can a wall be before it needs an engineer?',
-        a: ['In most Northern Virginia jurisdictions the threshold is around four feet, measured from the bottom of the footing rather than from the ground you are standing on — which catches people out, because a wall that looks three feet tall may not be. Walls carrying extra load above them, such as a driveway or a slope, can trigger the requirement lower.', 'We confirm the specific requirement with your county before we build rather than working from a rule of thumb.'] },
+        a: ['In most Northern Virginia jurisdictions the threshold is around four feet, measured from the bottom of the footing rather than from the ground you are standing on, which catches people out, because a wall that looks three feet tall may not be. Walls carrying extra load above them, such as a driveway or a slope, can trigger the requirement lower.', 'We confirm the specific requirement with your county before we build rather than working from a rule of thumb.'] },
       { q: 'Do you handle the permit?',
-        a: ['Where a permit is required we walk you through what is needed and coordinate with the jurisdiction. What we will not do is build a wall that needed a permit without one — it is your property that carries the consequence at resale or inspection, not ours.'] },
+        a: ['Where a permit is required we walk you through what is needed and coordinate with the jurisdiction. What we will not do is build a wall that needed a permit without one; it is your property that carries the consequence at resale or inspection, not ours.'] },
       { q: 'Why do retaining walls fail?',
         a: ['Almost always water, not weight. Soil that cannot drain becomes far heavier than the wall was built to hold, and hydrostatic pressure pushes it out from behind. The second cause is a footing that was not dug below grade or not compacted. Both are invisible once the wall is finished, which is exactly why they get skipped.'] },
       { q: 'Segmental block or natural stone?',
-        a: ['Block is engineered, consistent, and the straightforward choice for a structural wall of any height — it is designed to lock together and to be built to a spec. Natural stone costs more and takes longer, and it looks like nothing else. Many properties end up with block where the wall is doing structural work and stone where it is doing visual work.'] },
+        a: ['Block is engineered, consistent, and the straightforward choice for a structural wall of any height; it is designed to lock together and to be built to a spec. Natural stone costs more and takes longer, and it looks like nothing else. Many properties end up with block where the wall is doing structural work and stone where it is doing visual work.'] },
     ],
     href: '/masonry/retaining-walls/',
     title: 'Retaining Walls',
@@ -436,7 +436,7 @@ export const SERVICES = [
     feature: 'wall-curved',
     gallery: ['wall-curved', 'wall-build', 'wall-steps', 'wall-closeup', 'wall-brick-long', 'wall-hero'],
     h1: 'Custom Retaining Walls Built for Strength and Style',
-    intro: 'Retaining walls do more than hold back soil. They create structure, add depth to landscaping, and protect a property from erosion. Ours are built to match your style while standing up to the pressure behind them — because a retaining wall that looks good and fails in five years has not done its job.',
+    intro: 'Retaining walls do more than hold back soil. They create structure, add depth to landscaping, and protect a property from erosion. Ours are built to match your style while standing up to the pressure behind them, because a retaining wall that looks good and fails in five years has not done its job.',
     sections: [
       {
         h: 'Strength, stability, and style together',
@@ -455,14 +455,14 @@ export const SERVICES = [
           ['Segmental block walls', 'Clean lines and consistent structure, with an interlocking design that delivers long-term stability and a uniform look.'],
           ['Tiered walls', 'Multiple levels add dimension, maximize planting space, and improve drainage on steeper slopes.'],
           ['Planter-integrated walls', 'Planting areas built directly into the wall, adding greenery without giving up yard space.'],
-          ['Curved walls', 'A softer shape than straight runs — well suited to garden settings and pathways where flow matters.'],
+          ['Curved walls', 'A softer shape than straight runs, well suited to garden settings and pathways where flow matters.'],
           ['Seat walls', 'Double as built-in outdoor seating around patios and fire pits, which makes entertaining easier without adding furniture.'],
         ],
       },
       {
         h: 'Drainage is not optional',
         p: [
-          'Most retaining wall failures trace back to water, not weight. Every wall we build gets the drainage detail it needs — open-graded backfill, filter fabric, and outlets that actually carry water away from the structure.',
+          'Most retaining wall failures trace back to water, not weight. Every wall we build gets the drainage detail it needs: open-graded backfill, filter fabric, and outlets that actually carry water away from the structure.',
         ],
       },
     ],
@@ -471,7 +471,7 @@ export const SERVICES = [
     slug: 'foundation-repair',
     reviewFrom: 'Gemma V.',
     process: [
-      ['Inspection and diagnosis', 'We look at the crack pattern, the direction of movement, and the ground around the house. What a crack looks like tells you a great deal about whether it is settlement, water, or seasonal movement — and those need different repairs.'],
+      ['Inspection and diagnosis', 'We look at the crack pattern, the direction of movement, and the ground around the house. What a crack looks like tells you a great deal about whether it is settlement, water, or seasonal movement, and those need different repairs.'],
       ['Find the water', 'Most foundation problems are water problems first. Gutters discharging at the wall, grade pitched toward the house, and a driveway or patio draining the wrong way are ordinary causes with ordinary fixes.'],
       ['Written scope and honest scoping', 'You get an itemized estimate and a straight answer about urgency. If a crack is stable and cosmetic, we say so.'],
       ['Excavation where needed', 'Exterior repairs mean opening up the ground against the wall. We protect what we can and restore what we disturb.'],
@@ -484,7 +484,7 @@ export const SERVICES = [
       { q: 'Is this masonry work or structural engineering?',
         a: ['Some of it is neither ours to do nor safe to guess at. Crack repair, stabilization, repointing, waterproofing, and rebuilding damaged masonry are masonry work. Underpinning, piering, and anything involving structural movement of the house belong to a structural engineer, and the honest thing is to tell you that rather than take the job.', 'If what your house needs is outside masonry repair, we will say so plainly.'] },
       { q: 'Will you tell me if the repair can wait?',
-        a: ['Yes. A foundation is the one place where the cheapest version of a problem is the version you catch early, so there is nothing to gain from us talking you into work you do not need — and a great deal to lose. Several of our reviews mention exactly this.'] },
+        a: ['Yes. A foundation is the one place where the cheapest version of a problem is the version you catch early, so there is nothing to gain from us talking you into work you do not need, and a great deal to lose. Several of our reviews mention exactly this.'] },
       { q: 'Why does foundation work cost so differently from job to job?',
         a: ['Because the visible crack is rarely the whole scope. The type of foundation, the extent of damage behind the surface, how accessible the repair area is, how much excavation is needed, and the soil conditions around the house all move the number substantially. We break the estimate out by line so you can see which of those is driving your price.'] },
     ],
@@ -496,7 +496,7 @@ export const SERVICES = [
     feature: 'foundation-exterior',
     gallery: ['foundation-exterior', 'foundation-driveway'],
     h1: 'Professional Foundation Repair in Northern Virginia',
-    intro: 'Your foundation is the most important structural element of the house, and protecting it means protecting the whole investment. Cracks, shifting, and settling get worse quickly when they are left alone — which is why early detection and timely repair matter so much.',
+    intro: 'Your foundation is the most important structural element of the house, and protecting it means protecting the whole investment. Cracks, shifting, and settling get worse quickly when they are left alone, which is why early detection and timely repair matter so much.',
     sections: [
       {
         h: 'Stop the damage early',
@@ -535,7 +535,7 @@ export const SERVICES = [
       {
         h: 'The problems behind the problem',
         p: [
-          'Foundations rarely fail on their own. In the great majority of what we see, the foundation is the place where a water problem somewhere else on the property finally became visible — gutters discharging at the wall, ground pitched toward the house rather than away, a driveway or patio draining backward, or a downspout that runs into a buried line nobody has checked in twenty years.',
+          'Foundations rarely fail on their own. In the great majority of what we see, the foundation is the place where a water problem somewhere else on the property finally became visible: gutters discharging at the wall, ground pitched toward the house rather than away, a driveway or patio draining backward, or a downspout that runs into a buried line nobody has checked in twenty years.',
           'That is why our first visit spends as much time on the ground around the house as on the crack you called about. Repairing masonry while leaving the water in place produces a repair that fails again, on your money the second time. If the cause is something simple and cheap, we would rather tell you to fix that and watch the crack.',
         ],
       },
@@ -554,7 +554,7 @@ export const SERVICES = [
     ],
     faq: [
       { q: 'What is a chimney crown, and why does it matter so much?',
-        a: ['The crown is the sloped slab across the top of the chimney that sheds water away from the masonry below. When it cracks — and thin, poorly formed crowns crack early — water runs straight down inside the chimney structure. A large share of the chimney damage we are called out to look at started as a failed crown, which is why we assess it first.'] },
+        a: ['The crown is the sloped slab across the top of the chimney that sheds water away from the masonry below. When it cracks (and thin, poorly formed crowns crack early) water runs straight down inside the chimney structure. A large share of the chimney damage we are called out to look at started as a failed crown, which is why we assess it first.'] },
       { q: 'How often does a chimney need repointing?',
         a: ['There is no fixed interval; it depends on exposure, the original mortar, and how much weather that face of the house takes. A chimney is the most exposed masonry on the building, so it almost always needs attention before the walls do. The practical answer is to look at it when you notice receding joints, spalling brick faces, or staining on the interior near the fireplace.'] },
       { q: 'I have a stain on the ceiling near the chimney. Is that the chimney?',
@@ -579,7 +579,7 @@ export const SERVICES = [
         ],
         list: [
           ['Cracks in the brick or crown', 'Visible cracking lets water in and accelerates deterioration, and can lead to shifting over time.'],
-          ['Loose, missing, or damaged flashing', 'Flashing that has lifted or gone missing exposes the joint between chimney and roof — a small gap is enough.'],
+          ['Loose, missing, or damaged flashing', 'Flashing that has lifted or gone missing exposes the joint between chimney and roof. A small gap is enough.'],
           ['Water stains or moisture indoors', 'Spots, bubbling paint, or discoloration near the chimney usually mean water is already getting through.'],
           ['Rusted or corroded metal', 'Rust on flashing or the damper is direct evidence of moisture, and it weakens the assembly around it.'],
           ['Damp smells near the fireplace', 'Odors or a damp feeling point to hidden moisture, which leads to mold and mortar breakdown.'],
@@ -595,7 +595,7 @@ export const SERVICES = [
       {
         h: 'Local experience matters',
         p: [
-          'Northern Virginia homes face seasonal swings that are hard on masonry — freeze-thaw cycles work on any joint that is already compromised. We know how local weather and aging construction materials interact, and we build repairs accordingly.',
+          'Northern Virginia homes face seasonal swings that are hard on masonry: freeze-thaw cycles work on any joint that is already compromised. We know how local weather and aging construction materials interact, and we build repairs accordingly.',
         ],
       },
       {
@@ -606,7 +606,7 @@ export const SERVICES = [
         list: [
           ['Repointing', 'Failed mortar joints raked back to sound material and replaced, matched in color and joint profile to the existing work.'],
           ['Crown repair or recasting', 'A cracked or undersized crown rebuilt with proper slope, overhang, and a drip edge so water is thrown clear of the brickwork.'],
-          ['Flashing repair and replacement', 'The roof-to-chimney joint resealed and detailed correctly — the most common single source of a ceiling stain near a fireplace.'],
+          ['Flashing repair and replacement', 'The roof-to-chimney joint resealed and detailed correctly, the most common single source of a ceiling stain near a fireplace.'],
           ['Brick replacement', 'Spalled or cracked units cut out and replaced individually rather than skimmed over with mortar.'],
           ['Partial rebuild', 'Where deterioration has gone past repair, the affected section taken down to sound masonry and rebuilt.'],
           ['Waterproofing', 'A breathable repellent applied where it is appropriate, which sheds water while still letting the masonry dry outward.'],
@@ -615,7 +615,7 @@ export const SERVICES = [
       {
         h: 'Matching mortar to the chimney you have',
         p: [
-          'Mortar is not one product, and using the wrong one does real damage. Older brick is softer than modern brick and was laid with a softer lime-based mortar that was intended to move slightly and to fail before the brick does — mortar is the sacrificial part of the wall by design.',
+          'Mortar is not one product, and using the wrong one does real damage. Older brick is softer than modern brick and was laid with a softer lime-based mortar that was intended to move slightly and to fail before the brick does. Mortar is the sacrificial part of the wall by design.',
           'Repointing an older chimney with a modern high-strength mix produces joints harder than the brick around them. The assembly still has to move, so instead of the mortar giving, the faces of the brick spall off. It is a common and expensive mistake, and it is why we match the mortar to what is already there rather than defaulting to the strongest bag available.',
         ],
       },
@@ -626,7 +626,7 @@ export const SERVICES = [
     warranty: ['pavers', 'concrete', 'masonry'],
     reviewFrom: 'Dani S.',
     process: [
-      ['How you will actually use it', 'Before any layout, we talk about what the space is for — dining, a fire feature, a route to somewhere else — and how many people at once. Patios that feel wrong are usually the right material at the wrong size.'],
+      ['How you will actually use it', 'Before any layout, we talk about what the space is for (dining, a fire feature, a route to somewhere else) and how many people at once. Patios that feel wrong are usually the right material at the wrong size.'],
       ['Layout and material selection', 'We set the shape and size out on the ground so you can walk it before anything is dug, and choose material against the house, the light, and the maintenance you are willing to do.'],
       ['Excavation', 'The area is dug out to the depth the base needs, not to the depth that happens to be convenient. This is the stage that decides whether it stays level.'],
       ['Base and compaction', 'Aggregate goes in and is compacted in lifts, with the grade already pitched so water leaves the surface and travels away from the house.'],
@@ -636,27 +636,27 @@ export const SERVICES = [
     ],
     faq: [
       { q: 'How long does a patio take to build?',
-        a: ['Most residential patios run three to six days depending on size, access, and how much excavation is involved. A backyard that equipment cannot reach is the factor homeowners most often underestimate — wheelbarrowing base material by hand can add days to an otherwise straightforward job, and we account for it in the estimate rather than discovering it on day two.'] },
+        a: ['Most residential patios run three to six days depending on size, access, and how much excavation is involved. A backyard that equipment cannot reach is the factor homeowners most often underestimate: wheelbarrowing base material by hand can add days to an otherwise straightforward job, and we account for it in the estimate rather than discovering it on day two.'] },
       { q: 'Pavers, natural stone, brick, or stamped concrete?',
-        a: ['Pavers are the most forgiving over time: individual units lift and reset, so settling, staining, and utility work do not mean replacing the whole surface. Natural stone such as bluestone gives a look manufactured units do not, at a higher cost and with more hand-cutting. Clay brick holds its colour permanently and is the obvious answer beside a brick house.', 'Stamped concrete gives you one continuous surface with no joints for weeds, at a competitive price — with the trade-off that a crack in concrete is permanent in a way a lifted paver is not. We have a separate page on stamped concrete patios if that is the direction you are leaning.'] },
+        a: ['Pavers are the most forgiving over time: individual units lift and reset, so settling, staining, and utility work do not mean replacing the whole surface. Natural stone such as bluestone gives a look manufactured units do not, at a higher cost and with more hand-cutting. Clay brick holds its colour permanently and is the obvious answer beside a brick house.', 'Stamped concrete gives you one continuous surface with no joints for weeds, at a competitive price, with the trade-off that a crack in concrete is permanent in a way a lifted paver is not. We have a separate page on stamped concrete patios if that is the direction you are leaning.'] },
       { q: 'How big should my patio be?',
         a: ['Work backwards from the furniture. A four-person dining table with chairs that actually pull out needs roughly a twelve by twelve foot area to itself. A seating group around a fire feature needs about sixteen feet across before it stops feeling cramped. Add circulation space around each zone so people are not squeezing behind someone else’s chair.', 'This is why we lay the shape out on the ground first. A patio that looks generous on a drawing frequently is not, and moving a line on the grass costs nothing.'] },
       { q: 'Will my patio settle?',
         a: ['A properly built one settles very little, and what does happen is correctable. Settling comes from base material that was not compacted in lifts, or from water moving under the surface because the grade sends it the wrong way. Both are decisions made before a single paver is laid, which is why we spend more of the job below the surface than on it.'] },
       { q: 'Can you fix an existing patio that has sunk or pools water?',
-        a: ['Yes, and it is a common call. With pavers, the field is lifted, the base corrected and recompacted, the grade re-established, and the same units reset — you generally do not need new material. If the original base was never adequate, we will tell you that rebuilding is the honest fix rather than relevelling something that will sink again.'] },
+        a: ['Yes, and it is a common call. With pavers, the field is lifted, the base corrected and recompacted, the grade re-established, and the same units reset; you generally do not need new material. If the original base was never adequate, we will tell you that rebuilding is the honest fix rather than relevelling something that will sink again.'] },
       { q: 'Do I need a permit for a patio?',
         a: ['A ground-level patio usually does not, but requirements vary by jurisdiction and change when steps, walls, or proximity to a property line are involved. We check with your county rather than assuming, and tell you before work is scheduled.'] },
     ],
     href: '/stone-work/patio-design/',
     title: 'Patio Installation & Design',
     group: 'Stone Work',
-    card: 'Paver, natural stone, brick, and stamped concrete patios built from the base up — designed around how you actually use the space.',
+    card: 'Paver, natural stone, brick, and stamped concrete patios built from the base up, designed around how you actually use the space.',
     image: 'patio-firepit',
     feature: 'patio-firepit',
     gallery: ['patio-firepit', 'patio-cobble', 'patio-backyard', 'patio-pool', 'patio-stone', 'patio-red', 'patio-covered', 'patio-build', 'brick-flooring'],
     h1: 'Patio Installation and Design',
-    intro: 'We build patios — paver, natural stone, brick, and stamped concrete — from the excavation up. The design work happens first and it matters, but what decides whether you are still happy with the patio in fifteen years is the base underneath it and where the water goes.',
+    intro: 'We build patios (paver, natural stone, brick, and stamped concrete) from the excavation up. The design work happens first and it matters, but what decides whether you are still happy with the patio in fifteen years is the base underneath it and where the water goes.',
     sections: [
       {
         h: 'The patios we build',
@@ -664,7 +664,7 @@ export const SERVICES = [
           'Four materials cover almost every patio in Northern Virginia. They are not interchangeable: they cost differently, they age differently, and they suit different houses. We will tell you which one your site and your budget actually point at rather than steering you toward one by default.',
         ],
         list: [
-          ['Paver patios', 'Interlocking concrete units in the widest range of colours, formats, and patterns. The most forgiving surface over time — individual units lift out and go back without a patch mark, so settling, staining, and future utility work are all repairs rather than replacements.'],
+          ['Paver patios', 'Interlocking concrete units in the widest range of colours, formats, and patterns. The most forgiving surface over time: individual units lift out and go back without a patch mark, so settling, staining, and future utility work are all repairs rather than replacements.'],
           ['Natural stone patios', 'Bluestone, flagstone, and irregular stone cut and fitted by hand. More labour and more cost, and a surface that manufactured units do not imitate convincingly. Set on a base like anything else, or mortared on a slab where the design calls for it.'],
           ['Brick patios', 'Clay brick in herringbone, basketweave, or running bond. The colour is fired into the clay so it does not fade, which is why a brick patio still matches the brick house it was built beside twenty years on.'],
           ['Stamped concrete patios', 'One continuous coloured and textured surface reading as slate, ashlar, or brick. No joints for weeds, competitive on price, and covered in detail on its own page.'],
@@ -673,8 +673,8 @@ export const SERVICES = [
       {
         h: 'Designed around how the space gets used',
         p: [
-          'The most common fault in a patio is not the material — it is the size and the shape. A dining area that cannot take a chair being pushed back, a fire pit circle that seats four when six people come over, a walkway route that makes everyone squeeze behind the grill: those are layout decisions, and they are permanent once the base is in.',
-          'So we start with what the space is for and how many people use it at once, then set the shape out on the ground so you can stand in it. Zones get sized individually — dining, seating, cooking — with circulation between them, and the whole thing is checked against the doors it connects to and the view it is meant to face.',
+          'The most common fault in a patio is not the material; it is the size and the shape. A dining area that cannot take a chair being pushed back, a fire pit circle that seats four when six people come over, a walkway route that makes everyone squeeze behind the grill: those are layout decisions, and they are permanent once the base is in.',
+          'So we start with what the space is for and how many people use it at once, then set the shape out on the ground so you can stand in it. Zones get sized individually (dining, seating, cooking) with circulation between them, and the whole thing is checked against the doors it connects to and the view it is meant to face.',
         ],
       },
       {
@@ -687,7 +687,7 @@ export const SERVICES = [
       {
         h: 'Fire features, seating walls, and built-in elements',
         p: [
-          'A patio that includes somewhere to sit and something to gather around gets used in October. A low seating wall around a fire pit does two jobs at once — it retains the pad against the surrounding grade and seats another half-dozen people when the chairs are taken — and it wants to be built at a height where someone on the wall and someone in a chair are roughly level.',
+          'A patio that includes somewhere to sit and something to gather around gets used in October. A low seating wall around a fire pit does two jobs at once: it retains the pad against the surrounding grade and seats another half-dozen people when the chairs are taken, and it wants to be built at a height where someone on the wall and someone in a chair are roughly level.',
           'Fire pits, outdoor fireplaces, grill surrounds, steps down to the lawn, and lighting courses are all easier and cheaper to build into the patio than to add to it later, because each of them changes the base layout. If any of it is a possibility, it is worth designing in now even if it is built next year.',
         ],
       },
@@ -695,13 +695,13 @@ export const SERVICES = [
         h: 'Repairs, relevelling, and rebuilds',
         p: [
           'A great deal of our patio work is fixing someone else’s. Paver fields that have sunk in the middle, patios that pool water against the house, surfaces lifted by tree roots, and joints that have washed out and grown weeds are all routine, and with pavers the repair usually reuses the original material.',
-          'What we will not do is relevel a surface that is going to sink again. If the base was never adequate or water is still arriving from somewhere, we will tell you that a rebuild — or a drainage correction first — is the honest answer, even though it is the larger job.',
+          'What we will not do is relevel a surface that is going to sink again. If the base was never adequate or water is still arriving from somewhere, we will tell you that a rebuild, or a drainage correction first, is the honest answer, even though it is the larger job.',
         ],
       },
       {
         h: 'Built for the Northern Virginia climate',
         p: [
-          'We build with materials suited to this climate — weather-resistant stone, properly specified pavers, and joints set to handle freeze-thaw movement. Water is the variable that decides everything: a patio that drains is a patio that survives winter, and one that holds water is being taken apart a fraction at a time every time it freezes.',
+          'We build with materials suited to this climate: weather-resistant stone, properly specified pavers, and joints set to handle freeze-thaw movement. Water is the variable that decides everything: a patio that drains is a patio that survives winter, and one that holds water is being taken apart a fraction at a time every time it freezes.',
           'That is why the grade is set before the base goes in, and why we raise drainage on a patio estimate whether or not it was in the enquiry.',
         ],
       },
@@ -713,12 +713,12 @@ export const SERVICES = [
     warranty: ['concrete'],
     reviewFrom: 'Gemma V.',
     process: [
-      ['Pattern and colour selection', 'Pattern, base colour, and release colour are chosen together, because they only make sense together. We show you the combination rather than the swatch — a colour on a sample chip and the same colour across four hundred square feet are different experiences.'],
+      ['Pattern and colour selection', 'Pattern, base colour, and release colour are chosen together, because they only make sense together. We show you the combination rather than the swatch: a colour on a sample chip and the same colour across four hundred square feet are different experiences.'],
       ['Excavation and base', 'Dug out to depth and a compacted aggregate base laid in lifts. Stamped concrete is a slab like any other: it is rigid, and it needs a base that will not settle unevenly beneath it.'],
       ['Forming and grading', 'Forms set to the finished line, with the fall established so water sheds off the patio and away from the house.'],
       ['Reinforcement', 'Steel on chairs inside the slab. Fibre mesh in the mix where it suits the pour. Reinforcement lying on the subgrade is not reinforcement.'],
       ['Pour and colouring', 'Placed and screeded, then integrally coloured or colour-hardened across the surface, depending on the finish agreed.'],
-      ['Stamping', 'Mats are worked into the surface within the window while the concrete is still plastic. This is the part that cannot be redone — the timing decides whether the texture is crisp or soft, and it is measured in minutes.'],
+      ['Stamping', 'Mats are worked into the surface within the window while the concrete is still plastic. This is the part that cannot be redone: the timing decides whether the texture is crisp or soft, and it is measured in minutes.'],
       ['Jointing, curing, and sealing', 'Control joints cut into the pattern so they read as part of it, the slab cured properly, and a sealer applied once it has. The sealer is what holds the colour.'],
     ],
     faq: [
@@ -731,17 +731,17 @@ export const SERVICES = [
       { q: 'How often does it need resealing?',
         a: ['Every two to three years in this climate, depending on sun exposure and how much of the surface stays wet. The sealer carries the colour depth and protects against freeze-thaw and staining, so a patio that has gone chalky and pale has usually just gone too long between coats rather than failed.'] },
       { q: 'Can you stamp over an existing concrete patio?',
-        a: ['Not stamp, no — the concrete has to be plastic to take a mat. There are stamped overlay systems that go over sound existing slabs, and they can look good, but they are a coating and they will only ever be as sound as the slab underneath. If the existing patio is cracked or moving, an overlay hides that for a season or two. We would rather tell you that up front.'] },
+        a: ['Not stamp, no. The concrete has to be plastic to take a mat. There are stamped overlay systems that go over sound existing slabs, and they can look good, but they are a coating and they will only ever be as sound as the slab underneath. If the existing patio is cracked or moving, an overlay hides that for a season or two. We would rather tell you that up front.'] },
     ],
     href: '/stone-work/stamped-concrete-patios/',
     title: 'Stamped Concrete Patios',
     group: 'Stone Work',
-    card: 'Stamped and coloured concrete patios in slate, ashlar, and brick patterns — one continuous surface, no joints for weeds to find.',
+    card: 'Stamped and coloured concrete patios in slate, ashlar, and brick patterns: one continuous surface, no joints for weeds to find.',
     image: 'patio-cobble',
     feature: 'patio-covered',
     gallery: ['patio-cobble', 'patio-covered', 'patio-red', 'patio-stone', 'patio-backyard', 'patio-build'],
     h1: 'Stamped Concrete Patio Installation',
-    intro: 'Stamped concrete gives you the look of cut stone or brick across one continuous surface — no joints for weeds, no individual units to settle. It is a slab, so what it asks for is a proper base, honest jointing, and a finisher who knows how short the stamping window is.',
+    intro: 'Stamped concrete gives you the look of cut stone or brick across one continuous surface: no joints for weeds, no individual units to settle. It is a slab, so what it asks for is a proper base, honest jointing, and a finisher who knows how short the stamping window is.',
     sections: [
       {
         h: 'Patterns that hold up at walking distance',
@@ -758,14 +758,14 @@ export const SERVICES = [
       {
         h: 'Colour is two decisions, not one',
         p: [
-          'A stamped slab gets its colour from a base — integral colour through the mix, or a colour hardener worked into the surface — and then from a release agent applied before stamping, which settles into the low points of the texture and gives the surface depth and variation.',
+          'A stamped slab gets its colour from a base (integral colour through the mix, or a colour hardener worked into the surface) and then from a release agent applied before stamping, which settles into the low points of the texture and gives the surface depth and variation.',
           'One colour alone reads flat and obviously manufactured. The secondary tone in the joints and hollows is what makes it read as stone. We pick the pair against the house and against the light the patio actually gets, because a colour chosen in shade behaves differently in full sun.',
         ],
       },
       {
         h: 'Borders, bands, and where it meets other surfaces',
         p: [
-          'A stamped field is at its best framed. A contrasting border in a different pattern — a brick running bond around a slate field, or a plain band around a random stone — gives the patio an edge and stops the texture running raw into the lawn.',
+          'A stamped field is at its best framed. A contrasting border in a different pattern (a brick running bond around a slate field, or a plain band around a random stone) gives the patio an edge and stops the texture running raw into the lawn.',
           'The transitions matter too. Where the patio meets a paver walkway, a set of steps, or an existing porch, the levels have to be set flush and the pitch has to carry water across the junction rather than into it. Those junctions are where a stamped patio either looks built or looks poured.',
         ],
       },
@@ -785,7 +785,7 @@ export const SERVICES = [
     process: [
       ['Walk the route with you', 'We walk the approach the way a visitor does, from the car or the sidewalk to the door. Where a path is too narrow, where the steps are the wrong rise, and where people are already cutting the corner across the grass all show up in that walk.'],
       ['Layout and rise-and-run', 'Width and line are marked on the ground. Steps are set out properly: every riser the same height, every tread the same depth. Uneven risers are the single most common fault in a front entrance and they are what makes people stumble.'],
-      ['Demolition and excavation', 'The old walk or steps come out. On a replacement this is where the actual condition becomes visible — a settled walk is usually settled because there was never a base under it.'],
+      ['Demolition and excavation', 'The old walk or steps come out. On a replacement this is where the actual condition becomes visible: a settled walk is usually settled because there was never a base under it.'],
       ['Footings and base', 'Steps get a proper footing below frost depth so they do not heave and pull away from the house. Walkways get compacted aggregate in lifts.'],
       ['Setting the field and the treads', 'Units are set to the pattern, treads are laid to a consistent fall so water runs off rather than sitting on them, and cuts at the edges are made to fit.'],
       ['Borders, edging, and jointing', 'A soldier course or border locks the field and gives the walk a finished edge, joints are filled and compacted, and the transitions to the driveway, the sidewalk, and the landing are set flush.'],
@@ -795,25 +795,25 @@ export const SERVICES = [
       { q: 'How wide should a front walkway be?',
         a: ['Wide enough for two people to walk up to the door side by side, which in practice means about four feet as a minimum and rather more on a house with a wide facade. A three-foot path forces visitors into single file and makes a large house look pinched.', 'It is the change homeowners are most pleased with after a replacement, and it costs surprisingly little more than rebuilding the narrow one.'] },
       { q: 'Can you repair steps rather than replacing them?',
-        a: ['Sometimes. Loose or missing mortar, a cracked tread, or a single settled unit are genuine repairs. What is not repairable is a set of steps that is pulling away from the house, tipping forward, or moving as a whole — those have a footing problem or a water problem underneath, and repointing a moving structure buys a season.', 'We will tell you which one you have, and we will tell you if the repair is the right answer even though the replacement is the bigger job.'] },
+        a: ['Sometimes. Loose or missing mortar, a cracked tread, or a single settled unit are genuine repairs. What is not repairable is a set of steps that is pulling away from the house, tipping forward, or moving as a whole; those have a footing problem or a water problem underneath, and repointing a moving structure buys a season.', 'We will tell you which one you have, and we will tell you if the repair is the right answer even though the replacement is the bigger job.'] },
       { q: 'Why do brick and stone steps pull away from the house?',
         a: ['Almost always water and frost. Steps built without a footing below frost depth, or with no drainage behind them, take on water that freezes, expands, and levers the structure away from the wall a fraction at a time. Once the gap opens, more water gets in and it accelerates.', 'The fix is a proper footing and somewhere for water to go. Rebuilt that way, they stay put.'] },
       { q: 'Pavers, brick, or natural stone?',
-        a: ['Concrete pavers give you the widest range of formats and colours at the lowest cost, and they lift and reset cleanly. Clay brick holds its colour permanently because the colour is fired clay rather than pigment, and it is the natural choice beside a brick house. Natural stone — bluestone especially — gives a look manufactured units cannot, at a higher price and with more hand-cutting.', 'On steps specifically, the tread material matters more than on a flat walk, because it is what you feel underfoot and what has to stay grippy when it is wet.'] },
+        a: ['Concrete pavers give you the widest range of formats and colours at the lowest cost, and they lift and reset cleanly. Clay brick holds its colour permanently because the colour is fired clay rather than pigment, and it is the natural choice beside a brick house. Natural stone, bluestone especially, gives a look manufactured units cannot, at a higher price and with more hand-cutting.', 'On steps specifically, the tread material matters more than on a flat walk, because it is what you feel underfoot and what has to stay grippy when it is wet.'] },
       { q: 'How long does a front walkway and steps take?',
-        a: ['A straightforward walkway is often two to three days. Steps add time because of the footing, and a full front entrance — walk, steps, landing, and a border — usually runs four to six days. Access and how much demolition is involved are the two variables that move it.'] },
+        a: ['A straightforward walkway is often two to three days. Steps add time because of the footing, and a full front entrance (walk, steps, landing, and a border) usually runs four to six days. Access and how much demolition is involved are the two variables that move it.'] },
       { q: 'Will the new walkway match my driveway?',
         a: ['It can, and usually it should relate rather than match exactly. Running the same border detail or picking up the driveway colour in the walk ties the front of the house together. Using literally the same field pattern on both often reads as flat, so we generally vary one element deliberately.'] },
     ],
     href: '/stone-work/walkways-steps/',
     title: 'Walkways & Steps',
     group: 'Stone Work',
-    card: 'Paver, brick, and natural stone walkways, front entrances, landings, and steps — new installations, replacements, and repairs.',
+    card: 'Paver, brick, and natural stone walkways, front entrances, landings, and steps: new installations, replacements, and repairs.',
     image: 'walkway-steps',
     feature: 'walkway-steps',
     gallery: ['walkway-bluestone', 'walkway-brick', 'walkway-curved', 'steps-stone', 'steps-brick', 'walkway-front', 'steps-landing', 'hero-walkway', 'hero-steps', 'walkway-banded', 'steps-wide', 'walkway-flowers', 'walkway-side', 'wall-steps', 'walkway-crew'],
     h1: 'Walkways, Front Entrances, and Steps',
-    intro: 'The walk and the steps are the first thing anyone touches on your house and the last thing most people get round to replacing. Done properly they change the whole approach — wider, level underfoot, and draining away from the door instead of toward it.',
+    intro: 'The walk and the steps are the first thing anyone touches on your house and the last thing most people get round to replacing. Done properly they change the whole approach: wider, level underfoot, and draining away from the door instead of toward it.',
     sections: [
       {
         h: 'Paver, brick, and natural stone walkways',
@@ -838,7 +838,7 @@ export const SERVICES = [
         h: 'Steps built on a footing, not on fill',
         p: [
           'Steps carry more load and take more water than anything else at the front of a house, and they are usually the first element to fail. The two causes are always the same: no footing below frost depth, and nowhere for water behind the structure to go.',
-          'We dig a proper footing, build up from it, and give the structure drainage behind it. Treads are laid with a slight fall so water runs off rather than freezing on the surface, and every riser is set to the same height — which is what your feet are actually reading as you climb, whether or not you notice it.',
+          'We dig a proper footing, build up from it, and give the structure drainage behind it. Treads are laid with a slight fall so water runs off rather than freezing on the surface, and every riser is set to the same height, which is what your feet are actually reading as you climb, whether or not you notice it.',
         ],
       },
       {
@@ -858,7 +858,7 @@ export const SERVICES = [
         h: 'Where the water goes',
         p: [
           'A front walk that pitches back toward the house delivers water to the foundation every time it rains, and a landing that holds water is an ice sheet outside your front door every January. Both are grading problems and both get set right during installation.',
-          'Where the approach sits below the surrounding grade, or where downspouts discharge across the walk, the fix is drainage rather than pitch alone — a trench drain across the low point, or a French drain carrying water away to daylight.',
+          'Where the approach sits below the surrounding grade, or where downspouts discharge across the walk, the fix is drainage rather than pitch alone: a trench drain across the low point, or a French drain carrying water away to daylight.',
         ],
       },
     ],
@@ -877,18 +877,18 @@ export const SERVICES = [
     ],
     faq: [
       { q: 'Natural stone or manufactured veneer?',
-        a: ['Manufactured veneer is lighter, cheaper, and comes in consistent shapes, which makes installation faster. Natural stone costs more, weighs more, and holds its color and texture far longer — manufactured product is pigmented through a surface layer and fades with sustained sun exposure in a way real stone does not. On a front elevation that will be looked at every day for twenty years, the difference is worth the cost. On a sheltered accent wall, often it is not.'] },
+        a: ['Manufactured veneer is lighter, cheaper, and comes in consistent shapes, which makes installation faster. Natural stone costs more, weighs more, and holds its color and texture far longer; manufactured product is pigmented through a surface layer and fades with sustained sun exposure in a way real stone does not. On a front elevation that will be looked at every day for twenty years, the difference is worth the cost. On a sheltered accent wall, often it is not.'] },
       { q: 'Can veneer fall off?',
-        a: ['Badly installed veneer can, and when it does the cause is almost always behind the stone rather than in it — no drainage plane, no proper lath, or stone set directly onto a surface it cannot bond to. Water gets behind, has nowhere to go, and freeze-thaw pushes the stone off the wall. It is the reason we spend as much time on what goes on before the stone as on the stone itself.'] },
+        a: ['Badly installed veneer can, and when it does the cause is almost always behind the stone rather than in it: no drainage plane, no proper lath, or stone set directly onto a surface it cannot bond to. Water gets behind, has nowhere to go, and freeze-thaw pushes the stone off the wall. It is the reason we spend as much time on what goes on before the stone as on the stone itself.'] },
       { q: 'Can it go over my existing brick or siding?',
-        a: ['Over sound masonry, usually yes, with the surface prepared so the mortar bonds. Over siding it is not a matter of sticking stone to what is there — the siding comes off and the wall is built up properly underneath. Anyone offering to apply veneer straight onto existing siding is describing a job that will fail.'] },
+        a: ['Over sound masonry, usually yes, with the surface prepared so the mortar bonds. Over siding it is not a matter of sticking stone to what is there; the siding comes off and the wall is built up properly underneath. Anyone offering to apply veneer straight onto existing siding is describing a job that will fail.'] },
       { q: 'Does stone veneer need maintenance?',
         a: ['Very little. An occasional rinse, and attention to any joint that opens up so water does not start traveling behind the face. What matters more is keeping gutters and grade doing their job, since veneer problems almost always begin as water problems somewhere else on the building.'] },
     ],
     href: '/stone-work/stone-veneer/',
     title: 'Stone Veneer',
     group: 'Stone Work',
-    card: 'Natural stone veneer for facades, fireplaces, columns, and accent walls — real stone texture without full masonry weight.',
+    card: 'Natural stone veneer for facades, fireplaces, columns, and accent walls: real stone texture without full masonry weight.',
     image: 'veneer-siding',
     feature: 'veneer-siding',
     gallery: ['veneer-siding', 'veneer-walkway', 'veneer-drive', 'veneer-drive-build'],
@@ -899,7 +899,7 @@ export const SERVICES = [
         h: 'Texture and depth on almost any surface',
         p: [
           'Veneer brings depth and character to surfaces inside and out. Whether the goal is a sleek contemporary finish or something more rustic, the range of colors, patterns, and textures is wide enough to match nearly any design direction.',
-          'We help homeowners choose materials that complement what is already there rather than fighting it. Veneer is also an efficient way to highlight architectural details — columns, chimneys, and entry surrounds — that would otherwise go unnoticed.',
+          'We help homeowners choose materials that complement what is already there rather than fighting it. Veneer is also an efficient way to highlight architectural details (columns, chimneys, and entry surrounds) that would otherwise go unnoticed.',
         ],
       },
       {
@@ -932,7 +932,7 @@ export const SERVICES = [
       {
         h: 'Why veneer fails, and how it is avoided',
         p: [
-          'When stone veneer comes off a wall, the stone is almost never the problem. Water gets behind the face of any veneer installation — that is expected, and it is designed for. What decides the outcome is whether it has a way back out.',
+          'When stone veneer comes off a wall, the stone is almost never the problem. Water gets behind the face of any veneer installation; that is expected, and it is designed for. What decides the outcome is whether it has a way back out.',
           'A correct installation has a weather-resistive barrier, metal lath, a properly keyed scratch coat, and drainage at the base with flashing where the veneer meets other materials. Leave out the drainage plane and water sits behind the stone, saturates the substrate, and freeze-thaw does the rest. Everything in that list is invisible in the finished job, which is exactly why it is the part that gets cut when a price looks too good.',
         ],
       },
@@ -943,7 +943,7 @@ export const SERVICES = [
     warranty: ['masonry'],
     reviewFrom: 'Gemma V.',
     process: [
-      ['Siting for wind and smoke', 'Where the fireplace goes is decided before what it looks like. We look at prevailing wind, how close the house and any overhang sit, and where people will actually be sitting — a fireplace that pushes smoke into the seating area is a mistake you notice every single evening.'],
+      ['Siting for wind and smoke', 'Where the fireplace goes is decided before what it looks like. We look at prevailing wind, how close the house and any overhang sit, and where people will actually be sitting; a fireplace that pushes smoke into the seating area is a mistake you notice every single evening.'],
       ['Design and scale', 'The structure is scaled to the patio and to the house rather than to a catalog. Oversized outdoor fireplaces dominate a small yard; undersized ones look like an afterthought.'],
       ['Footing', 'A fireplace is a heavy masonry structure and needs a footing built for it. Setting one on an existing patio surface without a proper footing is how they crack and lean.'],
       ['Firebox and flue', 'The firebox and flue are built to draw properly. Draw is a function of firebox dimensions and flue height in relation to each other, not something you can adjust afterward.'],
@@ -952,15 +952,15 @@ export const SERVICES = [
     ],
     faq: [
       { q: 'Wood-burning or gas?',
-        a: ['Wood gives you the fire people picture — the sound, the smell, the heat — at the cost of storage, laying it, and cleaning it out. Gas lights instantly, produces no smoke to blow at your guests, and takes no work, but it is a different experience and needs a gas line run to the location. The question worth answering honestly is how you will use it on an ordinary Tuesday, not how you imagine using it.'] },
+        a: ['Wood gives you the fire people picture (the sound, the smell, the heat) at the cost of storage, laying it, and cleaning it out. Gas lights instantly, produces no smoke to blow at your guests, and takes no work, but it is a different experience and needs a gas line run to the location. The question worth answering honestly is how you will use it on an ordinary Tuesday, not how you imagine using it.'] },
       { q: 'How close can it be to the house or a deck?',
         a: ['Clearances to combustible structures are set by code and vary by jurisdiction, and a wood-burning structure has different requirements than a gas one. We confirm the requirement with your county before siting rather than working from a general rule, and it is one of the reasons placement gets decided early.'] },
       { q: 'Does it need a permit?',
         a: ['Often yes, particularly for a full masonry fireplace with a flue, and gas connections carry their own requirements. We tell you what your jurisdiction requires as part of the estimate so it is not a surprise partway through.'] },
       { q: 'Does it need its own footing?',
-        a: ['Yes. A masonry fireplace weighs a great deal and concentrates that weight in a small footprint, so it needs a footing sized and dug for it — not the patio base. Building one on top of an existing patio without a footing underneath is a common shortcut, and it shows up as cracking through the structure and the patio around it within a few years.'] },
+        a: ['Yes. A masonry fireplace weighs a great deal and concentrates that weight in a small footprint, so it needs a footing sized and dug for it, not the patio base. Building one on top of an existing patio without a footing underneath is a common shortcut, and it shows up as cracking through the structure and the patio around it within a few years.'] },
       { q: 'Can we use it through the winter?',
-        a: ['That is largely the point of building one here. What extends the season more than anything is placement — sheltering the seating area from wind does more for comfort than the size of the fire does. It is worth thinking about at the design stage, when it is free to change.'] },
+        a: ['That is largely the point of building one here. What extends the season more than anything is placement: sheltering the seating area from wind does more for comfort than the size of the fire does. It is worth thinking about at the design stage, when it is free to change.'] },
     ],
     href: '/stone-work/outdoor-fireplaces/',
     title: 'Outdoor Fireplaces',
@@ -970,7 +970,7 @@ export const SERVICES = [
     feature: 'fireplace-stone',
     gallery: ['fireplace-stone', 'fireplace-build', 'fireplace-install', 'fireplace-bbq', 'patio-firepit'],
     h1: 'Outdoor Fireplaces Designed for Northern Virginia Homes',
-    intro: 'A custom outdoor fireplace becomes the center of an outdoor living area — the thing that draws people together for conversation, for warmth, and for evenings that run longer than planned. Scale and placement are what make that happen, and both are design decisions worth getting right.',
+    intro: 'A custom outdoor fireplace becomes the center of an outdoor living area, the thing that draws people together for conversation, for warmth, and for evenings that run longer than planned. Scale and placement are what make that happen, and both are design decisions worth getting right.',
     sections: [
       {
         h: 'A gathering space, not just a feature',
@@ -983,7 +983,7 @@ export const SERVICES = [
         h: 'Ideas worth building in',
         p: [
           'Outdoor fireplaces can be as individual as the homes they belong to. Built-in seating walls, integrated lighting, pizza ovens, and firewood storage are all straightforward to incorporate when they are planned from the start rather than added later.',
-          'We will work through the options that suit your space and budget — including whether a traditional wood-burning design or a lower-maintenance gas build makes more sense for how you will actually use it.',
+          'We will work through the options that suit your space and budget, including whether a traditional wood-burning design or a lower-maintenance gas build makes more sense for how you will actually use it.',
         ],
       },
       {
@@ -998,7 +998,7 @@ export const SERVICES = [
           'A full masonry fireplace is not the right answer for every yard. What suits the space depends on how much room you have, how you will use it, and how much of the budget belongs above ground:',
         ],
         list: [
-          ['Full masonry fireplaces', 'A built firebox, flue, hearth, and chimney — the largest and most permanent option, and the one that provides directional heat and shelter.'],
+          ['Full masonry fireplaces', 'A built firebox, flue, hearth, and chimney: the largest and most permanent option, and the one that provides directional heat and shelter.'],
           ['Fire pits', 'Open, seen from all sides, and social in a way a fireplace is not. Far less structure and far less cost, at the price of no wind shelter.'],
           ['Built-in grills and outdoor kitchens', 'Masonry surrounds with counter space, storage, and utilities run in, built alongside the fire feature or on their own.'],
           ['Seating walls', 'Low walls that give the space its edge and seat people without furniture. Often the detail that makes an outdoor room feel like a room.'],
@@ -1009,7 +1009,7 @@ export const SERVICES = [
       {
         h: 'Materials that take the heat',
         p: [
-          'The inside of a firebox and the outside of a fireplace face completely different problems, and they are not built from the same things. The firebox needs firebrick set in refractory mortar — ordinary brick and standard mortar break down under sustained heat, and the failure shows up as cracking and spalling inside the box within a season or two of real use.',
+          'The inside of a firebox and the outside of a fireplace face completely different problems, and they are not built from the same things. The firebox needs firebrick set in refractory mortar; ordinary brick and standard mortar break down under sustained heat, and the failure shows up as cracking and spalling inside the box within a season or two of real use.',
           'The exterior faces weather rather than fire, so the choice there is about how the stone or brick sits against the house and how it handles freeze-thaw. Caps, hearths, and any horizontal surface get the most attention, because those are where water collects and where a poorly chosen material shows it first.',
         ],
       },
@@ -1021,26 +1021,26 @@ export const SERVICES = [
     reviewFrom: 'Patricia W.',
     process: [
       ['Find out where the water actually comes from', 'Before anything is priced we work out where the water arrives, how much of it there is, and where it is currently going. Roof area, driveway area, neighbouring grade, and downspout discharge all feed the same problem, and fixing one of four sources fixes nothing.'],
-      ['Establish where it can go', 'Water has to end up somewhere legal and lower than where it started. We identify the outfall first — daylight at a slope, a dry well, or a street connection — because a drain with nowhere to discharge is a buried pipe full of standing water.'],
+      ['Establish where it can go', 'Water has to end up somewhere legal and lower than where it started. We identify the outfall first (daylight at a slope, a dry well, or a street connection) because a drain with nowhere to discharge is a buried pipe full of standing water.'],
       ['Written scope and estimate', 'You get the route, the components, and the price in writing, with the drainage broken out as its own line rather than buried in a paving total.'],
-      ['Excavation to grade', 'Trenches are dug to a consistent fall along the whole run. Fall is the entire mechanism — a pipe laid flat, or laid with a dip in the middle, collects sediment and stops working within a couple of seasons.'],
+      ['Excavation to grade', 'Trenches are dug to a consistent fall along the whole run. Fall is the entire mechanism: a pipe laid flat, or laid with a dip in the middle, collects sediment and stops working within a couple of seasons.'],
       ['Pipe, stone, and fabric', 'Perforated pipe bedded in washed stone and wrapped in filter fabric for a French drain; solid pipe for a downspout or trench-drain carry. Fabric goes around the stone, not around the pipe alone, or the stone silts up and the drain dies.'],
       ['Inlets, outlets, and cleanouts', 'Catch basins, channel drains, pop-up emitters, and cleanout access at the points where the system will one day need rodding. A drain you cannot clean is a drain with an expiry date.'],
       ['Backfill, restore, and test', 'Backfilled and compacted, surfaces made good, and the system run with a hose so you can see water arrive at the outfall before we leave.'],
     ],
     faq: [
       { q: 'What is a French drain, and do I need one?',
-        a: ['A French drain is a perforated pipe laid in a stone-filled trench, wrapped in filter fabric, running downhill to somewhere the water can leave. It intercepts water moving through the ground and gives it a faster route than the one it was taking — which is usually through your foundation wall or under your patio.', 'You need one when water is arriving faster than the ground can absorb it and grading alone cannot redirect it: a yard that stays soggy for days, water against a basement wall, or a slope that sheets runoff toward the house.'] },
+        a: ['A French drain is a perforated pipe laid in a stone-filled trench, wrapped in filter fabric, running downhill to somewhere the water can leave. It intercepts water moving through the ground and gives it a faster route than the one it was taking, which is usually through your foundation wall or under your patio.', 'You need one when water is arriving faster than the ground can absorb it and grading alone cannot redirect it: a yard that stays soggy for days, water against a basement wall, or a slope that sheets runoff toward the house.'] },
       { q: 'What is the difference between a French drain and a trench drain?',
-        a: ['A French drain is buried and collects water from the soil around it. A trench drain — also called a channel drain — sits at the surface with a grate along its length, and catches water running across a hard surface before it reaches somewhere you do not want it.', 'A driveway that slopes toward a garage almost always wants a trench drain across the apron. A yard that will not dry out wants a French drain. Plenty of properties want both, connected to the same outfall.'] },
+        a: ['A French drain is buried and collects water from the soil around it. A trench drain, also called a channel drain, sits at the surface with a grate along its length, and catches water running across a hard surface before it reaches somewhere you do not want it.', 'A driveway that slopes toward a garage almost always wants a trench drain across the apron. A yard that will not dry out wants a French drain. Plenty of properties want both, connected to the same outfall.'] },
       { q: 'Where does the water actually go?',
-        a: ['To daylight wherever the site allows it — a point lower than the collection area where the pipe can discharge onto the ground or into a swale. Where there is no fall to work with, the alternatives are a dry well that buffers the volume and lets it soak away, or, in some jurisdictions, a connection to the storm system.', 'We establish the outfall before we design the rest. A drainage system is only as good as the place it ends, and this is the question the cheap installations skip.'] },
+        a: ['To daylight wherever the site allows it: a point lower than the collection area where the pipe can discharge onto the ground or into a swale. Where there is no fall to work with, the alternatives are a dry well that buffers the volume and lets it soak away, or, in some jurisdictions, a connection to the storm system.', 'We establish the outfall before we design the rest. A drainage system is only as good as the place it ends, and this is the question the cheap installations skip.'] },
       { q: 'Can you fix drainage without digging up my whole yard?',
-        a: ['Often, yes. The trench for a French drain is narrow, and turf goes back over it. Sometimes the answer is not a drain at all — regrading a low spot, extending downspout discharge well away from the house, or correcting the pitch on an existing patio can solve the problem outright and cost a fraction of a piped system.', 'We would rather sell you the regrade if the regrade is what works.'] },
+        a: ['Often, yes. The trench for a French drain is narrow, and turf goes back over it. Sometimes the answer is not a drain at all: regrading a low spot, extending downspout discharge well away from the house, or correcting the pitch on an existing patio can solve the problem outright and cost a fraction of a piped system.', 'We would rather sell you the regrade if the regrade is what works.'] },
       { q: 'Why does my driveway or patio keep failing in the same spot?',
         a: ['Because the water that caused it is still arriving. Water under a paved surface washes fines out of the base, the base loses its support, and the surface settles or cracks in exactly the place it did before. Replacing the surface without addressing the source resets the clock and nothing else.', 'This is why we raise drainage on paving jobs whether or not it was in the enquiry. It goes in the estimate as a visible line item so you can see what it costs and decide with the number in front of you.'] },
       { q: 'Will a drainage system need maintenance?',
-        a: ['Very little, but not none. Catch basins and channel grates collect leaves and want clearing a couple of times a year, particularly in autumn. Pop-up emitters occasionally need the grass cut back from them. A properly built French drain — washed stone, fabric around the stone, consistent fall — should run for decades without attention, which is precisely why those three details are not the place to save money.'] },
+        a: ['Very little, but not none. Catch basins and channel grates collect leaves and want clearing a couple of times a year, particularly in autumn. Pop-up emitters occasionally need the grass cut back from them. A properly built French drain (washed stone, fabric around the stone, consistent fall) should run for decades without attention, which is precisely why those three details are not the place to save money.'] },
     ],
     href: '/drainage/',
     title: 'Drainage & Water Management',
@@ -1050,7 +1050,7 @@ export const SERVICES = [
     feature: 'wall-build',
     gallery: ['driveway-prep', 'wall-build', 'patio-build', 'foundation-exterior', 'foundation-driveway', 'walkway-crew'],
     h1: 'Drainage, French Drains, and Grading Correction',
-    intro: 'Water is the reason most hardscape fails early, and almost none of the damage happens where the water lands. It happens where the water collects, where it soaks in, and where it moves under the surface — which is why a drainage problem shows up as a sunken patio, a cracked driveway, or a wall leaning out of line.',
+    intro: 'Water is the reason most hardscape fails early, and almost none of the damage happens where the water lands. It happens where the water collects, where it soaks in, and where it moves under the surface, which is why a drainage problem shows up as a sunken patio, a cracked driveway, or a wall leaning out of line.',
     sections: [
       {
         h: 'What we install',
@@ -1077,8 +1077,8 @@ export const SERVICES = [
       {
         h: 'Drainage and your patio',
         p: [
-          'A patio that pools after rain has either lost its fall or never had it. On a paver patio the field can be lifted, the base corrected and recompacted, the grade re-established, and the same units reset — you generally do not need new material. On a poured slab the options are narrower, which is one of the arguments for pavers.',
-          'The other patio drainage problem is what happens at the edges. A patio that sits below the surrounding grade collects everything the lawn sheds, and the fix is interception — a French drain along the uphill side, or a channel drain across the point where water arrives — rather than anything done to the patio itself.',
+          'A patio that pools after rain has either lost its fall or never had it. On a paver patio the field can be lifted, the base corrected and recompacted, the grade re-established, and the same units reset; you generally do not need new material. On a poured slab the options are narrower, which is one of the arguments for pavers.',
+          'The other patio drainage problem is what happens at the edges. A patio that sits below the surrounding grade collects everything the lawn sheds, and the fix is interception (a French drain along the uphill side, or a channel drain across the point where water arrives) rather than anything done to the patio itself.',
         ],
       },
       {
@@ -1098,7 +1098,7 @@ export const SERVICES = [
       {
         h: 'Why we raise it whether or not you asked',
         p: [
-          'Most people call us about a surface — a driveway, a patio, a wall. A good proportion of those surfaces failed because of water, and rebuilding them without dealing with it means selling you the same job twice.',
+          'Most people call us about a surface: a driveway, a patio, a wall. A good proportion of those surfaces failed because of water, and rebuilding them without dealing with it means selling you the same job twice.',
           'So we look at drainage on every estimate, we tell you what we find, and we price it as a separate line so you can see exactly what it costs and choose. Sometimes the honest answer is that your drainage is fine and nothing needs doing. We would rather say that than add a French drain to a quote to make the number look thorough.',
         ],
       },
@@ -1235,7 +1235,7 @@ export const PROJECTS = [
     alt: 'Tan paver driveway with a circular medallion inlay in front of a stone-faced Arlington home with two garage doors',
     summary: 'A full paver driveway in tumbled tan and grey units, laid to a running bond with a darker circular medallion set on the approach to the garages.',
     body: [
-      'The field is laid in a running bond that keeps the eye moving toward the house, with a soldier course running the full perimeter to lock the edges. The circular medallion is the piece that does the work here — set on axis with the two garage bays, it breaks up what would otherwise read as a large uninterrupted expanse of paving and gives the approach a centre.',
+      'The field is laid in a running bond that keeps the eye moving toward the house, with a soldier course running the full perimeter to lock the edges. The circular medallion is the piece that does the work here: set on axis with the two garage bays, it breaks up what would otherwise read as a large uninterrupted expanse of paving and gives the approach a centre.',
       'Pavers earn their keep on a driveway of this size. Individual units lift out and go back without a patch mark, so a future utility trench or a settled area is a repair rather than a scar. The stone facade on the house set the colour direction: the paving picks up its warm tans without matching it exactly, which would have flattened both.',
     ],
   },
@@ -1275,7 +1275,7 @@ export const PROJECTS = [
     alt: 'Broom-finished concrete driveway edged with a grey paver soldier course, curving to the garage of a brick Springfield home in winter',
     summary: 'A broom-finished concrete drive with a grey paver soldier course run down both edges, curving from the street to a two-car garage.',
     body: [
-      'The curve is the reason for the border. A concrete drive that sweeps rather than runs straight needs its edge defined, or the eye reads the sweep as a mistake — the paver soldier course does that, and it also gives the slab a clean termination against the lawn instead of a raw edge that grass creeps over.',
+      'The curve is the reason for the border. A concrete drive that sweeps rather than runs straight needs its edge defined, or the eye reads the sweep as a mistake; the paver soldier course does that, and it also gives the slab a clean termination against the lawn instead of a raw edge that grass creeps over.',
       'Poured in winter, which is a matter of watching the forecast rather than avoiding the season. Concrete needs its cure protected from freezing, so the pour was scheduled into a clear window and the surface kept covered. The broom finish across the driving surface is what gives it traction once the weather turns.',
     ],
   },
@@ -1295,7 +1295,7 @@ export const PROJECTS = [
     alt: 'MAC crew compacting a freshly laid asphalt driveway with a ride-on roller at a Springfield home',
     summary: 'A full-width asphalt replacement, photographed mid-compaction with the roller working the fresh mat.',
     body: [
-      'This is what the middle of an asphalt job looks like. The mat has been laid and the ride-on roller is compacting it while the material is still hot — compaction is the step that decides how long the surface lasts, and it has a window measured in minutes, not hours. Get it right and the driveway sheds water for two decades; rush it and the surface ravels at the edges within a few winters.',
+      'This is what the middle of an asphalt job looks like. The mat has been laid and the ride-on roller is compacting it while the material is still hot. Compaction is the step that decides how long the surface lasts, and it has a window measured in minutes, not hours. Get it right and the driveway sheds water for two decades; rush it and the surface ravels at the edges within a few winters.',
       'The old surface was torn out and the base regraded before any new material went down. That is the part no one photographs and the part that actually matters: asphalt laid over a failing base fails in exactly the same places the old one did, on roughly the same schedule.',
     ],
   },
@@ -1315,7 +1315,7 @@ export const PROJECTS = [
     alt: 'Freshly laid asphalt driveway edged with a tan paver border, running past clipped shrubs at a McLean home',
     summary: 'A long asphalt drive finished with a tan paver soldier course along its edge, separating the paving from the planting beds.',
     body: [
-      'Asphalt on its own gives you a clean surface and a soft edge. The paver border is what turns it into a finished piece of hardscape — it holds the asphalt edge from crumbling under a tyre that strays, and it draws a deliberate line between the drive and the beds instead of letting mulch and blacktop meet in a ragged seam.',
+      'Asphalt on its own gives you a clean surface and a soft edge. The paver border is what turns it into a finished piece of hardscape; it holds the asphalt edge from crumbling under a tyre that strays, and it draws a deliberate line between the drive and the beds instead of letting mulch and blacktop meet in a ragged seam.',
       'On a run this long the border also does something for the eye: it follows the curve and makes the length feel intentional. The alternative, an unedged strip of asphalt disappearing between the shrubs, reads as utility rather than as part of the property.',
     ],
   },
@@ -1335,7 +1335,7 @@ export const PROJECTS = [
     alt: 'Circular stone patio with a low seating wall and a central fire pit ringed by Adirondack chairs in a landscaped Vienna backyard',
     summary: 'A free-standing circular patio built around a fire pit, ringed by a low seating wall and set into an established lawn.',
     body: [
-      'The circle is set away from the house rather than attached to it, which is the right call on a property that already had a pool terrace doing the job of an entertaining space. This is the other kind of outdoor room — the one you use in October, facing inward at the fire rather than outward at the yard.',
+      'The circle is set away from the house rather than attached to it, which is the right call on a property that already had a pool terrace doing the job of an entertaining space. This is the other kind of outdoor room, the one you use in October, facing inward at the fire rather than outward at the yard.',
       'The low wall around the perimeter is structural and social at once: it retains the raised pad against the surrounding grade and it seats another half-dozen people when the four chairs are taken. Sized so that a person on the wall and a person in a chair are at roughly the same height, which is the detail that decides whether a fire pit space actually gets used.',
     ],
   },
@@ -1355,7 +1355,7 @@ export const PROJECTS = [
     alt: 'MAC mason setting red clay brick pavers in a herringbone pattern with a mallet during installation in Arlington',
     summary: 'Red clay brick set in a herringbone bond, photographed during installation with the field being closed unit by unit.',
     body: [
-      'Herringbone is the strongest bond you can lay in a brick field, which is why it is worth the extra labour it costs. Every unit locks against its neighbours in two directions, so the surface distributes load instead of letting individual bricks work loose — the reason it has been the pattern of choice for paved surfaces since long before anyone was laying them by machine.',
+      'Herringbone is the strongest bond you can lay in a brick field, which is why it is worth the extra labour it costs. Every unit locks against its neighbours in two directions, so the surface distributes load instead of letting individual bricks work loose, the reason it has been the pattern of choice for paved surfaces since long before anyone was laying them by machine.',
       'Set by hand, one at a time, with a mallet and a string line. The cuts at the perimeter are what the work is judged on: a herringbone field meeting its border cleanly means every edge unit was measured and cut to fit, and there is no way to hurry that part.',
     ],
   },
@@ -1395,7 +1395,7 @@ export const PROJECTS = [
     alt: 'Wide paver walkway with a contrasting soldier-course border running from the public sidewalk toward a Fairfax home',
     summary: 'A wide paver walk running from the public sidewalk to the house, bordered on both sides with a contrasting soldier course.',
     body: [
-      'Wider than a standard front walk, and deliberately so — two people should be able to walk up to a front door side by side. The field is laid in a running bond with the contrasting border framing it the whole way, which keeps a long straight run from reading as a corridor.',
+      'Wider than a standard front walk, and deliberately so: two people should be able to walk up to a front door side by side. The field is laid in a running bond with the contrasting border framing it the whole way, which keeps a long straight run from reading as a corridor.',
       'The walk meets the public sidewalk flush, with the transition set level so there is nothing to catch a toe or a wheel. Everything is pitched to shed water into the lawn on either side rather than letting it run the length of the walk and pool at the low end.',
     ],
   },
@@ -1415,9 +1415,9 @@ export const PROJECTS = [
     alt: 'Freshly poured broom-finished concrete driveway running to a two-car garage, taped off while it cures',
     summary: 'A single pour running the full width of the drive to a two-car garage, broom-finished for grip and jointed down the centre.',
     body: [
-      'Photographed the day it was placed, which is why the tape is still up. Concrete has to be left alone while it cures — a car driven onto a slab in its first week does damage that never comes out — so the tape stays and the homeowner parks on the street for a few days. That is the whole inconvenience of a concrete driveway, and it happens once.',
+      'Photographed the day it was placed, which is why the tape is still up. Concrete has to be left alone while it cures: a car driven onto a slab in its first week does damage that never comes out, so the tape stays and the homeowner parks on the street for a few days. That is the whole inconvenience of a concrete driveway, and it happens once.',
       'The line running down the centre is a control joint, not a crack. Concrete shrinks as it cures and the shrinkage has to go somewhere; a joint cut to about a quarter of the slab depth gives it a weak line to follow, so the crack forms inside the joint where nobody ever sees it. A drive this width without one would have cracked on its own terms, diagonally, within the first year.',
-      'The broom finish is the texture dragged across the surface while it was still plastic. It is the least glamorous of the concrete finishes and the right one for a driveway on a slope in a climate that ices over — a smooth trowelled slab looks better in a photograph and is treacherous in February.',
+      'The broom finish is the texture dragged across the surface while it was still plastic. It is the least glamorous of the concrete finishes and the right one for a driveway on a slope in a climate that ices over; a smooth trowelled slab looks better in a photograph and is treacherous in February.',
     ],
   },
   {
@@ -1456,7 +1456,7 @@ export const PROJECTS = [
     alt: 'Large grey paver patio at dusk with a square fire table at its centre, framed by a contrasting border band and low walls with lit pillar caps',
     summary: 'A large-format paver terrace laid to a banded rectangular layout, with a fire table on the centre axis and lit pillars closing the open side.',
     body: [
-      'A patio this size needs a centre or it reads as a car park. The banding does that geometrically — a contrasting border inside a contrasting border, drawing the eye to the middle — and the fire table sits exactly where those bands point. Without that structure the same square footage of paving would feel like surplus rather than like a room.',
+      'A patio this size needs a centre or it reads as a car park. The banding does that geometrically (a contrasting border inside a contrasting border, drawing the eye to the middle) and the fire table sits exactly where those bands point. Without that structure the same square footage of paving would feel like surplus rather than like a room.',
       'The low walls and lit pillars around the open edge are what turn a terrace into an outdoor room. They give the space a boundary on the side that faces open lawn, and the lighting in the caps means the edge is still legible after dark, which is when a patio with a fire feature actually gets used.',
       'Large-format units suit an area this big. Fewer joints across the field means the eye reads the surface as a plane rather than as a pattern, and the pattern work is saved for the bands where it does something.',
     ],
@@ -1475,11 +1475,11 @@ export const PROJECTS = [
       'Stone-faced cheek walls carried up alongside the run',
     ],
     alt: 'Irregular bluestone landing and steps with stone riser walls rising to the front door of a brick house, with lanterns and planters on the treads',
-    summary: 'A front entrance rebuilt in bluestone — an irregular flagstone landing, full-width treads on stone riser walls, and stone cheek walls carried up alongside.',
+    summary: 'A front entrance rebuilt in bluestone: an irregular flagstone landing, full-width treads on stone riser walls, and stone cheek walls carried up alongside.',
     body: [
       'Irregular bluestone is slower to lay than anything manufactured, because every piece is cut to its neighbours rather than dropped into a pattern. The landing here is the part that shows it: the joints run in no repeating direction and no two pieces are the same, which is the whole reason to use the material and the reason it cannot be hurried.',
       'The treads are full width and the risers are consistent from the bottom of the run to the top. That consistency is what your feet are reading as you climb, whether or not you notice it, and it is the thing that goes wrong when steps are patched rather than rebuilt.',
-      'The cheek walls carried up alongside the steps are structural before they are decorative — they hold the grade back on either side of the run so the steps are not left standing free with soil washing against them. They also give you somewhere to stand a lantern.',
+      'The cheek walls carried up alongside the steps are structural before they are decorative: they hold the grade back on either side of the run so the steps are not left standing free with soil washing against them. They also give you somewhere to stand a lantern.',
     ],
   },
   {
@@ -1513,11 +1513,11 @@ export const FAQ = [
   },
   {
     q: 'How long has MAC been in business?',
-    a: ['We have been serving homeowners across Northern Virginia since 2010. MAC is family-operated — you deal with the owners directly, not a salesperson, and the same people who quote the job are on site while it is being built.'],
+    a: ['We have been serving homeowners across Northern Virginia since 2010. MAC is family-operated: you deal with the owners directly, not a salesperson, and the same people who quote the job are on site while it is being built.'],
   },
   {
     q: 'What areas do you serve?',
-    a: ['Fairfax, Vienna, Falls Church, Arlington, Alexandria, McLean, Tysons, Reston, Burke, Fairfax Station, Springfield, Annandale, and Clifton in Virginia, plus Washington, DC. If you are just outside that list, call and ask — we often can.'],
+    a: ['Fairfax, Vienna, Falls Church, Arlington, Alexandria, McLean, Tysons, Reston, Burke, Fairfax Station, Springfield, Annandale, and Clifton in Virginia, plus Washington, DC. If you are just outside that list, call and ask. We often can.'],
   },
   {
     q: 'How long does a typical project take?',
@@ -1525,7 +1525,7 @@ export const FAQ = [
   },
   {
     q: 'What affects the price of a masonry project?',
-    a: ['Square footage, material choice, site access, how much excavation and base work is needed, and any drainage that has to be corrected. Access is the factor homeowners tend to underestimate — a backyard that equipment cannot reach changes the labor considerably. We break all of this out in the estimate so you can see where the money goes.'],
+    a: ['Square footage, material choice, site access, how much excavation and base work is needed, and any drainage that has to be corrected. Access is the factor homeowners tend to underestimate: a backyard that equipment cannot reach changes the labor considerably. We break all of this out in the estimate so you can see where the money goes.'],
   },
   {
     q: 'Do you clean up at the end of each day?',
@@ -1559,7 +1559,7 @@ export const WARRANTY = {
 export const POINTS = [
   ['Family-operated since 2010', 'You deal with the owners directly. The people who quote your job are on site while it is being built.'],
   ['Base prep done properly', 'Excavation, compacted aggregate, and drainage before anything decorative goes down. It is the step that decides whether the work lasts.'],
-  ['Clean sites, kept schedules', 'Our crews show up when they say they will and leave the site clean at the end of every day — the thing customers mention most.'],
+  ['Clean sites, kept schedules', 'Our crews show up when they say they will and leave the site clean at the end of every day, the thing customers mention most.'],
   ['Free written estimates', 'Itemized, no obligation, and honest about what can wait. We would rather keep a customer than sell a job.'],
 ];
 

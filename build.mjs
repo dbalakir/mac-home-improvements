@@ -116,7 +116,7 @@ function header(current) {
 
   return `<header class="masthead">
   <div class="wrap masthead__inner">
-    <a class="wordmark" href="/" aria-label="${esc(BIZ.legal)} — home">
+    <a class="wordmark" href="/" aria-label="${esc(BIZ.legal)}, home">
       ${lockup()}
     </a>
     <nav aria-label="Primary">
@@ -129,7 +129,7 @@ function header(current) {
         <span class="callout__label">Call</span>
         <span class="callout__num tel">${BIZ.phone}</span>
       </a>
-      <a class="btn btn--solid" href="/get-your-free-estimate/">Free Estimate</a>
+      <a class="btn btn--solid" href="/get-your-free-estimate/">Get a Free Estimate</a>
     </div>
     <details class="mobile-nav">
       <summary aria-label="Menu"><span></span><span></span><span></span></summary>
@@ -140,7 +140,7 @@ function header(current) {
           </ul>
         </nav>
         <div class="mobile-nav__cta">
-          <a class="btn btn--solid" href="/get-your-free-estimate/">Free Estimate</a>
+          <a class="btn btn--solid" href="/get-your-free-estimate/">Get a Free Estimate</a>
           <a class="btn btn--ghost tel" href="${BIZ.phoneHref}">${BIZ.phone}</a>
         </div>
       </div>
@@ -153,11 +153,10 @@ function ctaBand() {
   return `<section class="section cta-section">
   <div class="wrap"><div class="cta-close">
     <div>
-      <p class="eyebrow eyebrow--ruled reveal">Request</p>
       <h2 class="h-section reveal">Ready to start? Schedule a free estimate.</h2>
       <p class="cta-close__call reveal">Or call <a class="tel" href="${BIZ.phoneHref}">${BIZ.phone}</a></p>
     </div>
-    <a class="btn btn--solid" href="/get-your-free-estimate/">Request an Estimate</a>
+    <a class="btn btn--solid" href="/get-your-free-estimate/">Get a Free Estimate</a>
   </div></div>
 </section>`;
 }
@@ -179,7 +178,7 @@ function footer() {
 
   return `<footer class="footer">
   <div class="wrap">
-    <a class="footer__logo" href="/" aria-label="${esc(BIZ.legal)} — home">${lockup()}</a>
+    <a class="footer__logo" href="/" aria-label="${esc(BIZ.legal)}, home">${lockup()}</a>
     <div class="footer__cols">
       <div>
         <h2>Contact</h2>
@@ -344,12 +343,18 @@ function serviceGrid(reveal = true) {
 </a>`).join('\n');
 }
 
+/* Review attribution: the project on one line, where it was posted and when
+   on the next. Separate lines rather than a chain of middle dots. */
+function reviewMeta(r, extra = []) {
+  const posted = [r.source ? `Via ${r.source}` : '', r.date].filter(Boolean).join(', ');
+  return [r.project, ...extra, posted].filter(Boolean).map(l => `<span>${esc(l)}</span>`).join('');
+}
+
 function reviewCard(r) {
-  const meta = [r.project, r.date, r.source ? `via ${r.source}` : ''].filter(Boolean).join(' · ');
   return `<div class="quote-card reveal">
   <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
   <blockquote><p>${esc(smart(r.text))}</p></blockquote>
-  <cite>${esc(r.name)}${meta ? ` <span>— ${esc(meta)}</span>` : ''}</cite>
+  <cite><strong>${esc(r.name)}</strong>${reviewMeta(r)}</cite>
 </div>`;
 }
 
@@ -361,7 +366,6 @@ function leaveReview() {
   <div class="wrap">
     <div class="review-cta reveal">
       <div>
-        <p class="eyebrow">Worked with us?</p>
         <h2 class="h-sub">Leave us a review on Google.</h2>
         <p class="lede" style="margin-top:.9rem">Reviews are how most of our customers find us, and we read every one. It takes about a minute.</p>
       </div>
@@ -379,7 +383,6 @@ function processSection(steps, title) {
   return `<section class="section section--sunk">
   <div class="wrap">
     <div class="section__head">
-      <p class="eyebrow">How the work runs</p>
       <h2 class="h-section reveal">${esc(title)}, step by step</h2>
       <p class="lede reveal">Every job follows the same sequence. You are told which stage you are at and what happens next.</p>
     </div>
@@ -396,13 +399,12 @@ function serviceReview(name) {
     warnings.push(`reviewFrom "${name}" matches no review in REVIEWS — quote omitted.`);
     return '';
   }
-  const meta = [r.project, r.where, r.date].filter(Boolean).join(' · ');
   return `<section class="section section--tight">
   <div class="wrap">
     <figure class="pullquote reveal">
       <p class="stars" aria-label="Five out of five stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
       <blockquote><p>${esc(smart(r.text))}</p></blockquote>
-      <figcaption>${esc(r.name)}${meta ? ` <span>${esc(meta)}</span>` : ''}${r.source ? ` <span>via ${esc(r.source)}</span>` : ''}</figcaption>
+      <figcaption>${esc(r.name)}${reviewMeta(r, [r.where])}</figcaption>
     </figure>
     <p style="text-align:center;margin-top:1.25rem"><a href="/reviews/">Read all ${esc(BIZ.reviewCount)} reviews</a></p>
   </div>
@@ -414,7 +416,7 @@ function serviceReview(name) {
 function warrantySpan() {
   const y = WARRANTY.terms.map(t => t.years);
   const lo = Math.min(...y), hi = Math.max(...y);
-  return lo === hi ? `${lo}` : `${lo}\u2013${hi}`;
+  return lo === hi ? `${lo}` : `${lo}-${hi}`;
 }
 
 function warrantyTerms(keys) {
@@ -458,7 +460,6 @@ function faqSection(items) {
   return `<section class="section">
   <div class="wrap">
     <div class="section__head">
-      <p class="eyebrow">Questions</p>
       <h2 class="h-section">Frequently asked</h2>
     </div>
     <div class="faq">
@@ -487,7 +488,7 @@ function areasSection() {
     <div class="areaband__map">${areaMap('band', 'areamap--quiet')}</div>
     <div>
       <p class="eyebrow">Service area</p>
-      <p class="areaband__lede">Estimates are free everywhere on this list. If you are just outside it, call and ask &mdash; we often can.</p>
+      <p class="areaband__lede">Estimates are free everywhere on this list. If you are just outside it, call and ask. We often can.</p>
       <ul class="chips">
         ${AREAS.map(a => `<li><a href="/service-areas/${areaSlugOf(a)}/">${esc(a)}</a></li>`).join('\n        ')}
       </ul>
@@ -538,7 +539,7 @@ function mediaFor(slug, opts = {}) {
    `city` is optional: a job we have the photograph for but not the location is
    still real work, and stating a city we are not sure of would be worse than
    omitting it. Everything city-dependent below degrades to nothing. */
-const caption = p => esc(p.title) + (p.city ? ' \u2014 ' + esc(p.city) : '');
+const caption = p => esc(p.title) + (p.city ? ', ' + esc(p.city) : '');
 
 /* The "before" shot, where one exists. Same JPEG pair convention as the
    finished photo, with `-before` on the slug. */
@@ -576,7 +577,7 @@ function projectFigures(p) {
 
 /* Card grid of projects. `heading` is omitted when the caller supplies its
    own section header. */
-function projectGrid(list, { heading = null, intro = null, showService = false, eyebrow = 'Recent work' } = {}) {
+function projectGrid(list, { heading = null, intro = null, showService = false } = {}) {
   if (!list.length) return '';
   // Built on the site's own .card / .card__media primitives so the tiles
   // inherit the hairline outline, radius, and image-scale hover that every
@@ -593,8 +594,7 @@ function projectGrid(list, { heading = null, intro = null, showService = false, 
 
   return `<section class="section">
   <div class="wrap">
-    ${heading ? `${eyebrow ? `<p class="eyebrow eyebrow--ruled reveal">${esc(eyebrow)}</p>` : ''}
-    <h2 class="h-section reveal">${heading}</h2>` : ''}
+    ${heading ? `<h2 class="h-section reveal">${heading}</h2>` : ''}
     ${intro ? `<p class="lede reveal">${intro}</p>` : ''}
     <div class="pgrid">
   ${cards}
@@ -617,7 +617,7 @@ function areaProjects(area, city) {
   }
   return projectGrid(PROJECTS.slice(0, 3), {
     heading: 'Recent work nearby',
-    intro: `We have not photographed a ${city} job for the site yet. These are recent projects from elsewhere in the service area &mdash; the same crews and the same standard apply here.`,
+    intro: `We have not photographed a ${city} job for the site yet. These are recent projects from elsewhere in the service area. The same crews and the same standard apply here.`,
     showService: true,
   });
 }
@@ -687,7 +687,7 @@ function buildHome() {
       <h1 class="h-display">Northern Virginia&rsquo;s Driveway, Hardscape &amp; Masonry Specialists</h1>
       <p class="hero__lede">Paver, asphalt, and concrete driveways, patios, walkways, retaining walls, and stonework throughout Northern Virginia and Washington DC. Free written estimates, and the owners are on site for every job (<a href="/about-us/">read our story</a>).</p>
       <div class="hero__actions">
-        <a class="btn btn--solid" href="/get-your-free-estimate/">Request an Estimate</a>
+        <a class="btn btn--solid" href="/get-your-free-estimate/">Get a Free Estimate</a>
         <a class="btn btn--on-photo tel" href="${BIZ.phoneHref}">${BIZ.phone}</a>
       </div>
     </div>
@@ -706,9 +706,9 @@ ${trustbar()}
   <div class="wrap">
     <div class="section__head">
       <h2 class="h-section reveal">What we do</h2>
-      <p class="lede reveal">Masonry and stonework for homes across Northern Virginia — from a single set of front steps to a full driveway replacement.</p>
+      <p class="lede reveal">Masonry and stonework for homes across Northern Virginia, from a single set of front steps to a full driveway replacement.</p>
     </div>
-    <div class="grid grid--3">
+    <div class="grid grid--bento">
 ${serviceGrid()}
     </div>
   </div>
@@ -717,7 +717,6 @@ ${serviceGrid()}
 <section class="section section--sunk">
   <div class="wrap split split--reverse">
     <div>
-      <p class="eyebrow reveal">Why MAC</p>
       <h2 class="h-section reveal">Great craftsmanship starts with listening.</h2>
       <p class="lede reveal" style="margin-top:1.25rem">We take the time to understand your vision, your needs, and your home&rsquo;s character before we ever lift a stone. Our roots are local, and so is our pride in every project we take on.</p>
       <ul class="points">
@@ -750,15 +749,12 @@ ${mosaic}
       <h2 class="h-section reveal">What customers say</h2>
       <p class="lede reveal"><strong>${BIZ.reviewCount} five-star reviews</strong> on ${BIZ.ratingSource}.</p>
     </div>
-    <div class="quote-feature">
+    <div class="quote-feature quote-feature--solo">
       <div class="quote-lead reveal">
         <blockquote><p>&ldquo;${esc(smart(lead.text.split('.').slice(0, 1).join('.') + '.'))}&rdquo;</p></blockquote>
-        <cite>${esc(lead.name)}<span>${esc([lead.project, lead.source ? `via ${lead.source}` : ''].filter(Boolean).join(' · '))}</span></cite>
+        <cite><strong>${esc(lead.name)}</strong>${reviewMeta(lead)}</cite>
       </div>
-      ${lead.image && IMG[lead.image] ? `<figure class="quote-feature__media reveal">
-        ${picture(lead.image, { sizes: '(max-width:820px) 92vw, 45vw' })}
-        <figcaption>${esc(IMG[lead.image].alt)}</figcaption>
-      </figure>` : ''}
+
     </div>
     <div class="quote-grid">
 ${support.map(reviewCard).join('\n')}
@@ -850,9 +846,8 @@ function buildService(s) {
      as a layout that lost two cards. */
   const childSection = kids.length > 1 ? `<section class="section section--tight">
   <div class="wrap">
-    <p class="eyebrow eyebrow--ruled reveal">Choose your material</p>
     <h2 class="h-section reveal">${esc(s.title)} by material</h2>
-    <p class="lede reveal">Each one has its own page — what it costs, how it fails, and when it is genuinely the right answer.</p>
+    <p class="lede reveal">Each one has its own page: what it costs, how it fails, and when it is genuinely the right answer.</p>
     <div class="grid grid--3" style="margin-top:1.75rem">
       ${kids.map(c => `<a class="card reveal" href="${c.href}">
         <div class="card__media">${mediaFor(c.image, { sizes: '(max-width:620px) 92vw, (max-width:900px) 45vw, 30vw' })}</div>
@@ -928,7 +923,6 @@ ${s.faq && s.faq.length ? faqSection(s.faq) : ''}
 
 <section class="section section--tight">
   <div class="wrap">
-    <p class="eyebrow">Also from MAC</p>
     <div class="grid grid--3" style="margin-top:1.5rem">
       ${others.map(o => `<a class="card reveal" href="${o.href}">
         <div class="card__media">${mediaFor(o.image, { sizes: '(max-width:620px) 92vw, 30vw' })}</div>
@@ -993,7 +987,7 @@ function buildServicesIndex() {
   <div class="wrap">
     <p class="eyebrow">What we do</p>
     <h1 class="h-display">Masonry and stonework, done properly.</h1>
-    <p class="lede">Every job starts underneath — excavation, a compacted base, and a plan for where water goes. What sits on top is the part you see, but the part below it decides how long you get to enjoy it.</p>
+    <p class="lede">Every job starts underneath: excavation, a compacted base, and a plan for where water goes. What sits on top is the part you see, but the part below it decides how long you get to enjoy it.</p>
   </div>
 </section>
 
@@ -1057,7 +1051,7 @@ function buildAbout() {
     <div>
       <h2 class="h-sub reveal">A family business, working where we live</h2>
       <div class="prose reveal" style="margin-top:1.25rem">
-        <p>MAC has been serving homeowners across Northern Virginia since ${BIZ.since}. We are family-operated — two brothers and a crew — which means the people who quote your job are the same people on site while it is being built. There is no sales layer between you and the work.</p>
+        <p>MAC has been serving homeowners across Northern Virginia since ${BIZ.since}. We are family-operated (two brothers and a crew), which means the people who quote your job are the same people on site while it is being built. There is no sales layer between you and the work.</p>
         <p>Our roots are local, and so is our pride in every project we take on. Most of our work comes through word of mouth and repeat customers, which is a standard that keeps us honest: we would rather keep a customer for a decade than win one job.</p>
       </div>
     </div>
@@ -1098,7 +1092,7 @@ function buildAbout() {
       <h2 class="h-section reveal">Building stronger homes across Northern Virginia</h2>
     </div>
     <div class="prose reveal">
-      <p>We do not just build walls, patios, and fireplaces — we build spaces that stand up to time and weather. Using premium materials and proven techniques, we make sure your stonework is not only beautiful the week it is finished, but years afterward.</p>
+      <p>We do not just build walls, patios, and fireplaces; we build spaces that stand up to time and weather. Using premium materials and proven techniques, we make sure your stonework is not only beautiful the week it is finished, but years afterward.</p>
       <p>We collaborate closely with clients throughout the process so that every detail lines up with what they pictured. And we keep the site clean and the schedule realistic, which turns out to be the part people remember most.</p>
     </div>
     <p style="margin-top:2.5rem"><a class="link-arrow" href="/reviews/">Read what our customers say ${ARROW}</a></p>
@@ -1133,7 +1127,7 @@ function buildProjects() {
   <div class="wrap">
     <p class="eyebrow">Recent work</p>
     <h1 class="h-display" style="max-width:16ch">Projects we have built.</h1>
-    <p class="lede">Completed jobs across Northern Virginia and Washington DC, each with its own page &mdash; what was built, what it was built from, where it is, and what the work actually involved. Every photograph is our own.</p>
+    <p class="lede">Completed jobs across Northern Virginia and Washington DC, each with its own page: what was built, what it was built from, where it is, and what the work actually involved. Every photograph is our own.</p>
     <div class="hero__actions" style="margin-top:2rem">
       <a class="btn btn--solid" href="/get-your-free-estimate/">Get a Free Estimate</a>
       <a class="btn btn--ghost" href="/portfolio/">Browse the photo gallery</a>
@@ -1146,9 +1140,8 @@ ${projectGrid(PROJECTS, { showService: true })}
 <section class="section section--sunk">
   <div class="wrap">
     <div class="section__head">
-      <p class="eyebrow">Photographs</p>
       <h2 class="h-section reveal">More of our work</h2>
-      <p class="lede reveal">Not every job has a write-up. The gallery has the rest of the photographs &mdash; driveways, walkways, patios, steps, and stone walls.</p>
+      <p class="lede reveal">Not every job has a write-up. The gallery has the rest of the photographs: driveways, walkways, patios, steps, and stone walls.</p>
     </div>
     <p><a class="link-arrow" href="/portfolio/">See the full photo gallery ${ARROW}</a></p>
   </div>
@@ -1179,7 +1172,7 @@ ${ctaBand()}`;
           '@type': 'ListItem',
           position: i + 1,
           url: BIZ.origin + projectUrl(p),
-          name: p.city ? `${p.title} — ${p.city}` : p.title,
+          name: p.city ? `${p.title}, ${p.city}` : p.title,
         })),
       },
     }],
@@ -1206,7 +1199,7 @@ function buildPortfolio() {
   </div>
 </section>
 
-${projectGrid(PROJECTS.slice(0, 8), { heading: 'Projects with their own page', intro: 'Individual jobs written up in full &mdash; what was built, what it was built from, and where. <a href="/projects/">See all projects</a>.', showService: true })}
+${projectGrid(PROJECTS.slice(0, 8), { heading: 'Projects with their own page', intro: 'Individual jobs written up in full: what was built, what it was built from, and where. <a href="/projects/">See all projects</a>.', showService: true })}
 
 <section class="section section--tight">
   <div class="wrap">
@@ -1231,12 +1224,12 @@ ${ctaBand()}`;
 /* --- Reviews ------------------------------------------------------------- */
 function buildReviews() {
   const list = REVIEWS.filter(r => !r.hide).map(r => {
-    const meta = [r.project, r.date, r.source ? `via ${r.source}` : ''].filter(Boolean).join(' · ');
+    const meta = reviewMeta(r);
     return `<li class="reveal">
   <div class="review__meta">
     <span class="review__name">${esc(r.name)}</span>
     <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
-    ${meta ? `<span class="review__detail">${esc(meta)}</span>` : ''}
+    ${meta ? `<span class="review__detail">${meta}</span>` : ''}
   </div>
   <p>${esc(smart(r.text))}</p>
 </li>`;
@@ -1249,7 +1242,7 @@ function buildReviews() {
   <div class="wrap">
     <p class="eyebrow">Reviews</p>
     <h1 class="h-display">What customers say</h1>
-    <p class="lede">MAC has <strong>${BIZ.reviewCount} five-star reviews on ${BIZ.ratingSource}</strong> — a straight ${BIZ.rating} on both. A selection is reproduced below, as written by the customers who left them.</p>
+    <p class="lede">MAC has <strong>${BIZ.reviewCount} five-star reviews on ${BIZ.ratingSource}</strong>, a straight ${BIZ.rating} on both. A selection is reproduced below, as written by the customers who left them.</p>
     <div class="hero__actions" style="margin-top:2rem">
       <a class="btn btn--solid" href="${BIZ.googleProfileUrl}" rel="noopener">Read our reviews on Google</a>
       <a class="btn btn--ghost" href="${BIZ.ratingUrl}" rel="noopener">Verify on HomeAdvisor</a>
@@ -1344,10 +1337,10 @@ function buildContact() {
       <div class="formdone" id="form-done" hidden tabindex="-1" role="status" aria-live="polite">
         <p class="formdone__mark" aria-hidden="true">&check;</p>
         <p class="formdone__head">Submitted</p>
-        <p class="formdone__sub">Thanks &mdash; we have your request and will be in touch, usually the same day. If it is urgent, call <a class="tel" href="${BIZ.phoneHref}">${BIZ.phone}</a>.</p>
+        <p class="formdone__sub">Thanks, we have your request and will be in touch, usually the same day. If it is urgent, call <a class="tel" href="${BIZ.phoneHref}">${BIZ.phone}</a>.</p>
       </div>
       <form class="form" id="estimate-form" method="POST"${action ? ` action="${action}"` : ''}>
-        <input type="hidden" name="_subject" value="New estimate request — machomeimprovements.com">
+        <input type="hidden" name="_subject" value="New estimate request: machomeimprovements.com">
         <input type="hidden" name="_next" value="${BIZ.origin}/thank-you/">
         <div class="hp" aria-hidden="true">
           <label for="company">Company (leave blank)</label>
@@ -1390,11 +1383,11 @@ function buildContact() {
         </div>
 
         <div class="field">
-          <label for="message">Tell us about the project <span class="hint">Size, condition, timing — whatever you know so far.</span></label>
+          <label for="message">Tell us about the project <span class="hint">Size, condition, timing: whatever you know so far.</span></label>
           <textarea id="message" name="message" rows="6"></textarea>
         </div>
 
-        <p class="form__note"><abbr class="req" title="required">*</abbr> Required &mdash; everything else is optional.</p>
+        <p class="form__note"><abbr class="req" title="required">*</abbr> Required. Everything else is optional.</p>
         <p class="form__error" id="form-error" hidden role="alert"></p>
         <button class="btn btn--solid" type="submit" style="justify-self:start;padding-inline:2rem">Request My Free Estimate</button>
         <p class="form__note">We reply to every request, usually the same day. We never share your details.</p>
@@ -1413,14 +1406,14 @@ function buildContact() {
       ${BIZ.hours ? `<div><h2>Hours</h2><p>${esc(BIZ.hours)}</p></div>` : ''}
       <div>
         <h2>Service area</h2>
-        <p style="color:var(--ink-mid);font-size:.925rem">${AREAS.join(' · ')}</p>
+        <p style="color:var(--ink-mid);font-size:.925rem">${AREAS.join(', ')}</p>
       </div>
       <div>
         <h2>Rated</h2>
         <p style="color:var(--ink-mid);font-size:.925rem"><span class="stars">★★★★★</span><br>${BIZ.reviewCount} five-star reviews on ${BIZ.ratingSource}</p>
         <p style="margin-top:.75rem"><a href="${BIZ.googleReviewUrl}" rel="noopener" style="font-size:.875rem">Leave us a Google review</a></p>
       </div>
-      ${BIZ.license ? `<div><h2>Licensing</h2><p style="color:var(--ink-mid);font-size:.925rem">License ${esc(BIZ.license)} · Licensed &amp; insured</p></div>` : ''}
+      ${BIZ.license ? `<div><h2>Licensing</h2><p style="color:var(--ink-mid);font-size:.925rem">License ${esc(BIZ.license)}<br>Licensed &amp; insured</p></div>` : ''}
     </aside>
   </div>
 </section>`;
@@ -1446,7 +1439,7 @@ function buildContact() {
     body: `<section class="pagehead" style="padding-block:clamp(5rem,12vw,9rem)">
   <div class="wrap">
     <p class="eyebrow">Request received</p>
-    <h1 class="h-display" style="max-width:18ch">Thanks — we&rsquo;ll be in touch.</h1>
+    <h1 class="h-display" style="max-width:18ch">Thanks, we&rsquo;ll be in touch.</h1>
     <p class="lede">We reply to every request, usually the same day. If it is urgent, call us directly at <a class="tel" href="${BIZ.phoneHref}">${BIZ.phone}</a>.</p>
     <div class="hero__actions" style="margin-top:2rem">
       <a class="btn btn--solid" href="/">Back to home</a>
@@ -1469,7 +1462,7 @@ function buildAreas() {
   <div class="wrap">
     <p class="eyebrow">Where we work</p>
     <h1 class="h-display">Service areas</h1>
-    <p class="lede">MAC works throughout Northern Virginia and Washington DC. Estimates are free everywhere on this list — if you are just outside it, call and ask, because we often can.</p>
+    <p class="lede">MAC works throughout Northern Virginia and Washington DC. Estimates are free everywhere on this list. If you are just outside it, call and ask, because we often can.</p>
   </div>
 </section>
 
@@ -1637,7 +1630,7 @@ ${ctaBand()}`;
 
   write(url.replace(/^\//, '') + 'index.html', layout({
     title: p.city ? `${p.title} in ${p.city} | ${BIZ.legal}` : `${p.title} | ${BIZ.legal}`,
-    desc: metaDesc(smart(p.summary), `${svc.title} in ${p.city || 'Northern Virginia'}. Free estimates &mdash; call ${BIZ.phone}.`),
+    desc: metaDesc(smart(p.summary), `${svc.title} in ${p.city || 'Northern Virginia'}. Free estimates. Call ${BIZ.phone}.`),
     url,
     current: '/projects/',
     trail,
@@ -1650,7 +1643,7 @@ ${ctaBand()}`;
       '@context': 'https://schema.org',
       '@type': 'CreativeWork',
       '@id': BIZ.origin + url + '#project',
-      name: p.city ? `${p.title} — ${p.city}` : p.title,
+      name: p.city ? `${p.title}, ${p.city}` : p.title,
       headline: p.title,
       description: p.summary,
       url: BIZ.origin + url,
@@ -1735,7 +1728,7 @@ function buildWarranty() {
     <div>
       <h2 class="h-section reveal">What a workmanship warranty covers</h2>
       <div class="prose reveal" style="margin-top:1.25rem">
-        <p>A workmanship warranty covers our installation — the work we did and the way we did it. If something fails because of how it was built, we come back and put it right.</p>
+        <p>A workmanship warranty covers our installation: the work we did and the way we did it. If something fails because of how it was built, we come back and put it right.</p>
         <p>That is a different thing from the products themselves. Materials carry whatever terms their manufacturer sets, and those run separately from ours. It is also different from damage caused by something other than the installation.</p>
         <p>What is and is not covered is set out in full in your written contract. The warranty is part of the agreement you sign rather than a separate certificate that arrives later, so you can read the exact terms before you commit to anything.</p>
       </div>
@@ -1743,7 +1736,7 @@ function buildWarranty() {
     <div>
       <h2 class="h-section reveal">Why the terms differ</h2>
       <div class="prose reveal" style="margin-top:1.25rem">
-        <p>Asphalt and drainage carry three years; concrete, pavers, masonry, and retaining walls carry five. The difference is not a judgment about how carefully each is built — it reflects how each system behaves over time and how much of its performance depends on ground conditions that keep moving after we leave.</p>
+        <p>Asphalt and drainage carry three years; concrete, pavers, masonry, and retaining walls carry five. The difference is not a judgment about how carefully each is built; it reflects how each system behaves over time and how much of its performance depends on ground conditions that keep moving after we leave.</p>
         <p>A driveway can also fall into more than one category. An asphalt driveway carries the three-year term and a paver driveway carries five, so the term that applies to your job depends on what you actually build, and it is stated on your estimate.</p>
       </div>
     </div>
@@ -1754,7 +1747,7 @@ function buildWarranty() {
   <div class="wrap" style="max-width:70ch">
     <h2 class="h-section reveal">Making a claim</h2>
     <div class="prose reveal" style="margin-top:1.25rem">
-      <p>Call ${BIZ.phone} or email <a href="mailto:${BIZ.email}">${BIZ.email}</a> and tell us what you are seeing. We come out and look at it — there is no form to complete and no portal to sign into.</p>
+      <p>Call ${BIZ.phone} or email <a href="mailto:${BIZ.email}">${BIZ.email}</a> and tell us what you are seeing. We come out and look at it. There is no form to complete and no portal to sign into.</p>
       <p>The same people who quoted and built the job are the ones who come back to it. That is the practical advantage of a family-operated business over a company that may have subcontracted your installation to a crew it no longer works with.</p>
     </div>
   </div>
@@ -1765,7 +1758,7 @@ ${ctaBand()}`;
   write('warranty/index.html', layout({
     title: `Workmanship Warranty | ${BIZ.legal}`,
     desc: metaDesc(
-      'Written workmanship warranties on every installation — five years on concrete, pavers, masonry, and retaining walls, three years on asphalt and drainage.',
+      'Written workmanship warranties on every installation: five years on concrete, pavers, masonry, and retaining walls, three years on asphalt and drainage.',
       `Free estimates across Northern Virginia and DC. Call ${BIZ.phone}.`),
     url: '/warranty/',
     current: '/warranty/',
