@@ -1,0 +1,1074 @@
+{
+ "hero-driveway": {
+  "alt": "Circular paver driveway with stone banding in front of a stone-faced Northern Virginia home",
+  "role": "hero",
+  "w": 2048,
+  "h": 1536,
+  "sizes": [
+   {
+    "w": 760,
+    "h": 570
+   },
+   {
+    "w": 1200,
+    "h": 900
+   },
+   {
+    "w": 1800,
+    "h": 1350
+   }
+  ]
+ },
+ "hero-walkway": {
+  "alt": "Bluestone walkway and landing leading to an arched front door with flower beds",
+  "role": "hero",
+  "w": 1193,
+  "h": 761,
+  "sizes": [
+   {
+    "w": 760,
+    "h": 485
+   },
+   {
+    "w": 1200,
+    "h": 765
+   }
+  ]
+ },
+ "hero-steps": {
+  "alt": "Natural stone steps rising to a home entrance",
+  "role": "hero",
+  "w": 1193,
+  "h": 761,
+  "sizes": [
+   {
+    "w": 760,
+    "h": 485
+   },
+   {
+    "w": 1200,
+    "h": 765
+   }
+  ]
+ },
+ "hero-herringbone": {
+  "alt": "Dark herringbone paver driveway blending into a light stone border",
+  "role": "hero",
+  "w": 1193,
+  "h": 761,
+  "sizes": [
+   {
+    "w": 760,
+    "h": 485
+   },
+   {
+    "w": 1200,
+    "h": 765
+   }
+  ]
+ },
+ "driveway-circle": {
+  "alt": "Intricate natural stone residential driveway with a circular medallion inlay",
+  "role": "feature",
+  "w": 2048,
+  "h": 1536,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 315
+   },
+   {
+    "w": 760,
+    "h": 570
+   },
+   {
+    "w": 1200,
+    "h": 900
+   },
+   {
+    "w": 1800,
+    "h": 1350
+   }
+  ]
+ },
+ "driveway-paver-grey": {
+  "alt": "Grey paver driveway leading to a two-car garage",
+  "role": "card",
+  "w": 1318,
+  "h": 762,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 243
+   },
+   {
+    "w": 760,
+    "h": 439
+   },
+   {
+    "w": 1200,
+    "h": 694
+   }
+  ]
+ },
+ "driveway-paver-tan": {
+  "alt": "Tan paver stone driveway installed by Onyx Home Improvement",
+  "role": "card",
+  "w": 1792,
+  "h": 828,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 194
+   },
+   {
+    "w": 760,
+    "h": 351
+   },
+   {
+    "w": 1200,
+    "h": 554
+   }
+  ]
+ },
+ "driveway-paver-blue": {
+  "alt": "Paver driveway and walkway in front of a blue two-story home",
+  "role": "card",
+  "w": 2048,
+  "h": 1536,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 315
+   },
+   {
+    "w": 760,
+    "h": 570
+   },
+   {
+    "w": 1200,
+    "h": 900
+   }
+  ]
+ },
+ "driveway-paver-band": {
+  "alt": "Paver driveway with a contrasting border band leading to a brick colonial",
+  "role": "card",
+  "w": 2048,
+  "h": 1536,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 315
+   },
+   {
+    "w": 760,
+    "h": 570
+   },
+   {
+    "w": 1200,
+    "h": 900
+   }
+  ]
+ },
+ "driveway-paver-wide": {
+  "alt": "Wide paver driveway with soldier-course edging",
+  "role": "card",
+  "w": 2048,
+  "h": 1536,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 315
+   },
+   {
+    "w": 760,
+    "h": 570
+   },
+   {
+    "w": 1200,
+    "h": 900
+   }
+  ]
+ },
+ "driveway-asphalt-new": {
+  "alt": "Freshly laid asphalt driveway curing in the sun",
+  "role": "card",
+  "w": 2048,
+  "h": 1417,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 291
+   },
+   {
+    "w": 760,
+    "h": 526
+   },
+   {
+    "w": 1200,
+    "h": 830
+   }
+  ]
+ },
+ "driveway-asphalt-cone": {
+  "alt": "New asphalt driveway with a safety cone at the entrance",
+  "role": "card",
+  "w": 1463,
+  "h": 828,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 238
+   },
+   {
+    "w": 760,
+    "h": 430
+   },
+   {
+    "w": 1200,
+    "h": 679
+   }
+  ]
+ },
+ "driveway-asphalt-curve": {
+  "alt": "Freshly paved asphalt driveway curving toward a residential street",
+  "role": "card",
+  "w": 1024,
+  "h": 768,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 315
+   },
+   {
+    "w": 760,
+    "h": 570
+   }
+  ]
+ },
+ "driveway-roller": {
+  "alt": "Steam roller compacting a new residential asphalt driveway",
+  "role": "card",
+  "w": 2048,
+  "h": 1233,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 253
+   },
+   {
+    "w": 760,
+    "h": 458
+   },
+   {
+    "w": 1200,
+    "h": 722
+   }
+  ]
+ },
+ "driveway-crew": {
+  "alt": "Onyx Home Improvement contractor operating a steam roller over fresh asphalt",
+  "role": "card",
+  "w": 2048,
+  "h": 1536,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 315
+   },
+   {
+    "w": 760,
+    "h": 570
+   },
+   {
+    "w": 1200,
+    "h": 900
+   }
+  ]
+ },
+ "driveway-prep": {
+  "alt": "Skid steer tearing out an old driveway in preparation for new asphalt",
+  "role": "card",
+  "w": 2048,
+  "h": 1536,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 315
+   },
+   {
+    "w": 760,
+    "h": 570
+   },
+   {
+    "w": 1200,
+    "h": 900
+   }
+  ]
+ },
+ "walkway-bluestone": {
+  "alt": "Bluestone walkway bordered by flowering plants",
+  "role": "feature",
+  "w": 1263,
+  "h": 1361,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 453
+   },
+   {
+    "w": 760,
+    "h": 819
+   },
+   {
+    "w": 1200,
+    "h": 1293
+   }
+  ]
+ },
+ "walkway-steps": {
+  "alt": "Paver walkway with wide stone steps leading to a front entry",
+  "role": "card",
+  "w": 2048,
+  "h": 1536,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 315
+   },
+   {
+    "w": 760,
+    "h": 570
+   },
+   {
+    "w": 1200,
+    "h": 900
+   }
+  ]
+ },
+ "walkway-curved": {
+  "alt": "Curved paver walkway surrounded by fresh mulch beds",
+  "role": "card",
+  "w": 1400,
+  "h": 933,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 280
+   },
+   {
+    "w": 760,
+    "h": 506
+   },
+   {
+    "w": 1200,
+    "h": 800
+   }
+  ]
+ },
+ "walkway-brick": {
+  "alt": "Brick herringbone walking path leading to a residential front door",
+  "role": "card",
+  "w": 1371,
+  "h": 1990,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 610
+   },
+   {
+    "w": 760,
+    "h": 1103
+   },
+   {
+    "w": 1200,
+    "h": 1742
+   }
+  ]
+ },
+ "walkway-banded": {
+  "alt": "Long paver walkway with a contrasting centre band",
+  "role": "card",
+  "w": 959,
+  "h": 1509,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 661
+   },
+   {
+    "w": 760,
+    "h": 1196
+   }
+  ]
+ },
+ "walkway-front": {
+  "alt": "Natural stone walkway curving to a residential front door",
+  "role": "card",
+  "w": 2048,
+  "h": 1536,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 315
+   },
+   {
+    "w": 760,
+    "h": 570
+   },
+   {
+    "w": 1200,
+    "h": 900
+   }
+  ]
+ },
+ "walkway-flowers": {
+  "alt": "Paver walkway lined with flowers leading to a home",
+  "role": "card",
+  "w": 2048,
+  "h": 1352,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 277
+   },
+   {
+    "w": 760,
+    "h": 502
+   },
+   {
+    "w": 1200,
+    "h": 792
+   }
+  ]
+ },
+ "walkway-side": {
+  "alt": "Natural stone walkway running along the side of a house",
+  "role": "card",
+  "w": 1553,
+  "h": 1221,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 330
+   },
+   {
+    "w": 760,
+    "h": 598
+   },
+   {
+    "w": 1200,
+    "h": 943
+   }
+  ]
+ },
+ "walkway-crew": {
+  "alt": "Onyx Home Improvement contractors laying a new stone walkway",
+  "role": "card",
+  "w": 1377,
+  "h": 1068,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 326
+   },
+   {
+    "w": 760,
+    "h": 589
+   },
+   {
+    "w": 1200,
+    "h": 931
+   }
+  ]
+ },
+ "patio-firepit": {
+  "alt": "Circular paver patio with a built-in fire pit and Adirondack chairs",
+  "role": "feature",
+  "w": 2048,
+  "h": 1536,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 315
+   },
+   {
+    "w": 760,
+    "h": 570
+   },
+   {
+    "w": 1200,
+    "h": 900
+   },
+   {
+    "w": 1800,
+    "h": 1350
+   }
+  ]
+ },
+ "patio-cobble": {
+  "alt": "Cobble-pattern stone patio flooring",
+  "role": "card",
+  "w": 2048,
+  "h": 2048,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 420
+   },
+   {
+    "w": 760,
+    "h": 760
+   },
+   {
+    "w": 1200,
+    "h": 1200
+   }
+  ]
+ },
+ "patio-red": {
+  "alt": "Brick patio flooring under bright sun",
+  "role": "card",
+  "w": 1290,
+  "h": 941,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 306
+   },
+   {
+    "w": 760,
+    "h": 554
+   },
+   {
+    "w": 1200,
+    "h": 875
+   }
+  ]
+ },
+ "patio-backyard": {
+  "alt": "Freshly installed brick and natural stone backyard patio",
+  "role": "feature",
+  "w": 1600,
+  "h": 1200,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 315
+   },
+   {
+    "w": 760,
+    "h": 570
+   },
+   {
+    "w": 1200,
+    "h": 900
+   }
+  ]
+ },
+ "patio-stone": {
+  "alt": "Natural stone patio behind a residential home",
+  "role": "card",
+  "w": 2048,
+  "h": 1536,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 315
+   },
+   {
+    "w": 760,
+    "h": 570
+   },
+   {
+    "w": 1200,
+    "h": 900
+   }
+  ]
+ },
+ "patio-pool": {
+  "alt": "Natural stone pool deck in a backyard",
+  "role": "card",
+  "w": 1290,
+  "h": 1657,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 539
+   },
+   {
+    "w": 760,
+    "h": 976
+   },
+   {
+    "w": 1200,
+    "h": 1541
+   }
+  ]
+ },
+ "patio-covered": {
+  "alt": "Natural stone patio under a covered porch",
+  "role": "card",
+  "w": 2048,
+  "h": 1536,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 315
+   },
+   {
+    "w": 760,
+    "h": 570
+   },
+   {
+    "w": 1200,
+    "h": 900
+   }
+  ]
+ },
+ "patio-build": {
+  "alt": "Patio construction underway with natural stone staged on site",
+  "role": "card",
+  "w": 1024,
+  "h": 768,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 315
+   },
+   {
+    "w": 760,
+    "h": 570
+   }
+  ]
+ },
+ "wall-curved": {
+  "alt": "Curved natural stone retaining wall with integrated steps and walkway",
+  "role": "feature",
+  "w": 2048,
+  "h": 1710,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 351
+   },
+   {
+    "w": 760,
+    "h": 635
+   },
+   {
+    "w": 1200,
+    "h": 1002
+   },
+   {
+    "w": 1800,
+    "h": 1503
+   }
+  ]
+ },
+ "wall-build": {
+  "alt": "Natural stone retaining wall under construction on a sloped yard",
+  "role": "card",
+  "w": 2403,
+  "h": 1761,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 308
+   },
+   {
+    "w": 760,
+    "h": 557
+   },
+   {
+    "w": 1200,
+    "h": 879
+   }
+  ]
+ },
+ "wall-steps": {
+  "alt": "Natural stone steps and retaining wall leading to a front door",
+  "role": "card",
+  "w": 2048,
+  "h": 1536,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 315
+   },
+   {
+    "w": 760,
+    "h": 570
+   },
+   {
+    "w": 1200,
+    "h": 900
+   }
+  ]
+ },
+ "wall-brick-long": {
+  "alt": "Long brick retaining wall terracing a backyard",
+  "role": "card",
+  "w": 1024,
+  "h": 768,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 315
+   },
+   {
+    "w": 760,
+    "h": 570
+   }
+  ]
+ },
+ "wall-closeup": {
+  "alt": "Close-up of a stone retaining wall beside a two-story brick house",
+  "role": "card",
+  "w": 1921,
+  "h": 1209,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 264
+   },
+   {
+    "w": 760,
+    "h": 478
+   },
+   {
+    "w": 1200,
+    "h": 755
+   }
+  ]
+ },
+ "wall-hero": {
+  "alt": "Stone retaining wall with integrated steps",
+  "role": "card",
+  "w": 1873,
+  "h": 1080,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 242
+   },
+   {
+    "w": 760,
+    "h": 438
+   },
+   {
+    "w": 1200,
+    "h": 692
+   }
+  ]
+ },
+ "steps-stone": {
+  "alt": "Stone work steps leading up to the front door of a residential home",
+  "role": "feature",
+  "w": 2048,
+  "h": 1536,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 315
+   },
+   {
+    "w": 760,
+    "h": 570
+   },
+   {
+    "w": 1200,
+    "h": 900
+   },
+   {
+    "w": 1800,
+    "h": 1350
+   }
+  ]
+ },
+ "steps-brick": {
+  "alt": "Newly installed brick steps at a home front entrance",
+  "role": "card",
+  "w": 1101,
+  "h": 1374,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 524
+   },
+   {
+    "w": 760,
+    "h": 948
+   }
+  ]
+ },
+ "steps-landing": {
+  "alt": "Natural stone front door steps and landing",
+  "role": "card",
+  "w": 2040,
+  "h": 1503,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 309
+   },
+   {
+    "w": 760,
+    "h": 560
+   },
+   {
+    "w": 1200,
+    "h": 884
+   }
+  ]
+ },
+ "steps-wide": {
+  "alt": "Natural stone front door walkway and steps",
+  "role": "card",
+  "w": 2048,
+  "h": 1536,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 315
+   },
+   {
+    "w": 760,
+    "h": 570
+   },
+   {
+    "w": 1200,
+    "h": 900
+   }
+  ]
+ },
+ "brick-flooring": {
+  "alt": "Brick flooring surrounded by a home and trees",
+  "role": "card",
+  "w": 1536,
+  "h": 2048,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 560
+   },
+   {
+    "w": 760,
+    "h": 1013
+   },
+   {
+    "w": 1200,
+    "h": 1600
+   }
+  ]
+ },
+ "veneer-siding": {
+  "alt": "Stone veneer siding on a two-story home",
+  "role": "feature",
+  "w": 1459,
+  "h": 828,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 238
+   },
+   {
+    "w": 760,
+    "h": 431
+   },
+   {
+    "w": 1200,
+    "h": 681
+   }
+  ]
+ },
+ "veneer-walkway": {
+  "alt": "Residential outdoor walkway made of natural stone veneer",
+  "role": "card",
+  "w": 1103,
+  "h": 2048,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 780
+   },
+   {
+    "w": 760,
+    "h": 1411
+   }
+  ]
+ },
+ "veneer-drive": {
+  "alt": "Newly installed residential natural stone driveway",
+  "role": "card",
+  "w": 2048,
+  "h": 1536,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 315
+   },
+   {
+    "w": 760,
+    "h": 570
+   },
+   {
+    "w": 1200,
+    "h": 900
+   }
+  ]
+ },
+ "veneer-drive-build": {
+  "alt": "Residential natural stone driveway under construction",
+  "role": "card",
+  "w": 2048,
+  "h": 1536,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 315
+   },
+   {
+    "w": 760,
+    "h": 570
+   },
+   {
+    "w": 1200,
+    "h": 900
+   }
+  ]
+ },
+ "fireplace-build": {
+  "alt": "Backyard patio stone fireplace under construction",
+  "role": "card",
+  "w": 2048,
+  "h": 1536,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 315
+   },
+   {
+    "w": 760,
+    "h": 570
+   },
+   {
+    "w": 1200,
+    "h": 900
+   }
+  ]
+ },
+ "fireplace-stone": {
+  "alt": "Finished outdoor stone fireplace",
+  "role": "feature",
+  "w": 1290,
+  "h": 804,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 262
+   },
+   {
+    "w": 760,
+    "h": 474
+   },
+   {
+    "w": 1200,
+    "h": 748
+   }
+  ]
+ },
+ "fireplace-install": {
+  "alt": "Mason performing a fireplace and patio installation",
+  "role": "card",
+  "w": 2048,
+  "h": 1536,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 315
+   },
+   {
+    "w": 760,
+    "h": 570
+   },
+   {
+    "w": 1200,
+    "h": 900
+   }
+  ]
+ },
+ "fireplace-bbq": {
+  "alt": "Stainless steel BBQ pit enclosed by stone retaining walls",
+  "role": "card",
+  "w": 2048,
+  "h": 1536,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 315
+   },
+   {
+    "w": 760,
+    "h": 570
+   },
+   {
+    "w": 1200,
+    "h": 900
+   }
+  ]
+ },
+ "chimney-home": {
+  "alt": "Two-story home with a red brick chimney on the side",
+  "role": "feature",
+  "w": 1220,
+  "h": 768,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 264
+   },
+   {
+    "w": 760,
+    "h": 478
+   },
+   {
+    "w": 1200,
+    "h": 755
+   }
+  ]
+ },
+ "foundation-exterior": {
+  "alt": "Foundation repair work outside a residential home",
+  "role": "feature",
+  "w": 1024,
+  "h": 768,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 315
+   },
+   {
+    "w": 760,
+    "h": 570
+   }
+  ]
+ },
+ "foundation-driveway": {
+  "alt": "Driveway foundation repair by Onyx Home Improvement LLC",
+  "role": "card",
+  "w": 1110,
+  "h": 768,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 291
+   },
+   {
+    "w": 760,
+    "h": 526
+   }
+  ]
+ }
+}

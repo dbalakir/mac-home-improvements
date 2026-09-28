@@ -1,0 +1,19 @@
+# macOS / editor noise
+.DS_Store
+._*
+.vscode/
+.idea/
+
+# Node
+node_modules/
+
+# Census boundary data, downloaded on demand by tools/map.py (≈90 MB).
+# Regenerate with `python3 tools/map.py`; the committed SVG is the output.
+tools/counties.json
+
+# Client documents and working files that are not part of the site.
+# Keep them in the folder if you like — they just never get published.
+*.docx
+*.doc
+*.pdf
+*.xlsx
