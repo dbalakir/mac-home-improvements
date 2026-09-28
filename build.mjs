@@ -150,15 +150,15 @@ function header(current) {
 }
 
 function ctaBand() {
-  return `<section class="section section--dark">
-  <div class="wrap cta-close">
+  return `<section class="section cta-section">
+  <div class="wrap"><div class="cta-close">
     <div>
       <p class="eyebrow eyebrow--ruled reveal">Request</p>
       <h2 class="h-section reveal">Ready to start? Schedule a free estimate.</h2>
       <p class="cta-close__call reveal">Or call <a class="tel" href="${BIZ.phoneHref}">${BIZ.phone}</a></p>
     </div>
-    <a class="link-arrow reveal" href="/get-your-free-estimate/">Request an Estimate ${ARROW}</a>
-  </div>
+    <a class="btn btn--solid reveal" href="/get-your-free-estimate/">Request an Estimate ${ARROW}</a>
+  </div></div>
 </section>`;
 }
 
@@ -240,7 +240,7 @@ function layout({ title, desc, url, body, current, jsonld = [], heroImage = null
   const heroPreload = heroImage && IMG[heroImage]
     ? `\n<link rel="preload" as="image" type="image/avif" fetchpriority="high"`
       + ` imagesrcset="${IMG[heroImage].sizes.map(s => `/assets/img/${heroImage}-${s.w}.avif ${s.w}w`).join(', ')}"`
-      + ` imagesizes="100vw">`
+      + ` imagesizes="(max-width:900px) 100vw, 52vw">`
     : '';
 
   // BreadcrumbList mirrors the visible crumbs exactly — Google requires the
@@ -281,8 +281,8 @@ function layout({ title, desc, url, body, current, jsonld = [], heroImage = null
 <meta property="og:image" content="${BIZ.origin}/assets/img/hero-driveway-1200.webp">
 <meta name="twitter:card" content="summary_large_image">
 
-<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/fraunces-latin.woff2" crossorigin>
-<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/dm-sans-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/manrope-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-latin.woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/site.css">${heroPreload}
 <link rel="icon" href="/assets/favicon.ico" sizes="16x16 32x32 48x48">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
@@ -307,7 +307,7 @@ function crumbs(trail) {
       ? `<li aria-current="page">${esc(t.label)}</li>`
       : `<li><a href="${t.href}">${esc(t.label)}</a></li>`
   ).join('\n    ');
-  return `<div class="wrap"><ul class="crumbs">\n    ${items}\n  </ul></div>`;
+  return `<div class="crumbs-bar"><div class="wrap"><ul class="crumbs">\n    ${items}\n  </ul></div></div>`;
 }
 
 function trustbar() {
@@ -681,19 +681,21 @@ function buildHome() {
 </figure>`;
   }).join('\n');
 
-  const body = `<section class="hero">
-  <div class="hero__media">${picture('hero-driveway', {
-    sizes: '100vw', lazy: false,
-    altOverride: 'Circular paver driveway with a stone medallion in front of a stone-faced Northern Virginia home',
-  })}</div>
-  <div class="wrap hero__inner">
-    <p class="eyebrow">Family-operated in Northern Virginia since ${BIZ.since}</p>
-    <h1 class="h-display" style="max-width:16ch">Northern Virginia&rsquo;s Driveway, Hardscape &amp; Masonry Specialists</h1>
-    <p class="hero__lede">Paver, asphalt, and concrete driveways, patios, walkways, retaining walls, and stonework throughout Northern Virginia and Washington DC. Free written estimates, and the owners are on site for every job (<a href="/about-us/">read our story</a>).</p>
-    <div class="hero__actions">
-      <a class="btn btn--solid" href="/get-your-free-estimate/">Request an Estimate</a>
-      <a class="btn btn--on-photo tel" href="${BIZ.phoneHref}">${BIZ.phone}</a>
+  const body = `<section class="hero hero--split">
+  <div class="wrap hero__grid">
+    <div class="hero__copy">
+      <p class="eyebrow">Family-operated in Northern Virginia since ${BIZ.since}</p>
+      <h1 class="h-display">Northern Virginia&rsquo;s Driveway, Hardscape &amp; Masonry Specialists</h1>
+      <p class="hero__lede">Paver, asphalt, and concrete driveways, patios, walkways, retaining walls, and stonework throughout Northern Virginia and Washington DC. Free written estimates, and the owners are on site for every job (<a href="/about-us/">read our story</a>).</p>
+      <div class="hero__actions">
+        <a class="btn btn--solid" href="/get-your-free-estimate/">Request an Estimate</a>
+        <a class="btn btn--on-photo tel" href="${BIZ.phoneHref}">${BIZ.phone}</a>
+      </div>
     </div>
+    <div class="hero__frame">${picture('hero-driveway', {
+      sizes: '(max-width:900px) 100vw, 52vw', lazy: false,
+      altOverride: 'Circular paver driveway with a stone medallion in front of a stone-faced Northern Virginia home',
+    })}</div>
   </div>
 </section>
 
@@ -712,7 +714,7 @@ ${serviceGrid()}
 </section>
 
 <section class="section section--sunk">
-  <div class="wrap split">
+  <div class="wrap split split--reverse">
     <div>
       <p class="eyebrow reveal">Why MAC</p>
       <h2 class="h-section reveal">Great craftsmanship starts with listening.</h2>

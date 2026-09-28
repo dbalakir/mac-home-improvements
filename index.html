@@ -16,10 +16,10 @@
 <meta property="og:image" content="https://machomeimprovements.com/assets/img/hero-driveway-1200.webp">
 <meta name="twitter:card" content="summary_large_image">
 
-<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/fraunces-latin.woff2" crossorigin>
-<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/dm-sans-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/manrope-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="/assets/fonts/inter-latin.woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/site.css">
-<link rel="preload" as="image" type="image/avif" fetchpriority="high" imagesrcset="/assets/img/hero-driveway-760.avif 760w, /assets/img/hero-driveway-1200.avif 1200w, /assets/img/hero-driveway-1800.avif 1800w" imagesizes="100vw">
+<link rel="preload" as="image" type="image/avif" fetchpriority="high" imagesrcset="/assets/img/hero-driveway-760.avif 760w, /assets/img/hero-driveway-1200.avif 1200w, /assets/img/hero-driveway-1800.avif 1800w" imagesizes="(max-width:900px) 100vw, 52vw">
 <link rel="icon" href="/assets/favicon.ico" sizes="16x16 32x32 48x48">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
@@ -86,21 +86,23 @@
   </div>
 </header>
 <main id="main">
-<section class="hero">
-  <div class="hero__media"><picture>
-  <source type="image/avif" srcset="/assets/img/hero-driveway-760.avif 760w, /assets/img/hero-driveway-1200.avif 1200w, /assets/img/hero-driveway-1800.avif 1800w" sizes="100vw">
-  <source type="image/webp" srcset="/assets/img/hero-driveway-760.webp 760w, /assets/img/hero-driveway-1200.webp 1200w, /assets/img/hero-driveway-1800.webp 1800w" sizes="100vw">
-  <img src="/assets/img/hero-driveway-1200.webp" srcset="/assets/img/hero-driveway-760.webp 760w, /assets/img/hero-driveway-1200.webp 1200w, /assets/img/hero-driveway-1800.webp 1800w" sizes="100vw"
+<section class="hero hero--split">
+  <div class="wrap hero__grid">
+    <div class="hero__copy">
+      <p class="eyebrow">Family-operated in Northern Virginia since 2010</p>
+      <h1 class="h-display">Northern Virginia&rsquo;s Driveway, Hardscape &amp; Masonry Specialists</h1>
+      <p class="hero__lede">Paver, asphalt, and concrete driveways, patios, walkways, retaining walls, and stonework throughout Northern Virginia and Washington DC. Free written estimates, and the owners are on site for every job (<a href="/about-us/">read our story</a>).</p>
+      <div class="hero__actions">
+        <a class="btn btn--solid" href="/get-your-free-estimate/">Request an Estimate</a>
+        <a class="btn btn--on-photo tel" href="tel:+10000000000">(000) 000-0000</a>
+      </div>
+    </div>
+    <div class="hero__frame"><picture>
+  <source type="image/avif" srcset="/assets/img/hero-driveway-760.avif 760w, /assets/img/hero-driveway-1200.avif 1200w, /assets/img/hero-driveway-1800.avif 1800w" sizes="(max-width:900px) 100vw, 52vw">
+  <source type="image/webp" srcset="/assets/img/hero-driveway-760.webp 760w, /assets/img/hero-driveway-1200.webp 1200w, /assets/img/hero-driveway-1800.webp 1800w" sizes="(max-width:900px) 100vw, 52vw">
+  <img src="/assets/img/hero-driveway-1200.webp" srcset="/assets/img/hero-driveway-760.webp 760w, /assets/img/hero-driveway-1200.webp 1200w, /assets/img/hero-driveway-1800.webp 1800w" sizes="(max-width:900px) 100vw, 52vw"
        width="1200" height="900" alt="Circular paver driveway with a stone medallion in front of a stone-faced Northern Virginia home" fetchpriority="high" decoding="async">
 </picture></div>
-  <div class="wrap hero__inner">
-    <p class="eyebrow">Family-operated in Northern Virginia since 2010</p>
-    <h1 class="h-display" style="max-width:16ch">Northern Virginia&rsquo;s Driveway, Hardscape &amp; Masonry Specialists</h1>
-    <p class="hero__lede">Paver, asphalt, and concrete driveways, patios, walkways, retaining walls, and stonework throughout Northern Virginia and Washington DC. Free written estimates, and the owners are on site for every job (<a href="/about-us/">read our story</a>).</p>
-    <div class="hero__actions">
-      <a class="btn btn--solid" href="/get-your-free-estimate/">Request an Estimate</a>
-      <a class="btn btn--on-photo tel" href="tel:+10000000000">(000) 000-0000</a>
-    </div>
   </div>
 </section>
 
@@ -232,7 +234,7 @@
 </section>
 
 <section class="section section--sunk">
-  <div class="wrap split">
+  <div class="wrap split split--reverse">
     <div>
       <p class="eyebrow reveal">Why MAC</p>
       <h2 class="h-section reveal">Great craftsmanship starts with listening.</h2>
@@ -476,15 +478,15 @@
   </div>
 </section>
 
-<section class="section section--dark">
-  <div class="wrap cta-close">
+<section class="section cta-section">
+  <div class="wrap"><div class="cta-close">
     <div>
       <p class="eyebrow eyebrow--ruled reveal">Request</p>
       <h2 class="h-section reveal">Ready to start? Schedule a free estimate.</h2>
       <p class="cta-close__call reveal">Or call <a class="tel" href="tel:+10000000000">(000) 000-0000</a></p>
     </div>
-    <a class="link-arrow reveal" href="/get-your-free-estimate/">Request an Estimate <svg width="15" height="10" viewBox="0 0 15 10" fill="none" aria-hidden="true"><path d="M10 1l4 4-4 4M14 5H0" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-  </div>
+    <a class="btn btn--solid reveal" href="/get-your-free-estimate/">Request an Estimate <svg width="15" height="10" viewBox="0 0 15 10" fill="none" aria-hidden="true"><path d="M10 1l4 4-4 4M14 5H0" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  </div></div>
 </section>
 </main>
 <footer class="footer">
