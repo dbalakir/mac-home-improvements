@@ -239,7 +239,7 @@ function layout({ title, desc, url, body, current, jsonld = [], heroImage = null
   const heroPreload = heroImage && IMG[heroImage]
     ? `\n<link rel="preload" as="image" type="image/avif" fetchpriority="high"`
       + ` imagesrcset="${IMG[heroImage].sizes.map(s => `/assets/img/${heroImage}-${s.w}.avif ${s.w}w`).join(', ')}"`
-      + ` imagesizes="(max-width:900px) 100vw, 56vw">`
+      + ` imagesizes="100vw">`
     : '';
 
   // BreadcrumbList mirrors the visible crumbs exactly — Google requires the
@@ -680,8 +680,12 @@ function buildHome() {
 </figure>`;
   }).join('\n');
 
-  const body = `<section class="hero hero--panel">
-  <div class="hero__panel">
+  const body = `<section class="hero hero--photo">
+  <div class="hero__media">${picture('hero-driveway', {
+    sizes: '100vw', lazy: false,
+    altOverride: 'Circular paver driveway with a stone medallion in front of a stone-faced Northern Virginia home',
+  })}</div>
+  <div class="wrap hero__inner">
     <p class="eyebrow">Family-operated in Northern Virginia since ${BIZ.since}</p>
     <h1 class="h-display">Northern Virginia&rsquo;s Driveway, Hardscape &amp; Masonry Specialists</h1>
     <p class="hero__lede">Paver, asphalt, and concrete driveways, patios, walkways, retaining walls, and stonework throughout Northern Virginia and Washington DC. Free written estimates, and the owners are on site for every job (<a href="/about-us/">read our story</a>).</p>
@@ -690,10 +694,6 @@ function buildHome() {
       <a class="btn btn--ghost tel" href="${BIZ.phoneHref}">${BIZ.phone}</a>
     </div>
   </div>
-  <div class="hero__photo">${picture('hero-driveway', {
-    sizes: '(max-width:900px) 100vw, 56vw', lazy: false,
-    altOverride: 'Circular paver driveway with a stone medallion in front of a stone-faced Northern Virginia home',
-  })}</div>
 </section>
 
 ${trustbar()}

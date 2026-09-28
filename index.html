@@ -18,7 +18,7 @@
 
 <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/archivo-latin.woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/site.css">
-<link rel="preload" as="image" type="image/avif" fetchpriority="high" imagesrcset="/assets/img/hero-driveway-760.avif 760w, /assets/img/hero-driveway-1200.avif 1200w, /assets/img/hero-driveway-1800.avif 1800w" imagesizes="(max-width:900px) 100vw, 56vw">
+<link rel="preload" as="image" type="image/avif" fetchpriority="high" imagesrcset="/assets/img/hero-driveway-760.avif 760w, /assets/img/hero-driveway-1200.avif 1200w, /assets/img/hero-driveway-1800.avif 1800w" imagesizes="100vw">
 <link rel="icon" href="/assets/favicon.ico" sizes="16x16 32x32 48x48">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
@@ -85,8 +85,14 @@
   </div>
 </header>
 <main id="main">
-<section class="hero hero--panel">
-  <div class="hero__panel">
+<section class="hero hero--photo">
+  <div class="hero__media"><picture>
+  <source type="image/avif" srcset="/assets/img/hero-driveway-760.avif 760w, /assets/img/hero-driveway-1200.avif 1200w, /assets/img/hero-driveway-1800.avif 1800w" sizes="100vw">
+  <source type="image/webp" srcset="/assets/img/hero-driveway-760.webp 760w, /assets/img/hero-driveway-1200.webp 1200w, /assets/img/hero-driveway-1800.webp 1800w" sizes="100vw">
+  <img src="/assets/img/hero-driveway-1200.webp" srcset="/assets/img/hero-driveway-760.webp 760w, /assets/img/hero-driveway-1200.webp 1200w, /assets/img/hero-driveway-1800.webp 1800w" sizes="100vw"
+       width="1200" height="900" alt="Circular paver driveway with a stone medallion in front of a stone-faced Northern Virginia home" fetchpriority="high" decoding="async">
+</picture></div>
+  <div class="wrap hero__inner">
     <p class="eyebrow">Family-operated in Northern Virginia since 2010</p>
     <h1 class="h-display">Northern Virginia&rsquo;s Driveway, Hardscape &amp; Masonry Specialists</h1>
     <p class="hero__lede">Paver, asphalt, and concrete driveways, patios, walkways, retaining walls, and stonework throughout Northern Virginia and Washington DC. Free written estimates, and the owners are on site for every job (<a href="/about-us/">read our story</a>).</p>
@@ -95,12 +101,6 @@
       <a class="btn btn--ghost tel" href="tel:+10000000000">(000) 000-0000</a>
     </div>
   </div>
-  <div class="hero__photo"><picture>
-  <source type="image/avif" srcset="/assets/img/hero-driveway-760.avif 760w, /assets/img/hero-driveway-1200.avif 1200w, /assets/img/hero-driveway-1800.avif 1800w" sizes="(max-width:900px) 100vw, 56vw">
-  <source type="image/webp" srcset="/assets/img/hero-driveway-760.webp 760w, /assets/img/hero-driveway-1200.webp 1200w, /assets/img/hero-driveway-1800.webp 1800w" sizes="(max-width:900px) 100vw, 56vw">
-  <img src="/assets/img/hero-driveway-1200.webp" srcset="/assets/img/hero-driveway-760.webp 760w, /assets/img/hero-driveway-1200.webp 1200w, /assets/img/hero-driveway-1800.webp 1800w" sizes="(max-width:900px) 100vw, 56vw"
-       width="1200" height="900" alt="Circular paver driveway with a stone medallion in front of a stone-faced Northern Virginia home" fetchpriority="high" decoding="async">
-</picture></div>
 </section>
 
 <div class="trustbar">
