@@ -1356,44 +1356,21 @@ a { color: inherit; }
 
 /* ==========================================================================
    MAC theme
-   One page theme, following the visitor's system setting: limestone in
-   light mode, midnight in dark. The masthead, footer and closing card are
-   navy in both, as chrome rather than as sections, so the page itself never
-   flips theme mid-scroll. The one bold move is the hero: the photograph cut
+   One light theme, whatever the visitor's system setting: limestone ground,
+   navy and brass as accents. The masthead, footer and closing card are
+   navy chrome; the page itself never flips theme mid-scroll. The one bold move is the hero: the photograph cut
    to the gable of a house, under the same brass roofline as the logo.
    ========================================================================== */
 :root {
+  color-scheme: light;
   --btn:       #121b2a;
   --btn-ink:   #f3f2ee;
   --btn-hover: #24314a;
   --frame:     #0f1a2b;
   --frame-deep:#0b1422;
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: dark;
-    --bg:        #0e1726;
-    --bg-sunk:   #0b1320;
-    --bg-card:   #142034;
-    --ink:       #eef0f3;
-    --ink-mid:   #bcc4cf;
-    --ink-dim:   #939cab;
-    --line:      #26334a;
-    --line-soft: #1c2940;
-    --dark:      #0b1320;
-    --clay:      #cfae78;
-    --btn:       #c4a068;
-    --btn-ink:   #0f1a2b;
-    --btn-hover: #d5b47e;
-    --frame:     #0a1220;
-    --frame-deep:#070d18;
-  }
-  img { background: var(--bg-card); }
-  .form__error { color: #f3b8b0; background: #2a1618; border-color: #5a2b2b; }
-}
-
 /* Chrome regions: navy in either mode, so their tokens are fixed. */
-.masthead, .footer, .cta-close, .hero--photo {
+.masthead, .footer, .cta-close {
   --bg:        var(--frame);
   --bg-card:   #152238;
   --bg-sunk:   var(--frame-deep);
@@ -1479,26 +1456,28 @@ h1, h2, h3, h4 { font-stretch: 112%; font-weight: 700; letter-spacing: -0.02em; 
 .nav a:hover::after, .nav a[aria-current='page']::after { scale: 1 1; }
 .mobile-nav__panel, .mobile-nav__cta { background: var(--frame); }
 
-/* --- Hero: one photograph across the full width, copy on a navy scrim ----
-   The scrim is weighted left so the copy column holds contrast and the
-   right side of the photograph still reads. */
-.hero--photo { background: var(--frame); }
+/* --- Hero: one photograph across the full width, copy on a limestone scrim
+   The scrim is weighted left so the copy column reads as the page ground and
+   the right side of the photograph shows through. */
+.hero--photo { background: var(--bg); }
 .hero--photo::after {
   background:
-    linear-gradient(100deg, rgba(15,26,43,.92) 0%, rgba(15,26,43,.80) 36%, rgba(15,26,43,.45) 64%, rgba(15,26,43,.12) 100%),
-    linear-gradient(to top, rgba(15,26,43,.45), transparent 40%);
+    linear-gradient(100deg, rgba(243,242,238,.97) 0%, rgba(243,242,238,.92) 38%, rgba(243,242,238,.55) 62%, rgba(243,242,238,0) 88%);
 }
 @media (max-width: 760px) {
-  .hero--photo::after { background: linear-gradient(to top, rgba(15,26,43,.94) 15%, rgba(15,26,43,.72) 60%, rgba(15,26,43,.5) 100%); }
+  .hero--photo::after { background: linear-gradient(to bottom, rgba(243,242,238,.96) 55%, rgba(243,242,238,.75) 100%); }
 }
-.hero--photo .hero__inner { padding-block: clamp(5rem, 12vw, 8.5rem); max-width: var(--wrap); }
-.hero--photo .eyebrow { color: var(--brass); }
+.hero--photo .hero__inner { padding-block: clamp(5rem, 12vw, 8.5rem); max-width: var(--wrap); color: var(--ink); }
+.hero--photo .eyebrow { color: var(--clay); }
 .hero--photo h1 { color: var(--ink); font-size: clamp(2.2rem, 4.2vw, 3.5rem); font-stretch: 112%; max-width: 17ch; text-wrap: balance; }
 .hero--photo .hero__lede { color: var(--ink-mid); margin-top: 1.5rem; max-width: 52ch; }
 .hero--photo .hero__lede a { color: var(--ink); }
 .hero--photo .hero__actions { margin-top: 2.25rem; }
-.hero--photo .btn--ghost { border-color: rgba(255,255,255,.35); }
+.hero--photo .hero__actions .btn--solid { background: var(--btn); color: var(--btn-ink); }
+.hero--photo .btn--ghost { border-color: var(--ink); color: var(--ink); background: rgba(243,242,238,.6); }
 .hero--photo + .trustbar ul { border-top: 0; }
+/* A brass rule under the hero ties it to the navy masthead above. */
+.hero--photo { border-bottom: 3px solid var(--brass); }
 
 /* Scroll reveals are retired: content below the hero is simply there. */
 .reveal { animation: none !important; }
