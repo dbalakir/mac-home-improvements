@@ -185,7 +185,7 @@ function footer() {
         <address>
           <a class="tel" href="${BIZ.phoneHref}">${BIZ.phone}</a>
           <a href="mailto:${BIZ.email}">${BIZ.email}</a>
-          <span>${BIZ.street ? esc(BIZ.street) + '<br>' : ''}${BIZ.city}</span>
+          <span>${BIZ.street ? `${esc(BIZ.street)}<br>${esc(BIZ.locality)}, ${esc(BIZ.region)} ${esc(BIZ.postalCode)}` : BIZ.city}</span>
           <a href="${BIZ.facebook}" rel="noopener">Facebook</a>
           <a href="${BIZ.googleReviewUrl}" rel="noopener">Leave a Google review</a>
         </address>
@@ -636,12 +636,12 @@ const LOCAL_BUSINESS = {
   image: BIZ.origin + '/assets/img/hero-driveway-1200.webp',
   address: {
     '@type': 'PostalAddress',
-    ...(BIZ.street ? { streetAddress: BIZ.street } : {}),
+    ...(BIZ.street ? { streetAddress: BIZ.street, postalCode: BIZ.postalCode } : {}),
     // A locality, per schema.org — this is the business address, not the
     // service area. The visible copy says "Northern Virginia"; this field
     // has to name an actual city or Google discards the address.
-    addressLocality: 'Fairfax',
-    addressRegion: 'VA',
+    addressLocality: BIZ.locality,
+    addressRegion: BIZ.region,
     addressCountry: 'US',
   },
   areaServed: AREAS.map(a => ({ '@type': 'Place', name: a })),
@@ -1400,6 +1400,7 @@ function buildContact() {
         <p><a href="mailto:${BIZ.email}">${BIZ.email}</a></p>
       </div>
       ${BIZ.hours ? `<div><h2>Hours</h2><p>${esc(BIZ.hours)}</p></div>` : ''}
+      ${BIZ.street ? `<div><h2>Office</h2><p>${esc(BIZ.street)}<br>${esc(BIZ.locality)}, ${esc(BIZ.region)} ${esc(BIZ.postalCode)}</p></div>` : ''}
       <div>
         <h2>Service area</h2>
         <p style="color:var(--ink-mid);font-size:.925rem">${AREAS.join(', ')}</p>

@@ -11,8 +11,8 @@ export const BIZ = {
   name: 'MAC Home Improvements',
   legal: 'MAC Home Improvements',
   tagline: 'Masonry & Stonework · Northern Virginia · Washington DC',
-  phone: '(000) 000-0000',       // TODO: MAC phone
-  phoneHref: 'tel:+10000000000',
+  phone: '(703) 929-1621',
+  phoneHref: 'tel:+17039291621',
   email: 'info@machomeimprovements.com',   // TODO: MAC email
   city: 'Northern Virginia',
   since: '2010',
@@ -22,7 +22,12 @@ export const BIZ = {
   // --- TODO: confirm before launch -------------------------------------
   // Fill these in and rebuild; the build drops the line entirely if empty.
   license: '',              // TODO: MAC license #   // VA DPOR number, rendered as "License #…"
-  street: '',               // leave blank to show service area only
+  // Business address. Shown in the footer and contact page, and used in the
+  // LocalBusiness schema. Leave street blank to show the service area only.
+  street: '5510 Cherokee Ave, Ste 300',
+  locality: 'Alexandria',
+  region: 'VA',
+  postalCode: '22312',
   // ----------------------------------------------------------------------
 
   // Taken from the Google Business Profile, where the business sets them.
