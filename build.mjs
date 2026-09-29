@@ -10,6 +10,7 @@
 
 import fs from 'fs';
 import path from 'path';
+import { createHash } from 'crypto';
 import { fileURLToPath } from 'url';
 import {
   BIZ, NAV, SERVICES, REVIEWS, FEATURED_REVIEWS, AREAS, WARRANTY,
@@ -60,10 +61,25 @@ function applyBase(s) {
       (_, attr, val) => `${attr}="${val.replace(/(^|,\s*)\/(?!\/)/g, `$1${BASE}/`)}"`);
 }
 
+/* Stamp every image URL with a short hash of the file's contents, so when a
+   photo is replaced visitors get the new one instead of a cached copy. */
+const imgVersion = new Map();
+function versionImages(html) {
+  return html.replace(/(\/assets\/img\/[\w\/.-]+\.(?:avif|webp|jpg|png))(?![?\w])/g, (m, url) => {
+    if (!imgVersion.has(url)) {
+      const f = path.join(ROOT, url);
+      imgVersion.set(url, fs.existsSync(f)
+        ? createHash('md5').update(fs.readFileSync(f)).digest('hex').slice(0, 8) : '');
+    }
+    const v = imgVersion.get(url);
+    return v ? `${url}?v=${v}` : url;
+  });
+}
+
 function write(rel, html) {
   const file = path.join(ROOT, rel);
   fs.mkdirSync(path.dirname(file), { recursive: true });
-  const out = rel.endsWith('.html') ? applyBase(html) : html;
+  const out = rel.endsWith('.html') ? applyBase(versionImages(html)) : html;
   fs.writeFileSync(file, out.replace(/\n{3,}/g, '\n\n'));
   written++;
 }
