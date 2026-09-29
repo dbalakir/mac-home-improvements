@@ -1,5 +1,5 @@
 /* ==========================================================================
-   MAC Home Improvements — static site generator
+   M&C Home Improvements — static site generator
    --------------------------------------------------------------------------
    Reads content.mjs, writes plain .html files to the repo root. GitHub Pages
    serves those files directly; there is no build step on the server and no
@@ -111,15 +111,13 @@ function picture(slug, { sizes, cls = '', lazy = true, altOverride = null } = {}
 }
 
 /* --- chrome -------------------------------------------------------------- */
-/* The MAC lockup: a mitred roof chevron over the name, set in the site's own
-   type rather than a raster so it stays crisp at every size and inherits
-   colour from wherever it sits. The favicon is the same chevron. */
-function lockup() {
-  return `<span class="lockup" aria-hidden="true">
-        <svg class="lockup__roof" viewBox="0 0 64 26" width="64" height="26"><path d="M3 23L32 3L61 23" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linejoin="miter" stroke-linecap="butt"/></svg>
-        <span class="lockup__name">MAC</span>
-        <span class="lockup__sub">Home Improvements</span>
-      </span>`;
+/* The M&C logo, from assets/logo-src/ (regenerate with tools/logo.py). The masthead and
+   footer are navy, so both use the white version. */
+function lockup(where = 'header') {
+  const w = where === 'footer' ? 320 : 220;  // 1x widths; CSS sets display size
+  return `<img class="lockup lockup--${where}" src="/assets/img/logo/mc-light-${w * 2}.png"
+        srcset="/assets/img/logo/mc-light-${w}.png 1x, /assets/img/logo/mc-light-${w * 2}.png 2x"
+        width="${w}" height="${Math.round(w * 700 / 1603)}" alt="" decoding="async">`;
 }
 
 function header(current) {
@@ -197,7 +195,7 @@ function footer() {
 
   return `<footer class="footer">
   <div class="wrap">
-    <a class="footer__logo" href="/" aria-label="${esc(BIZ.legal)}, home">${lockup()}</a>
+    <a class="footer__logo" href="/" aria-label="${esc(BIZ.legal)}, home">${lockup('footer')}</a>
     <div class="footer__cols">
       <div>
         <h2>Contact</h2>
@@ -303,7 +301,6 @@ function layout({ title, desc, url, body, current, jsonld = [], heroImage = null
 <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/archivo-latin.woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/site.css">${heroPreload}
 <link rel="icon" href="/assets/favicon.ico" sizes="16x16 32x32 48x48">
-<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">${ld}${analytics}
 </head>
@@ -847,7 +844,7 @@ function buildService(s) {
   const kids = childrenOf(s.href);
   const parent = parentOf(s);
 
-  /* "Also from MAC" leads with the pages closest to this one — the material
+  /* "Also from M&C" leads with the pages closest to this one — the material
      pages under a hub, or the siblings under the same hub — then falls back
      to the rest of the top-level list. Three cards, never a duplicate. */
   const near = parent ? [parent, ...childrenOf(parent.href)] : kids;
@@ -1067,7 +1064,7 @@ function buildAbout() {
     <div>
       <h2 class="h-sub reveal">A family business, working where we live</h2>
       <div class="prose reveal" style="margin-top:1.25rem">
-        <p>MAC has been serving homeowners across Northern Virginia since ${BIZ.since}. We are family-operated (two brothers and a crew), which means the people who quote your job are the same people on site while it is being built. There is no sales layer between you and the work.</p>
+        <p>M&amp;C has been serving homeowners across Northern Virginia since ${BIZ.since}. We are family-operated (two brothers and a crew), which means the people who quote your job are the same people on site while it is being built. There is no sales layer between you and the work.</p>
         <p>Our roots are local, and so is our pride in every project we take on. Most of our work comes through word of mouth and repeat customers, which is a standard that keeps us honest: we would rather keep a customer for a decade than win one job.</p>
       </div>
     </div>
@@ -1119,8 +1116,8 @@ ${areasSection()}
 ${ctaBand()}`;
 
   write('about-us/index.html', layout({
-    title: `About MAC Home Improvements | Masonry in Northern Virginia`,
-    desc: `MAC Home Improvements is a family-operated masonry and stonework contractor serving Northern Virginia since ${BIZ.since}. Meet the team and how we work.`,
+    title: `About M&C Home Improvements | Masonry in Northern Virginia`,
+    desc: `M&C Home Improvements is a family-operated masonry and stonework contractor serving Northern Virginia since ${BIZ.since}. Meet the team and how we work.`,
     url: '/about-us/',
     current: '/about-us/',
     trail,
@@ -1229,7 +1226,7 @@ ${ctaBand()}`;
 
   write('portfolio/index.html', layout({
     title: `Portfolio | Masonry & Stonework in Northern Virginia | ${BIZ.legal}`,
-    desc: 'Photographs of completed driveway, walkway, patio, step, and retaining wall projects by MAC Home Improvements across Northern Virginia.',
+    desc: 'Photographs of completed driveway, walkway, patio, step, and retaining wall projects by M&C Home Improvements across Northern Virginia.',
     url: '/portfolio/',
     current: '/projects/',
     trail,
@@ -1258,7 +1255,7 @@ function buildReviews() {
   <div class="wrap">
     <p class="eyebrow">Reviews</p>
     <h1 class="h-display">What customers say</h1>
-    <p class="lede">MAC has <strong>${BIZ.reviewCount} five-star reviews on ${BIZ.ratingSource}</strong>, a straight ${BIZ.rating} on both. A selection is reproduced below, as written by the customers who left them.</p>
+    <p class="lede">M&amp;C has <strong>${BIZ.reviewCount} five-star reviews on ${BIZ.ratingSource}</strong>, a straight ${BIZ.rating} on both. A selection is reproduced below, as written by the customers who left them.</p>
     <div class="hero__actions" style="margin-top:2rem">
       <a class="btn btn--solid" href="${BIZ.googleProfileUrl}" rel="noopener">Read our reviews on Google</a>
       <a class="btn btn--ghost" href="${BIZ.ratingUrl}" rel="noopener">Verify on HomeAdvisor</a>
@@ -1280,7 +1277,7 @@ ${ctaBand()}`;
 
   write('reviews/index.html', layout({
     title: `Reviews | ${BIZ.legal} | ${BIZ.rating}/5 in Northern Virginia`,
-    desc: `${BIZ.reviewCount} five-star customer reviews of MAC Home Improvements on ${BIZ.ratingSource}, for masonry and stonework across Northern Virginia.`,
+    desc: `${BIZ.reviewCount} five-star customer reviews of M&C Home Improvements on ${BIZ.ratingSource}, for masonry and stonework across Northern Virginia.`,
     url: '/reviews/',
     current: '/reviews/',
     trail,
@@ -1437,7 +1434,7 @@ function buildContact() {
 
   write('get-your-free-estimate/index.html', layout({
     title: `Get Your Free Estimate | ${BIZ.legal}`,
-    desc: `Request a free, itemized masonry or stonework estimate from MAC Home Improvements. Serving Northern Virginia. Call ${BIZ.phone}.`,
+    desc: `Request a free, itemized masonry or stonework estimate from M&C Home Improvements. Serving Northern Virginia. Call ${BIZ.phone}.`,
     url: '/get-your-free-estimate/',
     current: '/get-your-free-estimate/',
     trail,
@@ -1479,7 +1476,7 @@ function buildAreas() {
   <div class="wrap">
     <p class="eyebrow">Where we work</p>
     <h1 class="h-display">Service areas</h1>
-    <p class="lede">MAC works throughout Northern Virginia. Estimates are free everywhere on this list. If you are just outside it, call and ask, because we often can.</p>
+    <p class="lede">M&amp;C works throughout Northern Virginia. Estimates are free everywhere on this list. If you are just outside it, call and ask, because we often can.</p>
   </div>
 </section>
 
@@ -1522,7 +1519,7 @@ ${ctaBand()}`;
 
   write('service-areas/index.html', layout({
     title: `Service Areas | Masonry in Northern Virginia | ${BIZ.legal}`,
-    desc: 'MAC Home Improvements covers Alexandria, Arlington, Falls Church, McLean, Vienna, Fairfax, Annandale, and Springfield. Free estimates.',
+    desc: 'M&C Home Improvements covers Alexandria, Arlington, Falls Church, McLean, Vienna, Fairfax, Annandale, and Springfield. Free estimates.',
     url: '/service-areas/',
     current: '',
     trail,
@@ -1542,7 +1539,7 @@ ${ctaBand()}`;
     write(`service-areas/${slug}/index.html`, layout({
       title: `Masonry & Stonework in ${a} | ${BIZ.legal}`,
       desc: metaDesc(
-        `MAC Home Improvements provides driveway paving, patios, walkways, retaining walls,`
+        `M&C Home Improvements provides driveway paving, patios, walkways, retaining walls,`
         + ` and masonry repair in ${a}. Family-operated since ${BIZ.since}.`,
         'Free estimates.'),
       url: `/service-areas/${slug}/`,
@@ -1568,7 +1565,7 @@ ${ctaBand()}`;
   <div class="wrap">
     <p class="eyebrow">Service area</p>
     <h1 class="h-display" style="max-width:18ch">Masonry &amp; Stonework in ${esc(a)}</h1>
-    <p class="lede">MAC Home Improvements has built driveways, patios, walkways, steps, and stone walls for homeowners in ${esc(city)} since ${BIZ.since}. We are family-operated, work throughout Northern Virginia, and estimates here are free.</p>
+    <p class="lede">M&amp;C Home Improvements has built driveways, patios, walkways, steps, and stone walls for homeowners in ${esc(city)} since ${BIZ.since}. We are family-operated, work throughout Northern Virginia, and estimates here are free.</p>
     <div class="hero__actions" style="margin-top:2rem">
       <a class="btn btn--solid" href="/get-your-free-estimate/">Get a Free Estimate</a>
       <a class="btn btn--ghost tel" href="${BIZ.phoneHref}">${BIZ.phone}</a>

@@ -1,9 +1,9 @@
-# MAC Home Improvements — website
+# M&C Home Improvements — website
 
-> Forked from the MAC Home Improvements site (same structure and copy) with a
+> Forked from the M&C Home Improvements site (same structure and copy) with a
 > midnight-navy + brass palette, rounder geometry, and an inline-SVG lockup
 > in place of the raster logo. Search `TODO` in `content.mjs` for the
-> MAC-specific values still to fill in.
+> M&C-specific values still to fill in.
 
 Static site for [machomeimprovements.com](https://machomeimprovements.com).
 No framework and no server-side build. GitHub Pages serves the `.html` files in

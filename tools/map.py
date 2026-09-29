@@ -16,7 +16,7 @@ if not os.path.exists(SRC):
     print('downloading county boundaries…')
     urllib.request.urlretrieve(SRC_URL, SRC)
 
-# Jurisdictions MAC actually serves — drawn filled and outlined.
+# Jurisdictions M&C actually serves — drawn filled and outlined.
 SERVED = {
     '51059': 'Fairfax County',
     '51600': 'Fairfax City',
@@ -126,7 +126,7 @@ parts.append(
     f'<svg class="areamap" viewBox="0 0 {W:.0f} {H:.0f}" role="img" '
     f'aria-labelledby="areamap-t areamap-d" xmlns="http://www.w3.org/2000/svg">'
 )
-parts.append('<title id="areamap-t">MAC Home Improvement service area map</title>')
+parts.append('<title id="areamap-t">M&C Home Improvements service area map</title>')
 parts.append(
     '<desc id="areamap-d">Northern Virginia and Washington DC, with '
     + ', '.join(v for v in SERVED.values())

@@ -1,5 +1,5 @@
 /* ==========================================================================
-   MAC Home Improvements
+   M&C Home Improvements
    Single stylesheet. No framework, no build step, no JavaScript.
    ========================================================================== */
 
@@ -257,44 +257,10 @@ a { color: inherit; }
   margin-right: auto;
   min-height: 44px;
 }
-/* The lockup is live type plus one SVG stroke — no raster, so it is sharp at
-   every density and takes its colour from wherever it sits. The roof is
-   brass; the name is ink. */
-.lockup {
-  display: inline-grid;
-  justify-items: center;
-  line-height: 1;
-  color: var(--ink);
-}
-.lockup__roof {
-  width: 62px;
-  height: auto;
-  color: var(--brass);
-  margin-bottom: 3px;
-  overflow: visible;
-}
-.lockup__name {
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 1.45rem;
-  letter-spacing: 0.14em;
-  /* Tracking adds space after the last letter too; pull it back so the
-     name centres optically under the roof. */
-  margin-right: -0.14em;
-}
-.lockup__sub {
-  margin-top: 4px;
-  font-size: 0.5rem;
-  font-weight: 600;
-  letter-spacing: 0.26em;
-  text-transform: uppercase;
-  color: var(--ink-dim);
-  margin-right: -0.26em;
-}
-@media (max-width: 520px) {
-  .lockup__roof { width: 54px; }
-  .lockup__name { font-size: 1.28rem; }
-}
+/* The logo is the client's own artwork, rendered white for the navy chrome. */
+.lockup { display: block; height: auto; background: none; }
+.lockup--header { width: 170px; }
+@media (max-width: 520px) { .lockup--header { width: 136px; } }
 
 .nav { display: flex; align-items: center; gap: 1.6rem; list-style: none; }
 .nav a {
@@ -913,9 +879,7 @@ a { color: inherit; }
   margin-bottom: 2.5rem;
   text-decoration: none;
 }
-.footer__logo .lockup__roof { width: 104px; margin-bottom: 6px; }
-.footer__logo .lockup__name { font-size: 2.1rem; }
-.footer__logo .lockup__sub { font-size: 0.62rem; margin-top: 6px; }
+.footer__logo .lockup { width: 220px; }
 
 .footer__cols {
   display: grid;
@@ -1355,7 +1319,7 @@ a { color: inherit; }
 }
 
 /* ==========================================================================
-   MAC theme
+   M&C theme
    One light theme, whatever the visitor's system setting: limestone ground,
    navy and brass as accents. The masthead, footer and closing card are
    navy chrome; the page itself never flips theme mid-scroll. The one bold move is the hero: the photograph cut
@@ -1597,7 +1561,6 @@ h1, h2, h3, h4 { font-stretch: 112%; font-weight: 700; letter-spacing: -0.02em; 
 .footer a:hover { color: var(--brass); text-decoration: none; }
 .footer__base p { color: var(--ink-dim); }
 .footer__brand { font-stretch: 112%; }
-.lockup__name { font-stretch: 118%; font-weight: 800; letter-spacing: 0.08em; margin-right: -0.08em; }
 
 /* --- Stillness -------------------------------------------------------------
    Nothing on the page moves on its own. Hover and press states change colour

@@ -1,5 +1,5 @@
 /* ==========================================================================
-   MAC Home Improvements — site content
+   M&C Home Improvements — site content
    --------------------------------------------------------------------------
    Everything you would want to edit lives in this file. Change it, then run
    `node build.mjs` to regenerate the HTML.
@@ -8,20 +8,20 @@
    ========================================================================== */
 
 export const BIZ = {
-  name: 'MAC Home Improvements',
-  legal: 'MAC Home Improvements',
+  name: 'M&C Home Improvements',
+  legal: 'M&C Home Improvements LLC',
   tagline: 'Masonry, Stonework, Roofing & Siding · Northern Virginia',
   phone: '(703) 929-1621',
   phoneHref: 'tel:+17039291621',
-  email: 'info@machomeimprovements.com',   // TODO: MAC email
+  email: 'info@machomeimprovements.com',   // TODO: M&C email
   city: 'Northern Virginia',
   since: '2010',
-  facebook: '#',                 // TODO: MAC Facebook page
+  facebook: '#',                 // TODO: M&C Facebook page
   origin: 'https://machomeimprovements.com',   // TODO: confirm domain
 
   // --- TODO: confirm before launch -------------------------------------
   // Fill these in and rebuild; the build drops the line entirely if empty.
-  license: '',              // TODO: MAC license #   // VA DPOR number, rendered as "License #…"
+  license: '',              // TODO: M&C license #   // VA DPOR number, rendered as "License #…"
   // Business address. Shown in the footer and contact page, and used in the
   // LocalBusiness schema. Leave street blank to show the service area only.
   street: '5510 Cherokee Ave, Ste 300',
@@ -43,14 +43,14 @@ export const BIZ = {
   reviewCount: '90+',
   ratingSource: 'Google and HomeAdvisor',
 
-  // TODO: MAC's own Google Business Profile and HomeAdvisor links.
+  // TODO: M&C's own Google Business Profile and HomeAdvisor links.
   googleProfileUrl: '#',
   googleReviewUrl: '#',
   ratingUrl: '#',
 
   // Paste your Formspree form ID here (formspree.io -> New Form).
   // Until it is set, the estimate form falls back to an email link.
-  formspreeId: '',   // TODO: MAC's own Formspree form
+  formspreeId: '',   // TODO: M&C's own Formspree form
 
   // --- Analytics & search-console verification ---------------------------
   // Both lines are dropped entirely from the HTML while blank, so the site is
@@ -1192,7 +1192,7 @@ export const SERVICES = [
 ];
 
 /* --- Real customer reviews ----------------------------------------------
-   Verbatim from the MAC HomeAdvisor profile (5.0 / 13 reviews).
+   Verbatim from the Onyx HomeAdvisor profile (5.0 / 13 reviews).
    Reviews sourced from Google are marked so.
    ------------------------------------------------------------------------ */
 export const REVIEWS = [
@@ -1375,7 +1375,7 @@ export const PROJECTS = [
       'Full-width asphalt mat laid and roller-compacted hot',
     ],
     w: 1200, h: 722,
-    alt: 'MAC crew compacting a freshly laid asphalt driveway with a ride-on roller at a Springfield home',
+    alt: 'M&C crew compacting a freshly laid asphalt driveway with a ride-on roller at a Springfield home',
     summary: 'A full-width asphalt replacement, photographed mid-compaction with the roller working the fresh mat.',
     body: [
       'This is what the middle of an asphalt job looks like. The mat has been laid and the ride-on roller is compacting it while the material is still hot. Compaction is the step that decides how long the surface lasts, and it has a window measured in minutes, not hours. Get it right and the driveway sheds water for two decades; rush it and the surface ravels at the edges within a few winters.',
@@ -1435,7 +1435,7 @@ export const PROJECTS = [
       'Perimeter cut to fit so the field meets its border cleanly',
     ],
     w: 1200, h: 900,
-    alt: 'MAC mason setting red clay brick pavers in a herringbone pattern with a mallet during installation in Arlington',
+    alt: 'M&C mason setting red clay brick pavers in a herringbone pattern with a mallet during installation in Arlington',
     summary: 'Red clay brick set in a herringbone bond, photographed during installation with the field being closed unit by unit.',
     body: [
       'Herringbone is the strongest bond you can lay in a brick field, which is why it is worth the extra labour it costs. Every unit locks against its neighbours in two directions, so the surface distributes load instead of letting individual bricks work loose, the reason it has been the pattern of choice for paved surfaces since long before anyone was laying them by machine.',
@@ -1595,8 +1595,8 @@ export const FAQ = [
     a: ['No. Estimates are free across our entire service area. We come out, look at the site, talk through what you are trying to accomplish, and give you a written price with no obligation.'],
   },
   {
-    q: 'How long has MAC been in business?',
-    a: ['We have been serving homeowners across Northern Virginia since 2010. MAC is family-operated: you deal with the owners directly, not a salesperson, and the same people who quote the job are on site while it is being built.'],
+    q: 'How long has M&C been in business?',
+    a: ['We have been serving homeowners across Northern Virginia since 2010. M&C is family-operated: you deal with the owners directly, not a salesperson, and the same people who quote the job are on site while it is being built.'],
   },
   {
     q: 'What areas do you serve?',
