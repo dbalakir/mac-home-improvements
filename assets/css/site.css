@@ -1515,12 +1515,11 @@ h1, h2, h3, h4 { font-stretch: 112%; font-weight: 700; letter-spacing: -0.02em; 
 
 /* --- Service grid: an uneven bond rather than three equal columns -------- */
 .grid--bento { grid-template-columns: repeat(4, 1fr); gap: clamp(1.5rem, 2.6vw, 2.25rem) clamp(1.25rem, 2vw, 1.75rem); }
-.grid--bento > .card:nth-child(1),
-.grid--bento > .card:nth-child(6) { grid-column: span 2; }
-.grid--bento > .card:nth-child(1) .card__media,
-.grid--bento > .card:nth-child(6) .card__media { aspect-ratio: 16 / 9.4; }
-.grid--bento > .card:nth-child(1) h3,
-.grid--bento > .card:nth-child(6) h3 { font-size: 1.5rem; }
+/* Twelve services in a four-column bond: two wide tiles per pair of rows,
+   staggered so no two wide tiles stack. 12 cards + 4 extra cells = 16. */
+.grid--bento > .card:is(:nth-child(1), :nth-child(6), :nth-child(7), :nth-child(12)) { grid-column: span 2; }
+.grid--bento > .card:is(:nth-child(1), :nth-child(6), :nth-child(7), :nth-child(12)) .card__media { aspect-ratio: 16 / 9.4; }
+.grid--bento > .card:is(:nth-child(1), :nth-child(6), :nth-child(7), :nth-child(12)) h3 { font-size: 1.5rem; }
 @media (max-width: 1000px) {
   .grid--bento { grid-template-columns: repeat(2, 1fr); }
   .grid--bento > .card:nth-child(n) { grid-column: auto; }

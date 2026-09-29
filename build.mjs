@@ -632,7 +632,7 @@ const LOCAL_BUSINESS = {
   telephone: BIZ.phone,
   email: BIZ.email,
   foundingDate: BIZ.since,
-  description: 'Family-operated masonry and stonework contractor serving Northern Virginia and Washington DC since 2010. Driveways, patios, walkways, retaining walls, stone veneer, chimney and foundation repair.',
+  description: 'Family-operated masonry, stonework, roofing and siding contractor serving Northern Virginia since 2010. Driveways, patios, walkways, retaining walls, stone veneer, chimney and foundation repair, drainage, roofing, and siding.',
   image: BIZ.origin + '/assets/img/hero-driveway-1200.webp',
   address: {
     '@type': 'PostalAddress',
@@ -688,7 +688,7 @@ function buildHome() {
   <div class="wrap hero__inner">
     <p class="eyebrow">Family-operated in Northern Virginia since ${BIZ.since}</p>
     <h1 class="h-display">Northern Virginia&rsquo;s Driveway, Hardscape &amp; Masonry Specialists</h1>
-    <p class="hero__lede">Paver, asphalt, and concrete driveways, patios, walkways, retaining walls, and stonework throughout Northern Virginia and Washington DC. Free written estimates, and the owners are on site for every job (<a href="/about-us/">read our story</a>).</p>
+    <p class="hero__lede">Paver, asphalt, and concrete driveways, patios, walkways, retaining walls, and stonework throughout Northern Virginia. Free written estimates, and the owners are on site for every job (<a href="/about-us/">read our story</a>).</p>
     <div class="hero__actions">
       <a class="btn btn--solid" href="/get-your-free-estimate/">Get a Free Estimate</a>
       <a class="btn btn--ghost tel" href="${BIZ.phoneHref}">${BIZ.phone}</a>
@@ -935,7 +935,7 @@ ${ctaBand()}`;
 
   write(s.href.replace(/^\//, '') + 'index.html', layout({
     title: `${s.title} in Northern Virginia | ${BIZ.legal}`,
-    desc: metaDesc(smart(s.card), `Free estimates across Northern Virginia and DC. Call ${BIZ.phone}.`),
+    desc: metaDesc(smart(s.card), `Free estimates across Northern Virginia. Call ${BIZ.phone}.`),
     url: s.href,
     current: '/services/',
     trail,
@@ -1017,7 +1017,7 @@ ${ctaBand()}`;
 
   write('services/index.html', layout({
     title: `Masonry & Stonework Services in Northern Virginia | ${BIZ.legal}`,
-    desc: 'Asphalt, concrete, and paver driveways, patios, walkways and steps, retaining walls, brickwork, drainage, chimney and foundation repair across Northern Virginia and DC.',
+    desc: 'Asphalt, concrete, and paver driveways, patios, walkways and steps, retaining walls, brickwork, drainage, chimney and foundation repair, roofing, and siding across Northern Virginia.',
     url: '/services/',
     current: '/services/',
     trail,
@@ -1123,7 +1123,7 @@ function buildProjects() {
   <div class="wrap">
     <p class="eyebrow">Recent work</p>
     <h1 class="h-display" style="max-width:16ch">Projects we have built.</h1>
-    <p class="lede">Completed jobs across Northern Virginia and Washington DC, each with its own page: what was built, what it was built from, where it is, and what the work actually involved. Every photograph is our own.</p>
+    <p class="lede">Completed jobs across Northern Virginia, each with its own page: what was built, what it was built from, where it is, and what the work actually involved. Every photograph is our own.</p>
     <div class="hero__actions" style="margin-top:2rem">
       <a class="btn btn--solid" href="/get-your-free-estimate/">Get a Free Estimate</a>
       <a class="btn btn--ghost" href="/portfolio/">Browse the photo gallery</a>
@@ -1150,7 +1150,7 @@ ${ctaBand()}`;
   write('projects/index.html', layout({
     title: `Recent Projects | Masonry & Hardscape in Northern Virginia | ${BIZ.legal}`,
     desc: metaDesc(
-      `Completed driveway, patio, walkway, step, and retaining wall projects by ${BIZ.legal} across Northern Virginia and DC.`,
+      `Completed driveway, patio, walkway, step, and retaining wall projects by ${BIZ.legal} across Northern Virginia.`,
       'Materials, locations, and photographs of the finished work.'),
     url: '/projects/',
     current: '/projects/',
@@ -1187,7 +1187,7 @@ function buildPortfolio() {
   <div class="wrap">
     <p class="eyebrow">Photo gallery</p>
     <h1 class="h-display">Portfolio</h1>
-    <p class="lede">Driveways, walkways, patios, steps, and stone walls built across Northern Virginia and Washington DC. Every photograph here is our own work.</p>
+    <p class="lede">Driveways, walkways, patios, steps, and stone walls built across Northern Virginia. Every photograph here is our own work.</p>
     <div class="hero__actions" style="margin-top:2rem">
       <a class="btn btn--solid" href="/projects/">See individual projects</a>
       <a class="btn btn--ghost" href="/get-your-free-estimate/">Get a Free Estimate</a>
@@ -1417,7 +1417,7 @@ function buildContact() {
 
   write('get-your-free-estimate/index.html', layout({
     title: `Get Your Free Estimate | ${BIZ.legal}`,
-    desc: `Request a free, itemized masonry or stonework estimate from MAC Home Improvements. Serving Northern Virginia and Washington DC. Call ${BIZ.phone}.`,
+    desc: `Request a free, itemized masonry or stonework estimate from MAC Home Improvements. Serving Northern Virginia. Call ${BIZ.phone}.`,
     url: '/get-your-free-estimate/',
     current: '/get-your-free-estimate/',
     trail,
@@ -1459,7 +1459,7 @@ function buildAreas() {
   <div class="wrap">
     <p class="eyebrow">Where we work</p>
     <h1 class="h-display">Service areas</h1>
-    <p class="lede">MAC works throughout Northern Virginia and Washington DC. Estimates are free everywhere on this list. If you are just outside it, call and ask, because we often can.</p>
+    <p class="lede">MAC works throughout Northern Virginia. Estimates are free everywhere on this list. If you are just outside it, call and ask, because we often can.</p>
   </div>
 </section>
 
@@ -1467,8 +1467,8 @@ function buildAreas() {
   <div class="wrap map-grid">
     <div class="reveal areamap-col">${areaMap('hero')}</div>
     <div>
-      <h2 class="h-sub reveal">From Clifton to the District</h2>
-      <p class="lede reveal" style="margin-top:1rem">Shaded areas are the counties and independent cities we work in. Towns like Vienna, Burke, and Fairfax Station sit inside Fairfax County, so they are marked with pins rather than their own outline.</p>
+      <h2 class="h-sub reveal">From McLean to Springfield</h2>
+      <p class="lede reveal" style="margin-top:1rem">Shaded areas are the counties and independent cities we work in. Towns like Vienna, McLean, Annandale, and Springfield sit inside Fairfax County, so they are marked with pins rather than their own outline.</p>
       <ul class="map-legend reveal">
         <li><i></i>Jurisdictions we serve</li>
         <li><i class="is-pin"></i>Cities and towns</li>
@@ -1501,8 +1501,8 @@ ${serviceGrid()}
 ${ctaBand()}`;
 
   write('service-areas/index.html', layout({
-    title: `Service Areas | Masonry in Northern Virginia & DC | ${BIZ.legal}`,
-    desc: 'MAC Home Improvements covers Fairfax, Arlington, Alexandria, Vienna, Falls Church, Burke, Fairfax Station, Springfield, and Washington DC. Free estimates.',
+    title: `Service Areas | Masonry in Northern Virginia | ${BIZ.legal}`,
+    desc: 'MAC Home Improvements covers Alexandria, Arlington, Falls Church, McLean, Vienna, Fairfax, Annandale, and Springfield. Free estimates.',
     url: '/service-areas/',
     current: '',
     trail,
@@ -1756,7 +1756,7 @@ ${ctaBand()}`;
     title: `Workmanship Warranty | ${BIZ.legal}`,
     desc: metaDesc(
       'Written workmanship warranties on every installation: five years on concrete, pavers, masonry, and retaining walls, three years on asphalt and drainage.',
-      `Free estimates across Northern Virginia and DC. Call ${BIZ.phone}.`),
+      `Free estimates across Northern Virginia. Call ${BIZ.phone}.`),
     url: '/warranty/',
     current: '/warranty/',
     trail,

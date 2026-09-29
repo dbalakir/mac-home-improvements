@@ -23,10 +23,10 @@ SERVED = {
     '51610': 'Falls Church',
     '51013': 'Arlington',
     '51510': 'Alexandria',
-    '11001': 'Washington, D.C.',
 }
 # Neighbouring jurisdictions, drawn faintly so the served area has context.
 CONTEXT = {
+    '11001': 'Washington, D.C.',
     '51107': 'Loudoun', '51153': 'Prince William', '51179': 'Stafford',
     '51177': 'Spotsylvania', '51061': 'Fauquier', '51610': None,
     '24031': 'Montgomery', '24033': "Prince George's", '24021': 'Frederick',
@@ -35,24 +35,24 @@ CONTEXT = {
     '51047': 'Culpeper', '24017': 'Charles', '51057': 'Essex',
 }
 
-# Pins. Towns inside Fairfax County (Vienna, Burke, Fairfax Station) have no
-# separate boundary of their own, so they only appear as pins.
+# Pins. Towns inside Fairfax County (Vienna, McLean, Annandale, Springfield)
+# have no separate boundary of their own, so they only appear as pins.
 PINS = [
     # name, lat, lon, text-anchor, dy nudge (viewBox units)
-    ('Vienna',          38.9012, -77.2653, 'start', -14),
-    ('Falls Church',    38.8823, -77.1711, 'end',     8),
-    ('Washington, DC',  38.9072, -77.0369, 'start', -16),
-    ('Arlington',       38.8816, -77.0910, 'start',  30),
-    ('Alexandria',      38.8048, -77.0469, 'start',   6),
-    ('Fairfax',         38.8462, -77.3064, 'end',     8),
-    ('Fairfax Station', 38.8043, -77.3225, 'end',     0),
-    ('Burke',           38.7934, -77.2717, 'start',  10),
+    ('McLean',        38.9339, -77.1773, 'end',   -10),
+    ('Vienna',        38.9012, -77.2653, 'end',    -8),
+    ('Falls Church',  38.8823, -77.1711, 'end',    14),
+    ('Arlington',     38.8816, -77.0910, 'start',   0),
+    ('Alexandria',    38.8048, -77.0469, 'start',   6),
+    ('Fairfax',       38.8462, -77.3064, 'end',     8),
+    ('Annandale',     38.8304, -77.1964, 'start',   4),
+    ('Springfield',   38.7893, -77.1872, 'start',  12),
 ]
 
 # Towns that appear only as a pin, for the <desc>. Kept explicit rather than
 # derived: the pin names and the SERVED labels are deliberately spelled
 # differently ("Fairfax" vs "Fairfax City"), so no join between them is safe.
-PIN_ONLY = ['Vienna', 'Burke', 'Fairfax Station']
+PIN_ONLY = ['Vienna', 'McLean', 'Annandale', 'Springfield']
 
 # Viewport in degrees, chosen so the served band reads roughly square.
 LON0, LON1 = -77.60, -76.85

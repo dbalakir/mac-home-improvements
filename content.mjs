@@ -10,7 +10,7 @@
 export const BIZ = {
   name: 'MAC Home Improvements',
   legal: 'MAC Home Improvements',
-  tagline: 'Masonry & Stonework · Northern Virginia · Washington DC',
+  tagline: 'Masonry, Stonework, Roofing & Siding · Northern Virginia',
   phone: '(703) 929-1621',
   phoneHref: 'tel:+17039291621',
   email: 'info@machomeimprovements.com',   // TODO: MAC email
@@ -111,7 +111,7 @@ export const SERVICES = [
     // On /services/ this hub stands aside and its three material pages take
     // the slot instead — see buildServicesIndex() in build.mjs.
     splitOnIndex: true,
-    card: 'Asphalt, concrete, and paver driveways across Northern Virginia and DC. Base prep done right, every layer laid the way it should be.',
+    card: 'Asphalt, concrete, and paver driveways across Northern Virginia. Base prep done right, every layer laid the way it should be.',
     image: 'driveway-paver-grey',
     feature: 'driveway-circle',
     gallery: ['driveway-circle', 'driveway-paver-grey', 'driveway-asphalt-new', 'driveway-roller', 'driveway-paver-tan', 'driveway-crew'],
@@ -1109,6 +1109,86 @@ export const SERVICES = [
       },
     ],
   },
+  {
+    slug: 'roofing',
+    process: [
+      ['Inspection from the roof, not just the ground', 'We check the surface, the flashing at walls, valleys, vents, and the chimney, the gutters, and the attic side where we can get to it. Most leaks start at a joint rather than in the middle of a slope.'],
+      ['Written scope', 'You get an itemized estimate that separates what needs doing now from what can wait, and says plainly whether repair or replacement is the honest answer.'],
+      ['Tear-off and deck check', 'On a replacement, the old roofing comes off down to the deck so we can see its condition. Soft or damaged decking is replaced before anything new goes on.'],
+      ['Underlayment, flashing, and roofing', 'Underlayment and ice and water protection go down first, flashing is reset at every wall, valley, and penetration, and then the new roof is installed.'],
+      ['Cleanup', 'Debris is cleared from the roof, the gutters, and the grounds at the end of every day.'],
+    ],
+    faq: [
+      { q: 'Do I need a new roof or just a repair?',
+        a: ['It depends on the age of the roof and whether the problem is local or widespread. A single leak at a flashing or a few damaged shingles is a repair. Curling, cracking, or granule loss across the whole surface usually means the roof is at the end of its life. We tell you which one we see.'] },
+      { q: 'Where do most roof leaks start?',
+        a: ['At the joints: flashing around chimneys, walls, and vents, and in the valleys where two slopes meet. The stain inside is often some distance from where the water actually gets in, which is why we trace it from the roof side.'] },
+      { q: 'Can you repair the flashing around my chimney?',
+        a: ['Yes. Because we do chimney masonry as well as roofing, we can repair the brick and reset the flashing in the same job, rather than you coordinating two trades at the one joint where they meet.'] },
+    ],
+    href: '/exterior/roofing/',
+    title: 'Roofing',
+    group: 'Roofing & Siding',
+    card: 'Roof replacement and repair, including the flashing, valleys, and details where the roof meets walls and chimneys.',
+    image: 'veneer-siding',
+    feature: 'veneer-siding',
+    gallery: ['veneer-siding'],
+    h1: 'Roof Replacement and Repair',
+    intro: 'A roof keeps water out of everything underneath it, and most roof problems are water problems long before they are visible ones. Whether you need a leak traced and repaired or a full replacement, we look at the whole roof before we price any of it.',
+    sections: [
+      {
+        h: 'Signs your roof needs attention',
+        p: ['Roofs fail gradually. These are the signs worth acting on before water reaches the ceiling:'],
+        list: [
+          ['Missing, cracked, or curling shingles', 'Damaged shingles expose the layers underneath to the weather.'],
+          ['Granules in the gutters', 'Shingles shed their protective granules as they age. A lot of it in the gutters means the surface is wearing out.'],
+          ['Stains on ceilings or in the attic', 'Water marks mean water is already getting in somewhere above.'],
+          ['Lifted or rusted flashing', 'Flashing that has pulled away from a wall or chimney leaves a gap at exactly the point water collects.'],
+          ['Sagging areas', 'A dip in the roof line can point to damaged decking or framing underneath.'],
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'siding',
+    process: [
+      ['Walk the house', 'We look at every side of the house: the condition of the siding and trim, the joints around windows and doors, and anywhere water is getting behind the wall.'],
+      ['Written scope', 'An itemized estimate that says whether a repair will match and hold, or whether a wall or the whole house is due for new siding.'],
+      ['Remove and inspect', 'Old siding comes off where it is being replaced, so any damaged sheathing or wet framing is found and dealt with rather than covered over.'],
+      ['Wrap, flash, and install', 'House wrap and flashing go on first, detailed around every window, door, and penetration. Then the new siding and trim are installed.'],
+      ['Cleanup', 'Offcuts, nails, and old material are cleared from the site at the end of every day.'],
+    ],
+    faq: [
+      { q: 'Can you match my existing siding for a repair?',
+        a: ['Often, but not always. Siding fades and profiles get discontinued, so a patch on a sunny wall can stand out. We tell you before the work whether a close match is available, and whether residing one full wall would look better than patching it.'] },
+      { q: 'Can you combine siding with stone veneer?',
+        a: ['Yes. A stone veneer base or accent wall with siding above is a common combination, and since we do both, the transition between the two is detailed as one job.'] },
+      { q: 'Why do the trim and flashing matter so much?',
+        a: ['Most water damage behind siding starts at an opening rather than through the siding itself. Windows, doors, and the joints where walls meet the roof are where water finds its way in, so that is where the detailing has to be right.'] },
+    ],
+    href: '/exterior/siding/',
+    title: 'Siding',
+    group: 'Roofing & Siding',
+    card: 'Siding replacement and repair, with the trim, flashing, and openings detailed so water stays on the outside of the wall.',
+    image: 'chimney-home',
+    feature: 'chimney-home',
+    gallery: ['chimney-home'],
+    h1: 'Siding Installation and Repair',
+    intro: 'Siding is the weather skin of the house. When it cracks, warps, or comes loose, water gets behind it and into the wall. We replace damaged sections or reside the whole house, and pay the same attention to the trim and openings as to the siding itself.',
+    sections: [
+      {
+        h: 'Signs your siding needs work',
+        p: ['Siding problems usually show on the outside before the damage inside the wall becomes serious. Look for:'],
+        list: [
+          ['Cracked, warped, or loose panels', 'Damaged siding lets water reach the sheathing behind it.'],
+          ['Soft spots or rot', 'Wood or trim that gives under pressure means moisture has been getting in for some time.'],
+          ['Stains or peeling paint inside', 'Moisture coming through the wall shows up on interior walls near windows and corners.'],
+          ['Gaps around windows and doors', 'Failed caulk and flashing at openings are the most common point of entry.'],
+          ['Fading and chalking', 'Heavily weathered siding has lost much of its protection even if it is still in place.'],
+        ],
+      },
+    ],
+  },
 ];
 
 /* --- Real customer reviews ----------------------------------------------
@@ -1168,10 +1248,8 @@ export const FEATURED_REVIEWS = ['Susan D.', 'Bob R.', 'Nancy P.'];
 
 /* --- Service areas ------------------------------------------------------- */
 export const AREAS = [
-  'Fairfax, VA', 'Vienna, VA', 'Falls Church, VA', 'Arlington, VA',
-  'Alexandria, VA', 'McLean, VA', 'Tysons, VA', 'Reston, VA',
-  'Burke, VA', 'Fairfax Station, VA', 'Springfield, VA',
-  'Annandale, VA', 'Clifton, VA', 'Washington, DC',
+  'Alexandria, VA', 'Arlington, VA', 'Falls Church, VA', 'McLean, VA',
+  'Vienna, VA', 'Fairfax, VA', 'Annandale, VA', 'Springfield, VA',
 ];
 
 /* --- Portfolio ----------------------------------------------------------- */
@@ -1522,7 +1600,7 @@ export const FAQ = [
   },
   {
     q: 'What areas do you serve?',
-    a: ['Fairfax, Vienna, Falls Church, Arlington, Alexandria, McLean, Tysons, Reston, Burke, Fairfax Station, Springfield, Annandale, and Clifton in Virginia, plus Washington, DC. If you are just outside that list, call and ask. We often can.'],
+    a: ['Alexandria, Arlington, Falls Church, McLean, Vienna, Fairfax, Annandale, and Springfield. If you are just outside that list, call and ask. We often can.'],
   },
   {
     q: 'How long does a typical project take?',
