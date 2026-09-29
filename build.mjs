@@ -83,8 +83,11 @@ function picture(slug, { sizes, cls = '', lazy = true, altOverride = null } = {}
   const fallback = m.sizes[Math.min(1, m.sizes.length - 1)];
   const alt = esc(altOverride ?? m.alt);
   const loading = lazy ? ' loading="lazy" decoding="async"' : ' fetchpriority="high" decoding="async"';
-  return `<picture${cls ? ` class="${cls}"` : ''}>
-  <source type="image/avif" srcset="${srcset('avif')}" sizes="${sizes}">
+  // Retouched photos are re-encoded as WebP only (no AVIF encoder here), so
+  // offer the AVIF source only when every width actually exists on disk.
+  const hasAvif = m.sizes.every(s => fs.existsSync(path.join(ROOT, 'assets/img', `${slug}-${s.w}.avif`)));
+  return `<picture${cls ? ` class="${cls}"` : ''}>${hasAvif ? `
+  <source type="image/avif" srcset="${srcset('avif')}" sizes="${sizes}">` : ''}
   <source type="image/webp" srcset="${srcset('webp')}" sizes="${sizes}">
   <img src="/assets/img/${slug}-${fallback.w}.webp" srcset="${srcset('webp')}" sizes="${sizes}"
        width="${fallback.w}" height="${fallback.h}" alt="${alt}"${loading}>
@@ -236,9 +239,10 @@ function layout({ title, desc, url, body, current, jsonld = [], heroImage = null
   // Preload the hero so the LCP element starts downloading before the CSS has
   // parsed. imagesrcset/imagesizes must mirror the <picture> exactly, or the
   // browser treats the preload as a separate resource and fetches twice.
+  const heroExt = heroImage && IMG[heroImage] && IMG[heroImage].sizes.every(s => fs.existsSync(path.join(ROOT, 'assets/img', `${heroImage}-${s.w}.avif`))) ? 'avif' : 'webp';
   const heroPreload = heroImage && IMG[heroImage]
-    ? `\n<link rel="preload" as="image" type="image/avif" fetchpriority="high"`
-      + ` imagesrcset="${IMG[heroImage].sizes.map(s => `/assets/img/${heroImage}-${s.w}.avif ${s.w}w`).join(', ')}"`
+    ? `\n<link rel="preload" as="image" type="image/${heroExt}" fetchpriority="high"`
+      + ` imagesrcset="${IMG[heroImage].sizes.map(s => `/assets/img/${heroImage}-${s.w}.${heroExt} ${s.w}w`).join(', ')}"`
       + ` imagesizes="100vw">`
     : '';
 
