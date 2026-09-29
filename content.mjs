@@ -221,7 +221,7 @@ export const SERVICES = [
     slug: 'concrete-driveways',
     parent: '/masonry/driveway-paving/',
     warranty: ['concrete'],
-    reviewFrom: 'Bob R.',
+    reviewFrom: 'RJ C.',
     process: [
       ['Site visit and written estimate', 'We measure, check access for the truck, and agree the finish (broom, exposed aggregate, or stamped) before anything is priced. Finish affects cost, so it belongs in the estimate rather than in a conversation on pour day.'],
       ['Demolition and excavation', 'The old surface is broken out and hauled away, and the subgrade is cut to the depth the new slab and its base need.'],
@@ -295,7 +295,7 @@ export const SERVICES = [
     slug: 'paver-driveways',
     parent: '/masonry/driveway-paving/',
     warranty: ['pavers'],
-    reviewFrom: 'Erin J.',
+    reviewFrom: 'Eric O.',
     process: [
       ['Design and material selection', 'Pattern, colour, border, and any inlay are settled first, against the house rather than against a brochure. A driveway is the largest single surface on most properties and it sets the tone for everything else.'],
       ['Excavation', 'Dug out considerably deeper than a patio would be. A driveway carries vehicle loads, and the depth of the base is what carries them.'],
@@ -414,7 +414,7 @@ export const SERVICES = [
   {
     slug: 'retaining-walls',
     warranty: ['walls'],
-    reviewFrom: 'Nancy P.',
+    reviewFrom: 'Patricia W.',
     process: [
       ['Survey the slope and the water', 'We measure the grade, work out how much soil the wall actually has to hold, and trace where water moves across the site. Load and water are what size the wall; the look is chosen afterward.'],
       ['Design, engineering, and permits', 'Taller walls and walls carrying a surcharge such as a driveway need an engineered design and a permit. We tell you which category yours falls into before you commit, and confirm the requirement with your jurisdiction rather than guessing.'],
@@ -474,7 +474,7 @@ export const SERVICES = [
   },
   {
     slug: 'foundation-repair',
-    reviewFrom: 'Gemma V.',
+    reviewFrom: 'Jason S.',
     process: [
       ['Inspection and diagnosis', 'We look at the crack pattern, the direction of movement, and the ground around the house. What a crack looks like tells you a great deal about whether it is settlement, water, or seasonal movement, and those need different repairs.'],
       ['Find the water', 'Most foundation problems are water problems first. Gutters discharging at the wall, grade pitched toward the house, and a driveway or patio draining the wrong way are ordinary causes with ordinary fixes.'],
@@ -629,7 +629,7 @@ export const SERVICES = [
   {
     slug: 'patio-design',
     warranty: ['pavers', 'concrete', 'masonry'],
-    reviewFrom: 'Dani S.',
+    reviewFrom: 'Patricia W.',
     process: [
       ['How you will actually use it', 'Before any layout, we talk about what the space is for (dining, a fire feature, a route to somewhere else) and how many people at once. Patios that feel wrong are usually the right material at the wrong size.'],
       ['Layout and material selection', 'We set the shape and size out on the ground so you can walk it before anything is dug, and choose material against the house, the light, and the maintenance you are willing to do.'],
@@ -716,7 +716,7 @@ export const SERVICES = [
     slug: 'stamped-concrete-patios',
     parent: '/stone-work/patio-design/',
     warranty: ['concrete'],
-    reviewFrom: 'Gemma V.',
+    reviewFrom: 'Eric O.',
     process: [
       ['Pattern and colour selection', 'Pattern, base colour, and release colour are chosen together, because they only make sense together. We show you the combination rather than the swatch: a colour on a sample chip and the same colour across four hundred square feet are different experiences.'],
       ['Excavation and base', 'Dug out to depth and a compacted aggregate base laid in lifts. Stamped concrete is a slab like any other: it is rigid, and it needs a base that will not settle unevenly beneath it.'],
@@ -871,7 +871,7 @@ export const SERVICES = [
   {
     slug: 'stone-veneer',
     warranty: ['masonry'],
-    reviewFrom: 'Gemma V.',
+    reviewFrom: 'Jason S.',
     process: [
       ['Assess the substrate', 'What is behind the stone determines how it has to be installed. We check the existing wall, the sheathing, and how water currently drains down the face of the building before quoting anything.'],
       ['Drainage plane and lath', 'A weather-resistive barrier and metal lath go on first, with a way for water that gets behind the stone to get back out. This layer is invisible in the finished job and is the single biggest difference between veneer that lasts and veneer that fails.'],
@@ -946,7 +946,7 @@ export const SERVICES = [
   {
     slug: 'outdoor-fireplaces',
     warranty: ['masonry'],
-    reviewFrom: 'Gemma V.',
+    reviewFrom: 'Larry D.',
     process: [
       ['Siting for wind and smoke', 'Where the fireplace goes is decided before what it looks like. We look at prevailing wind, how close the house and any overhang sit, and where people will actually be sitting; a fireplace that pushes smoke into the seating area is a mistake you notice every single evening.'],
       ['Design and scale', 'The structure is scaled to the patio and to the house rather than to a catalog. Oversized outdoor fireplaces dominate a small yard; undersized ones look like an afterthought.'],
@@ -1203,26 +1203,26 @@ export const REVIEWS = [
     text: 'John and his team replaced our back brick stairs that were falling apart. They were able to create a new set of stairs that matched our old pavers much better than the previous stairs. They were able to re-grade/level our patio so that it now sits flat. The grading before prevented us from being able to sit our table flat without wobbling. Lastly they provided a new walkway into our backyard. We love the new look and functionality.' },
 
   { name: 'Nancy P.', where: '', date: 'June 2026', project: 'Brick, stone or block wall installation', source: 'HomeAdvisor',
-    text: 'Mike and his crew did a terrific job! He gave us a good price on the job, explained everything ahead of time, and carried it out as promised (and even more, throwing in a couple of extras). They arrived on time, completed everything as promised, cleaned up as they went! Mike personally supervised and followed up on each stage. We have absolutely no hesitation in recommending Onyx, and certainly would call on them if we had another project.' },
+    text: 'Mike and his crew did a terrific job! He gave us a good price on the job, explained everything ahead of time, and carried it out as promised (and even more, throwing in a couple of extras). They arrived on time, completed everything as promised, cleaned up as they went! Mike personally supervised and followed up on each stage. We have absolutely no hesitation in recommending Onyx, and certainly would call on them if we had another project.' , hide: true },
 
   { name: 'Michael G.', where: '', date: 'May 2026', project: '', source: 'HomeAdvisor',
-    text: 'The Onyx team was a pleasure to deal with from start to finish. The owner showed up within an hour after my posting. The brick front stoop was a mess, made worse by an incomplete repair. Onyx quoted a good price. The work was completed skillfully and efficiently. Customer service was first-rate throughout. We now have the best-looking, best built brick steps to our front door that we could have hoped for. I recommend Onyx without reservation.' },
+    text: 'The Onyx team was a pleasure to deal with from start to finish. The owner showed up within an hour after my posting. The brick front stoop was a mess, made worse by an incomplete repair. Onyx quoted a good price. The work was completed skillfully and efficiently. Customer service was first-rate throughout. We now have the best-looking, best built brick steps to our front door that we could have hoped for. I recommend Onyx without reservation.' , hide: true },
 
   // `image` is the photo shown beside this quote when it leads the home page.
   // It illustrates the kind of work described — it is not this customer's own
   // project. Swap in their actual job photo if you have one.
   { name: 'Susan D.', where: '', date: 'March 2026', project: 'Paver walkway', source: 'Google',
     image: 'walkway-curved',
-    text: 'I’m extremely happy with my new paver walkway! The workmanship is excellent, and the project turned out even better than I imagined. The crew was professional, timely, and paid attention to every detail — from the layout and leveling to the final cleanup. The walkway looks beautiful, adds great curb appeal, and feels very solid underfoot. I highly recommend Onyx to anyone looking for quality paver work.' },
+    text: 'I’m extremely happy with my new paver walkway! The workmanship is excellent, and the project turned out even better than I imagined. The crew was professional, timely, and paid attention to every detail — from the layout and leveling to the final cleanup. The walkway looks beautiful, adds great curb appeal, and feels very solid underfoot. I highly recommend Onyx to anyone looking for quality paver work.' , hide: true },
 
   { name: 'Bob R.', where: '', date: 'March 2026', project: 'Driveway replacement and front entry steps', source: 'Google',
-    text: 'Had a great experience with Onyx replacing and widening our driveway. They also replaced our front entry steps. John Cash walked us through the process and then kept us informed of the next steps as the actual work was progressing. The crew was very professional and we are very happy with the finished product. Will definitely use again for any future projects.' },
+    text: 'Had a great experience with Onyx replacing and widening our driveway. They also replaced our front entry steps. John Cash walked us through the process and then kept us informed of the next steps as the actual work was progressing. The crew was very professional and we are very happy with the finished product. Will definitely use again for any future projects.' , hide: true },
 
   { name: 'Dani S.', where: '', date: 'March 2026', project: 'Paver patio leveling and drainage repair', source: 'Google',
-    text: 'Onyx leveled our paver patio for us after roots caused the pavers to lift up and be a danger to us. We are older and more likely to be injured if we fall. They dug out the roots and about 4 inches of dirt, repaired the broken drainage pipe underneath, leveled the foundation, added bluestone then put back our pavers and added a few new ones. They also built a small wall around the flower bed. The whole effect is quite stunning. They changed the pattern along the side as well making it more pleasing to the eye. We are quite happy with the result.' },
+    text: 'Onyx leveled our paver patio for us after roots caused the pavers to lift up and be a danger to us. We are older and more likely to be injured if we fall. They dug out the roots and about 4 inches of dirt, repaired the broken drainage pipe underneath, leveled the foundation, added bluestone then put back our pavers and added a few new ones. They also built a small wall around the flower bed. The whole effect is quite stunning. They changed the pattern along the side as well making it more pleasing to the eye. We are quite happy with the result.' , hide: true },
 
   { name: 'Erin J.', where: '', date: 'March 2026', project: 'Front stoop, walkway and driveway', source: 'Google',
-    text: 'Our work with Onyx was amazing. Our front stoop, walkway, driveway and back areas were a mess. Together we planned, worked, and accomplished amazing things. The team and work crew were very respectful and willing to listen to and address any and all concerns that we had. We are very pleased with their work.' },
+    text: 'Our work with Onyx was amazing. Our front stoop, walkway, driveway and back areas were a mess. Together we planned, worked, and accomplished amazing things. The team and work crew were very respectful and willing to listen to and address any and all concerns that we had. We are very pleased with their work.' , hide: true },
 
   { name: 'Larry D.', where: '', date: 'May 2026', project: 'Brick or stone tuckpointing', source: 'HomeAdvisor',
     text: 'We were very pleased with the work they did completely replacing the steps up to the front of our house. They also designed and installed pavers to create an attractive entrance into our home. Hard working crew and very personable, easy to talk to owners.' },
@@ -1231,7 +1231,7 @@ export const REVIEWS = [
     text: 'After some discussion we decided to have all of it repointed as well as just the necessary repairs. I must say that was the right choice as it looks great. All of the mortar joints were redone, a few cracked bricks were replaced, and the steps are once again complete and solid. Great work.' },
 
   { name: 'Gemma V.', where: '', date: 'June 2026', project: '', source: 'HomeAdvisor',
-    text: 'Onyx’s response was fast and professional. They came out and gave a very fair price and did a fantastic job. They were professional, expedient, friendly and punctual. Would highly recommend them.' },
+    text: 'Onyx’s response was fast and professional. They came out and gave a very fair price and did a fantastic job. They were professional, expedient, friendly and punctual. Would highly recommend them.' , hide: true },
 
   { name: 'RJ C.', where: '', date: 'March 2026', project: 'Driveway repaving', source: 'Google',
     text: 'We had our driveway repaved and it looks great. These brothers are delightful. Highly recommend for your next project.' },
@@ -1244,7 +1244,7 @@ export const REVIEWS = [
 ];
 
 /* The three shown on the home page: one lead quote plus two supporting. */
-export const FEATURED_REVIEWS = ['Susan D.', 'Bob R.', 'Nancy P.'];
+export const FEATURED_REVIEWS = ['Patricia W.', 'Larry D.', 'RJ C.'];
 
 /* --- Service areas ------------------------------------------------------- */
 export const AREAS = [
