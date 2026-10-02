@@ -114,7 +114,7 @@ export const SERVICES = [
     card: 'Asphalt, concrete, and paver driveways across Northern Virginia. Base prep done right, every layer laid the way it should be.',
     image: 'driveway-paver-grey',
     feature: 'driveway-circle',
-    gallery: ['driveway-circle', 'driveway-paver-grey', 'driveway-asphalt-new', 'driveway-roller', 'driveway-paver-tan', 'driveway-crew'],
+    gallery: ['driveway-paver-medallion', 'driveway-paver-red-band', 'asphalt-driveway-curved', 'concrete-driveway-paver-edge', 'driveway-circle', 'driveway-paver-grey', 'driveway-asphalt-new', 'driveway-roller', 'driveway-paver-tan', 'driveway-crew'],
     h1: 'Driveway Paving and Installation',
     intro: 'A professionally paved driveway does more than lift curb appeal: it improves safety, drainage, and the value of the property. Whether you are replacing a surface that has reached the end of its life or installing something new, the right materials and the right preparation make a difference you can see for decades.',
     sections: [
@@ -177,7 +177,7 @@ export const SERVICES = [
     card: 'New asphalt driveways and full replacements. Torn out to depth, rebuilt on a compacted base, laid in lifts and rolled hot.',
     image: 'driveway-asphalt-new',
     feature: 'driveway-roller',
-    gallery: ['driveway-asphalt-new', 'driveway-asphalt-curve', 'driveway-roller', 'driveway-crew', 'driveway-asphalt-cone', 'driveway-prep'],
+    gallery: ['asphalt-driveway-curved', 'asphalt-driveway-stone-edge', 'asphalt-driveway-brick-border', 'asphalt-driveway-roller', 'driveway-asphalt-new', 'driveway-asphalt-curve', 'driveway-roller', 'driveway-crew', 'driveway-asphalt-cone', 'driveway-prep'],
     h1: 'Asphalt Driveway Installation and Replacement',
     intro: 'Asphalt is the fastest and least expensive way to get a driveway that carries daily traffic and sheds water properly, provided the base underneath it is built to do its job. We tear out to depth, rebuild the base, and lay the mat in lifts.',
     sections: [
@@ -252,7 +252,7 @@ export const SERVICES = [
     // mediaFor() in build.mjs resolves a project slug the same way.
     image: 'stamped-concrete-driveway-annandale-va',
     feature: 'stamped-concrete-driveway-annandale-va',
-    gallery: ['driveway-prep', 'foundation-driveway', 'driveway-crew'],
+    gallery: ['concrete-driveway-paver-edge', 'concrete-driveway-night', 'concrete-driveway-garage', 'driveway-prep', 'foundation-driveway', 'driveway-crew'],
     h1: 'Concrete Driveway Installation',
     intro: 'A poured concrete driveway is the cleanest uniform surface you can put in front of a house, and the one that asks least of you once it is in. It is also unforgiving of shortcuts: the base, the steel, and the joints all have to be right, because none of them can be corrected afterwards.',
     sections: [
@@ -323,7 +323,7 @@ export const SERVICES = [
     card: 'Interlocking paver driveways with borders, banding, and circular inlays. Set on a driveway-depth base, and repairable unit by unit.',
     image: 'driveway-paver-grey',
     feature: 'driveway-circle',
-    gallery: ['driveway-circle', 'hero-herringbone', 'driveway-paver-grey', 'driveway-paver-tan', 'driveway-paver-blue', 'driveway-paver-band', 'driveway-paver-wide'],
+    gallery: ['driveway-paver-medallion', 'driveway-paver-red-band', 'driveway-paver-charcoal-border', 'driveway-paver-walled', 'driveway-circle', 'hero-herringbone', 'driveway-paver-grey', 'driveway-paver-tan', 'driveway-paver-blue', 'driveway-paver-band', 'driveway-paver-wide'],
     h1: 'Paver Driveway Installation',
     intro: 'A paver driveway is the one surface that can be repaired without leaving a mark. Individual units lift out and go back (after a utility trench, an oil spill, or a settled area), which is why a paver drive twenty years on can still look like the day it was laid.',
     sections: [
@@ -385,7 +385,7 @@ export const SERVICES = [
     card: 'Brick patios, entryways, steps, facades, and repointing. Traditional technique, materials chosen to match what is already there.',
     image: 'walkway-brick',
     feature: 'steps-stone',
-    gallery: ['steps-brick', 'walkway-brick', 'brick-flooring', 'patio-red', 'steps-landing', 'wall-brick-long'],
+    gallery: ['brick-walkway-entry', 'brick-patio-herringbone', 'steps-brick', 'walkway-brick', 'brick-flooring', 'patio-red', 'steps-landing', 'wall-brick-long'],
     h1: 'Brickwork That Adds Character and Lasting Value',
     intro: 'Quality brickwork does not just change how a property looks; it adds character, strength, and value that holds. Whether you are refreshing a worn exterior, building something new, or restoring detail that has been lost, expert craftsmanship is what separates work that lasts from work that has to be redone.',
     sections: [
@@ -439,7 +439,7 @@ export const SERVICES = [
     card: 'Natural stone and segmental block walls that hold back soil, stop erosion, and add real structure to a yard.',
     image: 'wall-closeup',
     feature: 'wall-curved',
-    gallery: ['wall-curved', 'wall-build', 'wall-steps', 'wall-closeup', 'wall-brick-long', 'wall-hero'],
+    gallery: ['wall-block-build', 'wall-stone-seat-curve', 'driveway-paver-walled', 'wall-curved', 'wall-build', 'wall-steps', 'wall-closeup', 'wall-brick-long', 'wall-hero'],
     h1: 'Custom Retaining Walls Built for Strength and Style',
     intro: 'Retaining walls do more than hold back soil. They create structure, add depth to landscaping, and protect a property from erosion. Ours are built to match your style while standing up to the pressure behind them, because a retaining wall that looks good and fails in five years has not done its job.',
     sections: [
@@ -499,7 +499,7 @@ export const SERVICES = [
     card: 'Crack repair, stabilization, and restoration. Early attention to a foundation problem is the cheapest it will ever be.',
     image: 'foundation-exterior',
     feature: 'foundation-exterior',
-    gallery: ['foundation-exterior', 'foundation-driveway'],
+    gallery: ['waterproof-membrane-drain', 'waterproof-dimple-board', 'waterproof-gravel-trench', 'drainage-pipe-hillside', 'foundation-exterior', 'foundation-driveway'],
     h1: 'Professional Foundation Repair in Northern Virginia',
     intro: 'Your foundation is the most important structural element of the house, and protecting it means protecting the whole investment. Cracks, shifting, and settling get worse quickly when they are left alone, which is why early detection and timely repair matter so much.',
     sections: [
@@ -573,7 +573,7 @@ export const SERVICES = [
     card: 'Repointing, crown and flashing repair, and rebuilds. A damaged chimney is a water problem before it is a fire problem.',
     image: 'chimney-home',
     feature: 'chimney-home',
-    gallery: ['chimney-home'],
+    gallery: ['chimney-rebuild-flues', 'chimney-rebuild-lift', 'chimney-home'],
     h1: 'Chimney Repair and Restoration',
     intro: 'A damaged chimney leads to structural problems and safety risks, and it usually starts quietly. Whether the issue is cracked mortar, deteriorated flashing, or ordinary weathering, timely repair protects both the chimney and everything underneath it.',
     sections: [
@@ -659,7 +659,7 @@ export const SERVICES = [
     card: 'Paver, natural stone, brick, and stamped concrete patios built from the base up, designed around how you actually use the space.',
     image: 'patio-firepit',
     feature: 'patio-firepit',
-    gallery: ['patio-firepit', 'patio-cobble', 'patio-backyard', 'patio-pool', 'patio-stone', 'patio-red', 'patio-covered', 'patio-build', 'brick-flooring'],
+    gallery: ['patio-herringbone-seatwall', 'patio-paver-curved-border', 'patio-pool-deck-slab', 'patio-paver-brown', 'patio-firepit', 'patio-cobble', 'patio-backyard', 'patio-pool', 'patio-stone', 'patio-red', 'patio-covered', 'patio-build', 'brick-flooring'],
     h1: 'Patio Installation and Design',
     intro: 'We build patios (paver, natural stone, brick, and stamped concrete) from the excavation up. The design work happens first and it matters, but what decides whether you are still happy with the patio in fifteen years is the base underneath it and where the water goes.',
     sections: [
@@ -816,7 +816,7 @@ export const SERVICES = [
     card: 'Paver, brick, and natural stone walkways, front entrances, landings, and steps: new installations, replacements, and repairs.',
     image: 'walkway-steps',
     feature: 'walkway-steps',
-    gallery: ['walkway-bluestone', 'walkway-brick', 'walkway-curved', 'steps-stone', 'steps-brick', 'walkway-front', 'steps-landing', 'hero-walkway', 'hero-steps', 'walkway-banded', 'steps-wide', 'walkway-flowers', 'walkway-side', 'wall-steps', 'walkway-crew'],
+    gallery: ['steps-paver-lit', 'steps-herringbone-landing', 'stone-flagstone-steps-seatwall', 'steps-paver-curved', 'stone-flagstone-walkway', 'steps-brick-flagstone', 'walkway-bluestone', 'walkway-brick', 'walkway-curved', 'steps-stone', 'steps-brick', 'walkway-front', 'steps-landing', 'hero-walkway', 'hero-steps', 'walkway-banded', 'steps-wide', 'walkway-flowers', 'walkway-side', 'wall-steps', 'walkway-crew'],
     h1: 'Walkways, Front Entrances, and Steps',
     intro: 'The walk and the steps are the first thing anyone touches on your house and the last thing most people get round to replacing. Done properly they change the whole approach: wider, level underfoot, and draining away from the door instead of toward it.',
     sections: [
@@ -1053,7 +1053,7 @@ export const SERVICES = [
     card: 'French drains, trench drains, downspout routing, grading, and drainage correction around driveways, patios, and retaining walls.',
     image: 'driveway-prep',
     feature: 'wall-build',
-    gallery: ['driveway-prep', 'wall-build', 'patio-build', 'foundation-exterior', 'foundation-driveway', 'walkway-crew'],
+    gallery: ['drainage-trench-drain', 'drainage-river-rock', 'drainage-pipe-trench', 'drainage-pipe-hillside', 'waterproof-membrane-drain', 'driveway-prep', 'wall-build', 'patio-build', 'foundation-exterior', 'foundation-driveway', 'walkway-crew'],
     h1: 'Drainage, French Drains, and Grading Correction',
     intro: 'Water is the reason most hardscape fails early, and almost none of the damage happens where the water lands. It happens where the water collects, where it soaks in, and where it moves under the surface, which is why a drainage problem shows up as a sunken patio, a cracked driveway, or a wall leaning out of line.',
     sections: [
@@ -1170,9 +1170,9 @@ export const SERVICES = [
     title: 'Siding',
     group: 'Roofing & Siding',
     card: 'Siding replacement and repair, with the trim, flashing, and openings detailed so water stays on the outside of the wall.',
-    image: 'chimney-home',
-    feature: 'chimney-home',
-    gallery: ['chimney-home'],
+    image: 'siding-lap-stone',
+    feature: 'siding-lap-stone',
+    gallery: ['siding-lap-stone', 'siding-housewrap'],
     h1: 'Siding Installation and Repair',
     intro: 'Siding is the weather skin of the house. When it cracks, warps, or comes loose, water gets behind it and into the wall. We replace damaged sections or reside the whole house, and pay the same attention to the trim and openings as to the siding itself.',
     sections: [
@@ -1264,6 +1264,13 @@ export const PORTFOLIO = [
   'driveway-roller', 'walkway-crew', 'patio-build', 'wall-closeup',
   'steps-landing', 'driveway-paver-blue', 'walkway-banded', 'veneer-drive',
   'driveway-crew', 'walkway-side', 'steps-wide', 'fireplace-build',
+  'driveway-paver-medallion', 'brick-walkway-entry', 'wall-block-build', 'driveway-paver-red-band',
+  'brick-patio-herringbone', 'driveway-paver-charcoal-border', 'driveway-paver-walled',
+  'patio-herringbone-seatwall', 'steps-paver-lit', 'asphalt-driveway-curved', 'concrete-driveway-paver-edge',
+  'patio-paver-curved-border', 'stone-flagstone-steps-seatwall', 'wall-stone-seat-curve', 'steps-herringbone-landing',
+  'patio-pool-deck-slab', 'asphalt-driveway-brick-border', 'concrete-driveway-night', 'stone-flagstone-walkway',
+  'chimney-rebuild-flues', 'drainage-trench-drain', 'siding-lap-stone', 'steps-paver-curved',
+  'patio-paver-brown', 'asphalt-driveway-stone-edge', 'waterproof-membrane-drain', 'drainage-river-rock',
 ];
 
 /* Nine shown on the home page. */

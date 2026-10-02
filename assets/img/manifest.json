@@ -1070,5 +1070,645 @@
     "h": 526
    }
   ]
+ },
+ "wall-block-build": {
+  "alt": "Crew building a block retaining wall along a side yard, with the hillside behind it covered in plastic sheeting",
+  "role": "card",
+  "w": 730,
+  "h": 546,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 314
+   },
+   {
+    "w": 730,
+    "h": 546
+   }
+  ]
+ },
+ "brick-patio-herringbone": {
+  "alt": "Herringbone brick patio enclosed by stacked stone walls under a pergola",
+  "role": "card",
+  "w": 702,
+  "h": 525,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 314
+   },
+   {
+    "w": 702,
+    "h": 525
+   }
+  ]
+ },
+ "brick-walkway-entry": {
+  "alt": "Curved herringbone brick walkway leading to new brick front steps and landing",
+  "role": "card",
+  "w": 701,
+  "h": 524,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 314
+   },
+   {
+    "w": 701,
+    "h": 524
+   }
+  ]
+ },
+ "driveway-paver-walled": {
+  "alt": "Paver driveway with red brick borders running between two segmental block retaining walls",
+  "role": "card",
+  "w": 701,
+  "h": 525,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 315
+   },
+   {
+    "w": 701,
+    "h": 525
+   }
+  ]
+ },
+ "driveway-paver-charcoal-border": {
+  "alt": "Multi-tone paver driveway framed by a charcoal soldier-course border and a low stone wall",
+  "role": "card",
+  "w": 701,
+  "h": 525,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 315
+   },
+   {
+    "w": 701,
+    "h": 525
+   }
+  ]
+ },
+ "driveway-paver-medallion": {
+  "alt": "Paver driveway with a circular medallion inlay and banded edging in front of a two-car garage",
+  "role": "card",
+  "w": 701,
+  "h": 936,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 561
+   },
+   {
+    "w": 701,
+    "h": 936
+   }
+  ]
+ },
+ "driveway-paver-red-band": {
+  "alt": "Grey paver driveway with a red accent band and granite edging beside a brick home",
+  "role": "card",
+  "w": 701,
+  "h": 647,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 388
+   },
+   {
+    "w": 701,
+    "h": 647
+   }
+  ]
+ },
+ "patio-paver-curved-border": {
+  "alt": "Large grey paver patio with a curved charcoal border behind a two-story home",
+  "role": "card",
+  "w": 701,
+  "h": 701,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 420
+   },
+   {
+    "w": 701,
+    "h": 701
+   }
+  ]
+ },
+ "patio-pool-deck-slab": {
+  "alt": "Large-format grey paver pool deck beside a lit block retaining wall",
+  "role": "card",
+  "w": 702,
+  "h": 525,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 314
+   },
+   {
+    "w": 702,
+    "h": 525
+   }
+  ]
+ },
+ "patio-herringbone-seatwall": {
+  "alt": "Charcoal herringbone paver patio with a curved seat wall, pillars, and round steps",
+  "role": "card",
+  "w": 701,
+  "h": 525,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 315
+   },
+   {
+    "w": 701,
+    "h": 525
+   }
+  ]
+ },
+ "patio-paver-brown": {
+  "alt": "Brown paver patio with a charcoal border along the back of a house",
+  "role": "card",
+  "w": 702,
+  "h": 937,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 561
+   },
+   {
+    "w": 702,
+    "h": 937
+   }
+  ]
+ },
+ "concrete-driveway-night": {
+  "alt": "New concrete driveway with scored panels and a smooth border, lit at night",
+  "role": "card",
+  "w": 688,
+  "h": 922,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 563
+   },
+   {
+    "w": 688,
+    "h": 922
+   }
+  ]
+ },
+ "concrete-driveway-paver-edge": {
+  "alt": "Fresh concrete driveway with a tan paver border, taped off while it cures",
+  "role": "card",
+  "w": 701,
+  "h": 525,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 315
+   },
+   {
+    "w": 701,
+    "h": 525
+   }
+  ]
+ },
+ "concrete-driveway-garage": {
+  "alt": "Wide concrete driveway pad leading to a detached garage behind a brick home",
+  "role": "card",
+  "w": 687,
+  "h": 525,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 321
+   },
+   {
+    "w": 687,
+    "h": 525
+   }
+  ]
+ },
+ "wall-stone-seat-curve": {
+  "alt": "Curved stone-faced retaining wall with a cap along a paver walkway in a side yard",
+  "role": "card",
+  "w": 702,
+  "h": 525,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 314
+   },
+   {
+    "w": 702,
+    "h": 525
+   }
+  ]
+ },
+ "steps-paver-lit": {
+  "alt": "Paver walkway with lit steps leading up a front lawn to a brick colonial",
+  "role": "card",
+  "w": 702,
+  "h": 916,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 548
+   },
+   {
+    "w": 702,
+    "h": 916
+   }
+  ]
+ },
+ "steps-brick-flagstone": {
+  "alt": "Brick front steps with flagstone treads",
+  "role": "card",
+  "w": 685,
+  "h": 522,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 320
+   },
+   {
+    "w": 685,
+    "h": 522
+   }
+  ]
+ },
+ "steps-paver-curved": {
+  "alt": "Curved paver steps and walkway with charcoal borders in a backyard",
+  "role": "card",
+  "w": 701,
+  "h": 937,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 561
+   },
+   {
+    "w": 701,
+    "h": 937
+   }
+  ]
+ },
+ "steps-herringbone-landing": {
+  "alt": "Stone-faced front landing and step with herringbone paver inlays and charcoal borders",
+  "role": "card",
+  "w": 702,
+  "h": 937,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 561
+   },
+   {
+    "w": 702,
+    "h": 937
+   }
+  ]
+ },
+ "stone-flagstone-steps-seatwall": {
+  "alt": "Flagstone steps climbing a front lawn to a curved stone seat wall and landing",
+  "role": "card",
+  "w": 702,
+  "h": 525,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 314
+   },
+   {
+    "w": 702,
+    "h": 525
+   }
+  ]
+ },
+ "stone-flagstone-walkway": {
+  "alt": "Flagstone walkway and steps with a metal handrail leading to a brick colonial",
+  "role": "card",
+  "w": 702,
+  "h": 525,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 314
+   },
+   {
+    "w": 702,
+    "h": 525
+   }
+  ]
+ },
+ "drainage-river-rock": {
+  "alt": "River rock swale carrying runoff along a mulched slope",
+  "role": "card",
+  "w": 669,
+  "h": 1088,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 683
+   },
+   {
+    "w": 669,
+    "h": 1088
+   }
+  ]
+ },
+ "drainage-pipe-trench": {
+  "alt": "Drain pipe laid in a fabric-lined trench beside a street",
+  "role": "card",
+  "w": 702,
+  "h": 525,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 314
+   },
+   {
+    "w": 702,
+    "h": 525
+   }
+  ]
+ },
+ "drainage-trench-drain": {
+  "alt": "Channel trench drain set into a concrete driveway with granite cobble edging",
+  "role": "card",
+  "w": 1139,
+  "h": 1510,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 557
+   },
+   {
+    "w": 760,
+    "h": 1008
+   },
+   {
+    "w": 1139,
+    "h": 1510
+   }
+  ]
+ },
+ "waterproof-membrane-drain": {
+  "alt": "Excavated foundation wall sealed with waterproofing, a dimple membrane, and a drain pipe in gravel",
+  "role": "card",
+  "w": 1512,
+  "h": 1502,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 417
+   },
+   {
+    "w": 760,
+    "h": 755
+   },
+   {
+    "w": 1200,
+    "h": 1192
+   },
+   {
+    "w": 1512,
+    "h": 1502
+   }
+  ]
+ },
+ "waterproof-dimple-board": {
+  "alt": "Dimple drainage board installed over a foundation wall below stone veneer",
+  "role": "card",
+  "w": 1190,
+  "h": 1574,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 556
+   },
+   {
+    "w": 760,
+    "h": 1005
+   },
+   {
+    "w": 1190,
+    "h": 1574
+   }
+  ]
+ },
+ "waterproof-gravel-trench": {
+  "alt": "Dimple drainage board and gravel backfill along an excavated foundation",
+  "role": "card",
+  "w": 1514,
+  "h": 1504,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 417
+   },
+   {
+    "w": 760,
+    "h": 755
+   },
+   {
+    "w": 1200,
+    "h": 1192
+   },
+   {
+    "w": 1514,
+    "h": 1504
+   }
+  ]
+ },
+ "drainage-pipe-hillside": {
+  "alt": "Drain pipe laid on filter fabric in a hillside trench",
+  "role": "card",
+  "w": 1588,
+  "h": 1578,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 417
+   },
+   {
+    "w": 760,
+    "h": 755
+   },
+   {
+    "w": 1200,
+    "h": 1192
+   },
+   {
+    "w": 1588,
+    "h": 1578
+   }
+  ]
+ },
+ "chimney-rebuild-flues": {
+  "alt": "Mason rebuilding the top of a brick chimney around new clay flue liners",
+  "role": "card",
+  "w": 1526,
+  "h": 1488,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 410
+   },
+   {
+    "w": 760,
+    "h": 741
+   },
+   {
+    "w": 1200,
+    "h": 1170
+   },
+   {
+    "w": 1526,
+    "h": 1488
+   }
+  ]
+ },
+ "chimney-rebuild-lift": {
+  "alt": "Masons relaying brick on a chimney from a lift",
+  "role": "card",
+  "w": 975,
+  "h": 1518,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 654
+   },
+   {
+    "w": 760,
+    "h": 1183
+   },
+   {
+    "w": 975,
+    "h": 1518
+   }
+  ]
+ },
+ "asphalt-driveway-curved": {
+  "alt": "Freshly paved curved asphalt driveway with a concrete apron in front of a large home",
+  "role": "card",
+  "w": 701,
+  "h": 525,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 315
+   },
+   {
+    "w": 701,
+    "h": 525
+   }
+  ]
+ },
+ "asphalt-driveway-stone-edge": {
+  "alt": "New asphalt driveway with a stone edge border, taped off after paving",
+  "role": "card",
+  "w": 2037,
+  "h": 1520,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 313
+   },
+   {
+    "w": 760,
+    "h": 567
+   },
+   {
+    "w": 1200,
+    "h": 895
+   },
+   {
+    "w": 2037,
+    "h": 1520
+   }
+  ]
+ },
+ "asphalt-driveway-roller": {
+  "alt": "Fresh asphalt driveway with a roller in the foreground",
+  "role": "card",
+  "w": 730,
+  "h": 972,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 559
+   },
+   {
+    "w": 730,
+    "h": 972
+   }
+  ]
+ },
+ "asphalt-driveway-brick-border": {
+  "alt": "Asphalt driveway framed by a red brick paver border",
+  "role": "card",
+  "w": 730,
+  "h": 547,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 315
+   },
+   {
+    "w": 730,
+    "h": 547
+   }
+  ]
+ },
+ "siding-housewrap": {
+  "alt": "House wrap installed over exterior walls before new siding",
+  "role": "card",
+  "w": 1072,
+  "h": 1526,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 598
+   },
+   {
+    "w": 760,
+    "h": 1082
+   },
+   {
+    "w": 1072,
+    "h": 1526
+   }
+  ]
+ },
+ "siding-lap-stone": {
+  "alt": "New lap siding above a stacked stone wainscot at a front entry",
+  "role": "card",
+  "w": 1526,
+  "h": 1526,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 420
+   },
+   {
+    "w": 760,
+    "h": 760
+   },
+   {
+    "w": 1200,
+    "h": 1200
+   },
+   {
+    "w": 1526,
+    "h": 1526
+   }
+  ]
  }
 }
