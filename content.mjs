@@ -112,9 +112,9 @@ export const SERVICES = [
     // the slot instead — see buildServicesIndex() in build.mjs.
     splitOnIndex: true,
     card: 'Asphalt, concrete, and paver driveways across Northern Virginia. Base prep done right, every layer laid the way it should be.',
-    image: 'driveway-paver-grey',
+    image: 'driveway-paver-red-border-handshake',
     feature: 'driveway-circle',
-    gallery: ['driveway-paver-medallion', 'driveway-paver-red-band', 'asphalt-driveway-curved', 'concrete-driveway-paver-edge', 'driveway-circle', 'driveway-paver-grey', 'driveway-asphalt-new', 'driveway-roller', 'driveway-paver-tan', 'driveway-crew'],
+    gallery: ['driveway-paver-red-border-handshake', 'driveway-paver-medallion', 'driveway-paver-red-band', 'asphalt-driveway-paver-edge', 'asphalt-driveway-curved', 'concrete-driveway-paver-edge', 'driveway-circle', 'driveway-paver-grey', 'driveway-asphalt-new', 'driveway-roller', 'driveway-paver-tan', 'driveway-crew'],
     h1: 'Driveway Paving and Installation',
     intro: 'A professionally paved driveway does more than lift curb appeal: it improves safety, drainage, and the value of the property. Whether you are replacing a surface that has reached the end of its life or installing something new, the right materials and the right preparation make a difference you can see for decades.',
     sections: [
@@ -177,7 +177,7 @@ export const SERVICES = [
     card: 'New asphalt driveways and full replacements. Torn out to depth, rebuilt on a compacted base, laid in lifts and rolled hot.',
     image: 'driveway-asphalt-new',
     feature: 'driveway-roller',
-    gallery: ['asphalt-driveway-curved', 'asphalt-driveway-stone-edge', 'asphalt-driveway-brick-border', 'asphalt-driveway-roller', 'driveway-asphalt-new', 'driveway-asphalt-curve', 'driveway-roller', 'driveway-crew', 'driveway-asphalt-cone', 'driveway-prep'],
+    gallery: ['asphalt-driveway-paver-edge', 'asphalt-driveway-base-prep', 'asphalt-driveway-curved', 'asphalt-driveway-stone-edge', 'asphalt-driveway-brick-border', 'asphalt-driveway-roller', 'driveway-asphalt-new', 'driveway-asphalt-curve', 'driveway-roller', 'driveway-crew', 'driveway-asphalt-cone', 'driveway-prep'],
     h1: 'Asphalt Driveway Installation and Replacement',
     intro: 'Asphalt is the fastest and least expensive way to get a driveway that carries daily traffic and sheds water properly, provided the base underneath it is built to do its job. We tear out to depth, rebuild the base, and lay the mat in lifts.',
     sections: [
@@ -321,9 +321,9 @@ export const SERVICES = [
     title: 'Paver Driveways',
     group: 'Masonry',
     card: 'Interlocking paver driveways with borders, banding, and circular inlays. Set on a driveway-depth base, and repairable unit by unit.',
-    image: 'driveway-paver-grey',
+    image: 'driveway-paver-red-border-handshake',
     feature: 'driveway-circle',
-    gallery: ['driveway-paver-medallion', 'driveway-paver-red-band', 'driveway-paver-charcoal-border', 'driveway-paver-walled', 'driveway-circle', 'hero-herringbone', 'driveway-paver-grey', 'driveway-paver-tan', 'driveway-paver-blue', 'driveway-paver-band', 'driveway-paver-wide'],
+    gallery: ['driveway-paver-red-border-handshake', 'driveway-paver-medallion', 'driveway-paver-red-band', 'driveway-paver-charcoal-border', 'driveway-paver-walled', 'driveway-circle', 'hero-herringbone', 'driveway-paver-grey', 'driveway-paver-tan', 'driveway-paver-blue', 'driveway-paver-band', 'driveway-paver-wide'],
     h1: 'Paver Driveway Installation',
     intro: 'A paver driveway is the one surface that can be repaired without leaving a mark. Individual units lift out and go back (after a utility trench, an oil spill, or a settled area), which is why a paver drive twenty years on can still look like the day it was laid.',
     sections: [
@@ -383,9 +383,9 @@ export const SERVICES = [
     title: 'Brickwork',
     group: 'Masonry',
     card: 'Brick patios, entryways, steps, facades, and repointing. Traditional technique, materials chosen to match what is already there.',
-    image: 'walkway-brick',
+    image: 'brick-paver-landing-steps',
     feature: 'steps-stone',
-    gallery: ['brick-walkway-entry', 'brick-patio-herringbone', 'steps-brick', 'walkway-brick', 'brick-flooring', 'patio-red', 'steps-landing', 'wall-brick-long'],
+    gallery: ['brick-paver-landing-steps', 'brick-walkway-entry', 'brick-patio-herringbone', 'steps-brick', 'walkway-brick', 'brick-flooring', 'patio-red', 'steps-landing', 'wall-brick-long'],
     h1: 'Brickwork That Adds Character and Lasting Value',
     intro: 'Quality brickwork does not just change how a property looks; it adds character, strength, and value that holds. Whether you are refreshing a worn exterior, building something new, or restoring detail that has been lost, expert craftsmanship is what separates work that lasts from work that has to be redone.',
     sections: [
@@ -437,9 +437,9 @@ export const SERVICES = [
     title: 'Retaining Walls',
     group: 'Masonry',
     card: 'Natural stone and segmental block walls that hold back soil, stop erosion, and add real structure to a yard.',
-    image: 'wall-closeup',
+    image: 'wall-stone-serpentine-seat',
     feature: 'wall-curved',
-    gallery: ['wall-block-build', 'wall-stone-seat-curve', 'driveway-paver-walled', 'wall-curved', 'wall-build', 'wall-steps', 'wall-closeup', 'wall-brick-long', 'wall-hero'],
+    gallery: ['wall-stone-serpentine-seat', 'wall-block-build', 'wall-stone-seat-curve', 'driveway-paver-walled', 'wall-curved', 'wall-build', 'wall-steps', 'wall-closeup', 'wall-brick-long', 'wall-hero'],
     h1: 'Custom Retaining Walls Built for Strength and Style',
     intro: 'Retaining walls do more than hold back soil. They create structure, add depth to landscaping, and protect a property from erosion. Ours are built to match your style while standing up to the pressure behind them, because a retaining wall that looks good and fails in five years has not done its job.',
     sections: [
@@ -659,7 +659,7 @@ export const SERVICES = [
     card: 'Paver, natural stone, brick, and stamped concrete patios built from the base up, designed around how you actually use the space.',
     image: 'patio-firepit',
     feature: 'patio-firepit',
-    gallery: ['patio-herringbone-seatwall', 'patio-paver-curved-border', 'patio-pool-deck-slab', 'patio-paver-brown', 'patio-firepit', 'patio-cobble', 'patio-backyard', 'patio-pool', 'patio-stone', 'patio-red', 'patio-covered', 'patio-build', 'brick-flooring'],
+    gallery: ['patio-paver-grill-terrace', 'patio-paver-curved-planter', 'patio-paver-stone-wall', 'patio-herringbone-seatwall', 'patio-paver-curved-border', 'patio-pool-deck-slab', 'patio-paver-brown', 'patio-firepit', 'patio-cobble', 'patio-backyard', 'patio-pool', 'patio-stone', 'patio-red', 'patio-covered', 'patio-build', 'brick-flooring'],
     h1: 'Patio Installation and Design',
     intro: 'We build patios (paver, natural stone, brick, and stamped concrete) from the excavation up. The design work happens first and it matters, but what decides whether you are still happy with the patio in fifteen years is the base underneath it and where the water goes.',
     sections: [
@@ -816,7 +816,7 @@ export const SERVICES = [
     card: 'Paver, brick, and natural stone walkways, front entrances, landings, and steps: new installations, replacements, and repairs.',
     image: 'walkway-steps',
     feature: 'walkway-steps',
-    gallery: ['steps-paver-lit', 'steps-herringbone-landing', 'stone-flagstone-steps-seatwall', 'steps-paver-curved', 'stone-flagstone-walkway', 'steps-brick-flagstone', 'walkway-bluestone', 'walkway-brick', 'walkway-curved', 'steps-stone', 'steps-brick', 'walkway-front', 'steps-landing', 'hero-walkway', 'hero-steps', 'walkway-banded', 'steps-wide', 'walkway-flowers', 'walkway-side', 'wall-steps', 'walkway-crew'],
+    gallery: ['walkway-paver-curved-inlay', 'steps-paver-lit', 'steps-herringbone-landing', 'stone-flagstone-steps-seatwall', 'steps-paver-curved', 'stone-flagstone-walkway', 'steps-brick-flagstone', 'walkway-bluestone', 'walkway-brick', 'walkway-curved', 'steps-stone', 'steps-brick', 'walkway-front', 'steps-landing', 'hero-walkway', 'hero-steps', 'walkway-banded', 'steps-wide', 'walkway-flowers', 'walkway-side', 'wall-steps', 'walkway-crew'],
     h1: 'Walkways, Front Entrances, and Steps',
     intro: 'The walk and the steps are the first thing anyone touches on your house and the last thing most people get round to replacing. Done properly they change the whole approach: wider, level underfoot, and draining away from the door instead of toward it.',
     sections: [
@@ -1271,6 +1271,8 @@ export const PORTFOLIO = [
   'patio-pool-deck-slab', 'asphalt-driveway-brick-border', 'concrete-driveway-night', 'stone-flagstone-walkway',
   'chimney-rebuild-flues', 'drainage-trench-drain', 'siding-lap-stone', 'steps-paver-curved',
   'patio-paver-brown', 'asphalt-driveway-stone-edge', 'waterproof-membrane-drain', 'drainage-river-rock',
+  'driveway-paver-red-border-handshake', 'brick-paver-landing-steps', 'wall-stone-serpentine-seat', 'patio-paver-grill-terrace',
+  'patio-paver-curved-planter', 'walkway-paver-curved-inlay', 'patio-paver-stone-wall', 'asphalt-driveway-paver-edge',
 ];
 
 /* Nine shown on the home page. */

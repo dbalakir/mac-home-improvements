@@ -1710,5 +1710,193 @@
     "h": 1526
    }
   ]
+ },
+ "brick-paver-landing-steps": {
+  "alt": "Raised paver entry landing with curved steps and a charcoal border beside a brick home",
+  "role": "card",
+  "w": 1512,
+  "h": 2016,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 560
+   },
+   {
+    "w": 760,
+    "h": 1013
+   },
+   {
+    "w": 1200,
+    "h": 1600
+   },
+   {
+    "w": 1512,
+    "h": 2016
+   }
+  ]
+ },
+ "driveway-paver-red-border-handshake": {
+  "alt": "Stamped-look paver driveway with a red and charcoal border, homeowner and crew at the far end",
+  "role": "card",
+  "w": 1222,
+  "h": 1199,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 412
+   },
+   {
+    "w": 760,
+    "h": 746
+   },
+   {
+    "w": 1222,
+    "h": 1199
+   }
+  ]
+ },
+ "wall-stone-serpentine-seat": {
+  "alt": "Serpentine stone-faced seat wall with a cap curving along a light paver patio",
+  "role": "card",
+  "w": 939,
+  "h": 690,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 309
+   },
+   {
+    "w": 760,
+    "h": 558
+   },
+   {
+    "w": 939,
+    "h": 690
+   }
+  ]
+ },
+ "patio-paver-grill-terrace": {
+  "alt": "Large paver terrace with charcoal banding, a stone grill station, and low stone walls",
+  "role": "card",
+  "w": 1024,
+  "h": 768,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 315
+   },
+   {
+    "w": 760,
+    "h": 570
+   },
+   {
+    "w": 1024,
+    "h": 768
+   }
+  ]
+ },
+ "patio-paver-curved-planter": {
+  "alt": "Paver patio with a curved charcoal border wrapping a stone planter behind a grey-sided home",
+  "role": "card",
+  "w": 1024,
+  "h": 768,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 315
+   },
+   {
+    "w": 760,
+    "h": 570
+   },
+   {
+    "w": 1024,
+    "h": 768
+   }
+  ]
+ },
+ "walkway-paver-curved-inlay": {
+  "alt": "Curved paver side walkway with charcoal band inlays leading to a bluestone landing",
+  "role": "card",
+  "w": 1024,
+  "h": 768,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 315
+   },
+   {
+    "w": 760,
+    "h": 570
+   },
+   {
+    "w": 1024,
+    "h": 768
+   }
+  ]
+ },
+ "patio-paver-stone-wall": {
+  "alt": "Paver patio with charcoal banding beside a capped natural stone wall and lawn",
+  "role": "card",
+  "w": 1024,
+  "h": 768,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 315
+   },
+   {
+    "w": 760,
+    "h": 570
+   },
+   {
+    "w": 1024,
+    "h": 768
+   }
+  ]
+ },
+ "asphalt-driveway-base-prep": {
+  "alt": "Crew grading a compacted stone base between new paver edging before paving",
+  "role": "card",
+  "w": 1600,
+  "h": 1200,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 315
+   },
+   {
+    "w": 760,
+    "h": 570
+   },
+   {
+    "w": 1200,
+    "h": 900
+   },
+   {
+    "w": 1600,
+    "h": 1200
+   }
+  ]
+ },
+ "asphalt-driveway-paver-edge": {
+  "alt": "Freshly paved asphalt driveway with paver edging, taped off to cure",
+  "role": "card",
+  "w": 1024,
+  "h": 768,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 315
+   },
+   {
+    "w": 760,
+    "h": 570
+   },
+   {
+    "w": 1024,
+    "h": 768
+   }
+  ]
  }
 }
