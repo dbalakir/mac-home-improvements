@@ -1898,5 +1898,61 @@
     "h": 768
    }
   ]
+ },
+ "chimney-rebuilt-flashing": {
+  "alt": "Rebuilt red brick chimney with new black step flashing on a shingle roof",
+  "role": "card",
+  "w": 700,
+  "h": 933,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 560
+   },
+   {
+    "w": 700,
+    "h": 933
+   }
+  ]
+ },
+ "foundation-waterproof-dimple-drain": {
+  "alt": "Dimple drainage membrane on a brick foundation with a perforated drain pipe in gravel",
+  "role": "card",
+  "w": 1024,
+  "h": 1024,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 420
+   },
+   {
+    "w": 760,
+    "h": 760
+   },
+   {
+    "w": 1024,
+    "h": 1024
+   }
+  ]
+ },
+ "roof-shingle-ridge": {
+  "alt": "New architectural shingle roof with ridge vents and capped hips",
+  "role": "card",
+  "w": 1178,
+  "h": 1270,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 453
+   },
+   {
+    "w": 760,
+    "h": 819
+   },
+   {
+    "w": 1178,
+    "h": 1270
+   }
+  ]
  }
 }
