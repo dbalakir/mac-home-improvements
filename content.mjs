@@ -497,9 +497,9 @@ export const SERVICES = [
     title: 'Foundation Repair',
     group: 'Masonry',
     card: 'Crack repair, stabilization, and restoration. Early attention to a foundation problem is the cheapest it will ever be.',
-    image: 'foundation-exterior',
-    feature: 'foundation-exterior',
-    gallery: ['waterproof-membrane-drain', 'waterproof-dimple-board', 'waterproof-gravel-trench', 'drainage-pipe-hillside', 'foundation-exterior', 'foundation-driveway'],
+    image: 'foundation-waterproof-dimple-drain',
+    feature: 'foundation-waterproof-dimple-drain',
+    gallery: ['foundation-waterproof-dimple-drain', 'waterproof-membrane-drain', 'waterproof-dimple-board', 'waterproof-gravel-trench', 'drainage-pipe-hillside', 'foundation-exterior', 'foundation-driveway'],
     h1: 'Professional Foundation Repair in Northern Virginia',
     intro: 'Your foundation is the most important structural element of the house, and protecting it means protecting the whole investment. Cracks, shifting, and settling get worse quickly when they are left alone, which is why early detection and timely repair matter so much.',
     sections: [
@@ -571,9 +571,9 @@ export const SERVICES = [
     title: 'Chimney Repair',
     group: 'Masonry',
     card: 'Repointing, crown and flashing repair, and rebuilds. A damaged chimney is a water problem before it is a fire problem.',
-    image: 'chimney-home',
-    feature: 'chimney-home',
-    gallery: ['chimney-rebuild-flues', 'chimney-rebuild-lift', 'chimney-home'],
+    image: 'chimney-rebuilt-flashing',
+    feature: 'chimney-rebuilt-flashing',
+    gallery: ['chimney-rebuilt-flashing', 'chimney-rebuild-flues', 'chimney-rebuild-lift', 'chimney-home'],
     h1: 'Chimney Repair and Restoration',
     intro: 'A damaged chimney leads to structural problems and safety risks, and it usually starts quietly. Whether the issue is cracked mortar, deteriorated flashing, or ordinary weathering, timely repair protects both the chimney and everything underneath it.',
     sections: [
@@ -1130,9 +1130,9 @@ export const SERVICES = [
     title: 'Roofing',
     group: 'Roofing & Siding',
     card: 'Roof replacement and repair, including the flashing, valleys, and details where the roof meets walls and chimneys.',
-    image: 'veneer-siding',
-    feature: 'veneer-siding',
-    gallery: ['veneer-siding'],
+    image: 'roof-shingle-ridge',
+    feature: 'roof-shingle-ridge',
+    gallery: ['roof-shingle-ridge'],
     h1: 'Roof Replacement and Repair',
     intro: 'A roof keeps water out of everything underneath it, and most roof problems are water problems long before they are visible ones. Whether you need a leak traced and repaired or a full replacement, we look at the whole roof before we price any of it.',
     sections: [
@@ -1273,6 +1273,7 @@ export const PORTFOLIO = [
   'patio-paver-brown', 'asphalt-driveway-stone-edge', 'waterproof-membrane-drain', 'drainage-river-rock',
   'driveway-paver-red-border-handshake', 'brick-paver-landing-steps', 'wall-stone-serpentine-seat', 'patio-paver-grill-terrace',
   'patio-paver-curved-planter', 'walkway-paver-curved-inlay', 'patio-paver-stone-wall', 'asphalt-driveway-paver-edge',
+  'chimney-rebuilt-flashing', 'foundation-waterproof-dimple-drain', 'roof-shingle-ridge',
 ];
 
 /* Nine shown on the home page. */
