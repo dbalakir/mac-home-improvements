@@ -13,11 +13,11 @@ export const BIZ = {
   tagline: 'Masonry, Stonework, Roofing & Siding · Northern Virginia',
   phone: '(703) 929-1621',
   phoneHref: 'tel:+17039291621',
-  email: 'info@machomeimprovements.com',   // TODO: M&C email
+  email: 'service@mac-homeimprovements.com',
   city: 'Northern Virginia',
   since: '2010',
   facebook: '#',                 // TODO: M&C Facebook page
-  origin: 'https://machomeimprovements.com',   // TODO: confirm domain
+  origin: 'https://mac-homeimprovements.com',
 
   // --- TODO: confirm before launch -------------------------------------
   // Fill these in and rebuild; the build drops the line entirely if empty.
@@ -1982,4 +1982,8 @@ export const POINTS = [
 
    Keep this list even after the ads' final URLs are updated: these URLs are
    also in whatever inbound links and citations the old pages accumulated. */
-export const REDIRECTS = [];
+export const REDIRECTS = [
+  // The GoDaddy Website Builder site that was on this domain before: a
+  // single page plus its online-store listing.
+  ['/ols/products/', '/services/'],
+];

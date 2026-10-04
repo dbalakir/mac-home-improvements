@@ -5,7 +5,7 @@
 > in place of the raster logo. Search `TODO` in `content.mjs` for the
 > M&C-specific values still to fill in.
 
-Static site for [machomeimprovements.com](https://machomeimprovements.com).
+Static site for [mac-homeimprovements.com](https://mac-homeimprovements.com).
 No framework and no server-side build. GitHub Pages serves the `.html` files in
 this repo directly. The only executable JavaScript that ships is a 1 KB
 progressive enhancement on the estimate form and, if you set `BIZ.ga4Id`, the
@@ -169,7 +169,7 @@ tools/
 
 The generated page directories sit at the repo root because that is the path
 they are served from: `/masonry/driveway-paving/` on disk is
-`machomeimprovements.com/masonry/driveway-paving/` in a browser. It means
+`mac-homeimprovements.com/masonry/driveway-paving/` in a browser. It means
 source and output share a folder, which is untidy but is the price of a
 zero-config Pages deploy.
 
@@ -219,7 +219,7 @@ The form already includes a hidden honeypot field for spam, and redirects to
 1. Create the repo on GitHub and push this directory.
 2. **Settings → Pages → Build and deployment**: source = *Deploy from a branch*,
    branch = `main`, folder = `/ (root)`.
-3. **Settings → Pages → Custom domain**: enter `machomeimprovements.com`.
+3. **Settings → Pages → Custom domain**: enter `mac-homeimprovements.com`.
    The `CNAME` file in this repo already contains it.
 4. At your DNS registrar, point the domain at GitHub:
 
@@ -559,7 +559,7 @@ exists.
 Set them, run `node build.mjs`, commit, and push. Then:
 
 1. **Verify** in Search Console — the tag is live on the deployed page.
-2. **Submit the sitemap** at `https://machomeimprovements.com/sitemap.xml`.
+2. **Submit the sitemap** at `https://mac-homeimprovements.com/sitemap.xml`.
    This is a separate step; verification alone does not submit it.
 3. **Link GA4 to Search Console** (GA4 → Admin → Product links) so search
    queries show up alongside traffic.

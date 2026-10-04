@@ -1492,7 +1492,7 @@ function buildContact() {
         <p class="formdone__sub">Thanks, we have your request and will be in touch, usually the same day. If it is urgent, call <a class="tel" href="${BIZ.phoneHref}">${BIZ.phone}</a>.</p>
       </div>
       <form class="form" id="estimate-form" method="POST"${action ? ` action="${action}"` : ''}>
-        <input type="hidden" name="_subject" value="New estimate request: machomeimprovements.com">
+        <input type="hidden" name="_subject" value="New estimate request: mac-homeimprovements.com">
         <input type="hidden" name="_next" value="${BIZ.origin}/thank-you/">
         <div class="hp" aria-hidden="true">
           <label for="company">Company (leave blank)</label>
