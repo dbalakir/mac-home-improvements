@@ -14,7 +14,7 @@ import { createHash } from 'crypto';
 import { fileURLToPath } from 'url';
 import {
   BIZ, NAV, SERVICES, REVIEWS, FEATURED_REVIEWS, AREAS, WARRANTY,
-  PORTFOLIO, HOME_PORTFOLIO, FAQ, POINTS, PROJECTS, REDIRECTS, LOCAL_PAGES,
+  PORTFOLIO, HOME_PORTFOLIO, FAQ, POINTS, PROJECTS, REDIRECTS, LOCAL_PAGES, AREA_COPY,
 } from './content.mjs';
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
@@ -641,24 +641,6 @@ function projectGrid(list, { heading = null, intro = null, showService = false, 
 </section>`;
 }
 
-/* Projects shown on a city page. If we have built in that city, show those.
-   Otherwise show recent work from elsewhere, labelled as such — a city page
-   must never imply a job happened somewhere it did not. */
-function areaProjects(area, city) {
-  const local = projectsIn(area);
-  if (local.length) {
-    return projectGrid(local, {
-      heading: `Our work in ${city}`,
-      intro: `Completed ${local.length === 1 ? 'project' : 'projects'} in ${city}. Every photograph is a job we built.`,
-      showService: true,
-    });
-  }
-  return projectGrid(PROJECTS.slice(0, 3), {
-    heading: 'Recent work nearby',
-    intro: `We have not photographed a ${city} job for the site yet. These are recent projects from elsewhere in the service area. The same crews and the same standard apply here.`,
-    showService: true,
-  });
-}
 
 /* --- structured data ----------------------------------------------------- */
 const LOCAL_BUSINESS = {
@@ -1683,73 +1665,109 @@ ${ctaBand()}`;
     body,
   }));
 
-  /* City stubs at the old WordPress URLs. */
-  const slugFor = a => a.toLowerCase().replace(/,/g, '').replace(/\s+/g, '-').replace(/-va$/, '-va').replace(/-dc$/, '-dc');
+  /* City pages, at the old WordPress URLs. Copy comes from AREA_COPY so each
+     page says something true about that place; the shared parts are kept
+     short so the pages are not near-copies of one another. */
   for (const a of AREAS) {
-    const slug = slugFor(a);
-    const city = a.split(',')[0];
+    const slug = areaSlugOf(a);
+    const city = cityOf(a);
+    const c = AREA_COPY[a];
+    if (!c) { warnings.push(`AREA_COPY has no entry for ${a}`); continue; }
     const trail = [
       { label: 'Home', href: '/' },
       { label: 'Service Areas', href: '/service-areas/' },
       { label: a },
     ];
+    const popular = c.popular.map(([sl, why]) => [SERVICES.find(x => x.slug === sl), why]).filter(([x]) => x);
+    const rest = TOP.filter(t => !popular.some(([p]) => p.href === t.href));
+    const here = LOCAL_PAGES.filter(lp => lp.area === a);
+    const local = projectsIn(a);
+    const photos = c.photos.filter(p => IMG[p]);
+
     write(`service-areas/${slug}/index.html`, layout({
-      title: `Masonry & Stonework in ${a} | ${BIZ.legal}`,
-      desc: metaDesc(
-        `M&C Home Improvements provides driveway paving, patios, walkways, retaining walls,`
-        + ` and masonry repair in ${a}. Family-operated since ${BIZ.since}.`,
-        'Free estimates.'),
+      title: `Masonry & Hardscaping in ${a} | ${BIZ.legal}`,
+      desc: metaDesc(smart(c.intro), 'Free estimates.'),
       url: `/service-areas/${slug}/`,
       current: '',
       trail,
-      // City landing pages carry the same service list as /services/, but with
-      // areaServed narrowed to this one city — that pairing is what tells
-      // Google the page is about masonry *in this place*. provider points at
-      // the LocalBusiness node on the home page rather than restating it, so
-      // there is exactly one business entity across the site.
-      jsonld: TOP.map(s => ({
+      // One Service node per service this page actually features, with
+      // areaServed narrowed to this city. provider points at the business
+      // node on the home page, so there is one business entity site-wide.
+      jsonld: popular.map(([x]) => ({
         '@context': 'https://schema.org',
         '@type': 'Service',
-        name: `${s.title} in ${a}`,
-        serviceType: s.title,
-        url: BIZ.origin + s.href,
+        name: `${x.title} in ${a}`,
+        serviceType: x.title,
+        url: BIZ.origin + x.href,
         provider: { '@id': BIZ.origin + '/#business' },
-        areaServed: { '@type': 'Place', name: a },
+        areaServed: { '@type': 'City', name: a },
       })),
       body: `${crumbs(trail)}
 
 <section class="pagehead">
   <div class="wrap">
     <p class="eyebrow">Service area</p>
-    <h1 class="h-display" style="max-width:18ch">Masonry &amp; Stonework in ${esc(a)}</h1>
-    <p class="lede">M&amp;C Home Improvements has built driveways, patios, walkways, steps, and stone walls for homeowners in ${esc(city)} since ${BIZ.since}. We are family-operated, work throughout Northern Virginia, and estimates here are free.</p>
+    <h1 class="h-display" style="max-width:18ch">Masonry &amp; Hardscaping in ${esc(a)}</h1>
+    <p class="lede">${esc(smart(c.intro))}</p>
     <div class="hero__actions" style="margin-top:2rem">
       <a class="btn btn--solid" href="/get-your-free-estimate/">Get a Free Estimate</a>
       <a class="btn btn--ghost tel" href="${BIZ.phoneHref}">${BIZ.phone}</a>
     </div>
   </div>
 </section>
-
-${(() => {
-  const here = LOCAL_PAGES.filter(lp => lp.area === a);
-  if (!here.length) return '';
-  return `<div class="wrap">
+${here.length ? `
+<div class="wrap">
   <p class="svc-parent reveal"><span>In ${esc(city)}:</span>
     ${here.map(lp => `<a href="${localUrl(lp)}">${esc(SERVICES.find(x => x.href === lp.service).title)} in ${esc(city)}</a>`).join('')}</p>
-</div>`;
-})()}
-
+</div>
+` : ''}
 <section class="section section--tight">
   <div class="wrap">
-    <div class="section__head"><h2 class="h-section reveal">What we build in ${esc(city)}</h2></div>
+    <div class="section__head"><h2 class="h-section reveal">Building in ${esc(city)}</h2></div>
     <div class="grid grid--3">
-${serviceGrid()}
+      ${c.notes.map(n => `<div class="reveal"><h3 style="font-size:1.05rem;margin-bottom:.5rem">${esc(n.h)}</h3><p style="color:var(--ink-mid);font-size:.95rem">${esc(smart(n.p))}</p></div>`).join('\n      ')}
     </div>
   </div>
 </section>
 
-${areaProjects(a, city)}
-${faqSection(FAQ.slice(0, 4))}
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section__head"><h2 class="h-section reveal">Most requested in ${esc(city)}</h2></div>
+    <div class="grid grid--3">
+      ${popular.map(([x, why]) => `<a class="card reveal" href="${x.href}">
+        <div class="card__media">${mediaFor(x.image, { sizes: '(max-width:620px) 92vw, (max-width:900px) 45vw, 30vw' })}</div>
+        <h3>${esc(x.title)}</h3>
+        <p>${esc(smart(why))}</p>
+        <span class="card__more">Learn more</span>
+      </a>`).join('\n      ')}
+    </div>
+    <p class="svc-parent reveal" style="margin-top:2rem"><span>Also in ${esc(city)}:</span>
+      ${rest.map(t => `<a href="${t.href}">${esc(t.title)}</a>`).join('')}</p>
+  </div>
+</section>
+
+${local.length ? projectGrid(local, {
+  heading: `Our work in ${esc(city)}`,
+  intro: `Completed ${local.length === 1 ? 'project' : 'projects'} in ${esc(city)}. Every photograph is a job we built.`,
+  showService: true,
+}) : ''}
+
+${photos.length ? `<section class="section section--sunk">
+  <div class="wrap">
+    <div class="section__head">
+      <h2 class="h-section reveal">${local.length ? 'More of our work' : 'Our work nearby'}</h2>
+      <p class="lede reveal">${local.length
+        ? 'Photographs from jobs across Northern Virginia.'
+        : `Recent jobs from across Northern Virginia. The same crews and the same standard apply in ${esc(city)}.`}</p>
+    </div>
+    <div class="grid grid--3">
+      ${photos.map(g => `<figure class="reveal" style="margin:0">${picture(g, { sizes: '(max-width:620px) 92vw, (max-width:900px) 45vw, 30vw', cls: 'card__media' })}
+      <figcaption style="margin-top:.6rem;font-size:.8rem;color:var(--ink-dim)">${esc(IMG[g].alt)}</figcaption></figure>`).join('\n      ')}
+    </div>
+  </div>
+</section>` : ''}
+
+${faqSection(c.faq)}
 ${ctaBand()}`,
     }));
   }

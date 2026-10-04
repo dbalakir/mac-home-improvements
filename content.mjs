@@ -1258,6 +1258,188 @@ export const AREAS = [
   'Vienna, VA', 'Fairfax, VA', 'Annandale, VA', 'Springfield, VA', 'Burke, VA',
 ];
 
+/* --- City page copy ------------------------------------------------------
+   One entry per AREAS city. Each page has to stand on its own: what is true
+   about building in that place (jurisdiction, housing stock, terrain, HOAs),
+   which jobs come up most there and why, and its own questions. Keep claims
+   to things that hold for the place itself; never imply a job happened in a
+   city unless it is in PROJECTS with that city.
+   `popular`: [service slug, why it comes up here]. `photos`: manifest slugs,
+   shown as recent work from across Northern Virginia. */
+export const AREA_COPY = {
+  'Alexandria, VA': {
+    intro: 'From Old Town rowhouses with courtyard gardens to split-levels on the Fairfax County side of an Alexandria address, the work here is mostly brick, small spaces, and water that needs somewhere to go. We build patios, walkways, steps, and brickwork across the city and its surrounding neighborhoods.',
+    notes: [
+      { h: 'City or county?', p: 'Alexandria is an independent city, but many homes with an Alexandria mailing address south and west of the city line are in Fairfax County. The two have different permit offices and different rules, so we confirm which one your lot is in before we design anything.' },
+      { h: 'Historic districts', p: 'In the Old Town and Parker-Gray historic districts, exterior work that can be seen from a public street generally goes through the Board of Architectural Review. Front steps and walks are the usual case. We tell you at the site visit whether a design is likely to need review.' },
+      { h: 'Brick and tight lots', p: 'On an older Alexandria house the right material is usually clay brick, or a paver chosen to sit with the brick of the house. On a small lot every patio is pitched away from the foundation and the runoff is planned before the surface is chosen.' },
+    ],
+    popular: [
+      ['patio-design', 'Courtyard and rear-yard patios, often in brick to match the house.'],
+      ['brickwork', 'Repointing, step rebuilds, and brick walks on older homes.'],
+      ['walkways-steps', 'Front entrances and steps, including in the historic districts.'],
+    ],
+    photos: ['brick-patio-herringbone', 'brick-walkway-entry', 'patio-herringbone-seatwall', 'steps-brick-flagstone', 'brick-paver-landing-steps', 'walkway-brick'],
+    faq: [
+      { q: 'Do you work in Old Town?', a: ['Yes. Projects there often need Board of Architectural Review approval when they can be seen from the street, and access is tighter, so we plan deliveries and staging around the block before work starts.'] },
+      { q: 'My address says Alexandria. Which rules apply?', a: ['Check your real-estate tax bill: it comes from either the City of Alexandria or Fairfax County, and that decides which permit office and rules apply. We confirm it at the site visit.'] },
+      { q: 'Can you match the brick on my house?', a: ['Usually closely. We match size, color, and texture, and the mortar color and joint profile, which matter as much as the brick itself. Samples are brought to the site so you can judge them against your walls.'] },
+    ],
+  },
+  'Arlington, VA': {
+    intro: 'Arlington is mostly older houses on compact lots: brick colonials, Cape Cods, and bungalows from the 1920s through the 1950s, with original chimneys, brick steps, and walks that have settled over decades. That is most of the work we do here, along with walls on the steeper streets in the north of the county.',
+    notes: [
+      { h: 'One county, no towns', p: 'Arlington is a county with no incorporated towns, so every address goes through the same county permit office. Some neighborhoods are local historic districts, where exterior changes are reviewed by the Historical Affairs and Landmark Review Board.' },
+      { h: 'Older masonry', p: 'Chimney crowns crack, flashing fails, and mortar on the weather side erodes. Front steps pull away from the house as the soil under them settles. These are repairs where matching the existing brick and mortar matters as much as the structure.' },
+      { h: 'Slopes and small yards', p: 'North Arlington in particular has steep lots, where a retaining wall or a set of steps is what makes the yard usable. On small lots, access for equipment is planned at the site visit, not discovered on the first day.' },
+    ],
+    popular: [
+      ['chimney-repair', 'Crowns, flashing, and rebuilds on original chimneys.'],
+      ['walkways-steps', 'Rebuilding settled front steps and walks.'],
+      ['retaining-walls', 'Walls and terraces on the steeper lots.'],
+    ],
+    photos: ['chimney-rebuilt-flashing', 'chimney-rebuild-flues', 'steps-herringbone-landing', 'wall-stone-seat-curve', 'walkway-paver-curved-inlay', 'steps-brick'],
+    faq: [
+      { q: 'Do you repair chimneys on older Arlington houses?', a: ['Yes: crowns, flashing, repointing, and rebuilding above the roofline, matched to the existing brick. We do not sweep chimneys or inspect flues; a CSIA-certified sweep does that, and we do the masonry their report calls for.'] },
+      { q: 'Is my house in a historic district?', a: ['Arlington has a number of local historic districts. If yours is in one, exterior changes go through the county review board first. We check your address before quoting.'] },
+      { q: 'My front steps are pulling away from the house. Can they be fixed?', a: ['Usually by taking them down to a proper footing and rebuilding, rather than patching the gap. We look at what is under them before recommending either.'] },
+    ],
+  },
+  'Falls Church, VA': {
+    intro: 'The City of Falls Church is small, leafy, and full of older houses on established lots, and the Falls Church mailing address reaches well beyond it into Fairfax County. Mature trees, settled walks, and aging driveways are most of what we are called about here.',
+    notes: [
+      { h: 'City or county?', p: 'The City of Falls Church is an independent city of about two square miles. Many Falls Church addresses outside it are in Fairfax County, which issues its own permits. We confirm which one applies before we price the job.' },
+      { h: 'Mature trees', p: 'Big trees are part of why people live here, and their roots are the most common reason a walk or driveway has heaved. We route around major roots where we can, and tell you where a tree and a hard surface cannot share the same ground.' },
+      { h: 'Replacing what is there', p: 'Most work here is replacing an original walk, driveway, or set of steps rather than building on open ground. Tear-out, base repair, and what happens to the old material are all in the estimate.' },
+    ],
+    popular: [
+      ['walkways-steps', 'Replacing heaved walks and worn front steps.'],
+      ['driveway-paving', 'Replacing original driveways, often in pavers or asphalt.'],
+      ['patio-design', 'Patios under mature trees, built to stay level.'],
+    ],
+    photos: ['walkway-curved', 'stone-flagstone-walkway', 'driveway-paver-charcoal-border', 'patio-paver-curved-planter', 'steps-paver-curved', 'walkway-banded'],
+    faq: [
+      { q: 'A tree root has lifted my walk. Can you fix it without killing the tree?', a: ['Often. We can reroute the walk, bridge a root, or use a surface that tolerates some movement. Where a large root has to be cut, we tell you first, and suggest an arborist look at it.'] },
+      { q: 'Is my Falls Church address in the city?', a: ['Only part of the Falls Church mailing area is the City of Falls Church; much of it is Fairfax County. Your real-estate tax bill shows which. We confirm it at the site visit.'] },
+      { q: 'Do you haul away the old driveway?', a: ['Yes. Tear-out and disposal are itemized in the estimate, so you can see what they cost.'] },
+    ],
+  },
+  'McLean, VA': {
+    intro: 'McLean lots are large and often wooded, with long driveways, grade changes, and outdoor living spaces built to the scale of the house. Most of the work we do here is paver driveways, retaining walls, and patios with fireplaces or seating walls.',
+    notes: [
+      { h: 'Fairfax County jurisdiction', p: 'McLean is not incorporated; it is part of Fairfax County, so permits go through Fairfax County Land Development Services. Taller retaining walls and work near a driveway often need an engineered design, which we confirm before quoting.' },
+      { h: 'Long driveways', p: 'A long driveway on a slope is a drainage project as much as a paving one. We grade the base so water leaves the surface along its length instead of running the full distance to the garage or the street.' },
+      { h: 'Scale and finish', p: 'On a large property the details show: border courses, banding, transitions between materials, and walls that are capped properly. We bring samples and lay out the design on site before anything is ordered.' },
+    ],
+    popular: [
+      ['paver-driveways', 'Long paver driveways with borders and banding.'],
+      ['retaining-walls', 'Walls that terrace sloped, wooded lots.'],
+      ['outdoor-fireplaces', 'Fireplaces and seating walls as part of a patio.'],
+    ],
+    photos: ['driveway-paver-medallion', 'driveway-paver-walled', 'patio-paver-grill-terrace', 'fireplace-bbq', 'wall-stone-serpentine-seat', 'patio-pool-deck-slab'],
+    faq: [
+      { q: 'Can a long driveway be done in stages?', a: ['Sometimes, but the base and the drainage need to be planned for the whole length at once, or the joins become the weak points. We price it both ways so you can decide.'] },
+      { q: 'Do I need an engineer for a retaining wall?', a: ['It depends on the height, measured from the bottom of the footing, and on what the wall supports. Walls beside driveways often need one at a lower height. We check with Fairfax County before we quote.'] },
+      { q: 'Can a patio, fireplace, and walls be one project?', a: ['Yes, and it is usually better that way: one base, one drainage plan, and materials chosen together. We design it as a whole and can build it in phases if needed.'] },
+    ],
+  },
+  'Vienna, VA': {
+    intro: 'Vienna mixes 1950s and 1960s ramblers with newer homes built on the same lots, and the yards show it: original driveways next to new construction, and slopes that need walls and steps. We build driveways, patios, retaining walls, and steps throughout the town and the surrounding area.',
+    notes: [
+      { h: 'Town of Vienna or Fairfax County?', p: 'The Town of Vienna is incorporated and has its own permit process; addresses just outside it fall under Fairfax County. We confirm which applies before we design or price the job.' },
+      { h: 'Old and new side by side', p: 'Many Vienna lots have an original driveway or walk next to a new or renovated house. Replacing them is a chance to correct grading that was never right, so water runs away from the foundation rather than toward it.' },
+      { h: 'Walls and steps on slopes', p: 'Where a lot falls away from the street or toward the back, a block retaining wall with built-in steps turns a slope into usable yard. The footing and the drainage behind the wall are what decide how long it lasts.' },
+    ],
+    popular: [
+      ['retaining-walls', 'Block walls with steps on sloped lots.'],
+      ['patio-design', 'Backyard patios and fire pit areas.'],
+      ['driveway-paving', 'Replacing original driveways on older lots.'],
+    ],
+    photos: ['wall-block-build', 'wall-steps', 'patio-paver-stone-wall', 'asphalt-driveway-paver-edge', 'driveway-paver-red-band', 'steps-wide'],
+    faq: [
+      { q: 'Does the Town of Vienna need to approve my project?', a: ['If your home is inside town limits, the town handles permits for work that needs one, such as taller retaining walls. Outside the town it is Fairfax County. We check which applies first.'] },
+      { q: 'Can a retaining wall include steps?', a: ['Yes. Steps built into a block wall are a common way to reach a lower yard. They are designed with the wall, not added afterward, so the two settle as one.'] },
+      { q: 'Can you fix water running toward my house when you replace the driveway?', a: ['Yes, and we will raise it if we see it. Regrading is itemized in the estimate so you can see what it costs.'] },
+    ],
+  },
+  'Fairfax, VA': {
+    intro: 'Fairfax covers both the independent City of Fairfax and the surrounding county, with subdivisions built on rolling ground and a lot of clay underneath them. Retaining walls, patios, and drainage correction make up much of the work we do here.',
+    notes: [
+      { h: 'County or city?', p: 'A Fairfax address can be in Fairfax County or in the City of Fairfax, which is independent and issues its own permits. We confirm which one your lot is in before quoting.' },
+      { h: 'Clay soil', p: 'Much of Fairfax County is clay that holds water. Behind a wall, under a patio, or beside a foundation, that water is what causes failure, so drainage is designed into every job rather than added when something goes wrong.' },
+      { h: 'HOA communities', p: 'Many Fairfax neighborhoods have an HOA with architectural review for walls, patios, and grading. We supply the drawings and material details the application asks for and do not start until it is approved.' },
+    ],
+    popular: [
+      ['retaining-walls', 'Walls that level sloped subdivision lots.'],
+      ['drainage', 'Correcting water that pools against foundations.'],
+      ['patio-design', 'Patios that extend a flat area off the back of the house.'],
+    ],
+    photos: ['wall-hero', 'drainage-trench-drain', 'drainage-pipe-trench', 'patio-paver-curved-border', 'wall-closeup', 'stone-flagstone-steps-seatwall'],
+    faq: [
+      { q: 'Do you work in the City of Fairfax as well as the county?', a: ['Yes, both. They have separate permit offices, so we confirm which one applies to your lot before we price anything.'] },
+      { q: 'Water pools against my foundation after rain. Can you fix that?', a: ['Usually with a combination of regrading, downspout routing, and a French or trench drain, depending on where the water comes from. We find the source first; the fix follows from that.'] },
+      { q: 'Will my HOA need to approve a patio?', a: ['Many Fairfax HOAs require review for patios and walls. We provide drawings and specifications for the application.'] },
+    ],
+  },
+  'Annandale, VA': {
+    intro: 'Annandale is mostly 1950s to 1970s split-levels, ramblers, and colonials, and many still have their original driveways, front steps, and walks. Replacing those, and the drainage that wore them out, is most of the work we do here.',
+    notes: [
+      { h: 'Fairfax County jurisdiction', p: 'Annandale is unincorporated Fairfax County, so permits go through Fairfax County Land Development Services. Most driveway and walk replacements do not need one; taller walls can. We confirm before quoting.' },
+      { h: 'Driveways at the end of their life', p: 'A driveway poured or paved fifty years ago has usually failed at the base, not the surface. Replacing it means taking out the old base where it has failed, not paving over it, or the same cracks come back.' },
+      { h: 'Split-level entrances', p: 'Split-levels often have short runs of steps up to the door that have settled or cracked. Rebuilding them on a proper footing, with a landing at the door, is one of the most common jobs on these houses.' },
+    ],
+    popular: [
+      ['driveway-paving', 'Replacing original driveways down to the base.'],
+      ['walkways-steps', 'Rebuilding front steps and landings.'],
+      ['concrete-driveways', 'Concrete and stamped concrete replacements.'],
+    ],
+    photos: ['concrete-driveway-paver-edge', 'concrete-driveway-garage', 'driveway-asphalt-new', 'steps-landing', 'walkway-front', 'driveway-paver-grey'],
+    faq: [
+      { q: 'Can you pave over my old driveway?', a: ['Sometimes, if the base is sound. On older Annandale driveways it usually is not, and an overlay brings the same cracks back within a few seasons. We tell you which case yours is.'] },
+      { q: 'Concrete, asphalt, or pavers?', a: ['Asphalt costs least up front, concrete gives the cleanest uniform surface, and pavers cost more but repair without patches. We walk through all three against your site and budget.'] },
+      { q: 'Can the front steps be widened?', a: ['Usually, when they are rebuilt. A wider landing at the door is one of the most useful changes on a split-level.'] },
+    ],
+  },
+  'Springfield, VA': {
+    intro: 'Springfield has established neighborhoods of colonials and split-levels, and parts of it sit on some of the most difficult soil in Fairfax County. Driveways, drainage, and foundation work are a large share of what we do here.',
+    notes: [
+      { h: 'Problem soils', p: 'Parts of southeastern Fairfax County, including areas around Springfield, have marine clay that swells when wet and shrinks when dry. It moves slabs, cracks foundations, and pushes walls. Fairfax County maps these soils, and building on them can call for a geotechnical review.' },
+      { h: 'Fairfax County jurisdiction', p: 'Springfield is unincorporated Fairfax County, so permits go through Fairfax County Land Development Services. We confirm requirements before we quote.' },
+      { h: 'Drainage first', p: 'On clay, the base and the drainage do more for a driveway or patio than the surface material does. We dig to depth, build the base in compacted lifts, and make sure water leaves the area instead of soaking in beside it.' },
+    ],
+    popular: [
+      ['driveway-paving', 'Asphalt and concrete driveway replacements.'],
+      ['foundation-repair', 'Exterior waterproofing and crack repair.'],
+      ['drainage', 'French drains and regrading on clay lots.'],
+    ],
+    photos: ['asphalt-driveway-roller', 'asphalt-driveway-base-prep', 'waterproof-membrane-drain', 'foundation-waterproof-dimple-drain', 'drainage-pipe-hillside', 'concrete-driveway-night'],
+    faq: [
+      { q: 'Is my lot on marine clay?', a: ['Fairfax County publishes maps of problem soils. If your lot is on them, foundations and slabs need more care, and some work calls for a geotechnical review. We look at the site and the map before we design.'] },
+      { q: 'Can you waterproof a basement from the outside?', a: ['Yes. We excavate along the foundation, seal the wall, add a drainage membrane and a drain in gravel, and backfill. It is the most thorough fix for water coming through a foundation wall.'] },
+      { q: 'Why does my driveway keep cracking?', a: ['On clay it is usually the base moving, not the surface failing. Replacing the surface without the base brings the cracks back. We tell you which is happening.'] },
+    ],
+  },
+  'Burke, VA': {
+    intro: 'Burke is largely planned communities from the 1970s and 1980s, including Burke Centre and the neighborhoods around Lake Braddock, with townhouses and single-family homes on wooded, sloping lots. Patios, walkways, and drainage are the jobs that come up most.',
+    notes: [
+      { h: 'Community associations', p: 'Much of Burke is governed by community associations, such as the Burke Centre Conservancy, that review exterior changes. A patio, wall, or new walkway usually needs approval first. We provide the drawings and material details for the application.' },
+      { h: 'Fairfax County jurisdiction', p: 'Burke is unincorporated Fairfax County, so any permit goes through Fairfax County Land Development Services.' },
+      { h: 'Wooded, sloping lots', p: 'Rear yards here often fall away from the house toward common woods. A patio off the back usually needs a short wall or steps to sit level, and the runoff from it needs to go somewhere other than the neighbor.' },
+    ],
+    popular: [
+      ['patio-design', 'Rear patios off townhouses and single-family homes.'],
+      ['walkways-steps', 'Replacing original walks and entry steps.'],
+      ['drainage', 'Routing water away on sloped, wooded lots.'],
+    ],
+    photos: ['patio-paver-brown', 'patio-cobble', 'walkway-side', 'steps-paver-lit', 'drainage-river-rock', 'wall-build'],
+    faq: [
+      { q: 'Do I need association approval for a patio in Burke?', a: ['Usually, if you are in Burke Centre or another community association with architectural review. We supply what the application needs and do not start until it is approved.'] },
+      { q: 'Can you build a patio on a townhouse lot?', a: ['Yes. Townhouse patios are often small and close to neighbors, so drainage and access are planned carefully. Materials are chosen to work with association guidelines.'] },
+      { q: 'Water runs off my yard into the woods and erodes it. Can that be fixed?', a: ['Usually with a stone swale or a drain that slows the water and carries it where it can spread out. We look at where it comes from and where it ends up before designing it.'] },
+    ],
+  },
+};
+
 /* --- Portfolio ----------------------------------------------------------- */
 /* Order matters — this is the sequence on the portfolio page. */
 export const PORTFOLIO = [
