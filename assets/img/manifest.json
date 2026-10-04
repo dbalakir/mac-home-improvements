@@ -92,22 +92,22 @@
   ]
  },
  "driveway-paver-grey": {
-  "alt": "Grey paver driveway leading to a two-car garage",
+  "alt": "Grey herringbone paver driveway being finished in front of a garage",
   "role": "card",
-  "w": 1318,
-  "h": 762,
+  "w": 1178,
+  "h": 1462,
   "sizes": [
    {
     "w": 420,
-    "h": 243
+    "h": 521
    },
    {
     "w": 760,
-    "h": 439
+    "h": 943
    },
    {
-    "w": 1200,
-    "h": 694
+    "w": 1178,
+    "h": 1462
    }
   ]
  },
@@ -368,22 +368,22 @@
   ]
  },
  "walkway-brick": {
-  "alt": "Brick herringbone walking path leading to a residential front door",
+  "alt": "Curved clay brick herringbone walkway along a front porch",
   "role": "card",
-  "w": 1371,
-  "h": 1990,
+  "w": 1178,
+  "h": 1541,
   "sizes": [
    {
     "w": 420,
-    "h": 610
+    "h": 549
    },
    {
     "w": 760,
-    "h": 1103
+    "h": 994
    },
    {
-    "w": 1200,
-    "h": 1742
+    "w": 1178,
+    "h": 1541
    }
   ]
  },
@@ -2004,6 +2004,122 @@
    {
     "w": 1520,
     "h": 1090
+   }
+  ]
+ },
+ "firepit-circle-patio": {
+  "alt": "Circular paver patio with a round fire pit and charcoal border ringed in black river stone",
+  "role": "card",
+  "w": 945,
+  "h": 1060,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 471
+   },
+   {
+    "w": 760,
+    "h": 852
+   },
+   {
+    "w": 945,
+    "h": 1060
+   }
+  ]
+ },
+ "hero-patio-seatwall": {
+  "alt": "Large-format paver patio with a stone seat wall and planting bed beside a retractable awning",
+  "role": "hero",
+  "w": 1178,
+  "h": 1469,
+  "sizes": [
+   {
+    "w": 760,
+    "h": 948
+   },
+   {
+    "w": 1178,
+    "h": 1469
+   }
+  ]
+ },
+ "stone-flagstone-patio-wall-dusk": {
+  "alt": "Flagstone patio and steps with a lit natural stone seat wall at dusk",
+  "role": "card",
+  "w": 1178,
+  "h": 1426,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 508
+   },
+   {
+    "w": 760,
+    "h": 920
+   },
+   {
+    "w": 1178,
+    "h": 1426
+   }
+  ]
+ },
+ "stone-flagstone-patio-curved": {
+  "alt": "Curved flagstone patio with a stone border at the back of a wooded lot",
+  "role": "card",
+  "w": 1178,
+  "h": 1533,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 547
+   },
+   {
+    "w": 760,
+    "h": 989
+   },
+   {
+    "w": 1178,
+    "h": 1533
+   }
+  ]
+ },
+ "stone-flagstone-patio-string-lights": {
+  "alt": "Flagstone patio under string lights behind a stone and clapboard house",
+  "role": "card",
+  "w": 1178,
+  "h": 1467,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 523
+   },
+   {
+    "w": 760,
+    "h": 946
+   },
+   {
+    "w": 1178,
+    "h": 1467
+   }
+  ]
+ },
+ "asphalt-driveway-paver-apron": {
+  "alt": "New asphalt driveway with a grey paver apron and charcoal border inlay",
+  "role": "card",
+  "w": 1178,
+  "h": 1558,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 555
+   },
+   {
+    "w": 760,
+    "h": 1005
+   },
+   {
+    "w": 1178,
+    "h": 1558
    }
   ]
  }

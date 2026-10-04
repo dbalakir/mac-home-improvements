@@ -1457,6 +1457,10 @@ h1, h2, h3, h4 { font-stretch: 112%; font-weight: 700; letter-spacing: -0.02em; 
 .hero--photo + .trustbar ul { border-top: 0; }
 /* A brass rule under the hero ties it to the navy masthead above. */
 .hero--photo { border-bottom: 3px solid var(--brass); }
+/* The hero photograph is portrait; on wide screens frame its lower half,
+   the patio and seat wall, rather than the equipment in the middle. */
+.hero--photo .hero__media img { object-position: 50% 78%; }
+@media (max-width: 760px) { .hero--photo .hero__media img { object-position: 50% 50%; } }
 
 /* Phones: the photograph runs clear at the top and darkens toward the
    bottom, where the copy sits in white. Overrides the limestone scrim above. */

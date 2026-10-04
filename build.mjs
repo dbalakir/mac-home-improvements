@@ -703,10 +703,7 @@ function buildHome() {
   }).join('\n');
 
   const body = `<section class="hero hero--photo">
-  <div class="hero__media">${picture('hero-driveway', {
-    sizes: '100vw', lazy: false,
-    altOverride: 'Circular paver driveway with a stone medallion in front of a stone-faced Northern Virginia home',
-  })}</div>
+  <div class="hero__media">${picture('hero-patio-seatwall', { sizes: '100vw', lazy: false })}</div>
   <div class="wrap hero__inner">
     <p class="eyebrow">Family-operated in Northern Virginia since ${BIZ.since}</p>
     <h1 class="h-display">Northern Virginia&rsquo;s Driveway, Hardscape &amp; Masonry Specialists</h1>
@@ -797,7 +794,7 @@ ${ctaBand()}`;
       'Free estimates.'),
     url: '/',
     current: '/',
-    heroImage: 'hero-driveway',
+    heroImage: 'hero-patio-seatwall',
     body,
     jsonld: [
       LOCAL_BUSINESS,

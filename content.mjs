@@ -177,7 +177,7 @@ export const SERVICES = [
     card: 'New asphalt driveways and full replacements. Torn out to depth, rebuilt on a compacted base, laid in lifts and rolled hot.',
     image: 'driveway-asphalt-new',
     feature: 'driveway-roller',
-    gallery: ['asphalt-driveway-paver-edge', 'asphalt-driveway-base-prep', 'asphalt-driveway-curved', 'asphalt-driveway-stone-edge', 'asphalt-driveway-brick-border', 'asphalt-driveway-roller', 'driveway-asphalt-new', 'driveway-asphalt-curve', 'driveway-roller', 'driveway-crew', 'driveway-asphalt-cone', 'driveway-prep'],
+    gallery: ['asphalt-driveway-paver-apron', 'asphalt-driveway-paver-edge', 'asphalt-driveway-base-prep', 'asphalt-driveway-curved', 'asphalt-driveway-stone-edge', 'asphalt-driveway-brick-border', 'asphalt-driveway-roller', 'driveway-asphalt-new', 'driveway-asphalt-curve', 'driveway-roller', 'driveway-crew', 'driveway-asphalt-cone', 'driveway-prep'],
     h1: 'Asphalt Driveway Installation and Replacement',
     intro: 'Asphalt is the fastest and least expensive way to get a driveway that carries daily traffic and sheds water properly, provided the base underneath it is built to do its job. We tear out to depth, rebuild the base, and lay the mat in lifts.',
     sections: [
@@ -665,7 +665,7 @@ export const SERVICES = [
     card: 'Paver, natural stone, brick, and stamped concrete patios built from the base up, designed around how you actually use the space.',
     image: 'patio-paver-grill-terrace',
     feature: 'patio-paver-grill-terrace',
-    gallery: ['patio-paver-grill-terrace', 'patio-paver-curved-planter', 'patio-paver-stone-wall', 'patio-herringbone-seatwall', 'patio-paver-curved-border', 'patio-pool-deck-slab', 'patio-paver-brown', 'patio-firepit', 'patio-cobble', 'patio-backyard', 'patio-pool', 'patio-stone', 'patio-red', 'patio-covered', 'patio-build', 'brick-flooring'],
+    gallery: ['stone-flagstone-patio-wall-dusk', 'stone-flagstone-patio-curved', 'stone-flagstone-patio-string-lights', 'patio-paver-grill-terrace', 'patio-paver-curved-planter', 'patio-paver-stone-wall', 'patio-herringbone-seatwall', 'patio-paver-curved-border', 'patio-pool-deck-slab', 'patio-paver-brown', 'patio-firepit', 'patio-cobble', 'patio-backyard', 'patio-pool', 'patio-stone', 'patio-red', 'patio-covered', 'patio-build', 'brick-flooring'],
     h1: 'Patio Installation and Design',
     intro: 'We build patios (paver, natural stone, brick, and stamped concrete) from the excavation up. The design work happens first and it matters, but what decides whether you are still happy with the patio in fifteen years is the base underneath it and where the water goes.',
     sections: [
@@ -979,7 +979,7 @@ export const SERVICES = [
     card: 'Custom fireplaces and fire pits scaled to the space, with seating walls, storage, and lighting built in where it makes sense.',
     image: 'fireplace-stone',
     feature: 'fireplace-stone',
-    gallery: ['firepit-square-block', 'fireplace-stone', 'fireplace-build', 'fireplace-install', 'fireplace-bbq', 'patio-firepit'],
+    gallery: ['firepit-circle-patio', 'firepit-square-block', 'fireplace-stone', 'fireplace-build', 'fireplace-install', 'fireplace-bbq', 'patio-firepit'],
     h1: 'Outdoor Fireplaces Designed for Northern Virginia Homes',
     intro: 'A custom outdoor fireplace becomes the center of an outdoor living area, the thing that draws people together for conversation, for warmth, and for evenings that run longer than planned. Scale and placement are what make that happen, and both are design decisions worth getting right.',
     sections: [
@@ -1462,6 +1462,7 @@ export const PORTFOLIO = [
   'driveway-paver-red-border-handshake', 'brick-paver-landing-steps', 'wall-stone-serpentine-seat', 'patio-paver-grill-terrace',
   'patio-paver-curved-planter', 'walkway-paver-curved-inlay', 'patio-paver-stone-wall', 'asphalt-driveway-paver-edge',
   'chimney-rebuilt-flashing', 'foundation-waterproof-dimple-drain', 'roof-shingle-ridge', 'firepit-square-block', 'brick-walk-curved-steps-wall',
+  'firepit-circle-patio', 'stone-flagstone-patio-wall-dusk', 'stone-flagstone-patio-curved', 'stone-flagstone-patio-string-lights', 'asphalt-driveway-paver-apron', 'hero-patio-seatwall',
 ];
 
 /* Nine shown on the home page. */
