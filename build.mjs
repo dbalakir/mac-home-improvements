@@ -255,12 +255,15 @@ function layout({ title, desc, url, body, current, jsonld = [], heroImage = null
   // Preload the hero so the LCP element starts downloading before the CSS has
   // parsed. imagesrcset/imagesizes must mirror the <picture> exactly, or the
   // browser treats the preload as a separate resource and fetches twice.
-  const heroExt = heroImage && IMG[heroImage] && IMG[heroImage].sizes.every(s => fs.existsSync(path.join(ROOT, 'assets/img', `${heroImage}-${s.w}.avif`))) ? 'avif' : 'webp';
-  const heroPreload = heroImage && IMG[heroImage]
-    ? `\n<link rel="preload" as="image" type="image/${heroExt}" fetchpriority="high"`
-      + ` imagesrcset="${IMG[heroImage].sizes.map(s => `/assets/img/${heroImage}-${s.w}.${heroExt} ${s.w}w`).join(', ')}"`
-      + ` imagesizes="100vw">`
-    : '';
+  // heroImage is a slug, or a list of { slug, media } when phones and
+  // desktops get different photographs; each gets a media-scoped preload.
+  const heroes = !heroImage ? [] : (Array.isArray(heroImage) ? heroImage : [{ slug: heroImage }]);
+  const heroPreload = heroes.filter(h => IMG[h.slug]).map(({ slug, media }) => {
+    const ext = IMG[slug].sizes.every(s => fs.existsSync(path.join(ROOT, 'assets/img', `${slug}-${s.w}.avif`))) ? 'avif' : 'webp';
+    return `\n<link rel="preload" as="image" type="image/${ext}" fetchpriority="high"`
+      + ` imagesrcset="${IMG[slug].sizes.map(s => `/assets/img/${slug}-${s.w}.${ext} ${s.w}w`).join(', ')}"`
+      + ` imagesizes="100vw"${media ? ` media="${media}"` : ''}>`;
+  }).join('');
 
   // BreadcrumbList mirrors the visible crumbs exactly — Google requires the
   // markup to match what the user can see, so both are driven off one array.
@@ -690,6 +693,20 @@ const LOCAL_BUSINESS = {
    ========================================================================== */
 
 /* --- Home ---------------------------------------------------------------- */
+/* Home hero: a landscape photograph on wide screens and a portrait one on
+   phones, so neither is cropped hard or enlarged past its real size. */
+const HERO_WIDE = 'patio-paver-grill-terrace';
+const HERO_TALL = 'hero-patio-seatwall';
+function heroPicture() {
+  const set = slug => IMG[slug].sizes.map(s => `/assets/img/${slug}-${s.w}.webp ${s.w}w`).join(', ');
+  const t = IMG[HERO_TALL].sizes.at(-1);
+  return `<picture>
+  <source type="image/webp" media="(min-width: 761px)" srcset="${set(HERO_WIDE)}" sizes="100vw">
+  <source type="image/webp" srcset="${set(HERO_TALL)}" sizes="100vw">
+  <img src="/assets/img/${HERO_TALL}-${t.w}.webp" width="${t.w}" height="${t.h}" alt="${esc(IMG[HERO_TALL].alt)}" fetchpriority="high" decoding="async">
+</picture>`;
+}
+
 function buildHome() {
   const lead = REVIEWS.find(r => r.name === FEATURED_REVIEWS[0]);
   const support = FEATURED_REVIEWS.slice(1).map(n => REVIEWS.find(r => r.name === n)).filter(Boolean);
@@ -703,7 +720,7 @@ function buildHome() {
   }).join('\n');
 
   const body = `<section class="hero hero--photo">
-  <div class="hero__media">${picture('hero-patio-seatwall', { sizes: '100vw', lazy: false })}</div>
+  <div class="hero__media">${heroPicture()}</div>
   <div class="wrap hero__inner">
     <p class="eyebrow">Family-operated in Northern Virginia since ${BIZ.since}</p>
     <h1 class="h-display">Northern Virginia&rsquo;s Driveway, Hardscape &amp; Masonry Specialists</h1>
@@ -794,7 +811,10 @@ ${ctaBand()}`;
       'Free estimates.'),
     url: '/',
     current: '/',
-    heroImage: 'hero-patio-seatwall',
+    heroImage: [
+      { slug: HERO_WIDE, media: '(min-width: 761px)' },
+      { slug: HERO_TALL, media: '(max-width: 760px)' },
+    ],
     body,
     jsonld: [
       LOCAL_BUSINESS,

@@ -1464,7 +1464,7 @@ h1, h2, h3, h4 { font-stretch: 112%; font-weight: 700; letter-spacing: -0.02em; 
   .hero--photo::after {
     background: linear-gradient(90deg, rgba(9,16,28,.82) 0%, rgba(9,16,28,.62) 40%, rgba(9,16,28,.15) 75%, rgba(9,16,28,0) 100%);
   }
-  .hero--photo .hero__media img { object-position: 50% 42%; }
+  .hero--photo .hero__media img { object-position: 50% 55%; }
   .hero--photo .eyebrow { color: rgba(255,255,255,.85); }
   .hero--photo h1 { color: #fff; }
   .hero--photo .hero__lede { color: rgba(255,255,255,.88); }
