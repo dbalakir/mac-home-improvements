@@ -1447,7 +1447,10 @@ h1, h2, h3, h4 { font-stretch: 112%; font-weight: 700; letter-spacing: -0.02em; 
     linear-gradient(100deg, rgba(243,242,238,.97) 0%, rgba(243,242,238,.92) 38%, rgba(243,242,238,.55) 62%, rgba(243,242,238,0) 88%);
 }
 @media (max-width: 760px) {
-  .hero--photo::after { background: linear-gradient(to bottom, rgba(243,242,238,.84) 0%, rgba(243,242,238,.78) 50%, rgba(243,242,238,.35) 100%); }
+  .hero--photo::after { background: linear-gradient(to bottom, rgba(243,242,238,.38) 0%, rgba(243,242,238,.3) 60%, rgba(243,242,238,.08) 100%); }
+  /* With the photo barely veiled, a soft limestone glow keeps the copy legible. */
+  .hero--photo .eyebrow, .hero--photo h1, .hero--photo .hero__lede { text-shadow: 0 0 14px rgba(243,242,238,.95), 0 0 4px rgba(243,242,238,.9); }
+  .hero--photo .btn--ghost { background: rgba(243,242,238,.9); }
 }
 .hero--photo .hero__inner { padding-block: clamp(5rem, 12vw, 8.5rem); max-width: var(--wrap); color: var(--ink); }
 .hero--photo .eyebrow { color: var(--clay); }
