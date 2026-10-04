@@ -1461,11 +1461,15 @@ h1, h2, h3, h4 { font-stretch: 112%; font-weight: 700; letter-spacing: -0.02em; 
 /* Phones: the photograph runs clear at the top and darkens toward the
    bottom, where the copy sits in white. Overrides the limestone scrim above. */
 @media (max-width: 760px) {
-  .hero--photo { display: flex; flex-direction: column; justify-content: flex-end; min-height: calc(100svh - 83px); }
   .hero--photo::after {
     background: linear-gradient(to bottom, rgba(9,16,28,0) 0%, rgba(9,16,28,.08) 25%, rgba(9,16,28,.55) 50%, rgba(9,16,28,.82) 100%);
   }
-  .hero--photo .hero__inner { padding-block: 9rem 3rem; color: #fff; }
+  /* Sized so both actions land on the first screen even on a short phone. */
+  .hero--photo .hero__inner { padding-block: 4.5rem 1.75rem; color: #fff; }
+  .hero--photo h1 { font-size: clamp(1.9rem, 8.4vw, 2.4rem); }
+  .hero--photo .hero__lede { margin-top: 1rem; font-size: 0.98rem; }
+  .hero--photo .hero__actions { margin-top: 1.5rem; flex-wrap: nowrap; gap: 0.6rem; }
+  .hero--photo .hero__actions .btn { flex: 1 1 0; padding-inline: 0.75rem; white-space: nowrap; }
   .hero--photo .eyebrow { color: rgba(255,255,255,.9); }
   .hero--photo h1 { color: #fff; }
   .hero--photo .hero__lede { color: rgba(255,255,255,.88); }
