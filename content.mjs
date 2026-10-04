@@ -979,7 +979,7 @@ export const SERVICES = [
     card: 'Custom fireplaces and fire pits scaled to the space, with seating walls, storage, and lighting built in where it makes sense.',
     image: 'fireplace-stone',
     feature: 'fireplace-stone',
-    gallery: ['fireplace-stone', 'fireplace-build', 'fireplace-install', 'fireplace-bbq', 'patio-firepit'],
+    gallery: ['firepit-square-block', 'fireplace-stone', 'fireplace-build', 'fireplace-install', 'fireplace-bbq', 'patio-firepit'],
     h1: 'Outdoor Fireplaces Designed for Northern Virginia Homes',
     intro: 'A custom outdoor fireplace becomes the center of an outdoor living area, the thing that draws people together for conversation, for warmth, and for evenings that run longer than planned. Scale and placement are what make that happen, and both are design decisions worth getting right.',
     sections: [
@@ -1461,7 +1461,7 @@ export const PORTFOLIO = [
   'patio-paver-brown', 'asphalt-driveway-stone-edge', 'waterproof-membrane-drain', 'drainage-river-rock',
   'driveway-paver-red-border-handshake', 'brick-paver-landing-steps', 'wall-stone-serpentine-seat', 'patio-paver-grill-terrace',
   'patio-paver-curved-planter', 'walkway-paver-curved-inlay', 'patio-paver-stone-wall', 'asphalt-driveway-paver-edge',
-  'chimney-rebuilt-flashing', 'foundation-waterproof-dimple-drain', 'roof-shingle-ridge',
+  'chimney-rebuilt-flashing', 'foundation-waterproof-dimple-drain', 'roof-shingle-ridge', 'firepit-square-block',
 ];
 
 /* Nine shown on the home page. */

@@ -1958,5 +1958,29 @@
     "h": 1270
    }
   ]
+ },
+ "firepit-square-block": {
+  "alt": "Square block fire pit with a charcoal cap on a grey paver patio below a back deck",
+  "role": "card",
+  "w": 1602,
+  "h": 2000,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 524
+   },
+   {
+    "w": 760,
+    "h": 949
+   },
+   {
+    "w": 1200,
+    "h": 1498
+   },
+   {
+    "w": 1602,
+    "h": 2000
+   }
+  ]
  }
 }
