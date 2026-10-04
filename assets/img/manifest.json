@@ -1982,5 +1982,29 @@
     "h": 2000
    }
   ]
+ },
+ "brick-walk-curved-steps-wall": {
+  "alt": "Brick front walk, curved brick steps, and low brick walls being laid in front of a brick colonial",
+  "role": "card",
+  "w": 1520,
+  "h": 1090,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 301
+   },
+   {
+    "w": 760,
+    "h": 545
+   },
+   {
+    "w": 1200,
+    "h": 861
+   },
+   {
+    "w": 1520,
+    "h": 1090
+   }
+  ]
  }
 }

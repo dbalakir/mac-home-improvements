@@ -385,7 +385,7 @@ export const SERVICES = [
     card: 'Brick patios, entryways, steps, facades, and repointing. Traditional technique, materials chosen to match what is already there.',
     image: 'brick-paver-landing-steps',
     feature: 'steps-stone',
-    gallery: ['brick-paver-landing-steps', 'brick-walkway-entry', 'brick-patio-herringbone', 'steps-brick', 'walkway-brick', 'brick-flooring', 'patio-red', 'steps-landing', 'wall-brick-long'],
+    gallery: ['brick-paver-landing-steps', 'brick-walk-curved-steps-wall', 'brick-walkway-entry', 'brick-patio-herringbone', 'steps-brick', 'walkway-brick', 'brick-flooring', 'patio-red', 'steps-landing', 'wall-brick-long'],
     h1: 'Brickwork That Adds Character and Lasting Value',
     intro: 'Quality brickwork does not just change how a property looks; it adds character, strength, and value that holds. Whether you are refreshing a worn exterior, building something new, or restoring detail that has been lost, expert craftsmanship is what separates work that lasts from work that has to be redone.',
     sections: [
@@ -1461,7 +1461,7 @@ export const PORTFOLIO = [
   'patio-paver-brown', 'asphalt-driveway-stone-edge', 'waterproof-membrane-drain', 'drainage-river-rock',
   'driveway-paver-red-border-handshake', 'brick-paver-landing-steps', 'wall-stone-serpentine-seat', 'patio-paver-grill-terrace',
   'patio-paver-curved-planter', 'walkway-paver-curved-inlay', 'patio-paver-stone-wall', 'asphalt-driveway-paver-edge',
-  'chimney-rebuilt-flashing', 'foundation-waterproof-dimple-drain', 'roof-shingle-ridge', 'firepit-square-block',
+  'chimney-rebuilt-flashing', 'foundation-waterproof-dimple-drain', 'roof-shingle-ridge', 'firepit-square-block', 'brick-walk-curved-steps-wall',
 ];
 
 /* Nine shown on the home page. */
