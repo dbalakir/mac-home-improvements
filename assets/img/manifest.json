@@ -1778,8 +1778,8 @@
  "patio-paver-grill-terrace": {
   "alt": "Large paver terrace with charcoal banding, a stone grill station, and low stone walls",
   "role": "card",
-  "w": 1024,
-  "h": 768,
+  "w": 2000,
+  "h": 1500,
   "sizes": [
    {
     "w": 420,
@@ -1790,8 +1790,12 @@
     "h": 570
    },
    {
-    "w": 1024,
-    "h": 768
+    "w": 1200,
+    "h": 900
+   },
+   {
+    "w": 2000,
+    "h": 1500
    }
   ]
  },
