@@ -1446,12 +1446,6 @@ h1, h2, h3, h4 { font-stretch: 112%; font-weight: 700; letter-spacing: -0.02em; 
   background:
     linear-gradient(100deg, rgba(243,242,238,.97) 0%, rgba(243,242,238,.92) 38%, rgba(243,242,238,.55) 62%, rgba(243,242,238,0) 88%);
 }
-@media (max-width: 760px) {
-  .hero--photo::after { background: linear-gradient(to bottom, rgba(243,242,238,.38) 0%, rgba(243,242,238,.3) 60%, rgba(243,242,238,.08) 100%); }
-  /* With the photo barely veiled, a soft limestone glow keeps the copy legible. */
-  .hero--photo .eyebrow, .hero--photo h1, .hero--photo .hero__lede { text-shadow: 0 0 14px rgba(243,242,238,.95), 0 0 4px rgba(243,242,238,.9); }
-  .hero--photo .btn--ghost { background: rgba(243,242,238,.9); }
-}
 .hero--photo .hero__inner { padding-block: clamp(5rem, 12vw, 8.5rem); max-width: var(--wrap); color: var(--ink); }
 .hero--photo .eyebrow { color: var(--clay); }
 .hero--photo h1 { color: var(--ink); font-size: clamp(2.2rem, 4.2vw, 3.5rem); font-stretch: 112%; max-width: 17ch; text-wrap: balance; }
@@ -1463,6 +1457,22 @@ h1, h2, h3, h4 { font-stretch: 112%; font-weight: 700; letter-spacing: -0.02em; 
 .hero--photo + .trustbar ul { border-top: 0; }
 /* A brass rule under the hero ties it to the navy masthead above. */
 .hero--photo { border-bottom: 3px solid var(--brass); }
+
+/* Phones: the photograph runs clear at the top and darkens toward the
+   bottom, where the copy sits in white. Overrides the limestone scrim above. */
+@media (max-width: 760px) {
+  .hero--photo { display: flex; flex-direction: column; justify-content: flex-end; min-height: calc(100svh - 83px); }
+  .hero--photo::after {
+    background: linear-gradient(to bottom, rgba(9,16,28,0) 0%, rgba(9,16,28,.08) 25%, rgba(9,16,28,.55) 50%, rgba(9,16,28,.82) 100%);
+  }
+  .hero--photo .hero__inner { padding-block: 9rem 3rem; color: #fff; }
+  .hero--photo .eyebrow { color: rgba(255,255,255,.9); }
+  .hero--photo h1 { color: #fff; }
+  .hero--photo .hero__lede { color: rgba(255,255,255,.88); }
+  .hero--photo .hero__lede a { color: #fff; }
+  .hero--photo .hero__actions .btn--solid { background: var(--ink); color: #fff; }
+  .hero--photo .btn--ghost { border-color: rgba(255,255,255,.75); color: #fff; background: transparent; }
+}
 
 /* Scroll reveals are retired: content below the hero is simply there. */
 .reveal { animation: none !important; }
