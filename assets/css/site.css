@@ -1447,7 +1447,7 @@ h1, h2, h3, h4 { font-stretch: 112%; font-weight: 700; letter-spacing: -0.02em; 
     linear-gradient(100deg, rgba(243,242,238,.97) 0%, rgba(243,242,238,.92) 38%, rgba(243,242,238,.55) 62%, rgba(243,242,238,0) 88%);
 }
 @media (max-width: 760px) {
-  .hero--photo::after { background: linear-gradient(to bottom, rgba(243,242,238,.96) 55%, rgba(243,242,238,.75) 100%); }
+  .hero--photo::after { background: linear-gradient(to bottom, rgba(243,242,238,.84) 0%, rgba(243,242,238,.78) 50%, rgba(243,242,238,.35) 100%); }
 }
 .hero--photo .hero__inner { padding-block: clamp(5rem, 12vw, 8.5rem); max-width: var(--wrap); color: var(--ink); }
 .hero--photo .eyebrow { color: var(--clay); }
