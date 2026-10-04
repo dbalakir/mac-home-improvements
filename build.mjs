@@ -297,7 +297,9 @@ function layout({ title, desc, url, body, current, jsonld = [], heroImage = null
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(desc)}">
 <meta property="og:url" content="${canonical}">
-<meta property="og:image" content="${BIZ.origin}/assets/img/hero-driveway-1200.webp">
+<meta property="og:image" content="${BIZ.origin}/assets/img/og-share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/archivo-latin.woff2" crossorigin>
