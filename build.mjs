@@ -1485,7 +1485,7 @@ function buildAreas() {
     <div class="reveal areamap-col">${areaMap('hero')}</div>
     <div>
       <h2 class="h-sub reveal">From McLean to Springfield</h2>
-      <p class="lede reveal" style="margin-top:1rem">Shaded areas are the counties and independent cities we work in. Towns like Vienna, McLean, Annandale, and Springfield sit inside Fairfax County, so they are marked with pins rather than their own outline.</p>
+      <p class="lede reveal" style="margin-top:1rem">Shaded areas are the counties and independent cities we work in. Towns like Vienna, McLean, Annandale, Springfield, and Burke sit inside Fairfax County, so they are marked with pins rather than their own outline.</p>
       <ul class="map-legend reveal">
         <li><i></i>Jurisdictions we serve</li>
         <li><i class="is-pin"></i>Cities and towns</li>
@@ -1519,7 +1519,7 @@ ${ctaBand()}`;
 
   write('service-areas/index.html', layout({
     title: `Service Areas | Masonry in Northern Virginia | ${BIZ.legal}`,
-    desc: 'M&C Home Improvements covers Alexandria, Arlington, Falls Church, McLean, Vienna, Fairfax, Annandale, and Springfield. Free estimates.',
+    desc: 'M&C Home Improvements covers Alexandria, Arlington, Falls Church, McLean, Vienna, Fairfax, Annandale, Springfield, and Burke. Free estimates.',
     url: '/service-areas/',
     current: '',
     trail,

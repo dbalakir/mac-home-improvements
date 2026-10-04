@@ -35,7 +35,7 @@ CONTEXT = {
     '51047': 'Culpeper', '24017': 'Charles', '51057': 'Essex',
 }
 
-# Pins. Towns inside Fairfax County (Vienna, McLean, Annandale, Springfield)
+# Pins. Towns inside Fairfax County (Vienna, McLean, Annandale, Springfield, Burke)
 # have no separate boundary of their own, so they only appear as pins.
 PINS = [
     # name, lat, lon, text-anchor, dy nudge (viewBox units)
@@ -47,12 +47,13 @@ PINS = [
     ('Fairfax',       38.8462, -77.3064, 'end',     8),
     ('Annandale',     38.8304, -77.1964, 'start',   4),
     ('Springfield',   38.7893, -77.1872, 'start',  12),
+    ('Burke',         38.7935, -77.2717, 'end',    12),
 ]
 
 # Towns that appear only as a pin, for the <desc>. Kept explicit rather than
 # derived: the pin names and the SERVED labels are deliberately spelled
 # differently ("Fairfax" vs "Fairfax City"), so no join between them is safe.
-PIN_ONLY = ['Vienna', 'McLean', 'Annandale', 'Springfield']
+PIN_ONLY = ['Vienna', 'McLean', 'Annandale', 'Springfield', 'Burke']
 
 # Viewport in degrees, chosen so the served band reads roughly square.
 LON0, LON1 = -77.60, -76.85
@@ -126,7 +127,7 @@ parts.append(
     f'<svg class="areamap" viewBox="0 0 {W:.0f} {H:.0f}" role="img" '
     f'aria-labelledby="areamap-t areamap-d" xmlns="http://www.w3.org/2000/svg">'
 )
-parts.append('<title id="areamap-t">M&C Home Improvements service area map</title>')
+parts.append('<title id="areamap-t">M&amp;C Home Improvements service area map</title>')
 parts.append(
     '<desc id="areamap-d">Northern Virginia and Washington DC, with '
     + ', '.join(v for v in SERVED.values())
