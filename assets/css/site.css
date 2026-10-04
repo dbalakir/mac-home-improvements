@@ -373,9 +373,27 @@ a { color: inherit; }
   min-height: 46px;
 }
 
+/* Phone button beside the hamburger on small screens. The number was only
+   inside the menu, one tap further from the call than it should be. */
+.mcall { display: none; }
+
 @media (max-width: 900px) {
   .nav, .masthead__cta { display: none; }
-  .mobile-nav { display: block; }
+  .mobile-nav { display: block; margin-left: 1rem; }
+  .mcall {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-left: auto;
+    min-height: 44px;
+    padding: 0 0.95rem;
+    border: 1.5px solid var(--brass);
+    border-radius: 999px;
+    color: var(--ink);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+  }
 }
 
 /* --- Hero --------------------------------------------------------------- */
@@ -1568,3 +1586,45 @@ h1, h2, h3, h4 { font-stretch: 112%; font-weight: 700; letter-spacing: -0.02em; 
 .card__media img, .card:hover .card__media img { transition: none; transform: none; }
 .nav a::after { transition: none; }
 .btn:active { translate: none; scale: 1; }
+
+/* --- Tap targets ---------------------------------------------------------
+   Standalone small links (breadcrumbs, "see more" links, footer, review
+   links) get an invisible 44px-tall hit area without changing their layout.
+   Links inside running text are exempt, as WCAG 2.5.8 allows. */
+.crumbs a, .link-arrow, .wband__link, a.hit { position: relative; }
+.crumbs a::before, .link-arrow::before, .wband__link::before, a.hit::before {
+  content: '';
+  position: absolute;
+  left: -4px;
+  right: -4px;
+  top: 50%;
+  height: 44px;
+  transform: translateY(-50%);
+}
+.footer a { min-height: 44px; }
+
+.estimate-call {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+  margin-top: 1.5rem;
+  color: var(--ink-mid);
+}
+.estimate-call .btn { display: inline-flex; align-items: center; gap: 0.5rem; }
+
+/* Urgent-repair box at the top of a service page (chimney repair). */
+.urgent {
+  margin-top: 1.75rem;
+  max-width: 62ch;
+  padding: 1.25rem 1.4rem;
+  border-left: 3px solid var(--brass);
+  background: color-mix(in srgb, var(--brass) 10%, transparent);
+  display: grid;
+  gap: 0.65rem;
+  justify-items: start;
+}
+.urgent__head { font-weight: 700; font-size: 1.1rem; color: var(--ink); }
+.urgent p { color: var(--ink-mid); }
+.urgent__creds { font-size: 0.875rem; font-weight: 600; }
+.urgent .btn { display: inline-flex; align-items: center; gap: 0.5rem; }
