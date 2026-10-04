@@ -1457,10 +1457,21 @@ h1, h2, h3, h4 { font-stretch: 112%; font-weight: 700; letter-spacing: -0.02em; 
 .hero--photo + .trustbar ul { border-top: 0; }
 /* A brass rule under the hero ties it to the navy masthead above. */
 .hero--photo { border-bottom: 3px solid var(--brass); }
-/* The hero photograph is portrait; on wide screens frame its lower half,
-   the patio and seat wall, rather than the equipment in the middle. */
-.hero--photo .hero__media img { object-position: 50% 78%; }
-@media (max-width: 760px) { .hero--photo .hero__media img { object-position: 50% 50%; } }
+/* Wide screens: the photograph runs the full width, darkened on the left
+   where the copy sits in white, as on phones. It is portrait, so it is framed
+   on the wall, planting, and awning band. */
+@media (min-width: 761px) {
+  .hero--photo::after {
+    background: linear-gradient(90deg, rgba(9,16,28,.82) 0%, rgba(9,16,28,.62) 40%, rgba(9,16,28,.15) 75%, rgba(9,16,28,0) 100%);
+  }
+  .hero--photo .hero__media img { object-position: 50% 42%; }
+  .hero--photo .eyebrow { color: rgba(255,255,255,.85); }
+  .hero--photo h1 { color: #fff; }
+  .hero--photo .hero__lede { color: rgba(255,255,255,.88); }
+  .hero--photo .hero__lede a { color: #fff; }
+  .hero--photo .hero__actions .btn--solid { background: var(--brass); color: var(--ink); }
+  .hero--photo .btn--ghost { border-color: rgba(255,255,255,.8); color: #fff; background: transparent; }
+}
 
 /* Phones: the photograph runs clear at the top and darkens toward the
    bottom, where the copy sits in white. Overrides the limestone scrim above. */
@@ -1649,3 +1660,10 @@ h1, h2, h3, h4 { font-stretch: 112%; font-weight: 700; letter-spacing: -0.02em; 
 .urgent p { color: var(--ink-mid); }
 .urgent__creds { font-size: 0.875rem; font-weight: 600; }
 .urgent .btn { display: inline-flex; align-items: center; gap: 0.5rem; }
+
+/* Between the mobile breakpoint and full desktop the masthead is one item
+   too wide; the phone number drops out of it (the button and the mobile
+   nav still carry it). */
+@media (min-width: 901px) and (max-width: 1100px) {
+  .masthead__cta .callout { display: none; }
+}
