@@ -1249,7 +1249,7 @@ export const FEATURED_REVIEWS = ['Patricia W.', 'Larry D.', 'RJ C.'];
 /* --- Service areas ------------------------------------------------------- */
 export const AREAS = [
   'Alexandria, VA', 'Arlington, VA', 'Falls Church, VA', 'McLean, VA',
-  'Vienna, VA', 'Fairfax, VA', 'Annandale, VA', 'Springfield, VA',
+  'Vienna, VA', 'Fairfax, VA', 'Annandale, VA', 'Springfield, VA', 'Burke, VA',
 ];
 
 /* --- Portfolio ----------------------------------------------------------- */
@@ -1610,7 +1610,7 @@ export const FAQ = [
   },
   {
     q: 'What areas do you serve?',
-    a: ['Alexandria, Arlington, Falls Church, McLean, Vienna, Fairfax, Annandale, and Springfield. If you are just outside that list, call and ask. We often can.'],
+    a: ['Alexandria, Arlington, Falls Church, McLean, Vienna, Fairfax, Annandale, Springfield, and Burke. If you are just outside that list, call and ask. We often can.'],
   },
   {
     q: 'How long does a typical project take?',
