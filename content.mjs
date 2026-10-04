@@ -548,6 +548,12 @@ export const SERVICES = [
   },
   {
     slug: 'chimney-repair',
+    // Shown at the top of the page. People searching for chimney repair are
+    // usually looking at a stain or a loose brick right now.
+    urgent: {
+      head: 'Water stain, loose brick, or a cracked crown?',
+      body: 'Call today and tell us what you are seeing. Water getting in around a chimney does more damage with every rain, so we look at leaks first. We do chimney masonry: crowns, flashing, repointing, and rebuilds. Sweeping and flue inspections are a separate trade, and we will tell you if you need one.',
+    },
     reviewFrom: 'Jason S.',
     process: [
       ['Inspection from the ground and the roof', 'A chimney has to be looked at from above to be assessed honestly. We check the crown, the flashing, the joint at the roofline, and the condition of the mortar on every face.'],
@@ -1599,6 +1605,136 @@ export const PROJECTS = [
 ];
 
 /* --- FAQ ----------------------------------------------------------------- */
+/* --- Service pages for one city ------------------------------------------
+   A service page narrowed to one place, for searches like "retaining wall
+   contractor Fairfax". Each one has to say something true about building
+   that service there (jurisdiction, terrain, housing stock) — a copy of the
+   service page with the city name swapped in would do more harm than good.
+   Never claim a local job here unless it is in PROJECTS with that city. */
+export const LOCAL_PAGES = [
+  {
+    service: '/masonry/retaining-walls/',
+    area: 'Fairfax, VA',
+    h1: 'Retaining Wall Contractor in Fairfax, VA',
+    intro: 'Fairfax has more slope than most people expect, and much of it sits on clay. We build segmental block and natural stone retaining walls across Fairfax County and the City of Fairfax, sized for the grade and drained for the water on your lot.',
+    sections: [
+      {
+        h: 'Two jurisdictions behind one address',
+        p: [
+          'A Fairfax mailing address can mean Fairfax County or the independent City of Fairfax, and the two handle permits separately. Walls in the county go through Fairfax County Land Development Services; walls inside city limits go through the City of Fairfax.',
+          'Whether a wall needs a permit, or an engineered design, depends on its height measured from the bottom of the footing and on what it holds up, such as a driveway or a slope above it. We confirm the requirement with the right office before we price the job, not after.',
+        ],
+      },
+      {
+        h: 'Clay soil and where the water goes',
+        p: [
+          'Much of Fairfax County is clay that holds water and swells when it is wet, and parts of the county are mapped as problem soils, including marine clay, where building can call for a geotechnical review. A wall holding back saturated clay carries far more load than one holding back soil that drains.',
+          'So the effort goes where you will never see it: a compacted gravel footing below grade, open-graded stone behind the wall, filter fabric to keep the clay out of it, and a drain outlet that actually leads somewhere. Most retaining wall failures are water failures, and this is where they are prevented.',
+        ],
+      },
+      {
+        h: 'Walls that make a sloped yard usable',
+        p: [
+          'In subdivisions built on rolling ground, the usual request is to turn a slope into flat lawn or a patio, terrace a steep side yard, or hold back the grade beside a driveway. We design the wall around how you want to use the space above and below it.',
+          'If your community has an HOA, the design usually needs architectural review before work starts. We provide the drawings, dimensions, and material specifications the application asks for.',
+        ],
+      },
+    ],
+    faq: [
+      { q: 'Do I need a permit for a retaining wall in Fairfax County?',
+        a: ['It depends on the height of the wall and what it holds back. The measurement that counts is from the bottom of the footing, not from the lawn, so a wall that looks short can still need one, and a wall carrying a driveway or a slope can need an engineered design at a lower height. We check with Fairfax County Land Development Services, or with the City of Fairfax if you are inside city limits, before we quote.'] },
+      { q: 'Block or natural stone for a wall in Fairfax?',
+        a: ['Segmental block where the wall is doing structural work, especially taller walls and walls beside driveways, because it is engineered to lock together and to be built to a specification. Natural stone where the wall is lower and on show. Plenty of yards end up with both.'] },
+      { q: 'Does my HOA need to approve a retaining wall?',
+        a: ['Many Fairfax communities require architectural review for walls, patios, and grading changes. Check your covenants. We supply the drawings and material details the application needs, and we do not start until it is approved.'] },
+      { q: 'How long does a retaining wall take to build?',
+        a: ['A typical residential wall takes days rather than weeks once materials are on site. An engineered wall adds design and permit time beforehand. You get a schedule with the estimate.'] },
+    ],
+  },
+  {
+    service: '/stone-work/patio-design/',
+    area: 'Alexandria, VA',
+    h1: 'Patio Installation in Alexandria, VA',
+    intro: 'Alexandria yards run from Old Town courtyards a few feet wide to large lots on the Fairfax County side of an Alexandria address. We design and build paver, natural stone, brick, and stamped concrete patios for both, starting from the base and from where the water goes.',
+    sections: [
+      {
+        h: 'City of Alexandria or Fairfax County?',
+        p: [
+          'Many homes with an Alexandria mailing address, particularly south and west of the city line, are actually in Fairfax County. It matters, because the two have different rules for permits, stormwater, and historic districts.',
+          'Your real-estate tax bill tells you which one you are in. We confirm it at the site visit and design to the rules that apply to your lot.',
+        ],
+      },
+      {
+        h: 'Patios in the historic districts',
+        p: [
+          'Inside the Old Town and Parker-Gray historic districts, exterior changes that can be seen from a public street generally need approval from the Board of Architectural Review. A rear patio behind the house often cannot be seen, but front walks, steps, and side yards facing a street can.',
+          'We tell you at the site visit whether a design is likely to need review, and we provide the drawings and material samples for the application.',
+        ],
+      },
+      {
+        h: 'Brick that belongs with the house',
+        p: [
+          'Alexandria is a brick city. On an older home, a clay brick patio laid in herringbone or basketweave, or a paver chosen to sit with the brick of the house, usually looks more at home than a cool grey concrete paver. We bring samples to the site so you can see them against your own walls before you choose.',
+        ],
+      },
+      {
+        h: 'Small yards are a drainage problem first',
+        p: [
+          'On a tight lot, water has nowhere to go but toward the house or the neighbor. Every patio we build is pitched away from the foundation, and on small courtyards we decide where the runoff ends up before we choose the surface. Larger projects can also fall under stormwater and land-disturbance rules; we check before we design rather than after.',
+        ],
+      },
+    ],
+    faq: [
+      { q: 'Do I need approval for a patio in Old Town Alexandria?',
+        a: ['If the patio, or anything that goes with it such as steps or a wall, can be seen from a public street in the Old Town or Parker-Gray historic districts, it generally needs Board of Architectural Review approval. A patio fully behind the house often does not. We tell you which case you are in and help with the application if it does.'] },
+      { q: 'What patio material suits an older Alexandria home?',
+        a: ['Usually clay brick or a warm-toned paver that sits with the brick of the house, laid in a traditional pattern. Bluestone and other natural stone also suit older homes well. We bring samples so the choice is made against your walls, not a showroom photograph.'] },
+      { q: 'How big a patio do I need?',
+        a: ['Plan it around what you will do on it. A table for four needs roughly twelve by twelve feet so chairs can be pulled out; a pair of lounge chairs needs about eight by ten. In a small yard we often fit both by changing level or shape rather than by making the patio bigger.'] },
+      { q: 'Is my Alexandria address in the city or in Fairfax County?',
+        a: ['Look at your real-estate tax bill: it is issued by either the City of Alexandria or Fairfax County. We confirm it during the site visit either way, because it decides which rules apply.'] },
+    ],
+  },
+  {
+    service: '/masonry/chimney-repair/',
+    area: 'Arlington, VA',
+    h1: 'Chimney Repair in Arlington, VA',
+    intro: 'Arlington is full of brick colonials, Cape Cods, and bungalows built between the 1920s and the 1950s, and most still have their original masonry chimney. Decades of freeze and thaw is what we repair: cracked crowns, failed flashing, eroded mortar, and spalled brick.',
+    sections: [
+      {
+        h: 'What goes wrong on an older Arlington chimney',
+        p: [
+          'The crown at the top cracks first. Water gets into the brick below it, and every winter the freeze pushes the faces of the brick off. Flashing at the roofline lifts, or was sealed years ago with caulk that has since dried out. Mortar on the weather side erodes until the joints are soft enough to scratch out with a key.',
+          'Each of these lets water into the chimney or into the ceiling around it, and each is far cheaper to fix early than after a winter or two of leaking.',
+        ],
+      },
+      {
+        h: 'Repair, repoint, or rebuild',
+        p: [
+          'Most chimneys need a new crown, new flashing, and repointing rather than a rebuild. When the brick above the roofline is loose or badly spalled, we take it down to sound masonry and relay it, matching the brick and the mortar color to what is already there.',
+          'We tell you which of these you need after we have been on the roof, not from the driveway.',
+        ],
+      },
+      {
+        h: 'Historic districts and permits',
+        p: [
+          'Some Arlington neighborhoods are local historic districts, where exterior changes go through the county Historical Affairs and Landmark Review Board, and a full rebuild can need a building permit. We check your address before work starts and tell you if either applies.',
+        ],
+      },
+    ],
+    faq: [
+      { q: 'There is a stain on my ceiling near the chimney. Is it the chimney?',
+        a: ['Often, but not always. A cracked crown, failed flashing, and porous brick are the usual sources, but a missing chimney cap or a roof problem beside the chimney can look exactly the same from inside. We find the source before recommending a fix, so you are not paying to repair the wrong thing.'] },
+      { q: 'Do you sweep chimneys or inspect flues?',
+        a: ['No. We repair the masonry. For a flue inspection or a cleaning, use a CSIA-certified chimney sweep; if their report calls for masonry work, we can do it.'] },
+      { q: 'Can you match the brick on an older house?',
+        a: ['Usually closely. We match the size, color, and texture of the brick from salvage or current production, and we match the mortar color and the joint profile, which matters as much as the brick itself.'] },
+      { q: 'How quickly can you look at a leak?',
+        a: ['Call and tell us what you are seeing. Active leaks are looked at first, because water around a chimney does more damage with every rain.'] },
+    ],
+  },
+];
+
 export const FAQ = [
   {
     q: 'Do you charge for estimates?',

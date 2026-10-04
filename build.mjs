@@ -14,7 +14,7 @@ import { createHash } from 'crypto';
 import { fileURLToPath } from 'url';
 import {
   BIZ, NAV, SERVICES, REVIEWS, FEATURED_REVIEWS, AREAS, WARRANTY,
-  PORTFOLIO, HOME_PORTFOLIO, FAQ, POINTS, PROJECTS, REDIRECTS,
+  PORTFOLIO, HOME_PORTFOLIO, FAQ, POINTS, PROJECTS, REDIRECTS, LOCAL_PAGES,
 } from './content.mjs';
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
@@ -84,6 +84,7 @@ function write(rel, html) {
   written++;
 }
 
+const PHONE = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg>';
 const ARROW = '<svg width="15" height="10" viewBox="0 0 15 10" fill="none" aria-hidden="true"><path d="M10 1l4 4-4 4M14 5H0" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 
 /**
@@ -148,6 +149,7 @@ function header(current) {
       </a>
       <a class="btn btn--solid" href="/get-your-free-estimate/">Get a Free Estimate</a>
     </div>
+    <a class="mcall tel" href="${BIZ.phoneHref}" aria-label="Call ${BIZ.phone}">${PHONE}<span>Call</span></a>
     <details class="mobile-nav">
       <summary aria-label="Menu"><span></span><span></span><span></span></summary>
       <div class="mobile-nav__panel">
@@ -395,6 +397,14 @@ function leaveReview() {
 </section>`;
 }
 
+/* License and insurance, for pages where a homeowner is deciding whether to
+   let someone onto the roof. Renders nothing until BIZ.license is filled in:
+   an unsupported "licensed and insured" claim is worse than none. */
+function credentials() {
+  if (!BIZ.license) return '';
+  return `<p class="urgent__creds">Virginia contractor license ${esc(BIZ.license)} &middot; Licensed &amp; insured</p>`;
+}
+
 function processSection(steps, title) {
   if (!steps || !steps.length) return '';
   return `<section class="section section--sunk">
@@ -423,7 +433,7 @@ function serviceReview(name) {
       <blockquote><p>${esc(smart(r.text))}</p></blockquote>
       <figcaption>${esc(r.name)}${reviewMeta(r, [r.where])}</figcaption>
     </figure>
-    <p style="text-align:center;margin-top:1.25rem"><a href="/reviews/">Read all ${esc(BIZ.reviewCount)} reviews</a></p>
+    <p style="text-align:center;margin-top:1.25rem"><a class="hit" href="/reviews/">Read all ${esc(BIZ.reviewCount)} reviews</a></p>
   </div>
 </section>`;
 }
@@ -518,6 +528,8 @@ function areasSection() {
 
 /* --- projects ------------------------------------------------------------ */
 const areaSlugOf = a => a.toLowerCase().replace(/,/g, '').replace(/\s+/g, '-');
+const localUrl = lp => lp.service + areaSlugOf(lp.area) + '/';
+const cityOf = a => a.split(',')[0];
 const projectUrl = p => p.service + p.slug + '/';
 /* Projects shown on a service page. A project lives at exactly one URL —
    {service}{slug}/ — but it can be *listed* under more than one service:
@@ -533,11 +545,15 @@ const projectsIn = city => PROJECTS.filter(p => p.city === city);
    rest of the site uses — they came from the Google Business Profile after
    the image pipeline had already run, and there is no encoder on hand to
    regenerate them. Two widths, so the srcset still does its job. */
+/* Project photos ship as a WebP pair with the original JPEGs as fallback. */
 function projectPicture(p, { sizes, lazy = true } = {}) {
   const base = '/assets/img/projects/' + p.slug;
-  return `<img src="${base}-1200.jpg"
+  return `<picture>
+  <source type="image/webp" srcset="${base}-760.webp 760w, ${base}-1200.webp 1200w" sizes="${sizes}">
+  <img src="${base}-760.jpg"
        srcset="${base}-760.jpg 760w, ${base}-1200.jpg 1200w" sizes="${sizes}"
-       width="${p.w}" height="${p.h}" alt="${esc(p.alt)}"${lazy ? ' loading="lazy" decoding="async"' : ' fetchpriority="high" decoding="async"'}>`;
+       width="${p.w}" height="${p.h}" alt="${esc(p.alt)}"${lazy ? ' loading="lazy" decoding="async"' : ' fetchpriority="high" decoding="async"'}>
+</picture>`;
 }
 
 /* A service's card and feature image. Normally a slug from the image
@@ -562,10 +578,13 @@ const caption = p => esc(p.title) + (p.city ? ', ' + esc(p.city) : '');
    finished photo, with `-before` on the slug. */
 function beforePicture(p, { sizes } = {}) {
   const base = '/assets/img/projects/' + p.slug + '-before';
-  return `<img src="${base}-1200.jpg"
+  return `<picture>
+  <source type="image/webp" srcset="${base}-760.webp 760w, ${base}-1200.webp 1200w" sizes="${sizes}">
+  <img src="${base}-760.jpg"
        srcset="${base}-760.jpg 760w, ${base}-1200.jpg 1200w" sizes="${sizes}"
        width="${p.before.w}" height="${p.before.h}" alt="${esc(p.before.alt)}"
-       loading="lazy" decoding="async">`;
+       loading="lazy" decoding="async">
+</picture>`;
 }
 
 /* Before and after side by side, or just the finished job when no before
@@ -594,15 +613,17 @@ function projectFigures(p) {
 
 /* Card grid of projects. `heading` is omitted when the caller supplies its
    own section header. */
-function projectGrid(list, { heading = null, intro = null, showService = false } = {}) {
+function projectGrid(list, { heading = null, intro = null, showService = false, eager = 0 } = {}) {
   if (!list.length) return '';
   // Built on the site's own .card / .card__media primitives so the tiles
   // inherit the hairline outline, radius, and image-scale hover that every
   // other card on the site uses. .pcard only adjusts the type scale down.
-  const cards = list.map(p => {
+  // `eager`: how many leading cards load immediately. Set it where the grid
+  // sits above the fold, so the largest paint is not a lazy image.
+  const cards = list.map((p, i) => {
     const svc = SERVICES.find(s => s.href === p.service);
     return `<a class="card pcard reveal" href="${projectUrl(p)}">
-    <div class="card__media">${projectPicture(p, { sizes: '(min-width:1000px) 22vw, (min-width:760px) 30vw, (min-width:460px) 45vw, 92vw' })}</div>
+    <div class="card__media">${projectPicture(p, { sizes: '(min-width:1000px) 22vw, (min-width:760px) 30vw, (min-width:460px) 45vw, 92vw', lazy: i >= eager })}</div>
     <p class="pcard__meta">${[showService && svc ? esc(svc.title) : '', p.city ? esc(p.city) : ''].filter(Boolean).join(' &middot; ')}</p>
     <h3>${esc(p.title)}</h3>
     <p class="pcard__mat">${esc(p.material)}</p>
@@ -880,6 +901,11 @@ function buildService(s) {
     ${links.items.map(c => `<a href="${c.href}">${esc(c.title)}</a>`).join('')}</p>
 </div>`;
 
+  const locals = LOCAL_PAGES.filter(lp => lp.service === s.href);
+  const localNote = locals.length
+    ? relatedRow({ label: 'Near you:', items: locals.map(lp => ({ href: localUrl(lp), title: `${s.title} in ${cityOf(lp.area)}` })) })
+    : '';
+
   const parentNote = parent
     ? relatedRow({
         label: `Also under ${esc(parent.title)}:`,
@@ -901,7 +927,13 @@ function buildService(s) {
   <div class="wrap">
     <p class="eyebrow">${esc(s.group)}</p>
     <h1 class="h-display" style="max-width:18ch">${esc(s.h1)}</h1>
-    <p class="lede">${esc(smart(s.intro))}</p>
+    <p class="lede">${esc(smart(s.intro))}</p>${s.urgent ? `
+    <div class="urgent">
+      <p class="urgent__head">${esc(s.urgent.head)}</p>
+      <p>${esc(smart(s.urgent.body))}</p>
+      ${credentials()}
+      <a class="btn btn--solid tel" href="${BIZ.phoneHref}">${PHONE} Call ${BIZ.phone}</a>
+    </div>` : ''}
     <div class="hero__actions" style="margin-top:2rem">
       <a class="btn btn--solid" href="/get-your-free-estimate/">Get a Free Estimate</a>
       <a class="btn btn--ghost tel" href="${BIZ.phoneHref}">${BIZ.phone}</a>
@@ -916,6 +948,7 @@ ${warrantyBand(s.warranty)}
 </div>
 
 ${parentNote}
+${localNote}
 
 ${childSection}
 
@@ -977,6 +1010,129 @@ ${ctaBand()}`;
       })),
     }] : []),
     ],
+  }));
+}
+
+/* --- Service pages for one city ------------------------------------------ */
+/* Built from LOCAL_PAGES. The local copy carries the page; the parent service
+   supplies the shared parts (warranty, process, photographs) so the two never
+   drift apart. Projects shown are local ones if we have any, otherwise the
+   same service elsewhere, labelled as such. */
+function buildLocal(lp) {
+  const s = SERVICES.find(x => x.href === lp.service);
+  if (!s) { warnings.push(`LOCAL_PAGES: no service at ${lp.service}`); return; }
+  const city = cityOf(lp.area);
+  const url = localUrl(lp);
+  const areaPage = `/service-areas/${areaSlugOf(lp.area)}/`;
+
+  const sections = lp.sections.map(sec => `<section class="section section--tight">
+  <div class="wrap">
+    <h2 class="h-sub reveal" style="max-width:24ch">${esc(sec.h)}</h2>
+    <div class="prose reveal" style="margin-top:1.25rem">
+      ${sec.p.map(p => `<p>${esc(smart(p))}</p>`).join('\n      ')}
+    </div>
+  </div>
+</section>`).join('\n');
+
+  const local = PROJECTS.filter(p => p.service === s.href && p.city === lp.area);
+  const projects = local.length
+    ? projectGrid(local, { heading: `Our ${esc(s.title.toLowerCase())} work in ${esc(city)}`, intro: 'Every photograph is a job we built.' })
+    : projectGrid(projectsFor(s.href).slice(0, 4), {
+        heading: `Recent ${esc(s.title.toLowerCase())} work nearby`,
+        intro: `Jobs from elsewhere in Northern Virginia, each with its own page. The same crews and the same standard apply in ${esc(city)}.`,
+        showService: false,
+      });
+
+  const gallery = s.gallery.filter(g => IMG[g]).slice(0, 6);
+  const gallerySection = gallery.length > 1 ? `<section class="section section--sunk">
+  <div class="wrap">
+    <div class="section__head">
+      <h2 class="h-section reveal">${esc(s.title)} photographs</h2>
+    </div>
+    <div class="grid grid--3">
+      ${gallery.map(g => `<figure class="reveal" style="margin:0">${picture(g, { sizes: '(max-width:620px) 92vw, (max-width:900px) 45vw, 30vw', cls: 'card__media' })}
+      <figcaption style="margin-top:.6rem;font-size:.8rem;color:var(--ink-dim)">${esc(IMG[g].alt)}</figcaption></figure>`).join('\n      ')}
+    </div>
+  </div>
+</section>` : '';
+
+  const parent = parentOf(s);
+  const trail = [
+    { label: 'Home', href: '/' },
+    { label: 'Services', href: '/services/' },
+    ...(parent ? [{ label: parent.title, href: parent.href }] : []),
+    { label: s.title, href: s.href },
+    { label: city },
+  ];
+
+  const body = `${crumbs(trail)}
+
+<section class="pagehead">
+  <div class="wrap">
+    <p class="eyebrow">${esc(s.title)} &middot; ${esc(lp.area)}</p>
+    <h1 class="h-display" style="max-width:18ch">${esc(lp.h1)}</h1>
+    <p class="lede">${esc(smart(lp.intro))}</p>${s.urgent ? `
+    <div class="urgent">
+      <p class="urgent__head">${esc(s.urgent.head)}</p>
+      <p>${esc(smart(s.urgent.body))}</p>
+      ${credentials()}
+      <a class="btn btn--solid tel" href="${BIZ.phoneHref}">${PHONE} Call ${BIZ.phone}</a>
+    </div>` : ''}
+    <div class="hero__actions" style="margin-top:2rem">
+      <a class="btn btn--solid" href="/get-your-free-estimate/">Get a Free Estimate</a>
+      <a class="btn btn--ghost tel" href="${BIZ.phoneHref}">${BIZ.phone}</a>
+    </div>
+  </div>
+</section>
+
+${warrantyBand(s.warranty)}
+
+<div class="wrap" style="margin-bottom:var(--section-y)">
+  ${mediaFor(lp.image || s.feature, { sizes: '(max-width:1180px) 92vw, 1120px' })}
+</div>
+
+<div class="wrap">
+  <p class="svc-parent reveal"><span>See also:</span>
+    <a href="${s.href}">${esc(s.title)} across Northern Virginia</a><a href="${areaPage}">Everything we build in ${esc(city)}</a></p>
+</div>
+
+${sections}
+
+${processSection(s.process, s.title)}
+
+${projects}
+
+${gallerySection}
+
+${faqSection(lp.faq)}
+
+${ctaBand()}`;
+
+  write(url.replace(/^\//, '') + 'index.html', layout({
+    title: `${lp.h1} | ${BIZ.legal}`,
+    desc: metaDesc(smart(lp.intro), `Free estimates. Call ${BIZ.phone}.`),
+    url,
+    current: '/services/',
+    trail,
+    body,
+    jsonld: [{
+      '@context': 'https://schema.org',
+      '@type': 'Service',
+      name: lp.h1,
+      serviceType: s.title,
+      url: BIZ.origin + url,
+      description: lp.intro,
+      provider: { '@id': BIZ.origin + '/#business' },
+      areaServed: { '@type': 'City', name: lp.area },
+    }, {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: lp.faq.map(f => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a.join(' ') },
+      })),
+    }],
   }));
 }
 
@@ -1212,7 +1368,7 @@ function buildPortfolio() {
   </div>
 </section>
 
-${projectGrid(PROJECTS.slice(0, 8), { heading: 'Projects with their own page', intro: 'Individual jobs written up in full: what was built, what it was built from, and where. <a href="/projects/">See all projects</a>.', showService: true })}
+${projectGrid(PROJECTS.slice(0, 8), { heading: 'Projects with their own page', intro: 'Individual jobs written up in full: what was built, what it was built from, and where. <a href="/projects/">See all projects</a>.', showService: true, eager: 2 })}
 
 <section class="section section--tight">
   <div class="wrap">
@@ -1341,6 +1497,7 @@ function buildContact() {
     <p class="eyebrow">Request</p>
     <h1 class="h-display" style="max-width:20ch">Want to create something great together?</h1>
     <p class="lede">Tell us what you have in mind and we will come out, look at the site, and give you a written estimate. Free, itemized, and no obligation.</p>
+    <p class="estimate-call">Rather talk it through? <a class="btn btn--solid tel" href="${BIZ.phoneHref}">${PHONE} Call ${BIZ.phone}</a></p>
   </div>
 </section>
 
@@ -1425,7 +1582,7 @@ function buildContact() {
       <div>
         <h2>Rated</h2>
         <p style="color:var(--ink-mid);font-size:.925rem"><span class="stars">★★★★★</span><br>${BIZ.reviewCount} five-star reviews on ${BIZ.ratingSource}</p>
-        <p style="margin-top:.75rem"><a href="${BIZ.googleReviewUrl}" rel="noopener" style="font-size:.875rem">Leave us a Google review</a></p>
+        <p style="margin-top:.75rem"><a class="hit" href="${BIZ.googleReviewUrl}" rel="noopener" style="font-size:.875rem">Leave us a Google review</a></p>
       </div>
       ${BIZ.license ? `<div><h2>Licensing</h2><p style="color:var(--ink-mid);font-size:.925rem">License ${esc(BIZ.license)}<br>Licensed &amp; insured</p></div>` : ''}
     </aside>
@@ -1572,6 +1729,15 @@ ${ctaBand()}`;
     </div>
   </div>
 </section>
+
+${(() => {
+  const here = LOCAL_PAGES.filter(lp => lp.area === a);
+  if (!here.length) return '';
+  return `<div class="wrap">
+  <p class="svc-parent reveal"><span>In ${esc(city)}:</span>
+    ${here.map(lp => `<a href="${localUrl(lp)}">${esc(SERVICES.find(x => x.href === lp.service).title)} in ${esc(city)}</a>`).join('')}</p>
+</div>`;
+})()}
 
 <section class="section section--tight">
   <div class="wrap">
@@ -1828,6 +1994,7 @@ function buildMeta() {
     ['/', '1.0'],
     ['/services/', '0.9'],
     ...SERVICES.map(s => [s.href, '0.8']),
+    ...LOCAL_PAGES.map(lp => [localUrl(lp), '0.7']),
     ['/projects/', '0.8'],
     ...PROJECTS.map(p => [projectUrl(p), '0.6']),
     ['/portfolio/', '0.7'],
@@ -1882,6 +2049,7 @@ buildReviews();
 buildContact();
 buildWarranty();
 buildAreas();
+LOCAL_PAGES.forEach(buildLocal);
 build404();
 buildRedirects();
 buildMeta();
