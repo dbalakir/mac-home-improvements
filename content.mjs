@@ -1057,9 +1057,9 @@ export const SERVICES = [
     title: 'Drainage & Water Management',
     group: 'Drainage & Site Work',
     card: 'French drains, trench drains, downspout routing, grading, and drainage correction around driveways, patios, and retaining walls.',
-    image: 'driveway-prep',
+    image: 'drainage-river-rock-swale',
     feature: 'wall-build',
-    gallery: ['drainage-trench-drain', 'drainage-river-rock', 'drainage-pipe-trench', 'drainage-pipe-hillside', 'waterproof-membrane-drain', 'driveway-prep', 'wall-build', 'patio-build', 'foundation-exterior', 'foundation-driveway', 'walkway-crew'],
+    gallery: ['drainage-river-rock-swale', 'drainage-trench-drain', 'drainage-river-rock', 'drainage-pipe-trench', 'drainage-pipe-hillside', 'waterproof-membrane-drain', 'driveway-prep', 'wall-build', 'patio-build', 'foundation-exterior', 'foundation-driveway', 'walkway-crew'],
     h1: 'Drainage, French Drains, and Grading Correction',
     intro: 'Water is the reason most hardscape fails early, and almost none of the damage happens where the water lands. It happens where the water collects, where it soaks in, and where it moves under the surface, which is why a drainage problem shows up as a sunken patio, a cracked driveway, or a wall leaning out of line.',
     sections: [
@@ -1461,7 +1461,7 @@ export const PORTFOLIO = [
   'patio-paver-brown', 'asphalt-driveway-stone-edge', 'waterproof-membrane-drain', 'drainage-river-rock',
   'driveway-paver-red-border-handshake', 'brick-paver-landing-steps', 'wall-stone-serpentine-seat', 'patio-paver-grill-terrace',
   'patio-paver-curved-planter', 'walkway-paver-curved-inlay', 'patio-paver-stone-wall', 'asphalt-driveway-paver-edge',
-  'chimney-rebuilt-flashing', 'foundation-waterproof-dimple-drain', 'roof-shingle-ridge', 'firepit-square-block', 'brick-walk-curved-steps-wall',
+  'chimney-rebuilt-flashing', 'foundation-waterproof-dimple-drain', 'roof-shingle-ridge', 'firepit-square-block', 'brick-walk-curved-steps-wall', 'drainage-river-rock-swale',
   'firepit-circle-patio', 'stone-flagstone-patio-wall-dusk', 'stone-flagstone-patio-curved', 'stone-flagstone-patio-string-lights', 'asphalt-driveway-paver-apron', 'hero-patio-seatwall',
 ];
 

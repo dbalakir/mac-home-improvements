@@ -2122,5 +2122,21 @@
     "h": 1558
    }
   ]
+ },
+ "drainage-river-rock-swale": {
+  "alt": "Dry creek bed of river rock running between pine-straw beds to carry runoff away from the house",
+  "role": "card",
+  "w": 768,
+  "h": 1024,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 560
+   },
+   {
+    "w": 768,
+    "h": 1024
+   }
+  ]
  }
 }
