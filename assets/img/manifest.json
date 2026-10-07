@@ -959,26 +959,6 @@
    }
   ]
  },
- "fireplace-stone": {
-  "alt": "Finished outdoor stone fireplace",
-  "role": "feature",
-  "w": 1290,
-  "h": 804,
-  "sizes": [
-   {
-    "w": 420,
-    "h": 262
-   },
-   {
-    "w": 760,
-    "h": 474
-   },
-   {
-    "w": 1200,
-    "h": 748
-   }
-  ]
- },
  "fireplace-install": {
   "alt": "Mason performing a fireplace and patio installation",
   "role": "card",
@@ -1000,7 +980,7 @@
   ]
  },
  "fireplace-bbq": {
-  "alt": "Stainless steel BBQ pit enclosed by stone retaining walls",
+  "alt": "Stacked stone veneer on a house wall and a stone outdoor kitchen beside a paver patio with a trench drain",
   "role": "card",
   "w": 2048,
   "h": 1536,
@@ -2136,6 +2116,286 @@
    {
     "w": 768,
     "h": 1024
+   }
+  ]
+ },
+ "roof-shingle-ranch-aerial": {
+  "alt": "New brown architectural shingle roof on a ranch home with a two-car garage, seen from above",
+  "role": "card",
+  "w": 1179,
+  "h": 754,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 269
+   },
+   {
+    "w": 760,
+    "h": 487
+   },
+   {
+    "w": 1179,
+    "h": 754
+   }
+  ]
+ },
+ "roof-replacement-crew-aerial": {
+  "alt": "Roofing crew laying synthetic underlayment and new shingles across a ranch home",
+  "role": "card",
+  "w": 1179,
+  "h": 834,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 298
+   },
+   {
+    "w": 760,
+    "h": 538
+   },
+   {
+    "w": 1179,
+    "h": 834
+   }
+  ]
+ },
+ "roof-underlayment-leak-barrier": {
+  "alt": "Leak barrier along the eave and synthetic underlayment on a roof deck, with shingle bundles staged for install",
+  "role": "card",
+  "w": 1178,
+  "h": 1560,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 557
+   },
+   {
+    "w": 760,
+    "h": 1007
+   },
+   {
+    "w": 1178,
+    "h": 1560
+   }
+  ]
+ },
+ "roof-shingle-hip-cap": {
+  "alt": "Close-up of new charcoal architectural shingles and hip cap running up to a new gable",
+  "role": "card",
+  "w": 1179,
+  "h": 996,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 355
+   },
+   {
+    "w": 760,
+    "h": 643
+   },
+   {
+    "w": 1179,
+    "h": 996
+   }
+  ]
+ },
+ "roof-deck-replacement": {
+  "alt": "Roofers replacing rotted roof decking with new plywood over the exposed rafters",
+  "role": "card",
+  "w": 1178,
+  "h": 1136,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 406
+   },
+   {
+    "w": 760,
+    "h": 733
+   },
+   {
+    "w": 1178,
+    "h": 1136
+   }
+  ]
+ },
+ "chimney-copper-cricket": {
+  "alt": "Rebuilt brick chimney with a copper cricket diverting water on a new shingle roof",
+  "role": "card",
+  "w": 1179,
+  "h": 1560,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 556
+   },
+   {
+    "w": 760,
+    "h": 1006
+   },
+   {
+    "w": 1179,
+    "h": 1560
+   }
+  ]
+ },
+ "siding-navy-lap-home": {
+  "alt": "Navy lap siding with white trim on a two-story home above a brick foundation",
+  "role": "card",
+  "w": 1179,
+  "h": 1143,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 408
+   },
+   {
+    "w": 760,
+    "h": 737
+   },
+   {
+    "w": 1179,
+    "h": 1143
+   }
+  ]
+ },
+ "siding-grey-lap-zip": {
+  "alt": "Light grey lap siding going up over ZIP System sheathing on a two-story house",
+  "role": "card",
+  "w": 1178,
+  "h": 1167,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 417
+   },
+   {
+    "w": 760,
+    "h": 753
+   },
+   {
+    "w": 1178,
+    "h": 1167
+   }
+  ]
+ },
+ "siding-shake-install": {
+  "alt": "Dark grey shake siding being installed over house wrap on a ranch home",
+  "role": "card",
+  "w": 1179,
+  "h": 1155,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 412
+   },
+   {
+    "w": 760,
+    "h": 745
+   },
+   {
+    "w": 1179,
+    "h": 1155
+   }
+  ]
+ },
+ "siding-ranch-renovation": {
+  "alt": "Ranch home wrapped for new siding with a new front porch gable while masons lay stone out front",
+  "role": "card",
+  "w": 1179,
+  "h": 1146,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 409
+   },
+   {
+    "w": 760,
+    "h": 739
+   },
+   {
+    "w": 1179,
+    "h": 1146
+   }
+  ]
+ },
+ "siding-grey-lap-ladders": {
+  "alt": "Grey lap siding installed under a new shed roof, with ladders still on site",
+  "role": "card",
+  "w": 1179,
+  "h": 1169,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 417
+   },
+   {
+    "w": 760,
+    "h": 754
+   },
+   {
+    "w": 1179,
+    "h": 1169
+   }
+  ]
+ },
+ "veneer-fieldstone-steps-wall": {
+  "alt": "Fieldstone retaining wall and stone-faced steps with granite treads and an iron railing beside a garage",
+  "role": "card",
+  "w": 1178,
+  "h": 839,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 300
+   },
+   {
+    "w": 760,
+    "h": 542
+   },
+   {
+    "w": 1178,
+    "h": 839
+   }
+  ]
+ },
+ "veneer-wood-steps-before": {
+  "alt": "Before: weathered wooden steps and timber retaining wall beside the garage, since rebuilt in stone",
+  "role": "card",
+  "w": 1178,
+  "h": 872,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 311
+   },
+   {
+    "w": 760,
+    "h": 563
+   },
+   {
+    "w": 1178,
+    "h": 872
+   }
+  ]
+ },
+ "firepit-herringbone-patio": {
+  "alt": "Round stone fire pit on a herringbone paver patio with lit borders, Adirondack chairs, and a stone outdoor kitchen",
+  "role": "feature",
+  "w": 1178,
+  "h": 1150,
+  "sizes": [
+   {
+    "w": 420,
+    "h": 411
+   },
+   {
+    "w": 760,
+    "h": 742
+   },
+   {
+    "w": 1178,
+    "h": 1150
    }
   ]
  }

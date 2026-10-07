@@ -15,7 +15,7 @@ export const BIZ = {
   phoneHref: 'tel:+17039291621',
   email: 'service@mac-homeimprovements.com',
   city: 'Northern Virginia',
-  since: '2010',
+  since: '2009',
   facebook: '#',                 // TODO: M&C Facebook page
   origin: 'https://mac-homeimprovements.com',
 
@@ -385,7 +385,7 @@ export const SERVICES = [
     card: 'Brick patios, entryways, steps, facades, and repointing. Traditional technique, materials chosen to match what is already there.',
     image: 'brick-paver-landing-steps',
     feature: 'steps-stone',
-    gallery: ['brick-paver-landing-steps', 'brick-walk-curved-steps-wall', 'brick-walkway-entry', 'brick-patio-herringbone', 'steps-brick', 'walkway-brick', 'brick-flooring', 'patio-red', 'steps-landing', 'wall-brick-long'],
+    gallery: ['brick-paver-landing-steps', 'brick-walk-curved-steps-wall', 'brick-walkway-entry', 'brick-patio-herringbone', 'steps-brick', 'walkway-brick', 'brick-flooring', 'steps-landing', 'wall-brick-long'],
     h1: 'Brickwork That Adds Character and Lasting Value',
     intro: 'Quality brickwork does not just change how a property looks; it adds character, strength, and value that holds. Whether you are refreshing a worn exterior, building something new, or restoring detail that has been lost, expert craftsmanship is what separates work that lasts from work that has to be redone.',
     sections: [
@@ -579,7 +579,7 @@ export const SERVICES = [
     card: 'Repointing, crown and flashing repair, and rebuilds. A damaged chimney is a water problem before it is a fire problem.',
     image: 'chimney-rebuilt-flashing',
     feature: 'chimney-rebuilt-flashing',
-    gallery: ['chimney-rebuilt-flashing', 'chimney-rebuild-flues', 'chimney-rebuild-lift', 'chimney-home'],
+    gallery: ['chimney-rebuilt-flashing', 'chimney-copper-cricket', 'chimney-rebuild-flues', 'chimney-rebuild-lift', 'chimney-home'],
     h1: 'Chimney Repair and Restoration',
     intro: 'A damaged chimney leads to structural problems and safety risks, and it usually starts quietly. Whether the issue is cracked mortar, deteriorated flashing, or ordinary weathering, timely repair protects both the chimney and everything underneath it.',
     sections: [
@@ -665,7 +665,7 @@ export const SERVICES = [
     card: 'Paver, natural stone, brick, and stamped concrete patios built from the base up, designed around how you actually use the space.',
     image: 'patio-paver-grill-terrace',
     feature: 'patio-paver-grill-terrace',
-    gallery: ['stone-flagstone-patio-wall-dusk', 'stone-flagstone-patio-curved', 'stone-flagstone-patio-string-lights', 'patio-paver-grill-terrace', 'patio-paver-curved-planter', 'patio-paver-stone-wall', 'patio-herringbone-seatwall', 'patio-paver-curved-border', 'patio-pool-deck-slab', 'patio-paver-brown', 'patio-firepit', 'patio-cobble', 'patio-backyard', 'patio-pool', 'patio-stone', 'patio-red', 'patio-covered', 'patio-build', 'brick-flooring'],
+    gallery: ['stone-flagstone-patio-wall-dusk', 'stone-flagstone-patio-curved', 'stone-flagstone-patio-string-lights', 'patio-paver-grill-terrace', 'patio-paver-curved-planter', 'patio-paver-stone-wall', 'patio-herringbone-seatwall', 'patio-paver-curved-border', 'patio-pool-deck-slab', 'patio-paver-brown', 'patio-firepit', 'patio-cobble', 'patio-backyard', 'patio-pool', 'patio-stone', 'patio-covered', 'patio-build', 'brick-flooring'],
     h1: 'Patio Installation and Design',
     intro: 'We build patios (paver, natural stone, brick, and stamped concrete) from the excavation up. The design work happens first and it matters, but what decides whether you are still happy with the patio in fifteen years is the base underneath it and where the water goes.',
     sections: [
@@ -750,7 +750,7 @@ export const SERVICES = [
     card: 'Stamped and coloured concrete patios in slate, ashlar, and brick patterns: one continuous surface, no joints for weeds to find.',
     image: 'patio-cobble',
     feature: 'patio-covered',
-    gallery: ['patio-cobble', 'patio-covered', 'patio-red', 'patio-stone', 'patio-backyard', 'patio-build'],
+    gallery: ['patio-cobble', 'patio-covered', 'patio-stone', 'patio-backyard', 'patio-build'],
     h1: 'Stamped Concrete Patio Installation',
     intro: 'Stamped concrete gives you the look of cut stone or brick across one continuous surface: no joints for weeds, no individual units to settle. It is a slab, so what it asks for is a proper base, honest jointing, and a finisher who knows how short the stamping window is.',
     sections: [
@@ -902,7 +902,7 @@ export const SERVICES = [
     card: 'Natural stone veneer for facades, fireplaces, columns, and accent walls: real stone texture without full masonry weight.',
     image: 'veneer-siding',
     feature: 'veneer-siding',
-    gallery: ['veneer-siding', 'veneer-walkway', 'veneer-drive', 'veneer-drive-build'],
+    gallery: ['veneer-siding', 'veneer-fieldstone-steps-wall', 'veneer-wood-steps-before', 'fireplace-bbq', 'veneer-walkway', 'veneer-drive', 'veneer-drive-build'],
     h1: 'Stone Veneer Crafted to Complement Your Home',
     intro: 'Stone veneer strikes the balance between natural beauty and practicality. Whether you are updating an exterior, facing a fireplace, or adding an accent wall, veneer delivers genuine stone texture without the weight or the cost of full masonry.',
     sections: [
@@ -977,9 +977,9 @@ export const SERVICES = [
     title: 'Outdoor Fireplaces',
     group: 'Stone Work',
     card: 'Custom fireplaces and fire pits scaled to the space, with seating walls, storage, and lighting built in where it makes sense.',
-    image: 'fireplace-stone',
-    feature: 'fireplace-stone',
-    gallery: ['firepit-circle-patio', 'firepit-square-block', 'fireplace-stone', 'fireplace-build', 'fireplace-install', 'fireplace-bbq', 'patio-firepit'],
+    image: 'firepit-herringbone-patio',
+    feature: 'firepit-herringbone-patio',
+    gallery: ['firepit-herringbone-patio', 'firepit-circle-patio', 'firepit-square-block', 'fireplace-build', 'fireplace-install', 'patio-firepit'],
     h1: 'Outdoor Fireplaces Designed for Northern Virginia Homes',
     intro: 'A custom outdoor fireplace becomes the center of an outdoor living area, the thing that draws people together for conversation, for warmth, and for evenings that run longer than planned. Scale and placement are what make that happen, and both are design decisions worth getting right.',
     sections: [
@@ -1138,7 +1138,7 @@ export const SERVICES = [
     card: 'Roof replacement and repair, including the flashing, valleys, and details where the roof meets walls and chimneys.',
     image: 'roof-shingle-ridge',
     feature: 'roof-shingle-ridge',
-    gallery: ['roof-shingle-ridge'],
+    gallery: ['roof-shingle-ridge', 'roof-shingle-ranch-aerial', 'roof-replacement-crew-aerial', 'roof-shingle-hip-cap', 'roof-underlayment-leak-barrier', 'roof-deck-replacement'],
     h1: 'Roof Replacement and Repair',
     intro: 'A roof keeps water out of everything underneath it, and most roof problems are water problems long before they are visible ones. Whether you need a leak traced and repaired or a full replacement, we look at the whole roof before we price any of it.',
     sections: [
@@ -1178,7 +1178,7 @@ export const SERVICES = [
     card: 'Siding replacement and repair, with the trim, flashing, and openings detailed so water stays on the outside of the wall.',
     image: 'siding-lap-stone',
     feature: 'siding-lap-stone',
-    gallery: ['siding-lap-stone', 'siding-housewrap'],
+    gallery: ['siding-lap-stone', 'siding-navy-lap-home', 'siding-grey-lap-zip', 'siding-shake-install', 'siding-ranch-renovation', 'siding-grey-lap-ladders', 'siding-housewrap'],
     h1: 'Siding Installation and Repair',
     intro: 'Siding is the weather skin of the house. When it cracks, warps, or comes loose, water gets behind it and into the wall. We replace damaged sections or reside the whole house, and pay the same attention to the trim and openings as to the siding itself.',
     sections: [
@@ -1446,7 +1446,7 @@ export const PORTFOLIO = [
   'driveway-circle', 'walkway-bluestone', 'patio-firepit', 'wall-curved',
   'walkway-brick', 'driveway-paver-grey', 'steps-stone', 'patio-cobble',
   'walkway-curved', 'driveway-asphalt-new', 'wall-steps', 'patio-backyard',
-  'walkway-steps', 'driveway-paver-tan', 'fireplace-stone', 'patio-pool',
+  'walkway-steps', 'driveway-paver-tan', 'firepit-herringbone-patio', 'patio-pool',
   'walkway-front', 'wall-build', 'steps-brick', 'veneer-siding',
   'driveway-paver-band', 'walkway-flowers', 'patio-stone', 'fireplace-bbq',
   'driveway-roller', 'walkway-crew', 'patio-build', 'wall-closeup',
@@ -1463,6 +1463,7 @@ export const PORTFOLIO = [
   'patio-paver-curved-planter', 'walkway-paver-curved-inlay', 'patio-paver-stone-wall', 'asphalt-driveway-paver-edge',
   'chimney-rebuilt-flashing', 'foundation-waterproof-dimple-drain', 'roof-shingle-ridge', 'firepit-square-block', 'brick-walk-curved-steps-wall', 'drainage-river-rock-swale',
   'firepit-circle-patio', 'stone-flagstone-patio-wall-dusk', 'stone-flagstone-patio-curved', 'stone-flagstone-patio-string-lights', 'asphalt-driveway-paver-apron', 'hero-patio-seatwall',
+  'roof-shingle-ranch-aerial', 'roof-replacement-crew-aerial', 'chimney-copper-cricket', 'siding-navy-lap-home', 'siding-grey-lap-zip', 'veneer-fieldstone-steps-wall',
 ];
 
 /* Nine shown on the home page. */
@@ -1925,7 +1926,7 @@ export const FAQ = [
   },
   {
     q: 'How long has M&C been in business?',
-    a: ['We have been serving homeowners across Northern Virginia since 2010. M&C is family-operated: you deal with the owners directly, not a salesperson, and the same people who quote the job are on site while it is being built.'],
+    a: ['We have been serving homeowners across Northern Virginia since 2009. M&C is family-operated: you deal with the owners directly, not a salesperson, and the same people who quote the job are on site while it is being built.'],
   },
   {
     q: 'What areas do you serve?',
@@ -1969,7 +1970,7 @@ export const WARRANTY = {
 
 /* --- Homepage "why us" points -------------------------------------------- */
 export const POINTS = [
-  ['Family-operated since 2010', 'You deal with the owners directly. The people who quote your job are on site while it is being built.'],
+  ['Family-operated since 2009', 'You deal with the owners directly. The people who quote your job are on site while it is being built.'],
   ['Base prep done properly', 'Excavation, compacted aggregate, and drainage before anything decorative goes down. It is the step that decides whether the work lasts.'],
   ['Clean sites, kept schedules', 'Our crews show up when they say they will and leave the site clean at the end of every day, the thing customers mention most.'],
   ['Free written estimates', 'Itemized, no obligation, and honest about what can wait. We would rather keep a customer than sell a job.'],

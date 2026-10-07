@@ -657,7 +657,7 @@ const LOCAL_BUSINESS = {
   telephone: BIZ.phone,
   email: BIZ.email,
   foundingDate: BIZ.since,
-  description: 'Family-operated masonry, stonework, roofing and siding contractor serving Northern Virginia since 2010. Driveways, patios, walkways, retaining walls, stone veneer, chimney and foundation repair, drainage, roofing, and siding.',
+  description: 'Family-operated masonry, stonework, roofing and siding contractor serving Northern Virginia since 2009. Driveways, patios, walkways, retaining walls, stone veneer, chimney and foundation repair, drainage, roofing, and siding.',
   image: BIZ.origin + '/assets/img/hero-driveway-1200.webp',
   address: {
     '@type': 'PostalAddress',
@@ -724,7 +724,7 @@ function buildHome() {
   <div class="wrap hero__inner">
     <p class="eyebrow">Family-operated in Northern Virginia since ${BIZ.since}</p>
     <h1 class="h-display">Northern Virginia&rsquo;s Driveway, Hardscape &amp; Masonry Specialists</h1>
-    <p class="hero__lede">Paver, asphalt, and concrete driveways, patios, walkways, retaining walls, and stonework throughout Northern Virginia. Free written estimates, and the owners are on site for every job (<a href="/about-us/">read our story</a>).</p>
+    <p class="hero__lede">Family-owned and operated in Northern Virginia since ${BIZ.since} (<a href="/about-us/">read our story</a>). Licensed and insured. Free estimates across Northern Virginia.</p>
     <div class="hero__actions">
       <a class="btn btn--solid" href="/get-your-free-estimate/">Get a Free Estimate</a>
       <a class="btn btn--ghost tel" href="${BIZ.phoneHref}">${BIZ.phone}</a>
